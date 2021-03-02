@@ -33,6 +33,6 @@ logo: "/assets/images/grillo white svg logo.svg"
 search_enabled: true
 
 aux_links:
-  "Grillo": "//grillo.io"
+  "Grillo Website": "//grillo.io"
 
 color_scheme: dark

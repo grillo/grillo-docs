@@ -15,7 +15,7 @@ Grillo Node Pro is a professional seismic sensor designed to collect data from e
 - GPS module and antenna for sub millisecond time accuracy
 - Grillo Pro support
 
-[Buy a Grillo Node Pro](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Buy a Grillo Node Pro](https://grillo.io/get-a-quote/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 

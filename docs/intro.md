@@ -5,13 +5,13 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Grillo in less than 5 minutes**.
 
 ## Getting Started
 
 Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Or **try Grillo immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
 ### What you'll need
 

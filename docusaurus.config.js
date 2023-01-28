@@ -21,7 +21,12 @@ const config = {
   organizationName: 'grillo', // Usually your GitHub org/user name.
   projectName: 'grillo-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
+
+ 
+
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful

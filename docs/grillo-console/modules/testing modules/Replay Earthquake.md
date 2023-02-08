@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Module 1'
+sidebar_label: 'Replay Earthquake'
 ---
 
-# Module 1
+# Replay Earthquake
 To add SeedLink stations, 

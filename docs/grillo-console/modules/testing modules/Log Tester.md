@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
-sidebar_label: 'Module 2'
+sidebar_label: 'Log Tester'
 ---
 
-# Module 2
+# Log Tester
 To add SeedLink stations, 

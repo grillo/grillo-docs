@@ -1,0 +1,8 @@
+{
+  "label": "Alert Modules",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Alert Modules allow you to send notifications following an event. If you wish to develop a custom module please contact our support team."
+  }
+}

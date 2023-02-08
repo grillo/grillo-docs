@@ -1,0 +1,8 @@
+{
+  "label": "Grillo Wifi",
+  "position": 20,
+  "link": {
+    "type": "generated-index",
+    "description": "Grillo Console allows you to interact with sensor data, run tasks and create events."
+  }
+}

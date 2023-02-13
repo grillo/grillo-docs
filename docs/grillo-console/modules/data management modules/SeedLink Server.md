@@ -9,4 +9,11 @@ This module captures all data from the Ingest Module stream and publishes it as 
 ```mermaid
 flowchart LR
    B[Ingest Module]--> Cp[[SeedLink Server Module]] --> id1[Local Server]
+   style Cp fill:#f9f
 ```
+
+---
+
+To find the `Ip Address` (Host Address) and `Port` for this new SeedLink Server, open the logs for the module:
+
+![Select station type](./img/seedlink%20server.png)

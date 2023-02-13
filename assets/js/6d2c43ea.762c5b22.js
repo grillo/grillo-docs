@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgrillo_docs=self.webpackChunkgrillo_docs||[]).push([[3443],{4542:e=>{e.exports=JSON.parse('{"title":"Events FAQ","description":"1..","slug":"/category/events-faq","permalink":"/category/events-faq","navigation":{"previous":{"title":"1","permalink":"/faq/modules/1"},"next":{"title":"1","permalink":"/faq/events/1"}}}')}}]);

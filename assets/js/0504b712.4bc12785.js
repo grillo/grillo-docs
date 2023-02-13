@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgrillo_docs=self.webpackChunkgrillo_docs||[]).push([[1420],{9104:e=>{e.exports=JSON.parse('{"title":"Modules","description":"1.","slug":"/category/modules-1","permalink":"/category/modules-1","navigation":{"previous":{"title":"1","permalink":"/faq/stations/1"},"next":{"title":"1","permalink":"/faq/modules/1"}}}')}}]);

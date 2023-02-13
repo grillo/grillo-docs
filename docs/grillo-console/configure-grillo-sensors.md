@@ -19,3 +19,5 @@ This allows a user to change the firmware version.
 Only use if you know which firmware you wish to use. Using this may break your device and lose connection.
 
 :::
+
+![Select station type](./img/ui-screens/firmware.png)

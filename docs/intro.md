@@ -10,4 +10,6 @@ Welcome to the Grillo Docs site! Here you'll find setup instructions and trouble
 You  can also create a [customer support ticket](#) for help.
 
 
+:::info
 If we can improve this documentation, please let us know [here](#).
+:::

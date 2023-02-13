@@ -6,6 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
+  
+
   title: 'Grillo',
   tagline: 'Understanding shaking',
   favicon: 'img/favicon.ico',
@@ -127,6 +133,7 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
+      
     }),
 };
 

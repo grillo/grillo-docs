@@ -15,11 +15,13 @@ Docusaurus is a modern static website generator so we need to build the website 
 npm run build
 ```
 
-## Updating your Docusaurus version
-refer to [help pages](https://docusaurus.io/docs/installation)
-
 ## Deploy to Github Pages
 
 ```
 GIT_USER=<GITHUB_USERNAME> yarn deploy
 ```
+
+## Updating your Docusaurus version
+refer to [help pages](https://docusaurus.io/docs/installation)
+
+

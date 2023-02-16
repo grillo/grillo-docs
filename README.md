@@ -7,7 +7,8 @@ To preview your changes as you edit the files, you can run a local development s
 First time you run this, use:
 ```npm install```
 
-npm install --save @docusaurus/theme-mermaid
+```npm install --save @docusaurus/theme-mermaid```
+
 ```
 npm run start
 ```

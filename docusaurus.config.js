@@ -72,10 +72,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Grillo',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Grillo Logo',
+          src: 'img/grillo-black-logo.svg',
         },
         items: [
           {

@@ -9,6 +9,5 @@ This module is typically enabled by default. It consumes station data in real-ti
 ```mermaid
 flowchart LR
    A([Grillo Sensor]) & B([SeedLink Server])--> Cp[[Ingest Data Module]]
-   style Cp fill:#f9f
+   style Cp fill:#1b62d4
 ```
-

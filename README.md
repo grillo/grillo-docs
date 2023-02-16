@@ -1,5 +1,8 @@
 
 # Grillo Docs Site
+This site is built using the static site generator refer to [Docusaurus](https://docusaurus.io/docs).
+
+The docs area consists of markdown pages, and the front page (or other pages) uses react. Instructions on how to create either page are found [here](https://docusaurus.io/docs/category/guides).
 
 ## Run development server
 To preview your changes as you edit the files, you can run a local development server that will serve your website and reflect the latest changes. 
@@ -11,12 +14,6 @@ First time you run this, use:
 
 ```
 npm run start
-```
-
-## Build
-Docusaurus is a modern static website generator so we need to build the website into a directory of static contents and put it on a web server so that it can be viewed. To build the website:
-```
-npm run build
 ```
 
 ## Deploy to Github Pages

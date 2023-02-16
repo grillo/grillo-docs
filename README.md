@@ -4,6 +4,9 @@
 ## Run development server
 To preview your changes as you edit the files, you can run a local development server that will serve your website and reflect the latest changes. 
 
+First time you run this, use:
+```npm install```
+
 npm install --save @docusaurus/theme-mermaid
 ```
 npm run start

@@ -6,14 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  markdown: {
-    mermaid: true,
-    },
-    themes: ['@docusaurus/theme-mermaid'],
-  
 
   title: 'Grillo',
-  tagline: 'Understanding shaking',
+  tagline: 'Make sense of shaking',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -30,7 +25,8 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
- 
+  
+
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -49,10 +45,19 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // Serve the docs at the site's root
-          /* other docs plugin options */
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false, // Optional: disable the blog plugin
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -66,12 +71,19 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Grillo Docs',
+        title: 'Grillo',
         logo: {
           alt: 'Grillo Logo',
           src: 'img/grillo-outlines.svg',
         },
         items: [
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Docs',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/grillo',
             label: 'GitHub',
@@ -124,17 +136,16 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Grillo Holdings Inc.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
-      
-      
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },            
     }),
 };
 

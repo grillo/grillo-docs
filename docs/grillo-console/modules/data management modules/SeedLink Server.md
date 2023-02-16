@@ -8,7 +8,7 @@ This module captures all data from the Ingest Module stream and publishes it as 
 
 ```mermaid
 flowchart LR
-   B[Ingest Module]--> Cp[[SeedLink Server Module]] --> id1[Local Server]
+   A[Ingest Module]--> Cp[[SeedLink Server Module]] --> id1[Local Server]
    style Cp fill:#f9f
 ```
 

@@ -6,7 +6,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-
   title: 'Grillo',
   tagline: 'Make sense of shaking',
   favicon: 'img/favicon.ico',
@@ -25,11 +24,13 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  
-
-
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -71,10 +72,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Grillo',
+        title: 'My Site',
         logo: {
-          alt: 'Grillo Logo',
-          src: 'img/grillo-outlines.svg',
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
         },
         items: [
           {
@@ -85,7 +86,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/grillo',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -98,7 +99,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Grillo',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
@@ -108,15 +109,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/grillo',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/grillo',
+                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/grilloapp',
+                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -129,14 +130,13 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/grillo',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Grillo Holdings Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
@@ -145,13 +145,8 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },            
+      },
     }),
 };
 
 module.exports = config;
-
-
-
-
-

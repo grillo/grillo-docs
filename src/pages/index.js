@@ -12,12 +12,12 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className="hero__title">{'Make sense of shaking'}</h1>
+        <p className="hero__subtitle">{'Use Grillo to convert earthquakes and structures to a stream of data that helps you make decisions.'}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="#">
             Get Started
           </Link>
         </div>

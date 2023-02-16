@@ -5,20 +5,9 @@
  */
 
 /* You can override the default Infima variables here. 
-
-/*
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
 */
+
+
 :root {
   --ifm-color-primary: #3578e5; /*#25c2a0;*/
   --ifm-color-primary-dark: #1d68e1; /*rgb(33, 175, 144);*/
@@ -34,4 +23,10 @@
 html[data-theme='dark'] {
   --ifm-background-color: #1e2125;
   --ifm-background-surface-color: #121212;
+}
+
+/* Use same font as web app */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+:root {
+  --ifm-font-family-base: 'Red Hat Text', sans-serif;
 }

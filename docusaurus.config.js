@@ -72,10 +72,13 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Grillo',
+        title: '',
         logo: {
           alt: 'Grillo Logo',
           src: 'img/grillo-black-logo.svg',
+          srcDark: 'img/grillo-white-logo.svg',
+          href: 'https://grillo.io/',
+          
         },
         items: [
           {
@@ -138,9 +141,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
+       defaultMode: 'dark',
+       disableSwitch: false,
+       respectPrefersColorScheme: false,
       },
       prism: {
         theme: lightCodeTheme,

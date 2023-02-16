@@ -9,5 +9,5 @@ This module captures all data from the Ingest Module stream and stores it in an 
 ```mermaid
 flowchart LR
    B[Ingest Module]--> Cp[[Archive Data Module]] --> id1[(Archive)]
-   style Cp fill:#f9f
+   style Cp fill:#1b62d4
 ```

@@ -50,14 +50,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/grillo/grillo-docs/docs/',
+            'https://github.com/grillo/grillo-docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/grillo/grillo-docs/blog/',
+            'https://github.com/grillo/grillo-docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -7,7 +7,7 @@ sidebar_label: 'Advanced Structural Monitoring Solution'
 In a more complex case, we want to monitor shaking of a structure, calculate spectral properties of the signal, generate graphics and receive an alert whenever the amplitude exceeds a predefined limit.
 
 ```mermaid
-flowchart LR
+flowchart TB
    A([Grillo Sensor]) & B([Seedlink Sensor]) --> C([Ingest Data]) --> E([Structural Health Monitoring]) --> F([Alert]) --> G([Twitter]) & H([SMS])
    D([Public Catalogue]) --> E
    style C fill:#1b62d4

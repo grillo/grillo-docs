@@ -7,7 +7,7 @@ sidebar_label: 'Simple Structural Monitoring Solution'
 Grillo has the capability to monitor sesmic shaking of structures. In a simple case, we want to monitor shaking of a structure and receive an alert whenever the amplitude exceeds a predefined limit.
 
 ```mermaid
-flowchart LR
+flowchart TB
    A([Grillo Sensor]) --> C([Ingest Data]) --> D([Threshold Detection]) --> E([Alert]) --> F([Twitter]) & G([SMS])
    style C fill:#1b62d4
    style D fill:#1b62d4

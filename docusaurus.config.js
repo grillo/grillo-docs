@@ -70,7 +70,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/grillo-logo-colour-1000x1000.jpg',
       navbar: {
         title: '',
         logo: {
@@ -81,6 +81,11 @@ const config = {
           
         },
         items: [
+          {
+            to: 'https://docs.grillo.io',
+            label: 'Home',
+            position: 'left',            
+          },
           {
             type: 'doc',
             docId: 'intro',

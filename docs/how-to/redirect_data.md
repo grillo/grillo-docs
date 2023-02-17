@@ -4,7 +4,7 @@ sidebar_label: 'Redirect Data Flow'
 ---
 
 # Redirect Data Flow
-You can redirect the data flow and stream all data to your own system. This is done by starting a Seedlink Server that offers Grillo Sensor data in real time.
+You can redirect the data flow and stream all data to your own system. This is done by starting a SeedLink Server that offers Grillo Sensor data in real time.
 
 ```mermaid
 flowchart TB
@@ -14,4 +14,4 @@ flowchart TB
 ```
 
 - <em>Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
-- <em>Seedlink Server</em> starts seedlink server
+- <em>SeedLink Server</em> starts SeedLink server

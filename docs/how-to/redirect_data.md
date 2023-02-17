@@ -13,5 +13,5 @@ flowchart TB
    style D fill:#1b62d4
 ```
 
-- <em>Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
-- <em>SeedLink Server</em> starts SeedLink server
+- `Ingest Data` module ingests data from Grillo Sensors and prepares them from processing
+- `SeedLink Server` starts SeedLink server

@@ -4,7 +4,7 @@ sidebar_label: 'Archive Data'
 ---
 
 # Archive Data
-You can simply archive all sensor data and use them for your own analysis. The archived data can be accessed in <em>Download Manager</em> tab in the <em>Event</em> section.
+You can simply archive all sensor data and use them for your own analysis. The archived data can be accessed in `Download Manager` tab in the `Event` section.
 
 ```mermaid
 flowchart TB
@@ -13,5 +13,5 @@ flowchart TB
    style D fill:#1b62d4
 ```
 
-- <em>Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
-- <em>Data Archive</em> module archives data in MSEED format
+- `Ingest Data` module ingests data from Grillo Sensors and prepares them from processing
+- `Data Archive` module archives data in MSEED format

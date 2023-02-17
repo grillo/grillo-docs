@@ -19,7 +19,7 @@ flowchart TB
    style F fill:#1b62d4
 ```
 
-- <em>Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
-- <em>Anomaly Detection</em> module gets the data and uses STA/LTA method to detect anomalous shaking amplitudes at individual stations
-- <em>Event Location and Magnitude</em> module gathers detections from individual stations, associates them into events and estimates event location and magnitude. For large events, it issues and alert message
-- <em>Alert</em> module distributes alert messages via channels such as e-mail or Twitter
+- `Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
+- `Anomaly Detection</em> module gets the data and uses STA/LTA method to detect anomalous shaking amplitudes at individual stations
+- `Event Location and Magnitude</em> module gathers detections from individual stations, associates them into events and estimates event location and magnitude. For large events, it issues and alert message
+- `Alert</em> module distributes alert messages via channels such as e-mail or Twitter

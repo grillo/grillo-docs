@@ -4,7 +4,7 @@ sidebar_label: 'Advanced Structural Monitoring Solution'
 ---
 
 # Create advanced Structural Monitoring Solution
-In a more complex case, we want to monitor shaking of a structure, calculate spectral properties of the signal, generate graphics and receive an alert whenever the amplitude exceeds a predefined limit.
+In a more complex case, we want to monitor the shaking of a structure, calculate spectral properties of the signal, generate graphics and receive an alert whenever the amplitude exceeds a predefined limit.
 
 ```mermaid
 flowchart TB

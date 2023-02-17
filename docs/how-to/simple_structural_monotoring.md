@@ -4,7 +4,7 @@ sidebar_label: 'Simple Structural Monitoring Solution'
 ---
 
 # Create simple Structural Monitoring Solution
-Grillo has the capability to monitor sesmic shaking of structures. In a simple case, we want to monitor shaking of a structure and receive an alert whenever the amplitude exceeds a predefined limit.
+Grillo has the capability to monitor seismic shaking of structures. In a simple case, we want to monitor the shaking of a structure and receive an alert whenever the amplitude exceeds a predefined limit.
 
 ```mermaid
 flowchart TB

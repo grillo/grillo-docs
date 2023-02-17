@@ -8,7 +8,7 @@ An EEW is a system that detects an earthquake in its early stage, evaluates its 
 
 Creating an EEW requires relatively dense network of real-time sensors, such as a Grillo Sensor, located strategically in areas of high seismic hazard. Such network is usually formed by tens to hundreds of sensors that transmit data to a servers in near real-time.
 
-Grillo has the capacity to facilitate EEW networks. Below we display and example workflow in Grillo Console.
+Grillo has the capacity to facilitate EEW networks. Below we display an example workflow in Grillo Console.
 
 ```mermaid
 flowchart TB

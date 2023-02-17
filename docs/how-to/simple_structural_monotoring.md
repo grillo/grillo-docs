@@ -14,6 +14,6 @@ flowchart TB
    style E fill:#1b62d4
 ```
 
-- `Ingest Data</em> module ingests data from Grillo Sensors and prepares them from processing
-- `Threshold Detection</em> module gets the data and evaluates whether the amplitude (in acceleration, velocity, or displacement) exceeded a predefined threshold. If so, it publishes an alert message
-- `Alert</em> module distributes alert messages via channels such as e-mail or Twitter
+- `Ingest Data` module ingests data from Grillo Sensors and prepares them from processing
+- `Threshold Detection` module gets the data and evaluates whether the amplitude (in acceleration, velocity, or displacement) exceeded a predefined threshold. If so, it publishes an alert message
+- `Alert` module distributes alert messages via channels such as e-mail or Twitter

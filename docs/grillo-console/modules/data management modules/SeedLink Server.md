@@ -16,4 +16,4 @@ flowchart LR
 
 To find the `Ip Address` (Host Address) and `Port` for this new SeedLink Server, open the logs for the module:
 
-![Select station type](./img/SeedLink%20server.png)
+![Select station type](./img/seedlink%20server.png)

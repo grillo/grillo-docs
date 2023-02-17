@@ -8,7 +8,7 @@ You can redirect the data flow and stream all data to your own system. This is d
 
 ```mermaid
 flowchart TB
-   A([Grillo Sensor]) --> C([Ingest Data]) --> D([Seedlink Server]) --> E([Outside World])
+   A([Grillo Sensor]) --> C([Ingest Data]) --> D([SeedLink Server]) --> E([Outside World])
    style C fill:#1b62d4
    style D fill:#1b62d4
 ```

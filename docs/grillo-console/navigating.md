@@ -6,7 +6,7 @@ sidebar_label: 'Navigating the UI'
 # Grillo Console Work Areas
 Grillo console features 3 work areas; `Stations`, `Modules` and `Data`, as well as an account and billing section.
 ## Stations
-In this section you can add your Grillo sensors or Seedlink stations, view their status and interact with some configurations.
+In this section you can add your Grillo sensors or SeedLink stations, view their status and interact with some configurations.
 ![Add station button](./img/ui-screens/station%20ui.png)
 
 ## Modules

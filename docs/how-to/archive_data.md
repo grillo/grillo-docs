@@ -7,7 +7,7 @@ sidebar_label: 'Archive Data'
 You can simply archive all sensor data and use them for your own analysis. The archived data can be accessed in <em>Download Manager</em> tab in the <em>Event</em> section.
 
 ```mermaid
-flowchart LR
+flowchart TB
    A([Grillo Sensor]) & B([Seedlink Sensor]) --> C([Ingest Data]) --> D([Data Archive]) --> E([Archive]) --> F([Query archive in Data Manager])
    style C fill:#1b62d4
    style D fill:#1b62d4

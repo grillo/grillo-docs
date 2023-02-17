@@ -109,8 +109,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
-                to: '/docs',
+                label: 'Console',
+                to: '/docs/category/grillo-console',
+              },
+              {
+                label: 'Sensors',
+                to: '/docs/category/grillo-sensors',
+              },
+              {
+                label: 'Guides',
+                to: '/docs/category/how-to-guides',
               },
             ],
           },

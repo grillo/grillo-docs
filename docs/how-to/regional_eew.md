@@ -11,7 +11,7 @@ Creating an EEW requires relatively dense network of real-time sensors, such as 
 Grillo has the capacity to facilitate EEW networks. Below we display and example workflow in Grillo Console.
 
 ```mermaid
-flowchart LR
+flowchart TB
    A([Grillo Sensor]) --> C([Ingest Data]) --> D([Anomaly Detection]) --> E([Event Location and Magnitude]) --> F([Alert]) --> G([Twitter]) & H([SMS])
    style C fill:#1b62d4
    style D fill:#1b62d4

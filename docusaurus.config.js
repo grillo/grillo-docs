@@ -82,7 +82,7 @@ const config = {
           {
             to: '/',
             label: 'Home',
-            position: 'left',            
+            position: 'left',         
           },
           {
             type: 'doc',
@@ -90,9 +90,10 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', 
-          label: 'Blog', 
-          position: 'left'
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
           },
           {
             to: 'https://app.grillo.io/',
@@ -109,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },

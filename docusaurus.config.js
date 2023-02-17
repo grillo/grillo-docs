@@ -77,12 +77,12 @@ const config = {
           alt: 'Grillo Logo',
           src: 'img/grillo-black-logo.svg',
           srcDark: 'img/grillo-white-logo.svg',
-          href: 'https://docs.grillo.io',
+          to: '/',
           
         },
         items: [
           {
-            to: 'https://docs.grillo.io',
+            to: '/',
             label: 'Home',
             position: 'left',            
           },

@@ -6,7 +6,7 @@ sidebar_label: 'Create Earthquake Early-Warning System'
 # Create Earthquake Early-Warning System
 An EEW is a system that detects an earthquake in its early stage, evaluates its location and magnitude and issues alerts to people in the affected region.
 
-Creating an EEW requires relatively dense network of real-time sensors, such as a Grillo Sensor, located strategically in areas of high seismic hazard. Such network is usually formed by tens to hundreds of sensors that transmit data to a servers in near real-time.
+Creating an EEW requires a relatively dense network of real-time sensors, such as a Grillo Sensor, located strategically in areas of high seismic hazard. Such a network is usually formed by tens to hundreds of sensors that transmit data to servers in near real-time.
 
 Grillo has the capacity to facilitate EEW networks. Below we display an example workflow in Grillo Console.
 

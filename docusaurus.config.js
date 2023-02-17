@@ -76,9 +76,7 @@ const config = {
         logo: {
           alt: 'Grillo Logo',
           src: 'img/grillo-black-logo.svg',
-          srcDark: 'img/grillo-white-logo.svg',
-          to: '/',
-          
+          srcDark: 'img/grillo-white-logo.svg'         
         },
         items: [
           {

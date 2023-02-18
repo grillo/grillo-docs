@@ -6,7 +6,7 @@ sidebar_label: 'Structural Health Monitoring'
 # Structural Health Monitoring
 The `Structural Health Monitoring` module enables you to calculate and plot signal properties in time and frequency domain and issue `Alerts` in case a threshold is exceeded.
 
-The module receives the `Event` object and processes 5-minute signal window after the origin time of the event.
+The module receives the `Event` object and processes a 5-minute signal window after the origin time of the event.
 
 You can claculate and plot the following signal properties:
 

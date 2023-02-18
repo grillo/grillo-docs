@@ -8,7 +8,7 @@ You can simply archive all sensor data and use them for your own analysis. The a
 
 ```mermaid
 flowchart TB
-   A([Grillo Sensor]) & B([SeedLink Sensor]) --> C([Ingest Data]) --> D([Data Archive]) --> E([Archive]) --> F([Query archive in Data Manager])
+   A[Grillo Sensor] & B[SeedLink Sensor] --> C([Ingest Data]) --> D([Data Archive]) --> E[(Archive)] --> F[Query archive in Data Manager]
    style C fill:#1b62d4
    style D fill:#1b62d4
 ```

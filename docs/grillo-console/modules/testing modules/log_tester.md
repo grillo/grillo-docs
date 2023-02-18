@@ -4,4 +4,4 @@ sidebar_label: 'Log Tester'
 ---
 
 # Log Tester
-To add SeedLink stations, 
+Module used for internal Web-Application testing.

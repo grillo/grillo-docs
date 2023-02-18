@@ -8,7 +8,7 @@ In a more complex case, we want to monitor the shaking of a structure, calculate
 
 ```mermaid
 flowchart TB
-   A([Grillo Sensor]) & B([SeedLink Sensor]) --> C([Ingest Data]) --> E([Structural Health Monitoring]) --> F([Alert]) --> G([Twitter]) & H([SMS])
+   A[Grillo Sensor] & B[SeedLink Sensor] --> C([Ingest Data]) --> E([Structural Health Monitoring]) --> F([Alert]) --> G[Twitter] & H[Email]
    D([Public Catalogue]) --> E
    style C fill:#1b62d4
    style D fill:#1b62d4

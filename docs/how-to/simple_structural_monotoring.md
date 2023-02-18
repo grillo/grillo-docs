@@ -8,7 +8,7 @@ Grillo has the capability to monitor seismic shaking of structures. In a simple 
 
 ```mermaid
 flowchart TB
-   A([Grillo Sensor]) --> C([Ingest Data]) --> D([Threshold Detection]) --> E([Alert]) --> F([Twitter]) & G([SMS])
+   A[Grillo Sensor] --> C([Ingest Data]) --> D([Threshold Detection]) --> E([Alert]) --> F[Twitter] & G[Email]
    style C fill:#1b62d4
    style D fill:#1b62d4
    style E fill:#1b62d4

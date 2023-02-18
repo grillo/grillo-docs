@@ -9,7 +9,7 @@ From the Stations work space you are not only able to view key information about
 ## Transmission mode
 Here you can tell the sensor to send continous telemetry or only on an acceleration threshold trigger.
 
-![Select station type](./img/ui-screens/on%20trigger.png)
+![Select station type](../img/ui-screens/on%20trigger.png)
 
 ## Firmware version
 This allows a user to change the firmware version.
@@ -20,4 +20,4 @@ Only use if you know which firmware you wish to use. Using this may break your d
 
 :::
 
-![Select station type](./img/ui-screens/firmware.png)
+![Select station type](../img/ui-screens/firmware.png)

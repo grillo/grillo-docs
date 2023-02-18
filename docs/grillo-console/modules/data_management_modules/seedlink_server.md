@@ -4,11 +4,11 @@ sidebar_label: 'SeedLink Server'
 ---
 
 # SeedLink Server Module
-This module captures all data from the Ingest Module stream and publishes it as a SeedLink Server. This can be used to relay the data stream from the cloud to an on-premise server.
+This module captures all data from the Ingest Module stream and publishes it as a SeedLink Server. This can be used to relay the data stream from the cloud to a local server.
 
 ```mermaid
-flowchart LR
-   A[Ingest Module]--> Cp[[SeedLink Server Module]] --> id1[Local Server]
+flowchart TB
+   A([Ingest Module])-->|Data Stream| Cp([SeedLink Server]) --> id1[Local Server]
    style Cp fill:#1b62d4
 ```
 

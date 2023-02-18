@@ -12,7 +12,7 @@ Grillo has the capacity to facilitate EEW networks. Below we display an example 
 
 ```mermaid
 flowchart TB
-   A([Grillo Sensor]) --> C([Ingest Data]) --> D([Anomaly Detection]) --> E([Event Location and Magnitude]) --> F([Alert]) --> G([Twitter]) & H([SMS])
+   A[Grillo Sensor] --> C([Ingest Data]) --> D([Anomaly Detection]) --> E([Event Location and Magnitude]) --> F([Alert]) --> G[Twitter] & H[Email]
    style C fill:#1b62d4
    style D fill:#1b62d4
    style E fill:#1b62d4

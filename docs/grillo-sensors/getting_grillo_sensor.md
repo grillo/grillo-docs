@@ -6,5 +6,5 @@ sidebar_position: 2
 You can buy a Grillo sensor [here](#).
 
 :::info
-Please note that Grillo sensors require a subscription to [Grillo Console](#). Without this you won't be able to access or process the sensor data.
+Please note that Grillo sensors require an active subscription to [Grillo Console](#). Without this you won't be able to access or process the sensor data.
 :::

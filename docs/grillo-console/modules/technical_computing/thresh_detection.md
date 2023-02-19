@@ -10,6 +10,6 @@ When the threshold value is exceeded, the module produces `Events` that are disp
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Data Stream| Cp([Threshold Detection]) -->|Alert, Event| D([Other Modules])
-   style Cp fill:#1b62d4
+   B([Other Modules])-->|Data Stream| Cp([<font color=333333><b>Threshold Detection</b>]) -->|Alert, Event| D([Other Modules])
+   style Cp fill:#99CCFF
 ```

@@ -8,6 +8,6 @@ The module enables you to obtain any seismic catalogue available via the [FDSN s
 
 ```mermaid
 flowchart TB
-   B([Public Earthquake Catalog])-->|Event, Alert| C([Other Modules])
-   style B fill:#1b62d4
+   B([<font color=333333><b>Public Earthquake Catalog</b>])-->|Event, Alert| C([Other Modules])
+   style B fill:#99CCFF
 ```

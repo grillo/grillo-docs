@@ -8,8 +8,8 @@ This module captures all data from the Ingest Module stream and publishes it as 
 
 ```mermaid
 flowchart TB
-   A([Ingest Module])-->|Data Stream| Cp([SeedLink Server]) --> id1[Local Server]
-   style Cp fill:#1b62d4
+   A([Ingest Module])-->|Data Stream| Cp([<font color=333333><b>SeedLink Server</b>]) --> id1[Local Server]
+   style Cp fill:#99CCFF
 ```
 
 ---

@@ -29,6 +29,6 @@ You can choose one or multiple signal parameters and set a threshold value for a
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Event| C([Structural Health Monitoring]) -->|Alert, Figure| D([Other Modules])
-   style C fill:#1b62d4
+   B([Other Modules])-->|Event| C([<font color=333333><b>Structural Health Monitoring</b>]) -->|Alert, Figure| D([Other Modules])
+   style C fill:#99CCFF
 ```

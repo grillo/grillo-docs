@@ -11,6 +11,6 @@ The module creates `Event` and `Alert` objects that are passed to subsequent mod
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Pick, Amplitude| Cp([Event location and magnitude]) -->|Event, Alert| D([Other Modules])
-   style Cp fill:#1b62d4
+   B([Other Modules])-->|Pick, Amplitude| Cp([<font color=333333><b>Event location and magnitude</b>]) -->|Event, Alert| D([Other Modules])
+   style Cp fill:#99CCFF
 ```

@@ -12,6 +12,6 @@ Grillo Relays are currently in development, please [contact us](#) if you are in
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Alert| C([Relay Control]) --> D[Grillo Relay]
-   style C fill:#1b62d4
+   B([Other Modules])-->|Alert| C([<font color=333333><b>Relay Control</b>]) --> D[Grillo Relay]
+   style C fill:#99CCFF
 ```

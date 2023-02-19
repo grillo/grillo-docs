@@ -8,12 +8,12 @@ In a more complex case, we want to monitor the shaking of a structure, calculate
 
 ```mermaid
 flowchart TB
-   A[Grillo Sensor] & B[SeedLink Sensor] --> C([Ingest Data]) --> E([Structural Health Monitoring]) --> F([Alert]) --> G[Twitter] & H[Email]
-   D([Public Catalogue]) --> E
-   style C fill:#1b62d4
-   style D fill:#1b62d4
-   style E fill:#1b62d4
-   style F fill:#1b62d4
+   A[Grillo Sensor] & B[SeedLink Sensor] --> C([<font color=333333><b>Ingest Data</b>]) --> E([<font color=333333><b>Structural Health Monitoring</b>]) --> F([<font color=333333><b>Alert</b>]) --> G[Twitter] & H[Email]
+   D([<font color=333333><b>Public Catalogue</b>]) --> E
+   style C fill:#99CCFF
+   style D fill:#99CCFF
+   style E fill:#99CCFF
+   style F fill:#99CCFF
 ```
 
 - `Ingest Data` module ingests data from Grillo Sensors and prepares them from processing

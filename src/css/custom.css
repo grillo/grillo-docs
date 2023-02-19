@@ -29,6 +29,8 @@ html[data-theme='dark'] {
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
 :root {
   --ifm-font-family-base: 'Red Hat Text', sans-serif;
+  --ifm-link-color: #99CCFF;
+  --ifm-color-primary: #99CCFF;
 }
 /*
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');

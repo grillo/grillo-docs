@@ -1,6 +1,6 @@
 {
   "label": "Testing Modules",
-  "position": 5,
+  "position": 40,
   "link": {
     "type": "generated-index",
     "description": "Modules are like plug and play components that work together to achieve a result. You can combine them to create earthquake early warning systems , structural health monitoring or even just for archiving data. You can see some example combinations here."

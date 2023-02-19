@@ -9,6 +9,6 @@ By default, data is archived in counts. In configuration you can remove the effe
 
 ```mermaid
 flowchart TB
-   B([Ingest Data])-->|Data Stream| Cp([Archive Data]) --> id1[(Archive)]
-   style Cp fill:#1b62d4
+   B([Ingest Data])-->|Data Stream| Cp([<font color=333333><b>Archive Data</b>]) --> id1[(Archive)]
+   style Cp fill:##99CCFF
 ```

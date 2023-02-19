@@ -12,6 +12,6 @@ Module currently in development.
 
 ```mermaid
 flowchart TB
-   B([Replay Earthquake])-->|Data Stream| C([Other Modules])
-   style B fill:#1b62d4
+   B([<font color=333333><b>Replay Earthquake</b>])-->|Data Stream| C([Other Modules])
+   style B fill:#99CCFF
 ```

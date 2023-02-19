@@ -13,6 +13,6 @@ It creates `Pick` and `Amplitude` objects that are passed to subsequent modules,
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Data Stream| Cp([Seismic Phase Detection]) -->|Pick, Amplitude| D([Other Modules])
-   style Cp fill:#1b62d4
+   B([Other Modules])-->|Data Stream| Cp([<font color=333333><b>Seismic Phase Detection</b>]) -->|Pick, Amplitude| D([Other Modules])
+   style Cp fill:#99CCFF
 ```

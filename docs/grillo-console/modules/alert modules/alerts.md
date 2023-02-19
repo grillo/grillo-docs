@@ -8,6 +8,6 @@ sidebar_label: 'Alerts'
 
 ```mermaid
 flowchart TB
-   B([Other Modules])-->|Alert| C([Alerts]) --> D[Twitter] & E[Email]
-   style C fill:#1b62d4
+   B([Other Modules])-->|Alert| C([<font color=333333><b>Alerts</b>]) --> D[Twitter] & E[Email]
+   style C fill:#99CCFF
 ```

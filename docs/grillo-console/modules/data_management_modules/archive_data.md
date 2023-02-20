@@ -15,8 +15,8 @@ flowchart TB
 
 ### Configuration
 
-<details><summary><b>Archive data</b></summary><p>
+<details><summary><b>Archive</b></summary><p>
 
-- `Verbose` [boolean]: `Logs` are printed in when set to true
+- `Verbose` [boolean]: If true, `Logs` are printed out
 
 </p></details>

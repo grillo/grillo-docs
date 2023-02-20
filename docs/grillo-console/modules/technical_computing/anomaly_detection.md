@@ -13,3 +13,15 @@ flowchart TB
    B([Other Modules])-->|Data Stream| Cp([<font color=333333><b>Anomaly Detection</b>]) -->|Pick, Amplitude| D([Other Modules])
    style Cp fill:#99CCFF
 ```
+
+### Configuration
+
+<details><summary><b>Detector</b></summary><p>
+
+- `Sta len` [float, seconds]: Length of the short time average (STA) window                 
+- `Lta len` [float, seconds]: Length of the long time average (LTA) window                        
+- `Stalta thresh` [float]: STA/LTA threshold    
+- `No Det Win` [float, seconds]: Time since a detection after which no more detections are going to be issued
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

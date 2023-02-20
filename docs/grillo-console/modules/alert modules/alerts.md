@@ -14,6 +14,12 @@ flowchart TB
 
 ### Configuration
 
+<details><summary><b>General</b></summary><p>
+
+- `Verbose` [boolean]: If true, `Logs` are printed out
+
+</p></details>
+
 <details><summary><b>Twitter alert</b></summary><p>
 
 - `Send alert` [boolean]: If set to true, alert message id going to be published on Twitter

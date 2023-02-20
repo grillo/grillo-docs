@@ -11,3 +11,12 @@ flowchart TB
    B([<font color=333333><b>Public Earthquake Catalog</b>])-->|Event, Alert| C([Other Modules])
    style B fill:#99CCFF
 ```
+
+### Configuration
+
+<details><summary><b>Catalog</b></summary><p>
+
+- `Send alert` [boolean]: Publishes an aler message on new event
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

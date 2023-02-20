@@ -17,3 +17,19 @@ flowchart TB
    B([Other Modules])-->|Pick, Amplitude| Cp([<font color=333333><b>Event location and magnitude</b>]) -->|Event, Alert| D([Other Modules])
    style Cp fill:#99CCFF
 ```
+
+### Configuration
+
+<details><summary><b>RTCatalogue</b></summary><p>
+
+- `Use Amplitude` [boolean]: Use amplitudes and calculate magnitude
+- `Dbscan eps` [float]: The time window length for pick catalogue scan
+- `Dbscan min samples` [integer]: Minimum number of picks to scan
+- `Min picks per eq` [integer]: Minimum number of picks associated with an event
+- `Max sigma11` [float, seconds]: Maximum time sigma
+- `Max sigma22` [float, seconds]: Maximum amplitude sigma
+- `Max sigma12` [float, seconds]: Maximum time x amplitude sigma
+- `Pvel` [float, km/s]: Constant P-wave velocity
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

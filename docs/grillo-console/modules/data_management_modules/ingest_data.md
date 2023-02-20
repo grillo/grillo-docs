@@ -14,7 +14,7 @@ flowchart TB
 
 ### Configuration
 
-<details><summary><b>Ingest data</b></summary><p>
+<details><summary><b>Ingestor</b></summary><p>
 
 - `Verbose` [boolean]: `Logs` are printed in when set to true
 

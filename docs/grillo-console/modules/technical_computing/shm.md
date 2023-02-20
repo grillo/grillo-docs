@@ -32,3 +32,74 @@ flowchart TB
    B([Other Modules])-->|Event| C([<font color=333333><b>Structural Health Monitoring</b>]) -->|Alert, Figure| D([Other Modules])
    style C fill:#99CCFF
 ```
+### Configuration
+
+<details><summary><b>General</b></summary><p>
+
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>
+
+<details><summary><b>Acceleration</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Velocity</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Displacement</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Spectral Acceleration</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Pseudo-Spectral Acceleration</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Spactral Velocity</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Pseudo Spectral Velocity</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>
+
+<details><summary><b>Spectral Displacement</b></summary><p>
+
+- `Peak Value Alert` [boolean]: Turn on trigger for exceedance
+- `Threshold` [float]: Threshold for alert
+- `Plot` [boolean]: Plot and save a figure
+
+</p></details>

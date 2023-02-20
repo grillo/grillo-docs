@@ -16,3 +16,15 @@ flowchart TB
    B([Other Modules])-->|Data Stream| Cp([<font color=333333><b>Seismic Phase Detection</b>]) -->|Pick, Amplitude| D([Other Modules])
    style Cp fill:#99CCFF
 ```
+
+
+### Configuration
+
+<details><summary><b>Detector</b></summary><p>
+
+- `Max window` [float]: Maximum time window after now after which new detections are declared
+- `ML thresh` [float]: Threshold for phase detection
+- `No Det Win` [float, seconds]: Time since a detection after which no more detections are going to be issued
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

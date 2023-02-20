@@ -1,8 +1,4 @@
 {
   "label": "Technical Computing",
-  "position": 20,
-  "link": {
-    "type": "generated-index",
-    "description": "Technical Computing Modules allow you to run computing on the incoming data stream."
-  }
+  "position": 20
 }

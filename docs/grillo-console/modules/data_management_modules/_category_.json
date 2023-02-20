@@ -1,8 +1,4 @@
 {
   "label": "Data Management Modules",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "description": "Data Management modules allow you to manipulate data streams originating from a station."
-  }
+  "position": 10
 }

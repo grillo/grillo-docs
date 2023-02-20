@@ -9,6 +9,14 @@ By default, data is archived in counts. In configuration you can remove the effe
 
 ```mermaid
 flowchart TB
-   B([Ingest Data])-->|Data Stream| Cp([<font color=333333><b>Archive Data</b>]) --> id1[(Archive)]
-   style Cp fill:##99CCFF
+   B([Ingest Data])-->|Data Stream| C([<font color=333333><b>Archive Data</b>]) --> D[(Archive)]
+   style C fill:#99CCFF
 ```
+
+### Configuration
+
+<details><summary><b>Archive data</b></summary><p>
+
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

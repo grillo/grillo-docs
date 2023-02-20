@@ -3,7 +3,7 @@ sidebar_position: 3
 sidebar_label: 'SeedLink Server'
 ---
 
-# SeedLink Server Module
+# SeedLink Server
 This module captures all data from the Ingest Module stream and publishes it as a SeedLink Server. This can be used to relay the data stream from the cloud to a local server.
 
 ```mermaid
@@ -17,3 +17,11 @@ flowchart TB
 To find the `Ip Address` (Host Address) and `Port` for this new SeedLink Server, open the logs for the module:
 
 ![Select station type](./img/seedlink%20server.png)
+
+### Configuration
+
+<details><summary><b>Seedlink server</b></summary><p>
+
+- `Verbose` [boolean]: `Logs` are printed in when set to true
+
+</p></details>

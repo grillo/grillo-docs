@@ -15,3 +15,11 @@ flowchart TB
    B([Other Modules])-->|Alert| C([<font color=333333><b>Relay Control</b>]) --> D[Grillo Relay]
    style C fill:#99CCFF
 ```
+
+### Configuration
+
+<details><summary><b>Relay control</b></summary><p>
+
+- `Send alert` [boolean]: If set to true, alert message is going to be send to the relay
+
+</p></details>

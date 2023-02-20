@@ -1,9 +1,4 @@
 {
   "label": "Grillo Sensors",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "description": "Grillo sensors are plug-and-play accelerometers that instantly transmit data to Grillo Console."
-
-  }
+  "position": 10
 }

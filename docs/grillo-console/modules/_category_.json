@@ -1,8 +1,4 @@
 {
   "label": "Modules",
-  "position": 20,
-  "link": {
-    "type": "generated-index",
-    "description": "Modules are small programs that can be chained into workflows to achieve a desired result."
-  }
+  "position": 20
 }

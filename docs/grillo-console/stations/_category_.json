@@ -1,8 +1,4 @@
 {
   "label": "Stations",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "description": "This section will show you how to manage your station fleet in the Grillo Console."
-  }
+  "position": 10
 }

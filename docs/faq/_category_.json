@@ -1,8 +1,4 @@
 {
   "label": "FAQ",
-  "position": 40,
-  "link": {
-    "type": "generated-index",
-    "description": "Frequently Asked Questions."
-  }
+  "position": 40
 }

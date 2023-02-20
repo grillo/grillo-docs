@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Sensor',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/whatisgrillo1.svg').default,
     description: (
       <>
         Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Processing',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/whatisgrillo2.svg').default,
     description: (
       <>
         Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Alerts/Notifications',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/whatisgrillo3.svg').default,
     description: (
       <>
         Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.

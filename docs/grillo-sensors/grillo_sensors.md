@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # What is a Grillo Sensor?
-Grillo sensor is a strong-motion seismometer that features a low-noise MEMs accelerometer. The sensor is connected to Grillo Console using Internet of Things (IoT) infrastructure and transmits data in near real-time.
+**Grillo** sensor is a strong-motion seismometer that features a low-noise MEMs accelerometer. The sensor is connected to Grillo Console using Internet of Things (IoT) infrastructure and transmits data in near real-time.
 
 ![Grillo Sensor](./img/sensor.jpg)
 

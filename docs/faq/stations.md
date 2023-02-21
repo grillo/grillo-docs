@@ -27,6 +27,22 @@ graph TB
 
 </p></details>
 
+<details><summary><b>How do I find network APN details?</b></summary><p>
+
+You can find APN details of your network by inserting the SIM card into your phone. On iPhone, follow these steps to get the APN details. Steps are similar on Android OS.
+
+![apn_iphone](img/apn_iphone2.png)
+
+</p></details>
+
+<details><summary><b>How do I set up Network mode and Data transmission mode?</b></summary><p>
+
+`Grillo Air` can connect to either 2G (GSM) network, or LTE network Nb-IoT or CAT-M (also sometimes referred to as LTE-M). Grillo sensor should choose the best available option automatically. If not, you may need to define the desired option in APN setup after the sensor boots-up.
+- To force the GSM option, set `GSM` to `1` and `LTE` to `0`
+- To force either `Nb-IoT` or `CAT-M`, set the desired one to `1` and the other to `0` 
+
+</p></details>
+
 <details><summary><b>How many stations can be associated with one account?</b></summary><p>
 
 The currrent limit is 200 stations. Please contact us if you need to onboard more stations.

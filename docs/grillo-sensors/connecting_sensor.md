@@ -11,8 +11,11 @@ If connecting by Wi-Fi or Ethernet, your local area network (LAN) must be able t
 
 <details><summary><b>Cellular</b></summary><p>
 
-The sensor can be connected to CAT-M LTE, NB IoT or GSM networks. Please ensure your sensor is in a location with cellular connectivity and your SIM and data plan enables at least one of these connectivity options. Based on the station setup (sampling rate, on trigger vs. continuous mode) you may need a data plan up to 5 GB/month.
+In order to connect your sensor to cellular internet, please ensure that:
+- You are at a location with cellular connectivity that offers CAT-M LTE, NB IoT or GSM network. For a quick reference you can folow [this list](https://www.gsma.com/iot/mobile-iot-commercial-launches/) but you may ned to conctact the service provider for detailed info.
+- You have a SIM card with an active data plan. Based on the station setup (sampling rate, on trigger vs. continuous mode) the sensor will consume between 100 MB to 5 GB of data per month.
 
+To connect your station:
 1. Make sure SIM is inserted in the device and cellular antenna is connected.
 2. Power-up your sensor.
 3. Wait a minute or so its LED should start blinking. This means it is successfully sending data to the cloud.
@@ -22,9 +25,9 @@ If the sensor does not start blinking, the connection was not successful. In suc
 1. Make sure SIM is inserted in the device and cellular antenna is connected.
 2. Power-up your sensor.
 3. Wait a few seconds until a Wi-Fi network appears with an SSID that starts with `Grillo-` (eg. `Grillo-XXXXXX`). Connect your phone to this network, a startup page should show up automatically.
-4. Choose `Setup`. Fill your APN details, and (optionally) the Network mode and Data Trasfer mode (1 if you wish to choose it, 0 if you don't).
-4. Click `Save` and wait for a success confirmation message.
-5. Wait a minute or so, the sensor's LED should start blinking. This means it is successfully sending data to the cloud.
+4. Choose `Setup`. Fill your APN details, and (optionally) the Network mode and Data Trasfer mode (1 if you wish to choose it, 0 if you don't). Check out [how to find APN details](../faq/stations.md) and [how to set up network mode](../faq/stations.md) in FAQ if you are unsure about the setup.
+5. Click `Save` and wait for a success confirmation message.
+6. Wait a minute or so, the sensor's LED should start blinking. This means it is successfully sending data to the cloud.
 
 </p></details>
 

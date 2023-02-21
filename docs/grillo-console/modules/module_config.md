@@ -38,7 +38,7 @@ Warning: This feature is still in development and may produce unexpected results
 
 <details><summary><b>Inventory</b></summary><p>
 
-- `Sensor_type`: Select only stations equipped with the given type of a sensor. At this point, the oprions include `grillo` or `seedlink`.
+- `Sensor_type`: Select only stations equipped with the given type of a sensor. At this point, the options include `grillo` and `seedlink`.
 - `Network`: Select only stations belongint to a network
 - `Station`: Select only stations with the given code
 - `Location`: Select only channels with the given location code

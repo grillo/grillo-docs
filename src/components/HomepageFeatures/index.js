@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/whatisgrillo1.svg').default,
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
+        Use Grillo Sensor to monitor ground motion. The sensor simply connects to Grillo Console and monitors all seismic motion at the site.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/whatisgrillo2.svg').default,
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
+        Use Grillo Console to process your data streams. Set up simple or complex routines and choose your desired outputs and alerts that help you to make critical decisions.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/whatisgrillo3.svg').default,
     description: (
       <>
-        Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
+        Get fast alerts from Grillo Console to your Twitter or E-mail.
       </>
     ),
   },

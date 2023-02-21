@@ -3,14 +3,8 @@ sidebar_position: 40
 sidebar_label: 'Billing'
 ---
 
-# Billing
-This module captures all data from the Ingest Module stream and stores it in an archive, ready for future analysis or downloading.
-By default, data is archived in counts. In configuration you can remove the effect of the instrument response or sensitivity and archive data in acceleration or velocity units.
+# Billing and account FAQ
 
-### Configuration
-
-<details><summary><b>Archive</b></summary><p>
-
-- `Verbose` [boolean]: If true, `Logs` are printed out
+<details><summary><b>First FAQ</b></summary><p>
 
 </p></details>

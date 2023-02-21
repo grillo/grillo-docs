@@ -4,7 +4,7 @@ sidebar_label: 'Alerts'
 ---
 
 # Alerts
-`Alerts` module distributes alerts to via various channels. Currently implemented channels include publishing to Twitter or Email.
+`Alerts` module distributes alerts to via various channels. Currently implemented channels include publishing to Twitter or Email. Let us know if you are interested in implementation of other publishing channels.
 
 ```mermaid
 flowchart TB

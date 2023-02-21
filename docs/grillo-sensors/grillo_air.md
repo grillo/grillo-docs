@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Grillo Air
-Grillo Air is a low-cost accelerometer that streams real-time data to Grillo Console using cellular or Wi-Fi connection, without any additional digitizers or radios.
+Grillo Air is a low-cost accelerometer that streams real-time data to Grillo Console using `cellular` or `Wi-Fi` connection, without any additional digitizers or radios.
 
 ### Specifications
 - Low-noise MEMs accelerometer, configurable range (±2, 4, 8g) and sampling rate (31, 62, 125 sps, higher upon request)
@@ -15,3 +15,6 @@ Grillo Air is a low-cost accelerometer that streams real-time data to Grillo Con
 - Internal data backup on microSD card
 - Powered by 5V USB (suggested minimum 2A) or 5V barrel connector
 - Solar panel controller and connector (available on request)
+
+### Connecting the sensor
+Follow the instructions for `Wi-Fi` or `Cellular` at the [Connecting your Sensor](connecting_sensor) page.

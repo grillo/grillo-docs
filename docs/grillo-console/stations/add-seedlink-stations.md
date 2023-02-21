@@ -21,7 +21,6 @@ Having selected SeedLink server you can now add its details:
 ![Add station button](../img/ui-screens/add%20seedlink%20details.png)
 
 The required details include:
-- **Host** This should be the URL address for the server.
-- **Port** The port number associated with your server's Host address.
-- **Network** This should be a short identifier for your seismic network. It should follow [FDSN conventions](https://www.fdsn.org/networks/) for Network Code.
-- **Latitude** and **Longitude** These are required to locate your station.
+- `Host` This should be the URL address for the server. `Port` The port number associated with your server's Host address.
+- `Network`, `Station` as the identifier of the seismic station. You can find the existing ones at the [FDSN website](https://www.fdsn.org/networks/).
+- `Latitude` and `Longitude` These are required to locate your station.

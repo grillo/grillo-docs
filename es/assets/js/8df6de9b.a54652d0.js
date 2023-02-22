@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9954],{23222:e=>{e.exports=JSON.parse('[{"label":"grillo","permalink":"/es/blog/tags/grillo","count":1},{"label":"hello","permalink":"/es/blog/tags/hello","count":1},{"label":"earthquakes","permalink":"/es/blog/tags/earthquakes","count":1}]')}}]);

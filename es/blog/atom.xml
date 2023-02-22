@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.grillo.io/es/blog</id>
+    <title>Grillo Blog</title>
+    <updated>2023-02-17T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.grillo.io/es/blog"/>
+    <subtitle>Grillo Blog</subtitle>
+    <icon>https://docs.grillo.io/es/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://docs.grillo.io/es/blog/welcome</id>
+        <link href="https://docs.grillo.io/es/blog/welcome"/>
+        <updated>2023-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to Grillo. We will be posting updated on our projects and technology. Stay tuned!]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to Grillo. We will be posting updated on our projects and technology. Stay tuned!</p>]]></content>
+        <author>
+            <name>Andres Meira</name>
+            <uri>https://github.com/</uri>
+        </author>
+        <category label="grillo" term="grillo"/>
+        <category label="hello" term="hello"/>
+        <category label="earthquakes" term="earthquakes"/>
+    </entry>
+</feed>

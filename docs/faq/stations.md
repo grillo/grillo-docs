@@ -5,7 +5,7 @@ sidebar_label: 'Stations'
 
 # Stations FAQ
 
-<details><summary><b>My station shows to be off in the Grillo Console.</b></summary><p>
+<details><summary><b>My station appears not connected in the Grillo Console.</b></summary><p>
 
 Please follow the flow below.
 

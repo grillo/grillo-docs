@@ -5,7 +5,7 @@ sidebar_position: 5
 # Connecting your Sensor
 To connect your Grillo sensor to Grillo Console please follow the relevant steps for your sensor type:
 
-:::info
+:::note
 If connecting by Wi-Fi or Ethernet, your local area network (LAN) must be able to dynamically assign your device an IP address by DHCP. If your network only permits for static IP addresses, please speak with your network manager to resolve this.
 :::
 

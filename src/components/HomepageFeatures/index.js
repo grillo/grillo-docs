@@ -32,27 +32,6 @@ const FeatureList = [
   },
 ];
 
-const PicturePanel = [
-  {
-    title: 'Sensor',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
-      </>
-    ),
-  },
-  {
-    title: 'Processing',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet consectetur. Eu porttitor adipiscing proin condimentum ut pharetra egestas nunc.
-      </>
-    ),
-  }
-];
-
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>

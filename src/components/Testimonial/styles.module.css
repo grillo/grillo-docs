@@ -1,0 +1,30 @@
+.testimonial {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  row-gap: 20px;
+  padding: 20px 0 20px 0;
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-font-color-base-inverse);
+}
+
+.quote {
+  text-align: center;
+  font-weight: bold;
+}
+
+.picture {
+  background-color: var(--ifm-font-color-base-inverse);
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+.author {
+  font-size: smaller;
+}

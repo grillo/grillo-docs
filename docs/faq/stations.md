@@ -43,6 +43,23 @@ You can find APN details of your network by inserting the SIM card into your pho
 
 </p></details>
 
+<details><summary><b>Troubleshooting using serial output</b></summary><p>
+
+You can use the sensor serial output to track down the reasons of your connectivity problems.
+To display the serial output on MAC OS system, follow these steps:
+- Open `Terminal`
+- Connect your Grillo Sensor to your computer via the USB-C connector on the sensor
+- Find the correct port the sensor is connected to in `/dev/`. Grillo Connect is usually at `/dev/cu.SLAB_USBtoUART`
+- Run `screen /dev/cu.SLAB_USBtoUART 115200` (replace serial port if needed)
+- Restart your sensor to see the logs from the very beginning. If you need help interpreting the logs, please copy&paste them in a text file and contact us. We can help you to troubleshoot.
+
+:::caution  
+For Grillo Air sensor, make sure your device is disconnected from the power source before you connect it to your computer via USB-C. Connecting both at the same time may cause damage to the sensor.
+:::
+
+
+</p></details>
+
 <details><summary><b>How many stations can be associated with one account?</b></summary><p>
 
 The currrent limit is 200 stations. Please contact us if you need to onboard more stations.

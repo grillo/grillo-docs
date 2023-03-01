@@ -4,16 +4,13 @@ sidebar_label: 'Introduction to Stations'
 ---
 
 # Introduction to Stations
-The station page has three main sections.
-- `Main table`: Displays all the stations associated with the account
-- `Map area`: Displays station locations
-- `Details panel`: Displays details about the selected stations
+The Station page serves for display and management of station fleet.
 
-### Main table
-The main table displays
+The page has three main sections.
+- `Main table`: Displays stations associated with the account
+- `Map and Figure area`: Displays station locations and figures
+- `Details panel`: Displays details about the selected stations, enables configuration and station deactivation
 
-### Map area
+![Station layout](../img/sensor_intro.png)
 
-### Details panel
-
-
+In the following senctions we will show how to use the Station page to manage your sensor fleet.

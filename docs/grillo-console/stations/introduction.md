@@ -11,6 +11,6 @@ The page has three main sections.
 - `Map and Figure area`: Displays station locations and figures
 - `Details panel`: Displays details about the selected stations, enables configuration and station deactivation
 
-![Station layout](../img/sensor_intro2.png)
+![Station layout](../img/sensor_intro.png)
 
 In the following senctions we will show how to use the Station page to manage your sensor fleet.

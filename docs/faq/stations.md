@@ -53,6 +53,11 @@ To display the serial output on MAC OS system, follow these steps:
 - Run `screen /dev/cu.SLAB_USBtoUART 115200` (replace serial port if needed)
 - Restart your sensor to see the logs from the very beginning. If you need help interpreting the logs, please copy&paste them in a text file and contact us. We can help you to troubleshoot.
 
+:::caution  
+For Grillo Air sensor, make sure your device is disconnected from the power source before you connect it to your computer via USB-C. Connecting both at the same time may cause damage to the sensor.
+:::
+
+
 </p></details>
 
 <details><summary><b>How many stations can be associated with one account?</b></summary><p>

@@ -7,7 +7,6 @@
 /* You can override the default Infima variables here. 
 */
 
-
 :root {
   --ifm-color-primary: #3578e5;
   /*#25c2a0;*/
@@ -29,7 +28,8 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme='dark'] {
-  --ifm-background-color: #1A202C;
+  /*--ifm-background-color: #1A202C;*/
+  --ifm-background-color: #001628;  
   --ifm-background-surface-color: #121212;
 }
 
@@ -40,6 +40,7 @@ html[data-theme='dark'] {
   --ifm-font-family-base: 'Red Hat Text', sans-serif;
   --ifm-link-color: #99CCFF;
   --ifm-color-primary: #99CCFF;
+  --ifm-font-color-base: #EAFFFF;
 }
 
 /*
@@ -59,3 +60,4 @@ html[data-theme='dark'] {
   height: 24px;
   width: 24px;
 }
+

@@ -5,11 +5,14 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import React from 'react';
 import CallToAction from '../components/CallToAction';
-
 import SocialProof from '../components/SocialProof';
 import Testimonial from '../components/Testimonial';
 import UseCases from '../components/UseCase';
+
 import styles from './index.module.css';
+
+
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();

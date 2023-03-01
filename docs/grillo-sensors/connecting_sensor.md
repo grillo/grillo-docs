@@ -25,7 +25,7 @@ If the sensor does not start blinking, the connection was not successful. In suc
 1. Make sure SIM is inserted in the device and cellular antenna is connected.
 2. Power-up your sensor.
 3. Wait a few seconds until a Wi-Fi network appears with an SSID that starts with `Grillo-` (eg. `Grillo-XXXXXX`). Connect your phone to this network, a startup page should show up automatically.
-4. Choose `Setup`. Fill your APN details, and (optionally) the Network mode and Data Trasfer mode (1 if you wish to choose it, 0 if you don't). Check out [how to find APN details](../faq/stations.md) and [how to set up network mode](../faq/stations.md) in FAQ if you are unsure about the setup.
+4. Choose `Setup`. Fill your APN details, and (optionally) the Network mode and Data Trasfer mode (`1` if you wish to choose it, `0` if you don't). Check out [how to find APN details](../faq/stations.md) and [how to set up network mode](../faq/stations.md) in FAQ if you are unsure about the setup.
 5. Click `Save` and wait for a success confirmation message.
 6. Wait a minute or so, the sensor's LED should start blinking. This means it is successfully sending data to the cloud.
 
@@ -46,7 +46,7 @@ The local Wi-Fi network must be 2.4Ghz (5Ghz will not work). Please ensure that 
 <details><summary><b>Ethernet LAN</b></summary><p>
 
 1. Plug an ethernet cable to your sensor.
-2. Power-up your sensor.
+2. Power on your sensor.
 3. Wait a minute or so its LED should start blinking. This means it is successfully sending data to the cloud.
   
 </p></details>

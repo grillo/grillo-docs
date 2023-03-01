@@ -38,7 +38,7 @@ const useCases = [
 ];
 
 export function UseCase({ useCase: { headerTitle, contentTitle, description, Svg, benefits } }) {
-    return (<div className={styles.usageCase}>
+    return (<div className={"container " + styles.usageCase}>
         <h3 className={styles.headerTitle}>
             {headerTitle}
         </h3>

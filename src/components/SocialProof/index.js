@@ -26,8 +26,8 @@ const companies = [
 
 export default function SocialProof() {
     return (
-        <section className="container">
-            <div className={styles.socialProof}>
+        <section className={styles.section}>
+            <div className={"container " + styles.socialProof}>
                 <div>Trusted by the World's Best Companies</div>
                 <div className={styles.companiesContainer}>
                     {companies.map(company => (

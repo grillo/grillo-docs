@@ -12,7 +12,7 @@ If connecting by Wi-Fi or Ethernet, your local area network (LAN) must be able t
 <details><summary><b>Cellular</b></summary><p>
 
 In order to connect your sensor to cellular internet, please ensure that:
-- You are at a location with cellular connectivity that offers CAT-M LTE, NB IoT or GSM network. For a quick reference you can folow [this list](https://www.gsma.com/iot/mobile-iot-commercial-launches/) but you may ned to conctact the service provider for detailed info.
+- You are at a location with cellular connectivity that offers CAT-M LTE, NB IoT or GSM network. For a quick reference you can follow [this list](https://www.gsma.com/iot/mobile-iot-commercial-launches/) but you may need to contact the service provider for detailed info, or your telcom may not be shown here or updated.
 - You have a SIM card with an active data plan. Based on the station setup (sampling rate, on trigger vs. continuous mode) the sensor will consume between 100 MB to 5 GB of data per month.
 
 To connect your station:

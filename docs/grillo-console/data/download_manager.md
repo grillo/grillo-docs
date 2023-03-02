@@ -6,7 +6,7 @@ sidebar_label: 'Download Manager'
 # Download Manager
 
 :::note
-Sensor data are stored in the long archive once per hour 10 minutes after every hour. You may need to wait up to an hour for your latest data to arrive. If this is a problem for you, please enquire with us, archival frequency is configurable.
+Sensor data are archived in 10-minute-long segments so you may need to wait up to 10 minutes until your latest data arrive.
 :::
 
 

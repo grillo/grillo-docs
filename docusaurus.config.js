@@ -59,6 +59,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/grillo/grillo-docs/tree/main/',
+          routeBasePath: '/', // Serve the docs at the site's root
+        /* other docs plugin options */
         },
         blog: {
           showReadingTime: true,
@@ -87,11 +89,7 @@ const config = {
           srcDark: 'img/grillo-white-logo.svg'         
         },
         items: [
-          {
-            to: '/',
-            label: 'Home',
-            position: 'left',         
-          },
+
           {
             type: 'doc',
             docId: 'intro',
@@ -99,8 +97,8 @@ const config = {
             label: 'Docs',
           },
           {
-            to: '/blog', 
-            label: 'Blog', 
+            to: 'https://grillo.io/', 
+            label: 'Grillo Site', 
             position: 'left'
           },
           {

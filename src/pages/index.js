@@ -9,9 +9,8 @@ import SocialProof from '../components/SocialProof';
 import Testimonial from '../components/Testimonial';
 import UseCases from '../components/UseCase';
 
+
 import styles from './index.module.css';
-
-
 
 
 function HomepageHeader() {
@@ -19,6 +18,8 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        
+
         <h1 className="hero__title">{'Make sense of shaking'}</h1>
         <p className="hero__subtitle">{'Grillo converts vibrations into critical information that helps you make decisions.'}</p>
         <div className={styles.buttons}>

@@ -103,7 +103,7 @@ const config = {
           },
           {
             to: 'https://app.grillo.io/',
-            label: 'Log in',
+            label: 'Log in to App',
             position: 'right',
           },
           //{type: 'localeDropdown',position: 'right'},

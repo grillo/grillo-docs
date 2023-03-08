@@ -91,16 +91,16 @@ const config = {
         items: [
 
           {
+            to: 'https://grillo.io/', 
+            label: 'Home', 
+            position: 'left'
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Docs',
-          },
-          {
-            to: 'https://grillo.io/', 
-            label: 'Grillo Site', 
-            position: 'left'
-          },
+          },          
           {
             to: 'https://app.grillo.io/',
             label: 'Log in to App',

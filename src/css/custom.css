@@ -29,7 +29,7 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme='dark'] {
   /*--ifm-background-color: #1A202C;*/
-  --ifm-background-color: #001628;  
+  --ifm-background-color: #1A202C;  
   --ifm-background-surface-color: #121212;
 }
 

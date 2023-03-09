@@ -38,7 +38,7 @@ html[data-theme='dark'] {
 
 :root {
   --ifm-font-family-base: 'Red Hat Text', sans-serif;
-  --ifm-link-color: #99CCFF;
+  --ifm-link-color: #46E872;
   --ifm-color-primary: #99CCFF;
   --ifm-font-color-base: #EAFFFF;
 }

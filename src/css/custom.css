@@ -31,6 +31,7 @@ html[data-theme='dark'] {
   /*--ifm-background-color: #1A202C;*/
   --ifm-background-color: #1A202C;  
   --ifm-background-surface-color: #121212;
+  
 }
 
 /* Use same font as web app */
@@ -41,6 +42,8 @@ html[data-theme='dark'] {
   --ifm-link-color: #46E872;
   --ifm-color-primary: #99CCFF;
   --ifm-font-color-base: #EAFFFF;
+  --ifm-navbar-link-hover-color: #46E872;
+  --ifm-menu-color-active: #46E872;
 }
 
 /*

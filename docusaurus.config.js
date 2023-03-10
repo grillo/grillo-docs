@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Grillo',
+  title: 'Grillo Docs',
   tagline: 'Make sense of shaking',
   favicon: 'img/favicon.ico',
 

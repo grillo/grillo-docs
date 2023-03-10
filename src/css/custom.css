@@ -30,7 +30,7 @@
 html[data-theme='dark'] {
   /*--ifm-background-color: #1A202C;*/
   --ifm-background-color: #1A202C;  
-  --ifm-background-surface-color: #121212;
+  --ifm-background-surface-color: #1A202C;
   
 }
 
@@ -54,6 +54,12 @@ html[data-theme='dark'] {
 */
 .header-github-link:hover {
   opacity: 0.6;
+}
+
+/* make navbar like grillo menu bar */
+.navbar {  
+  border-bottom: 1px solid;   
+  border-bottom-color: #444950;
 }
 
 .header-github-link:before {

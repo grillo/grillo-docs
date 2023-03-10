@@ -92,8 +92,8 @@ const config = {
 
           {
             to: 'https://grillo.io/', 
-            label: 'Home', 
-            position: 'left'
+            label: 'Grillo Site', 
+            position: 'right'
           },
           {
             type: 'doc',
@@ -101,11 +101,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },          
-          {
-            to: 'https://app.grillo.io/',
-            label: 'Log in to App',
-            position: 'right',
-          },
+          
           //{type: 'localeDropdown',position: 'right'},
         ],
       },

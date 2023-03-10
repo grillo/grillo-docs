@@ -91,8 +91,9 @@ const config = {
         items: [
 
           {
-            to: 'https://grillo.io/', 
+            href: 'https://grillo.io/', 
             label: 'Grillo Site', 
+            target: '_self',
             position: 'right'
           },
           {

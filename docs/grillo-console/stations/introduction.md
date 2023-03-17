@@ -13,4 +13,4 @@ The page has three main sections.
 
 ![Station layout](../img/sensor_intro.png)
 
-In the following senctions we will show how to use the Station page to manage your sensor fleet.
+In the following sections we will show how to use the Station page to manage your sensor fleet.

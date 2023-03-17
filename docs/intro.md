@@ -7,7 +7,9 @@ sidebar_position: 1
 
 Welcome to the Grillo Docs site! Here you'll find setup instructions and troubleshooting steps for Grillo products.
 
-You  can also create a [customer support ticket](#) for help.
+Please join our community [customer support ticket](https://discord.gg/Z5CH6dWaVR) for additional support.
+
+You can also create a [customer support ticket](#) for help.
 
 
 :::info

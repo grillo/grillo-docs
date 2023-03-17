@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 # Flashing a Grillo Sensor
-If you need to upgrade to a new firmware version you can do this [via the Grillo Console](docs/stations/configure-grillo-sensors.md). However if you need to use a specialized firmware version, you may need to do this locally.
+If you need to upgrade to a new firmware version you can do this [via the Grillo Console](/docs/grillo-console/stations/configure-grillo-sensors.md). However if you need to use a specialized firmware version, you may need to do this locally.
 
 :::caution
 

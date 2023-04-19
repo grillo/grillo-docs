@@ -13,7 +13,7 @@ Only use if you know which firmware you wish to use. Using this may break your d
 ## Local Firmware Flashing
 There are a few steps:
 - Obtain the necessary `.bin` file from Grillo. 
-- Download the [ESPHome Flasher software](https://github.com/esphome/esphome-flasher/releases/tag/1.4.0) for your OS.
+- Download the [Flasher software](https://github.com/esphome/esphome-flasher/releases/tag/1.4.0) for your OS.
 - Connect your sensor via USB to your computer. If you are using a Grillo Air, please make sure you have also disconnected it from power, or it may become damaged.
 - Flash your device with ESPHome Flasher
 

@@ -11,6 +11,9 @@ flowchart TB
    A([Ingest Module])-->|Data Stream| Cp([<font color=333333><b>SeedLink Server</b>]) --> id1[Local Server]
    style Cp fill:#99CCFF
 ```
+:::info
+Only one SeedLink Module is required to stream all your sensors through as single URL.
+:::
 
 ---
 

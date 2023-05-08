@@ -11,5 +11,5 @@ If you don't find what you need, please create a [customer support ticket](mailt
 
 
 :::info
-If we can improve this documentation, please let us know [here](#).
+If we can improve this documentation, please let us know [here](https://github.com/grillo/grillo-docs/issues).
 :::

@@ -3,20 +3,16 @@
  * and scoped locally.
  */
 
-
 .heroBanner {
-  padding: 10rem 0;
-  
+  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: 'black';
-  color: var(--ifm-font-color-base);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
@@ -25,9 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.button {
-  background-color: green;
-}
-
-

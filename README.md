@@ -1,28 +1,41 @@
+# Grillo Docs
 
-# Grillo Docs Site
-This site is built using the static site generator refer to [Docusaurus](https://docusaurus.io/docs).
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-The docs area consists of markdown pages, and the front page (or other pages) uses react. Instructions on how to create either page are found [here](https://docusaurus.io/docs/category/guides).
+## Installation
 
-## First time installation
-First time you install this, use:
-
-```npm install```
-
-```npm install --save @docusaurus/theme-mermaid```
-
-## Run development server
-To preview your changes as you edit the files, you can run a local development server that will serve your website and reflect the latest changes. 
- 
-```
-npm run start
+```bash
+npm install
 ```
 
-## Deploy to Github Pages
-This is now done automatically via Github Actions. Just have your PR accepted, or push directly to main branch, and Github will build and publish the pages.
+## Local Development
 
+```bash
+npm start
+```
 
-## Updating your Docusaurus version
-refer to [help pages](https://docusaurus.io/docs/installation)
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+## Build
 
+```bash
+npm run build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true npm run deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> npm run deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

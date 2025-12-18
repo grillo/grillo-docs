@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Primary green */
-  --ifm-color-primary: #22c55e;
-  --ifm-color-primary-dark: #16a34a;
-  --ifm-color-primary-darker: #15803d;
-  --ifm-color-primary-darkest: #166534;
-  --ifm-color-primary-light: #4ade80;
-  --ifm-color-primary-lighter: #86efac;
-  --ifm-color-primary-lightest: #bbf7d0;
+  /* Primary green - darker for light mode readability */
+  --ifm-color-primary: #15803d;
+  --ifm-color-primary-dark: #166534;
+  --ifm-color-primary-darker: #14532d;
+  --ifm-color-primary-darkest: #052e16;
+  --ifm-color-primary-light: #16a34a;
+  --ifm-color-primary-lighter: #22c55e;
+  --ifm-color-primary-lightest: #4ade80;
 
   /* Background/text */
   --ifm-background-color: #f0f4f8;

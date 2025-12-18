@@ -75,10 +75,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Grillo',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Grillo Logo',
+        src: 'img/grillo-logo-black.svg',
+        srcDark: 'img/grillo-logo-white.svg',
       },
       items: [
         {
@@ -87,8 +88,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
+                {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',

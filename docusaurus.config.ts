@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Grillo Docs',
+  tagline: 'Earthquake monitoring made simple',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,13 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.grillo.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'grillo', // Usually your GitHub org/user name.
+  projectName: 'grillo-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -35,32 +33,21 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    './plugins/suppress-casing-warnings.js',
+  ],
+
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/', // Docs as homepage
+          // Enable "edit this page" links pointing to your repo
+          editUrl: 'https://github.com/grillo/grillo-docs/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,14 +70,13 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          href: 'https://cloud.grillo.io',
+          label: 'Dashboard',
+          position: 'right',
         },
-                {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+        {
+          href: 'https://grillo.io',
+          label: 'Grillo.io',
           position: 'right',
         },
       ],
@@ -99,46 +85,54 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting Started',
+              to: '/getting-started',
+            },
+            {
+              label: 'Hardware Setup',
+              to: '/hardware/grillo-one',
+            },
+            {
+              label: 'Dashboard Guide',
+              to: '/dashboard',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Products',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Grillo One',
+              to: '/hardware/grillo-one',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Grillo Pulse',
+              to: '/hardware/grillo-pulse',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Grillo Cloud',
+              href: 'https://cloud.grillo.io',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Company',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Grillo.io',
+              href: 'https://grillo.io',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Contact Support',
+              to: '/support/contact',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Grillo Ltd. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

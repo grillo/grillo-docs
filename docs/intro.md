@@ -1,47 +1,39 @@
 ---
 sidebar_position: 1
+slug: /
+title: Welcome to Grillo Docs
 ---
 
-# Tutorial Intro
+# Welcome to Grillo Documentation
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Grillo provides affordable, IoT-enabled seismic sensors that empower communities and organizations to build their own earthquake monitoring networks.
 
-## Getting Started
+## What you'll find here
 
-Get started by **creating a new site**.
+This documentation covers everything you need to get started with Grillo's earthquake monitoring ecosystem:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **[Getting Started](/getting-started)** - New to Grillo? Start here for an overview and setup guides
+- **[Hardware Setup](/hardware/grillo-one)** - Detailed guides for Grillo One and Grillo Pulse sensors
+- **[Dashboard Guide](/dashboard)** - Learn to use the Grillo Cloud platform at cloud.grillo.io
+- **[Events & Alerts](/events)** - Configure earthquake detection and real-time alerts
+- **[API Reference](/api)** - Integrate Grillo data into your applications
 
-### What you'll need
+## Quick links
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+| I want to... | Go to... |
+|--------------|----------|
+| Set up my new Grillo One sensor | [Grillo One Setup Guide](/hardware/grillo-one) |
+| Set up my new Grillo Pulse sensor | [Grillo Pulse Setup Guide](/hardware/grillo-pulse) |
+| Create an account on the dashboard | [Creating an Account](/dashboard/account/creating-account) |
+| Add a sensor to my network | [Adding a Sensor](/dashboard/sensors/adding-sensor) |
+| View detected earthquakes | [Event Catalog](/events/event-catalog) |
+| Integrate with the API | [API Overview](/api) |
 
-## Generate a new site
+## Need help?
 
-Generate a new Docusaurus site using the **classic template**.
+- Check our [FAQ](/support/faq) for common questions
+- [Contact Support](/support/contact) for additional assistance
 
-The classic template will automatically be added to your project after you run the command:
+---
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+*Looking for the main Grillo website? Visit [grillo.io](https://grillo.io)*

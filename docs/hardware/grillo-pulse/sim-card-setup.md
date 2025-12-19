@@ -27,7 +27,7 @@ The Grillo Pulse uses LTE Cat-4 with automatic fallback to 3G/2G networks:
 
 ### Data plan requirements
 
-- **Minimum:** Low bandwidth due to binary data format
+- **Minimum:** Low bandwidth (binary format option reduces usage further)
 - **Recommended:** M2M/IoT data plans
 - **Best value:** Plans with unlimited or high data caps
 

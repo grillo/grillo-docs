@@ -51,7 +51,7 @@ It combines an ultra-low noise MEMS accelerometer with a sensitive 4.5Hz geophon
 | Additional method | USB serial data |
 | Time synchronization | NTP (via Grillo Cloud timeserver) |
 | Data transmission | UDP over CoAP |
-| Data format | Binary |
+| Data format | JSON (binary option available) |
 | Ingestion software | DataLink/SeedLink compatible |
 
 ### Sensors

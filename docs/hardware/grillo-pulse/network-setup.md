@@ -140,7 +140,7 @@ The Grillo Pulse transmits seismic data using:
 | Setting | Value |
 |---------|-------|
 | Protocol | UDP over CoAP |
-| Data format | Binary |
+| Data format | JSON (binary option available) |
 | Time sync | NTP (via Grillo Cloud timeserver) |
 | Compatibility | DataLink/SeedLink compatible |
 
@@ -162,11 +162,11 @@ No inbound ports need to be opened. All connections are initiated by the sensor.
 
 - **Minimum:** 100 Kbps upload
 - **Recommended:** 500 Kbps upload
-- **Cellular data usage:** Low bandwidth due to binary data format
+- **Cellular data usage:** Low bandwidth (binary format option reduces data usage further)
 
 ### Cellular data considerations
 
-- Binary data format minimizes data usage
+- Binary format option available to minimize data usage
 - Data usage varies with sample rate and event activity
 - Consider M2M/IoT data plans for best value
 - Monitor usage through your carrier's portal

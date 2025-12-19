@@ -5,92 +5,98 @@ title: Physical Installation
 
 # Physical Installation - Grillo One
 
-Proper sensor placement is crucial for data quality. This guide covers best practices for installing your Grillo One sensor.
+Proper sensor placement is crucial for data quality. Follow this guide step-by-step to install your Grillo One sensor.
 
-## Choosing a location
-
-### Ideal locations
-
-- **Ground floor** - Best for detecting ground motion
-- **Solid foundation** - Concrete slab, basement floor
-- **Away from vibrations** - Far from HVAC, appliances, heavy traffic
-- **Protected area** - Indoor, climate-controlled space
-- **Accessible** - For maintenance and network connectivity
-
-### Locations to avoid
-
-- **Upper floors** - Building sway can amplify signals
-- **Near machinery** - HVAC units, generators, motors
-- **Near traffic** - Roads with heavy vehicles
-- **Soft surfaces** - Carpet, raised floors (without proper mounting)
-- **Exterior walls** - More susceptible to environmental noise
-
-## Orientation
-
-The Grillo One should be installed in a specific orientation for accurate readings:
-
-![Sensor orientation diagram](/img/placeholder-orientation.svg)
-<!-- TODO: Replace with actual orientation diagram -->
-
-- **Level** - Use a bubble level to ensure the sensor is horizontal
-- **Aligned** - Arrow on device should point North (if marked)
-- **Stable** - Should not wobble or move when touched
-
-:::tip
-A slightly imperfect orientation is acceptable. The most important factor is that the sensor is stable and level.
+:::warning Indoor use only
+The Grillo One is designed for indoor installation only. For outdoor deployments, see the [Grillo Pulse](/hardware/grillo-pulse/) with its weatherproof enclosure.
 :::
 
-## Mounting options
+## Before you begin
 
-### Option 1: Floor placement (Recommended)
+### Tools required
 
-The simplest installation method:
+- Pencil or marker
+- Power drill with masonry bit (sized for included wall plugs)
+- Screwdriver
+- Spirit level
+- Cleaning cloth
 
-1. Choose a location on a solid floor (concrete preferred)
-2. Clean the surface to remove dust and debris
-3. Place the sensor directly on the floor
-4. Ensure it sits level and stable
-5. Use adhesive pads if needed to prevent sliding
+### Included hardware
 
-**Best for:** Concrete floors, basements, ground-level rooms
+- Mounting screws
+- Wall plugs
 
-### Option 2: Wall mounting
+## Step 1: Choose your location
 
-For locations where floor placement isn't suitable:
+Select a location that meets **all** of the following criteria:
 
-1. Locate wall studs or use appropriate anchors
-2. Mark mounting holes using the bracket as a template
-3. Drill pilot holes and install anchors if needed
-4. Attach the mounting bracket securely
-5. Snap the sensor onto the bracket
-6. Verify level and stability
+### Building level
 
-**Best for:** Rooms with carpet, raised floors, or limited floor space
+- **Ground floor or basement only** — upper floors amplify building sway and reduce data quality
 
-### Option 3: Shelf placement
+### Surface type
 
-If mounting isn't possible:
+The sensor must be mounted on a **stiff structural element**:
 
-1. Choose a sturdy, stable shelf
-2. Ensure the shelf is attached firmly to the wall
-3. Place the sensor on a non-slip surface
-4. Verify the shelf doesn't vibrate or wobble
+- Concrete floor slab (preferred)
+- Steel beam or column base
+- Structural concrete or masonry wall (at floor level)
 
-**Best for:** Temporary installations, rental properties
+:::caution Unsuitable surfaces
+Do not mount on:
+- Wooden floors or raised flooring
+- Drywall or plasterboard
+- Mid-span of walls (between structural supports)
+- Carpet (unless using a solid base underneath)
+:::
 
-## Installation checklist
+### Environment
 
-Before finalizing installation:
+| ✓ Required | ✗ Avoid |
+|------------|---------|
+| Near power outlet | Upper floors |
+| Near WiFi router or Ethernet port | HVAC units, generators, motors |
+| Away from foot traffic | Hallways, doorways, stairs |
+| Quiet location | Roads with heavy vehicle traffic |
+| | Exterior walls |
 
-- [ ] Location is on the ground floor (if possible)
-- [ ] Surface is solid and stable
-- [ ] Sensor is level (check with level tool)
-- [ ] Away from vibration sources (>3 meters from HVAC)
-- [ ] Power outlet is accessible
-- [ ] Network connectivity is available (WiFi signal or Ethernet)
-- [ ] Sensor is secure and won't be disturbed
+:::caution Floor mounting: water hazards
+If mounting on the floor, avoid locations at risk of:
+- **Flooding** — basements prone to water ingress
+- **Floor cleaning** — areas regularly mopped or washed
+- **Spills** — near sinks, pipes, or water heaters
+:::
 
-## Cable management
+## Step 2: Prepare the surface
+
+1. Clean the mounting surface thoroughly
+2. Remove all dust, debris, and loose material
+3. Ensure the surface is completely dry
+
+## Step 3: Mark and drill mounting holes
+
+1. Place the sensor on the prepared surface
+2. Use a spirit level to ensure the sensor is horizontal
+3. For wall mounting: position with USB port facing down
+4. Mark screw hole positions through the flanged mounting holes with a pencil
+5. Remove the sensor
+6. Drill holes at the marked positions using the masonry bit
+7. Clear dust from the holes
+8. Insert wall plugs
+
+## Step 4: Mount the sensor
+
+1. Position the sensor over the wall plugs
+2. Insert screws through the flanged mounting holes
+3. Tighten screws firmly — **the sensor must not move**
+4. Verify the sensor is level with a spirit level
+5. Confirm the sensor cannot shift or wobble
+
+:::warning Secure mounting required
+A loose sensor will produce unreliable data. Ensure all screws are tight and the device cannot move when touched.
+:::
+
+## Step 5: Connect cables
 
 ### Power cable
 
@@ -102,25 +108,63 @@ Before finalizing installation:
 ### Ethernet cable (if used)
 
 - Route to nearest network switch or router
-- Use cable clips or conduit for clean installation
 - Keep away from power cables to reduce interference
+- Use cable clips or conduit for clean installation
 
-## Environmental considerations
+## Step 6: Verify installation
 
-| Factor | Recommendation |
-|--------|----------------|
-| Temperature | 0°C to 40°C (32°F to 104°F) |
+Before powering on, confirm:
+
+- [ ] Sensor is indoors on ground floor or basement
+- [ ] Mounted on structural element (concrete/steel)
+- [ ] All screws tight — sensor cannot move
+- [ ] Sensor is level
+- [ ] Away from foot traffic (>3 meters)
+- [ ] Away from machinery and vibration sources (>3 meters)
+- [ ] Power outlet within reach
+- [ ] Network access available (WiFi signal or Ethernet)
+
+## Automatic calibration
+
+When powered on, the Grillo One automatically calibrates:
+
+- Calibration takes a few seconds
+- The sensor **must remain completely stationary** during this process
+- The Sensor LED indicates when calibration is complete
+
+:::warning
+Do not move or disturb the sensor during the initial power-on sequence. Movement during calibration affects data quality.
+:::
+
+## Sensor orientation
+
+The sensor measures ground motion in three axes. Precise compass orientation is not required, but all sensors in your network should have a consistent vertical axis.
+
+### Floor mounting (standard)
+
+- Mount the sensor flat on the floor
+- Ensure the sensor is level
+- No special orientation required
+
+### Wall mounting
+
+If mounting on a structural wall:
+
+1. Position the sensor with the **USB port facing down**
+2. This keeps the Y-axis consistent with floor-mounted sensors
+3. **Record the mounting orientation** in the sensor's metadata in Grillo Cloud dashboard
+
+:::warning Wall mounting metadata
+When a sensor is wall-mounted, you must update its configuration in Grillo Cloud to indicate the mounting orientation. This ensures correct data interpretation.
+:::
+
+## Operating environment
+
+| Specification | Limit |
+|---------------|-------|
+| Temperature | -20°C to +60°C |
 | Humidity | 10% to 90% non-condensing |
-| Dust | Minimal - clean periodically |
-| Direct sunlight | Avoid - can cause overheating |
-
-## Common installation mistakes
-
-1. **Installing on upper floors** - Reduces data quality due to building motion
-2. **Near HVAC equipment** - Constant vibration creates noise
-3. **On carpeted floors without mounting** - Sensor may shift or tilt
-4. **In closets with network equipment** - Fan vibration affects readings
-5. **Rushed leveling** - Take time to ensure proper orientation
+| Direct sunlight | Avoid — can cause overheating |
 
 ## Next steps
 

@@ -11,10 +11,11 @@ Grillo offers two sensor models to fit different deployment scenarios. This guid
 
 | Feature | Grillo One | Grillo Pulse |
 |---------|------------|--------------|
+| **Sensors** | MEMS accelerometer (3 channels) | MEMS accelerometer + geophone (4 channels) |
+| **Detection range** | Small to strong motion | Micro-seismic to strong motion |
 | **Connectivity** | WiFi / Ethernet | WiFi / Cellular (LTE) |
 | **Power** | AC power only | AC power + battery backup |
 | **Installation** | Indoor | Indoor / Outdoor |
-| **Best for** | Fixed locations with reliable infrastructure | Remote or mobile deployments |
 | **Setup complexity** | Simple | Moderate |
 
 ## Grillo One
@@ -22,12 +23,13 @@ Grillo offers two sensor models to fit different deployment scenarios. This guid
 ![Grillo One sensor](/img/placeholder-grillo-one.svg)
 <!-- TODO: Replace with actual product image -->
 
+The Grillo One uses a low-noise MEMS accelerometer (3 channels) to capture ground motion from small to strong events.
+
 ### Ideal for
 
-- **Office buildings** - Reliable power and network available
-- **Schools and universities** - Fixed installations with IT infrastructure
-- **Homes** - Residential earthquake monitoring
-- **Data centers** - Critical infrastructure monitoring
+- **Fixed indoor installations** - Buildings with reliable power and network
+- **Structural monitoring** - Building vibration and ground motion detection
+- **Strong motion recording** - Capturing local and regional earthquakes
 
 ### Connectivity options
 
@@ -57,12 +59,14 @@ Grillo offers two sensor models to fit different deployment scenarios. This guid
 ![Grillo Pulse sensor](/img/placeholder-grillo-pulse.svg)
 <!-- TODO: Replace with actual product image -->
 
+The Grillo Pulse combines the same low-noise MEMS accelerometer as the Grillo One with a vertical geophone, providing 4 channels of seismic data. This allows it to capture micro-seismic events up to strong shaking.
+
 ### Ideal for
 
 - **Remote field sites** - Areas without WiFi coverage
-- **Temporary deployments** - Events, research campaigns
+- **Seismic research** - High-sensitivity monitoring with geophone
 - **Outdoor installations** - Weather-resistant enclosure
-- **Mobile monitoring** - Relocatable sensor positions
+- **Temporary deployments** - Events, research campaigns
 
 ### Connectivity options
 
@@ -107,10 +111,12 @@ Grillo offers two sensor models to fit different deployment scenarios. This guid
 
 ## Can I use both?
 
-Yes! Many networks combine both sensor types:
+Yes! Many networks combine both sensor types for different purposes:
 
-- **Grillo One** sensors at fixed indoor locations (offices, schools)
-- **Grillo Pulse** sensors at remote or outdoor sites
+- **Grillo Pulse** sensors in the field for early earthquake detection (high-sensitivity geophone captures events first)
+- **Grillo One** sensors at population centers for recording shaking intensity
+
+This combination works well for early warning systems: Pulse sensors detect earthquakes near the source, while One sensors measure the impact where people are located.
 
 Both sensor types work seamlessly together in the same network on Grillo Cloud.
 

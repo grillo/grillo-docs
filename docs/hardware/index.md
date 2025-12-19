@@ -9,25 +9,26 @@ Grillo offers two sensor models designed for different deployment scenarios. Bot
 
 ## Grillo One
 
-The Grillo One is designed for fixed indoor installations where reliable power and network connectivity are available.
+The Grillo One is a strong motion sensor designed for fixed indoor installations. It uses a low-noise MEMS accelerometer to capture vibrations and ground shaking from small to strong events.
 
 **Key features:**
+- Low-noise MEMS accelerometer (3 channels)
 - WiFi and Ethernet connectivity
 - Compact design for indoor use
-- Simple plug-and-play setup
-- Ideal for offices, schools, and homes
+- Captures small to strong ground motion
 
 [Grillo One Documentation →](/hardware/grillo-one)
 
 ## Grillo Pulse
 
-The Grillo Pulse adds cellular connectivity and is designed for remote or field deployments where WiFi may not be available.
+The Grillo Pulse adds cellular connectivity and is designed for remote or field deployments. It combines the same low-noise MEMS accelerometer as the Grillo One with a vertical geophone, providing 4 channels of seismic data capable of capturing micro-seismic events up to strong shaking.
 
 **Key features:**
+- Low-noise MEMS accelerometer + vertical geophone (4 channels)
+- Captures micro-seismic to strong ground motion
 - WiFi and cellular (LTE) connectivity
 - Battery backup for power outages
 - Weather-resistant design
-- Suitable for outdoor and remote installations
 
 [Grillo Pulse Documentation →](/hardware/grillo-pulse)
 
@@ -35,6 +36,8 @@ The Grillo Pulse adds cellular connectivity and is designed for remote or field 
 
 | Feature | Grillo One | Grillo Pulse |
 |---------|------------|--------------|
+| Sensor channels | 3 (MEMS accelerometer) | 4 (MEMS + geophone) |
+| Detection range | Small to strong motion | Micro-seismic to strong motion |
 | WiFi | Yes | Yes |
 | Ethernet | Yes | No |
 | Cellular | No | Yes (LTE) |

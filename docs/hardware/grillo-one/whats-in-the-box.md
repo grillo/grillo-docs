@@ -15,23 +15,23 @@ This page describes all components included with your Grillo One sensor.
 ### 1. Grillo One sensor unit
 
 The main sensor device containing:
-- MEMS accelerometer
+- High-precision 3-axis MEMS accelerometer (seismic-grade, ±2g range)
+- Dual-core microcontroller
 - WiFi and Ethernet connectivity
-- LED status indicators
-- Micro USB port (for configuration)
+- 3 RGB LED status indicators
+- USB port (for power and firmware updates)
 
 ### 2. Power adapter
 
-<!-- TODO: Add power adapter specifications -->
-- Input: TBD
-- Output: TBD
-- Cable length: TBD
+- Input: 100-240V AC
+- Output: 5V DC
+- For continuous power supply
 
 ### 3. Ethernet cable
 
 - Standard Cat5e/Cat6 cable
-- Length: TBD
-- For wired network connection (optional)
+- RJ45 connectors
+- For wired network connection (recommended for maximum reliability)
 
 ### 4. Quick start guide
 
@@ -39,37 +39,41 @@ Printed card with basic setup instructions and QR code for online documentation.
 
 ### 5. Mounting hardware
 
-- Wall mount bracket
 - Mounting screws
-- Adhesive pads (for non-drill mounting)
+- Wall plugs
 
 ## Sensor unit details
 
 ![Grillo One sensor diagram](/img/placeholder-one-diagram.svg)
 <!-- TODO: Replace with actual diagram -->
 
-### Front panel
+### Status LEDs
 
-- **Status LED** - Indicates device state and connectivity
-- **Grillo logo** - Brand identifier
+The Grillo One has three RGB status LEDs:
 
-### Rear panel
+| LED | Purpose |
+|-----|---------|
+| Network LED | Shows connection status (Ethernet/WiFi) |
+| Sensor LED | Shows accelerometer status |
+| Data LED | Flashes when transmitting data |
 
-- **Power input** - DC power jack
-- **Ethernet port** - RJ45 connector for wired network
-- **Reset button** - Factory reset (hold for 10 seconds)
+### Ports and connectors
+
+- **Ethernet port** - RJ45 connector for wired network connection
+- **USB port** - For power input and firmware updates
+- **DC power input** - For AC adapter connection
 
 ### Bottom
 
-- **Mounting holes** - For wall bracket attachment
-- **Serial number** - Device identifier for registration
-- **QR code** - For quick provisioning
+- **Mounting holes** — for screw attachment
+- **Device ID sticker** — required for provisioning (see below)
 
 ## Verify your package
 
 Before beginning setup, verify all components are present and undamaged:
 
 - [ ] Sensor unit is intact with no visible damage
+- [ ] Device ID sticker is present (on device or packaging)
 - [ ] Power adapter and cable are present
 - [ ] Ethernet cable is included
 - [ ] Quick start guide is present
@@ -79,16 +83,21 @@ Before beginning setup, verify all components are present and undamaged:
 If any components are missing or damaged, [contact Grillo support](/support/contact) before proceeding with installation.
 :::
 
-## Serial number location
+## Device ID sticker
 
-You'll need your sensor's serial number during provisioning. It can be found:
+Each sensor has a **Device ID** sticker — you'll need this to claim and provision the sensor in Grillo Cloud.
 
-1. **On the device** - Bottom of the sensor unit
-2. **QR code** - Scannable code on the bottom
-3. **Packaging** - Label on the outer box
+The sticker can be found:
+
+1. **On the packaging** — label on the outer box
+2. **On the device** — bottom of the sensor unit
+
+The sticker contains:
+- **Device ID** — unique identifier required for provisioning
+- **QR code** — for quick scanning during setup
 
 :::tip
-Take a photo of the serial number/QR code for easy reference during setup.
+Take a photo of the Device ID sticker before installation. You'll need it when adding the sensor to your Grillo Cloud dashboard.
 :::
 
 ## Next steps

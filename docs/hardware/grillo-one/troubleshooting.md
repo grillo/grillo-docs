@@ -9,17 +9,41 @@ This guide covers common issues and solutions for the Grillo One sensor.
 
 ## LED status reference
 
-<!-- TODO: Confirm actual LED patterns -->
+The Grillo One has three status LEDs. Here's what each indicates:
 
-| LED Pattern | Status | Action |
-|-------------|--------|--------|
-| Solid green | Online, streaming | Normal operation |
-| Blinking green | Connecting | Wait for connection |
-| Solid blue | Setup mode | Configure WiFi |
-| Blinking blue | Hotspot active | Connect to configure |
-| Solid red | Error | See error section |
-| Blinking red | Critical error | Contact support |
-| Off | No power | Check power connection |
+### Network LED
+
+| Color | Meaning | Action |
+|-------|---------|--------|
+| Blue pulse | Connecting or provisioning mode | Wait, or configure WiFi |
+| Green | Connected to network | Normal operation |
+| Yellow | Connection warning | Check network stability |
+| Red | Connection error | Check network setup |
+
+### Sensor LED
+
+| Color | Meaning | Action |
+|-------|---------|--------|
+| Blue pulse | Initializing | Wait for startup to complete |
+| Green | Running normally | Normal operation |
+| Red | Sensor error | Contact support |
+
+### Data LED
+
+| Behavior | Meaning |
+|----------|---------|
+| Flashing | Transmitting data | Normal operation |
+| Off | No transmission | Check network connection |
+
+## Quick reference
+
+| Symptom | Likely Cause | Solution |
+|---------|--------------|----------|
+| Blue pulsing (stuck) | No network found | Connect Ethernet OR join `GrilloOne-XXXX` WiFi to provision |
+| Network LED red | WiFi credentials invalid | Device will auto-reset and re-enter provisioning |
+| Sensor LED red | Accelerometer not responding | Contact support (hardware issue) |
+| No data reaching server | Internet connectivity issue | Check firewall allows outbound UDP 5683/5684 |
+| Time not synchronized | NTP blocked | Check firewall allows outbound UDP 123 |
 
 ## Common issues
 
@@ -57,7 +81,7 @@ This guide covers common issues and solutions for the Grillo One sensor.
    - Check router settings
 
 5. **Factory reset and retry**
-   - Hold reset button for 10 seconds
+   - Power cycle via USB-C cable
    - Reconfigure WiFi from scratch
 
 ### Sensor shows "Offline" in dashboard
@@ -81,7 +105,7 @@ This guide covers common issues and solutions for the Grillo One sensor.
    - Reconnect and wait 2-3 minutes
 
 4. **Check firewall/network changes**
-   - Ensure ports 443 and 8883 are not blocked
+   - Ensure UDP ports 5683, 5684, and 123 are not blocked
    - Verify no new network restrictions
 
 ### Sensor not appearing after provisioning
@@ -98,8 +122,8 @@ This guide covers common issues and solutions for the Grillo One sensor.
    - Ensure sensor completed WiFi/Ethernet setup
    - Check LED indicates network connection
 
-3. **Check serial number**
-   - Verify correct serial number was entered
+3. **Check Device ID**
+   - Verify correct Device ID was entered
    - Watch for typos (0 vs O, 1 vs l)
 
 4. **Check network selection**
@@ -159,9 +183,9 @@ This guide covers common issues and solutions for the Grillo One sensor.
 
 To completely reset your Grillo One:
 
-1. Locate the reset button on the back panel
-2. Press and hold for **10 seconds**
-3. Release when LED pattern changes
+1. Disconnect the power adapter
+2. Connect a USB-C cable to the sensor
+3. Power cycle by disconnecting and reconnecting the USB-C cable
 4. Sensor will restart in setup mode
 5. Reconfigure WiFi and re-provision
 
@@ -169,23 +193,32 @@ To completely reset your Grillo One:
 Factory reset clears all settings including WiFi configuration. You'll need to set up the sensor from scratch.
 :::
 
-## Error codes
+## Automatic recovery
 
-<!-- TODO: Add actual error codes if applicable -->
+The Grillo One has built-in recovery mechanisms:
 
-| Code | Meaning | Solution |
-|------|---------|----------|
-| E01 | Network error | Check internet connection |
-| E02 | Authentication failed | Re-provision sensor |
-| E03 | Server unreachable | Check firewall settings |
-| E04 | Sensor hardware error | Contact support |
+| Situation | Automatic Response |
+|-----------|-------------------|
+| Invalid WiFi credentials | Auto-clears credentials, restarts into provisioning mode |
+| Network dropout | Retries connection (3 attempts with 1-second delay) |
+| Bad firmware update | Auto-rollback to previous working version |
+| Sensor timeout | Health check every second, LED indicates error |
 
 ## Diagnostic information
 
+The device automatically reports diagnostics to Grillo Cloud every 60 seconds, including:
+- Connection type (WiFi or Ethernet)
+- WiFi signal strength (if applicable)
+- Memory usage
+- Time synchronization status
+- Uptime
+- Data buffer usage
+- Temperature
+
 When contacting support, gather this information:
 
-1. **Serial number** - Found on bottom of device
-2. **LED status** - Current light pattern
+1. **Device ID** - Found on sticker on device or packaging
+2. **LED status** - Current color/pattern of all three LEDs
 3. **Network type** - WiFi or Ethernet
 4. **Dashboard status** - What the dashboard shows
 5. **Recent changes** - Any changes to network or setup

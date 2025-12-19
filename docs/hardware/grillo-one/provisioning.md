@@ -15,7 +15,7 @@ Before provisioning, ensure you have:
 - [ ] An organization created in the dashboard
 - [ ] A network created within your organization
 - [ ] Your sensor connected to the internet (WiFi or Ethernet)
-- [ ] Your sensor's serial number (found on bottom of device)
+- [ ] Your sensor's Device ID (found on sticker on device or packaging)
 
 ## Provisioning methods
 
@@ -38,7 +38,7 @@ The fastest way to provision your sensor:
    - Scan the QR code on the bottom of your sensor
 
 5. **Confirm registration**
-   - Verify the serial number matches your device
+   - Verify the Device ID matches your sensor
    - Click "Register" or "Confirm"
 
 6. **Wait for connection**
@@ -59,7 +59,7 @@ If QR scanning isn't available:
    - Choose "Manual entry" option
 
 4. **Enter sensor details**
-   - Serial number (found on bottom of device)
+   - Device ID (from sticker on device or packaging)
    - Device type: Grillo One
 
 5. **Complete registration**
@@ -118,9 +118,9 @@ If you accidentally added the sensor to the wrong network:
 1. Remove the sensor from the current network
 2. Re-add it to the correct network using the same process
 
-### Serial number not recognized
+### Device ID not recognized
 
-1. Verify you're entering the correct serial number
+1. Verify you're entering the correct Device ID from the sticker
 2. Check for typos (0 vs O, 1 vs l)
 3. Contact support if the sensor isn't in the system
 
@@ -137,13 +137,26 @@ To remove a sensor from your network:
 Deprovisioning removes the sensor from your network but does not factory reset the device. The sensor's network configuration (WiFi credentials) will remain intact.
 :::
 
+## Re-provisioning WiFi
+
+If your WiFi credentials change or become invalid:
+
+- The sensor automatically detects invalid credentials
+- It clears the stored WiFi configuration
+- The device re-enters provisioning mode (Network LED pulses blue)
+- Follow the [WiFi setup steps](/hardware/grillo-one/network-setup#wifi-setup-steps) to reconfigure
+
+:::tip Ethernet bypass
+You can skip WiFi provisioning at any time by plugging in an Ethernet cable. The sensor will automatically use the wired connection instead.
+:::
+
 ## Factory reset
 
 To completely reset a sensor and clear all configuration:
 
-1. Locate the reset button on the back of the device
-2. Hold the reset button for 10+ seconds
-3. Release when the LED changes pattern
+1. Disconnect the power adapter
+2. Connect a USB-C cable to the sensor
+3. Power cycle the device by disconnecting and reconnecting the USB-C cable
 4. The sensor will restart in setup mode
 
 ## Next steps

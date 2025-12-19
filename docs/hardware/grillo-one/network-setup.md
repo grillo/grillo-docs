@@ -9,10 +9,14 @@ The Grillo One supports both WiFi and Ethernet connectivity. This guide covers h
 
 ## Connectivity options
 
-| Method | Best for | Requirements |
-|--------|----------|--------------|
-| **WiFi** | Most installations | 2.4 GHz network, SSID & password |
-| **Ethernet** | Maximum reliability | Network cable, available port |
+| Priority | Method | Best for | Requirements |
+|----------|--------|----------|--------------|
+| 1st | **Ethernet** | Maximum reliability | Network cable, available port, DHCP |
+| 2nd | **WiFi** | Flexible placement | 2.4 GHz network, SSID & password |
+
+:::info Connection priority
+The Grillo One automatically prioritizes Ethernet over WiFi. If an Ethernet cable is connected at boot, the device will use Ethernet exclusively. WiFi is only used when no Ethernet connection is detected.
+:::
 
 ## Option 1: WiFi setup
 
@@ -24,28 +28,31 @@ The Grillo One supports both WiFi and Ethernet connectivity. This guide covers h
 
 ### WiFi setup steps
 
-<!-- TODO: Add actual WiFi configuration process -->
-
-1. **Power on the sensor**
+1. **Power on the sensor** (without Ethernet connected)
    - Connect power adapter to the sensor
-   - Wait for the LED to indicate setup mode (typically blinking)
+   - The device checks for Ethernet for about 5 seconds
+   - If no Ethernet is found, it enters provisioning mode
+   - Network LED will pulse blue indicating setup mode
 
 2. **Connect to sensor's hotspot**
-   - On your phone/computer, look for a WiFi network named `Grillo-XXXX`
-   - Connect to this network (no password required initially)
+   - On your phone or computer, look for a WiFi network named `GrilloOne-XXXX`
+   - (XXXX = last 4 characters of the device's MAC address)
+   - Connect to this network (no password required)
 
-3. **Open configuration page**
-   - Open a web browser
-   - Navigate to `http://192.168.4.1` or the address shown in the quick start guide
+3. **Open configuration portal**
+   - A captive portal should open automatically
+   - If not, open a browser and navigate to `http://192.168.4.1`
 
 4. **Select your WiFi network**
-   - Choose your network from the list of available networks
+   - Available networks are displayed with signal strength indicators
+   - Select your network from the list
+   - For hidden networks, you can enter the SSID manually
    - Enter your WiFi password
-   - Click "Connect"
 
-5. **Verify connection**
-   - The sensor will restart and connect to your network
-   - LED should change to indicate successful connection
+5. **Complete setup**
+   - The sensor validates your credentials and restarts
+   - Credentials are saved permanently on the device
+   - Network LED turns green when successfully connected
    - The sensor's hotspot will no longer be visible
 
 ### WiFi troubleshooting
@@ -54,7 +61,7 @@ The Grillo One supports both WiFi and Ethernet connectivity. This guide covers h
 |-------|----------|
 | Network not listed | Ensure 2.4 GHz network; move closer to router |
 | Connection fails | Verify password; check for special characters |
-| Sensor won't enter setup mode | Hold reset button for 10 seconds |
+| Sensor won't enter setup mode | Power cycle via USB-C cable |
 
 ## Option 2: Ethernet setup
 
@@ -78,30 +85,21 @@ The Grillo One supports both WiFi and Ethernet connectivity. This guide covers h
    - LED should indicate successful connection
    - The sensor will appear on your network
 
-### Static IP configuration
-
-If your network requires a static IP:
-
-<!-- TODO: Add static IP configuration process -->
-
-1. Access the sensor's configuration interface
-2. Navigate to network settings
-3. Disable DHCP and enter:
-   - IP address
-   - Subnet mask
-   - Gateway
-   - DNS server
+:::info DHCP required
+The Grillo One requires DHCP for automatic IP assignment. Static IP configuration is not currently supported. If your network requires static IP addresses, contact your network administrator about setting up a DHCP reservation for the sensor's MAC address.
+:::
 
 ## Network requirements
 
 ### Firewall and ports
 
-The Grillo One needs outbound access to Grillo Cloud servers:
+The Grillo One needs outbound internet access:
 
-| Protocol | Port | Destination | Purpose |
-|----------|------|-------------|---------|
-| HTTPS | 443 | *.grillo.io | API communication |
-| MQTT/TLS | 8883 | *.grillo.io | Data streaming |
+| Purpose | Protocol | Port | Direction |
+|---------|----------|------|-----------|
+| Sensor data & status | UDP | 5683, 5684 | Outbound |
+| Time synchronization | UDP | 123 (NTP) | Outbound |
+| Firmware updates | TCP | 443 (HTTPS) | Outbound |
 
 :::note
 No inbound ports need to be opened. All connections are initiated by the sensor.
@@ -115,23 +113,24 @@ No inbound ports need to be opened. All connections are initiated by the sensor.
 
 ### Network restrictions
 
-If your network has restrictions (corporate, university):
+If your network has restrictions (corporate, university), provide your IT department with these requirements:
 
-1. Contact your IT department
-2. Request access to `*.grillo.io` on ports 443 and 8883
-3. Provide the sensor's MAC address if required for registration
+- **UDP ports 5683, 5684** - Outbound for sensor data
+- **UDP port 123** - Outbound for NTP time sync
+- **TCP port 443** - Outbound for firmware updates
+- **DHCP** - Required for IP assignment
+- **DNS** - Required to resolve hostnames
 
 ## LED status indicators
 
-<!-- TODO: Add actual LED status meanings -->
+The Network LED indicates connection status:
 
 | LED State | Meaning |
 |-----------|---------|
-| Solid green | Connected and streaming |
-| Blinking green | Connecting to network |
-| Blinking blue | Setup mode (WiFi hotspot active) |
-| Solid red | Error - check troubleshooting |
-| Off | No power |
+| Blue pulse | Connecting or in provisioning mode |
+| Green | Connected to network |
+| Yellow | Warning (check connection) |
+| Red | Connection error |
 
 ## Verifying connectivity
 

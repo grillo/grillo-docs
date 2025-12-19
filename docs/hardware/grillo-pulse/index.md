@@ -7,16 +7,18 @@ title: Grillo Pulse Overview
 
 The Grillo Pulse is Grillo's versatile sensor designed for remote deployments, featuring cellular connectivity and battery backup for locations where WiFi isn't available or power isn't reliable.
 
+It combines the same low-noise MEMS accelerometer used in the Grillo One with a vertical geophone, providing 4 channels of seismic data capable of capturing micro-seismic events up to strong ground motion.
+
 ![Grillo Pulse](/img/placeholder-grillo-pulse.svg)
 <!-- TODO: Replace with actual product image -->
 
 ## Key features
 
+- **4-channel seismic data** - MEMS accelerometer + vertical geophone
+- **Wide detection range** - Captures micro-seismic to strong motion
 - **Dual connectivity** - WiFi and cellular (LTE) options
 - **Battery backup** - Continues operating during power outages
 - **Weather resistant** - Suitable for outdoor installations
-- **Remote management** - Configure from anywhere via cellular
-- **Flexible deployment** - Indoor or outdoor use
 
 ## Specifications
 
@@ -33,9 +35,10 @@ The Grillo Pulse is Grillo's versatile sensor designed for remote deployments, f
 | WiFi | 802.11 b/g/n (2.4 GHz) |
 | Cellular | LTE Cat-M1 / NB-IoT |
 | Cellular bands | TBD |
-| Sensor type | MEMS accelerometer |
+| Sensor type | MEMS accelerometer + vertical geophone |
+| Channels | 4 (3 accelerometer + 1 geophone) |
+| Detection range | Micro-seismic to strong motion |
 | Sample rate | TBD |
-| Resolution | TBD |
 
 ## What's included
 

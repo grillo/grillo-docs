@@ -5,34 +5,57 @@ title: Grillo One Overview
 
 # Grillo One
 
-The Grillo One is Grillo's flagship indoor sensor, designed for fixed installations in environments with reliable power and network connectivity.
+The Grillo One is a strong motion sensor designed for fixed indoor installations. It uses a low-noise MEMS accelerometer to capture vibrations and ground shaking from small to strong events.
 
 ![Grillo One](/img/placeholder-grillo-one.svg)
 <!-- TODO: Replace with actual product image -->
 
 ## Key features
 
+- **Low-noise MEMS accelerometer** - 3 channels of seismic data
+- **Small to strong motion** - Captures vibrations and earthquake shaking
 - **Dual connectivity** - WiFi (2.4 GHz) and Ethernet options
-- **Compact design** - Unobtrusive form factor for indoor spaces
-- **Easy setup** - Plug-and-play installation in minutes
 - **Real-time streaming** - Continuous data to Grillo Cloud
-- **Remote management** - Configure settings from the dashboard
+- **Compact design** - Unobtrusive form factor for indoor spaces
 
 ## Specifications
 
-<!-- TODO: Add actual specifications -->
+### Physical
 
 | Specification | Value |
 |---------------|-------|
-| Dimensions | TBD |
-| Weight | TBD |
-| Power input | TBD |
-| Power consumption | TBD |
-| Operating temperature | TBD |
-| Connectivity | WiFi 802.11 b/g/n (2.4 GHz), Ethernet |
-| Sensor type | MEMS accelerometer |
-| Sample rate | TBD |
-| Resolution | TBD |
+| Dimensions | 50 x 80 mm |
+| Weight | 20g |
+| Enclosure | 3D printed (IP65 outdoor enclosure optional) |
+| Operating temperature | -20°C to +60°C |
+
+### Power
+
+| Specification | Value |
+|---------------|-------|
+| Power source | AC adapter (5V DC) |
+| Power consumption | 1.32W (400mA at 3.3V) |
+| USB | Power and firmware updates |
+
+### Connectivity
+
+| Specification | Value |
+|---------------|-------|
+| Primary connection | Ethernet |
+| Secondary connection | WiFi 802.11 b/g/n (2.4 GHz) |
+| Data transmission | Real-time |
+| Time synchronization | NTP |
+
+### Sensor
+
+| Specification | Value |
+|---------------|-------|
+| Sensor type | MEMS triaxial accelerometer (20-bit ADC) |
+| Channels | 3 |
+| Noise density | 22.5 µg/√Hz |
+| Full-scale range | ±2g |
+| Sampling rate | 125 Hz |
+| Detection range | Small to strong ground motion |
 
 ## What's included
 
@@ -40,7 +63,7 @@ The Grillo One is Grillo's flagship indoor sensor, designed for fixed installati
 - Power adapter
 - Ethernet cable
 - Quick start guide
-- Mounting hardware
+- Mounting screws and wall plugs
 
 [See complete unboxing guide →](/hardware/grillo-one/whats-in-the-box)
 

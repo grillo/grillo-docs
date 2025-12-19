@@ -22,6 +22,7 @@ const config: Config = {
   // GitHub pages deployment config.
   organizationName: 'grillo', // Usually your GitHub org/user name.
   projectName: 'grillo-docs', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 

@@ -7,8 +7,7 @@ title: Grillo One Overview
 
 The Grillo One is a strong motion sensor designed for fixed indoor installations. It uses a low-noise MEMS accelerometer to capture vibrations and ground shaking from small to strong events.
 
-![Grillo One](/img/placeholder-grillo-one.svg)
-<!-- TODO: Replace with actual product image -->
+<img src="/img/grillo-one-case.jpg" alt="Grillo One" style={{maxWidth: '800px', width: '100%'}} />
 
 ## Key features
 

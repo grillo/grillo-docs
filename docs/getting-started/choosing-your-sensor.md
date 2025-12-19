@@ -14,14 +14,13 @@ Grillo offers two sensor models to fit different deployment scenarios. This guid
 | **Sensors** | MEMS accelerometer (3 channels) | MEMS accelerometer + geophone (4 channels) |
 | **Detection range** | Small to strong motion | Micro-seismic to strong motion |
 | **Connectivity** | WiFi / Ethernet | WiFi / Cellular (LTE) |
-| **Power** | AC power only | AC power + battery backup |
+| **Power** | USB-C | DC / solar + battery backup |
 | **Installation** | Indoor | Indoor / Outdoor |
 | **Setup complexity** | Simple | Moderate |
 
 ## Grillo One
 
-![Grillo One sensor](/img/placeholder-grillo-one.svg)
-<!-- TODO: Replace with actual product image -->
+<img src="/img/grillo-one-case.jpg" alt="Grillo One sensor" style={{maxWidth: '800px', width: '100%'}} />
 
 The Grillo One uses a low-noise MEMS accelerometer (3 channels) to capture ground motion from small to strong events.
 
@@ -38,7 +37,7 @@ The Grillo One uses a low-noise MEMS accelerometer (3 channels) to capture groun
 
 ### Requirements
 
-- Stable AC power outlet
+- USB-C power source
 - WiFi network (2.4 GHz) or Ethernet connection
 - Indoor installation location
 - Solid mounting surface (floor or wall)
@@ -56,8 +55,7 @@ The Grillo One uses a low-noise MEMS accelerometer (3 channels) to capture groun
 
 ## Grillo Pulse
 
-![Grillo Pulse sensor](/img/placeholder-grillo-pulse.svg)
-<!-- TODO: Replace with actual product image -->
+<img src="/img/grillo-pulse-case.jpg" alt="Grillo Pulse sensor" style={{maxWidth: '800px', width: '100%'}} />
 
 The Grillo Pulse combines the same low-noise MEMS accelerometer as the Grillo One with a vertical geophone, providing 4 channels of seismic data. This allows it to capture micro-seismic events up to strong shaking.
 
@@ -73,9 +71,17 @@ The Grillo Pulse combines the same low-noise MEMS accelerometer as the Grillo On
 1. **WiFi** - When available, uses less power than cellular
 2. **Cellular (LTE)** - Connect anywhere with cell coverage
 
+### Power options
+
+The Pulse accepts DC power through a waterproof cable input:
+
+- **AC adapter** - Standard mains power with included adapter
+- **Solar panel** - For off-grid deployments
+- **Battery backup** - Internal battery maintains operation during outages
+
 ### Requirements
 
-- AC power (battery provides backup, not primary power)
+- DC power source (AC adapter or solar panel)
 - Cellular coverage (if using cellular mode)
 - SIM card with active data plan (for cellular)
 - Suitable mounting location
@@ -83,6 +89,7 @@ The Grillo Pulse combines the same low-noise MEMS accelerometer as the Grillo On
 ### Advantages
 
 - Cellular connectivity for remote locations
+- Solar-compatible for off-grid sites
 - Battery backup for power outages
 - Weather-resistant design
 - Flexible deployment options

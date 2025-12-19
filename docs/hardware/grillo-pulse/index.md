@@ -9,8 +9,7 @@ The Grillo Pulse is Grillo's versatile sensor designed for remote deployments, f
 
 It combines the same low-noise MEMS accelerometer used in the Grillo One with a vertical geophone, providing 4 channels of seismic data capable of capturing micro-seismic events up to strong ground motion.
 
-![Grillo Pulse](/img/placeholder-grillo-pulse.svg)
-<!-- TODO: Replace with actual product image -->
+<img src="/img/grillo-pulse-case.jpg" alt="Grillo Pulse" style={{maxWidth: '800px', width: '100%'}} />
 
 ## Key features
 

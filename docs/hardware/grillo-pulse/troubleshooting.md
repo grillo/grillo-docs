@@ -7,7 +7,23 @@ title: Troubleshooting
 
 This guide covers common issues and solutions for the Grillo Pulse sensor.
 
-## LED status reference
+:::info Monitoring deployed sensors
+The status LEDs on the Grillo Pulse PCB are **not visible** through the standard IP67 enclosure. For deployed sensors, use the [Grillo Cloud dashboard](https://cloud.grillo.io) to monitor sensor status, connectivity, and data streaming. The LED reference below is useful for debugging and testing before final assembly, or if using a custom enclosure with a transparent lid.
+:::
+
+## Checking sensor status via dashboard
+
+For deployed sensors, the Grillo Cloud dashboard is your primary tool for monitoring:
+
+1. **Log in** to [cloud.grillo.io](https://cloud.grillo.io)
+2. **Navigate** to your network and sensor
+3. **Check status indicators:**
+   - **Online** - Sensor is connected and streaming data
+   - **Offline** - Sensor is not currently connected
+   - **Pending** - Sensor is registered but hasn't connected yet
+4. **View details** for connection type (WiFi/Cellular), signal strength, and last data received
+
+## LED status reference (debugging/testing only)
 
 | LED Pattern | Status | Action |
 |-------------|--------|--------|

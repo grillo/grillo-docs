@@ -171,9 +171,11 @@ No inbound ports need to be opened. All connections are initiated by the sensor.
 - Consider M2M/IoT data plans for best value
 - Monitor usage through your carrier's portal
 
-## LED status indicators
+## LED status indicators (debugging/testing only)
 
-<!-- TODO: Add actual LED patterns -->
+:::note
+LEDs are on the PCB and **not visible** through the standard IP67 enclosure. Use the [Grillo Cloud dashboard](https://cloud.grillo.io) to verify connectivity for deployed sensors.
+:::
 
 | LED Pattern | Network Status |
 |-------------|----------------|

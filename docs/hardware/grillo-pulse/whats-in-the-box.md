@@ -78,7 +78,11 @@ The Grillo Pulse PCB includes:
 - **Power input** - 6-12V DC (solar/battery compatible)
 - **LTE antenna port** - SMA connector for cellular antenna
 - **USB port** - For power and firmware updates
-- **Status LEDs** - Visible indicators for system status
+- **Status LEDs** - On-board indicators (not visible through standard enclosure)
+
+:::note LEDs not visible in enclosure
+The status LEDs are located on the PCB and are **not visible** through the standard IP67 enclosure. They are primarily for debugging and testing before final assembly. For deployed sensors, use the [Grillo Cloud dashboard](https://cloud.grillo.io) to monitor sensor status and connectivity. If you need visible LED indicators, consider using a custom enclosure with a transparent lid.
+:::
 
 ### Internal components
 

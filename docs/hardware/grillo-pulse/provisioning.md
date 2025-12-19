@@ -15,7 +15,7 @@ Before provisioning, ensure you have:
 - [ ] An organization created in the dashboard
 - [ ] A network created within your organization
 - [ ] Your sensor connected to the internet (WiFi or cellular)
-- [ ] Your sensor's serial number (found on device label)
+- [ ] Your sensor's Device ID (found on PCB label or packaging)
 
 ## Provisioning methods
 
@@ -41,7 +41,7 @@ The fastest way to provision your sensor:
    - Choose "Grillo Pulse" when prompted
 
 6. **Confirm registration**
-   - Verify the serial number matches your device
+   - Verify the Device ID matches your device
    - Click "Register" or "Confirm"
 
 7. **Wait for connection**
@@ -62,7 +62,7 @@ If QR scanning isn't available:
    - Choose "Manual entry" option
 
 4. **Enter sensor details**
-   - Serial number (found on device label)
+   - Device ID (found on PCB label or packaging)
    - Device type: Grillo Pulse
 
 5. **Complete registration**
@@ -147,9 +147,9 @@ If you accidentally added the sensor to the wrong network:
 1. Remove the sensor from the current network
 2. Re-add it to the correct network using the same process
 
-### Serial number not recognized
+### Device ID not recognized
 
-1. Verify you're entering the correct serial number
+1. Verify you're entering the correct Device ID from the PCB label
 2. Check for typos (0 vs O, 1 vs l)
 3. Contact support if the sensor isn't in the system
 

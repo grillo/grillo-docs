@@ -11,51 +11,50 @@ This guide covers how to install and configure a SIM card in your Grillo Pulse f
 
 ### Compatible SIM types
 
-<!-- TODO: Confirm supported technologies -->
+The Grillo Pulse uses LTE Cat-4 with automatic fallback to 3G/2G networks:
 
 | Technology | Supported | Notes |
 |------------|-----------|-------|
-| LTE Cat-M1 | Yes | Recommended |
-| NB-IoT | Yes | Lower power, higher latency |
-| 4G LTE | TBD | Check compatibility |
-| 3G/2G | No | Not supported |
+| LTE Cat-4 | Yes | Primary, recommended |
+| 4G LTE | Yes | Supported |
+| WCDMA (3G) | Yes | Automatic fallback |
+| GSM (2G) | Yes | Automatic fallback |
 
 ### SIM card size
 
-- **Standard size:** TBD (Mini/Micro/Nano)
-- Adapters may be included if needed
+- **Required size:** Nano SIM
+- Standard or Micro SIM cards will not fit
 
 ### Data plan requirements
 
-- Minimum: TBD MB/month
-- Recommended: TBD MB/month or unlimited
-- M2M/IoT data plans work well
+- **Minimum:** Low bandwidth due to binary data format
+- **Recommended:** M2M/IoT data plans
+- **Best value:** Plans with unlimited or high data caps
 
 ## Supported carriers
 
-<!-- TODO: Add region-specific carrier information -->
+The Grillo Pulse modem supports a wide range of frequency bands for global coverage. Most carriers worldwide are compatible.
 
-### North America
+### Supported frequency bands
 
-| Carrier | Compatible | Notes |
-|---------|------------|-------|
-| TBD | TBD | TBD |
+| Technology | Bands |
+|------------|-------|
+| LTE-FDD | B1, B2, B3, B4, B5, B7, B8, B12, B13, B18, B19, B20, B25, B26, B28, B66 |
+| LTE-TDD | B34, B38, B39, B40, B41 |
+| WCDMA | B1, B2, B4, B5, B6, B8, B19 |
+| GSM | 850, 900, 1800, 1900 MHz |
 
-### Latin America
+### Carrier compatibility
 
-| Carrier | Compatible | Notes |
-|---------|------------|-------|
-| TBD | TBD | TBD |
+With support for LTE-FDD, LTE-TDD, WCDMA, and GSM bands, the Grillo Pulse is compatible with most carriers globally. Check your carrier's supported bands to confirm compatibility.
 
-### Europe
-
-| Carrier | Compatible | Notes |
-|---------|------------|-------|
-| TBD | TBD | TBD |
-
-:::note
-Contact Grillo support for carrier compatibility in your region.
+:::tip
+M2M/IoT SIM cards from carriers typically offer better rates for low-bandwidth devices like the Grillo Pulse.
 :::
+
+### Starlink Direct to Cell
+
+**Coming soon:** Starlink Direct to Cell connectivity will be available for the Grillo Pulse in specific regions (TBD). This will enable satellite-based cellular connectivity for truly remote deployments where traditional cellular coverage is unavailable.
 
 ## Installing the SIM card
 
@@ -63,39 +62,37 @@ Contact Grillo support for carrier compatibility in your region.
 
 - Power off the sensor
 - Work in a clean, dry environment
-- Have a small Phillips screwdriver ready
+- Have a Nano SIM card ready
+- Have a small Phillips screwdriver ready (if using IP67 enclosure)
 
 ### Installation steps
-
-<!-- TODO: Add actual installation process with images -->
 
 1. **Power off the sensor**
    - Disconnect power cable
    - Wait 30 seconds for complete shutdown
 
-2. **Open the enclosure**
-   - Locate the enclosure screws
-   - Remove screws carefully (keep track of them)
-   - Gently separate the enclosure halves
+2. **Access the SIM slot**
+   - If using IP67 enclosure: Open the enclosure by removing screws
+   - If PCB only: SIM slot is directly accessible on the board
 
 3. **Locate the SIM slot**
-   - Find the SIM card holder on the circuit board
-   - Note the orientation diagram near the slot
+   - Find the Nano SIM card holder on the circuit board
+   - Note the orientation diagram near the slot (contacts facing down typically)
 
-4. **Insert the SIM card**
+4. **Insert the Nano SIM card**
    - Orient the SIM according to the diagram
    - Slide into the slot until it clicks
    - Do not force - it should slide in smoothly
 
-5. **Close the enclosure**
+5. **Close the enclosure (if applicable)**
    - Align the enclosure halves
    - Ensure no cables are pinched
    - Replace and tighten all screws
    - Verify weatherproof seal is intact
 
 6. **Reconnect power**
-   - Connect the power cable
-   - Wait for boot sequence to complete
+   - Connect the power cable (6-12V DC or USB)
+   - Wait for boot sequence to complete (2-5 minutes for cellular connection)
 
 ![SIM card installation diagram](/img/placeholder-sim-install.svg)
 <!-- TODO: Replace with actual installation image -->
@@ -114,20 +111,22 @@ If your Pulse came with a pre-activated SIM:
 If using a SIM from your carrier:
 
 1. **Purchase data plan**
-   - Contact carrier for IoT/M2M plan
-   - Provide device IMEI if requested
+   - Contact carrier for IoT/M2M data plan
+   - LTE Cat-4 compatible SIM (most modern SIMs)
+   - Ensure Nano SIM size
 
 2. **Activate SIM**
    - Follow carrier's activation process
    - This may take up to 24 hours
 
-3. **Note APN settings**
+3. **Note APN settings (if required)**
    - Get APN name from carrier
-   - Username/password if required
+   - Username/password if required (often blank)
 
 4. **Install and configure**
-   - Install SIM in sensor
-   - Configure APN if needed (see below)
+   - Install Nano SIM in sensor
+   - Most carriers auto-configure APN
+   - Manual APN configuration rarely needed
 
 ## APN configuration
 

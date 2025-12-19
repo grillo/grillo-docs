@@ -9,8 +9,6 @@ This guide covers common issues and solutions for the Grillo Pulse sensor.
 
 ## LED status reference
 
-<!-- TODO: Confirm actual LED patterns -->
-
 | LED Pattern | Status | Action |
 |-------------|--------|--------|
 | Solid green | Online via WiFi | Normal operation |
@@ -226,14 +224,15 @@ Factory reset clears all settings including WiFi configuration, cellular APN, an
 
 When contacting support, gather this information:
 
-1. **Serial number** - Found on device label
+1. **Device ID** - Found on PCB label or packaging
 2. **LED status** - Current light pattern and color
-3. **Connection type** - WiFi or cellular
+3. **Connection type** - WiFi or cellular (LTE/3G/2G)
 4. **Signal strength** - If available
 5. **Installation details** - Location type, mounting method
 6. **Environmental conditions** - Weather, temperature
-7. **Recent changes** - Any changes to setup or environment
-8. **Error messages** - Screenshots from dashboard
+7. **Power source** - Solar panel voltage, battery status
+8. **Recent changes** - Any changes to setup or environment
+9. **Error messages** - Screenshots from dashboard
 
 ## Contact support
 

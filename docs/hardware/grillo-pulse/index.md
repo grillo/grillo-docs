@@ -5,61 +5,88 @@ title: Grillo Pulse Overview
 
 # Grillo Pulse
 
-The Grillo Pulse is Grillo's versatile sensor designed for remote deployments, featuring cellular connectivity and battery backup for locations where WiFi isn't available or power isn't reliable.
+The Grillo Pulse is Grillo's professional-grade seismic sensor designed for remote and outdoor deployments. Featuring global cellular connectivity, solar power support, and GPS timing, it's built for locations where infrastructure is limited or unreliable.
 
-It combines the same low-noise MEMS accelerometer used in the Grillo One with a vertical geophone, providing 4 channels of seismic data capable of capturing micro-seismic events up to strong ground motion.
+It combines an ultra-low noise MEMS accelerometer with a sensitive 4.5Hz geophone, providing 4 channels of seismic data capable of capturing everything from microseismic events to strong local earthquakes.
 
 <img src="/img/grillo-pulse-case.jpg" alt="Grillo Pulse" style={{maxWidth: '800px', width: '100%'}} />
 
 ## Key features
 
-- **4-channel seismic data** - MEMS accelerometer + vertical geophone
-- **Wide detection range** - Captures micro-seismic to strong motion
-- **Dual connectivity** - WiFi and cellular (LTE) options
-- **Battery backup** - Continues operating during power outages
-- **Weather resistant** - Suitable for outdoor installations
+- **Dual sensor system** - 4.5Hz geophone + ultra-low noise MEMS accelerometer
+- **Wide detection range** - Captures microseismic to strong local earthquakes
+- **Global connectivity** - LTE Cat-4 with 2G/3G/4G fallback, WiFi, and Starlink (coming soon)
+- **Solar powered** - 6-12V input with external LiPo battery backup
+- **NTP timing** - Precise time synchronization via Grillo Cloud timeserver
+- **Weather resistant** - IP67 weatherproof enclosure available
+- **Industry compatible** - DataLink/SeedLink compatible output
 
 ## Specifications
 
-<!-- TODO: Add actual specifications -->
+### Physical
 
 | Specification | Value |
 |---------------|-------|
-| Dimensions | TBD |
-| Weight | TBD |
-| Power input | TBD |
-| Battery backup | TBD hours |
-| Operating temperature | TBD |
-| Ingress protection | TBD (IP rating) |
-| WiFi | 802.11 b/g/n (2.4 GHz) |
-| Cellular | LTE Cat-M1 / NB-IoT |
-| Cellular bands | TBD |
-| Sensor type | MEMS accelerometer + vertical geophone |
-| Channels | 4 (3 accelerometer + 1 geophone) |
-| Detection range | Micro-seismic to strong motion |
-| Sample rate | TBD |
+| Dimensions | 98.5 x 70mm (PCB) |
+| Weight | 50g |
+| Enclosure | IP67 Weatherproof (optional) |
+| Operating temperature | -20°C to +60°C |
+
+### Power
+
+| Specification | Value |
+|---------------|-------|
+| Power source | Solar 6-12V |
+| Battery | External LiPo |
+| Energy consumption | 1.32W (400mA at 3.3V) |
+| USB | Power and firmware updates |
+
+### Connectivity
+
+| Specification | Value |
+|---------------|-------|
+| Primary connection | LTE Cat-4 (2G/3G/4G global support) |
+| Secondary connection | Starlink Direct to Cell (coming soon, select regions) |
+| Tertiary connection | WiFi 802.11 b/g/n (2.4 GHz) |
+| Additional method | USB serial data |
+| Time synchronization | NTP (via Grillo Cloud timeserver) |
+| Data transmission | UDP over CoAP |
+| Data format | Binary |
+| Ingestion software | DataLink/SeedLink compatible |
+
+### Sensors
+
+| Specification | Value |
+|---------------|-------|
+| Primary sensor | 4.5Hz Geophone with 32-bit ADC |
+| Secondary sensor | Ultra-low noise MEMS accelerometer with 20-bit ADC |
+| Channels | 4 (1 geophone + 3 accelerometer) |
+| Sampling rate | 125Hz (accelerometer), 100Hz (geophone) |
+| Detection range | Microseismic to strong local earthquakes |
 
 ## What's included
 
-- Grillo Pulse sensor unit
-- Power adapter
-- External antenna (for cellular)
+- Grillo Pulse sensor unit (PCB with integrated sensors)
+- IP67 weatherproof enclosure (if ordered)
+- LTE antenna
+- GPS antenna
+- Power cable (for solar/battery connection)
 - Quick start guide
 - Mounting hardware
-- SIM card (varies by region)
 
 [See complete unboxing guide →](/hardware/grillo-pulse/whats-in-the-box)
 
 ## Setup overview
 
 1. **Unbox** - Verify all components are present
-2. **Install SIM** - Insert SIM card if using cellular
-3. **Install** - Mount the sensor in an appropriate location
-4. **Connect** - Configure WiFi or cellular connectivity
-5. **Provision** - Register the sensor to Grillo Cloud
-6. **Configure** - Set station name and location in the dashboard
+2. **Assemble** - Install PCB in enclosure, connect antennas
+3. **Install SIM** - Insert SIM card for cellular connectivity
+4. **Install** - Mount the sensor in an appropriate location
+5. **Connect power** - Wire to solar panel and/or battery
+6. **Provision** - Register the sensor to Grillo Cloud
+7. **Configure** - Set station name and location in the dashboard
 
-**Estimated setup time:** 20-30 minutes
+**Estimated setup time:** 30-45 minutes
 
 ## Guides in this section
 
@@ -76,22 +103,23 @@ Before you begin, ensure you have:
 
 - [ ] A Grillo Cloud account ([create one here](https://cloud.grillo.io))
 - [ ] An organization and network set up in the dashboard
-- [ ] WiFi credentials OR SIM card with active data plan
-- [ ] Power outlet (or solar/battery power source)
-- [ ] Suitable mounting location
+- [ ] SIM card with active data plan (for cellular) OR WiFi credentials
+- [ ] Solar panel (6-12V) and/or external LiPo battery
+- [ ] Suitable mounting location (ground level, stable surface)
 
-## WiFi vs Cellular
+## Connectivity comparison
 
-| Factor | WiFi | Cellular |
-|--------|------|----------|
-| Monthly cost | Free (use existing network) | Data plan required |
-| Setup complexity | Simple | Moderate |
-| Power consumption | Lower | Higher |
-| Coverage | Limited to WiFi range | Anywhere with cell coverage |
-| Best for | Sites with existing WiFi | Remote locations |
+| Factor | LTE Cellular | WiFi | Starlink Direct to Cell |
+|--------|--------------|------|-------------------------|
+| Availability | Primary | Tertiary | Coming soon (select regions) |
+| Monthly cost | Data plan required | Free (existing network) | TBD |
+| Setup complexity | Moderate | Simple | TBD |
+| Power consumption | Moderate | Lower | TBD |
+| Coverage | Global (2G/3G/4G) | Limited to WiFi range | Satellite-based global |
+| Best for | Remote deployments | Sites with existing WiFi | Areas without cellular coverage |
 
 :::tip
-When both WiFi and cellular are configured, the Pulse will prefer WiFi to conserve data and power.
+The Pulse supports multiple connectivity options simultaneously. When WiFi is available, it will be preferred to conserve cellular data.
 :::
 
 ## Need help?

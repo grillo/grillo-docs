@@ -42,7 +42,7 @@ The Grillo Pulse uses LTE Cat-4 with automatic fallback to 3G/2G networks for gl
    - Position antenna for optimal reception (vertical, elevated)
 
 3. **Power on the sensor**
-   - Connect power (6-12V DC or USB)
+   - Connect power (6-10V DC or USB)
    - Wait for cellular connection (may take 2-5 minutes)
 
 4. **Verify connection**
@@ -98,7 +98,7 @@ Time synchronization uses NTP via Grillo Cloud timeserver, not GNSS. The GNSS mo
 ### WiFi setup steps
 
 1. **Power on the sensor**
-   - Connect power (6-12V DC or USB) to the sensor
+   - Connect power (6-10V DC or USB) to the sensor
    - Wait for the LED to indicate setup mode
 
 2. **Connect to sensor's hotspot**

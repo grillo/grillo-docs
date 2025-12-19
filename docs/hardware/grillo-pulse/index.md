@@ -16,7 +16,7 @@ It combines an ultra-low noise MEMS accelerometer with a sensitive 4.5Hz geophon
 - **Dual sensor system** - 4.5Hz geophone + ultra-low noise MEMS accelerometer
 - **Wide detection range** - Captures microseismic to strong local earthquakes
 - **Global connectivity** - LTE Cat-4 with 2G/3G/4G fallback, WiFi, and Starlink (coming soon)
-- **Solar powered** - 6-12V input with external LiPo battery backup
+- **Solar powered** - 6-10V input with external LiPo battery backup
 - **NTP timing** - Precise time synchronization via Grillo Cloud timeserver
 - **Weather resistant** - IP67 weatherproof enclosure available
 - **Industry compatible** - DataLink/SeedLink compatible output
@@ -36,7 +36,7 @@ It combines an ultra-low noise MEMS accelerometer with a sensitive 4.5Hz geophon
 
 | Specification | Value |
 |---------------|-------|
-| Power source | Solar 6-12V |
+| Power source | Solar 6-10V |
 | Battery | External LiPo |
 | Energy consumption | 1.32W (400mA at 3.3V) |
 | USB | Power and firmware updates |
@@ -104,7 +104,7 @@ Before you begin, ensure you have:
 - [ ] A Grillo Cloud account ([create one here](https://cloud.grillo.io))
 - [ ] An organization and network set up in the dashboard
 - [ ] SIM card with active data plan (for cellular) OR WiFi credentials
-- [ ] Solar panel (6-12V) and/or external LiPo battery
+- [ ] Solar panel (6-10V) and/or external LiPo battery
 - [ ] Suitable mounting location (ground level, stable surface)
 
 ## Connectivity comparison

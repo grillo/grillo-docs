@@ -129,11 +129,11 @@ The Grillo Pulse is designed for outdoor use, but proper installation ensures lo
 
 ## Power considerations
 
-The Grillo Pulse accepts 6-12V DC input, making it ideal for solar-powered installations.
+The Grillo Pulse accepts 6-10V DC input, making it ideal for solar-powered installations.
 
 ### Solar power setup
 
-- **Solar panel** - 6-12V output, sized for your location's sunlight availability
+- **Solar panel** - 6-10V output, sized for your location's sunlight availability
 - **Battery** - External LiPo battery for overnight and cloudy operation
 - **Charge controller** - Recommended for optimal battery management
 - **Power consumption** - 1.32W (400mA at 3.3V)
@@ -171,7 +171,7 @@ Before finalizing installation:
 |--------|---------------|
 | Operating temperature | -20°C to +60°C |
 | Ingress protection | IP67 (with weatherproof enclosure) |
-| Power input | 6-12V DC |
+| Power input | 6-10V DC |
 | Power consumption | 1.32W (400mA at 3.3V) |
 
 ## Common installation mistakes

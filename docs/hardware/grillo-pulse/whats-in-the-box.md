@@ -42,7 +42,7 @@ External antenna for cellular connectivity:
 ### 4. Power cable
 
 For connecting to external power source:
-- Compatible with solar panels (6-12V input)
+- Compatible with solar panels (6-10V input)
 - Compatible with external LiPo batteries
 - Weatherproof connectors
 
@@ -75,7 +75,7 @@ The Grillo Pulse PCB includes:
 
 ### External connections
 
-- **Power input** - 6-12V DC (solar/battery compatible)
+- **Power input** - 6-10V DC (solar/battery compatible)
 - **LTE antenna port** - SMA connector for cellular antenna
 - **USB port** - For power and firmware updates
 - **Status LEDs** - On-board indicators (not visible through standard enclosure)

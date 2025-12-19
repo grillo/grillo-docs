@@ -91,7 +91,7 @@ M2M/IoT SIM cards from carriers typically offer better rates for low-bandwidth d
    - Verify weatherproof seal is intact
 
 6. **Reconnect power**
-   - Connect the power cable (6-12V DC or USB)
+   - Connect the power cable (6-10V DC or USB)
    - Wait for boot sequence to complete (2-5 minutes for cellular connection)
 
 ![SIM card installation diagram](/img/placeholder-sim-install.svg)

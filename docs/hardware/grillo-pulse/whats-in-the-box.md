@@ -32,6 +32,8 @@ If ordered with enclosure:
 - Weatherproof cable glands
 - Desiccant pack for moisture control
 
+*Note: Enclosure color may vary from shown.*
+
 ### 3. LTE antenna
 
 External antenna for cellular connectivity:

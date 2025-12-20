@@ -166,8 +166,14 @@ No inbound ports need to be opened. All connections are initiated by the sensor.
 
 ### Cellular data considerations
 
-- Binary format option available to minimize data usage
-- Data usage varies with sample rate and event activity
+Estimated monthly data usage:
+
+| Data Format | Bandwidth | Monthly Usage |
+|-------------|-----------|---------------|
+| JSON (default) | ~3.2 KB/s | ~8 GB/month |
+| Binary/MiniSEED | ~0.6 KB/s | ~1.5 GB/month |
+
+- Binary format significantly reduces data usage
 - Consider M2M/IoT data plans for best value
 - Monitor usage through your carrier's portal
 
@@ -177,14 +183,21 @@ No inbound ports need to be opened. All connections are initiated by the sensor.
 LEDs are on the PCB and **not visible** through the standard IP67 enclosure. Use the [Grillo Cloud dashboard](https://cloud.grillo.io) to verify connectivity for deployed sensors.
 :::
 
-| LED Pattern | Network Status |
-|-------------|----------------|
-| Solid green | Connected via WiFi |
-| Blinking green | Connecting to WiFi |
-| Solid cyan | Connected via cellular |
-| Blinking cyan | Connecting to cellular |
-| Solid blue | Setup mode |
-| Solid red | No network connection |
+The Grillo Pulse has two RGB status LEDs:
+
+**Network LED:**
+| Color | Meaning |
+|-------|---------|
+| Blue pulsing | Connecting or provisioning mode |
+| Green | Connected to network |
+| Red | Connection failed |
+
+**Sensor LED:**
+| Color | Meaning |
+|-------|---------|
+| Green | Sensors operational |
+| Yellow | Sensor degraded |
+| Red | Sensor failed |
 
 ## Signal strength
 

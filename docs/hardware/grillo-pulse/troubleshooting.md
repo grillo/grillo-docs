@@ -25,17 +25,29 @@ For deployed sensors, the Grillo Cloud dashboard is your primary tool for monito
 
 ## LED status reference (debugging/testing only)
 
-| LED Pattern | Status | Action |
-|-------------|--------|--------|
-| Solid green | Online via WiFi | Normal operation |
-| Solid cyan | Online via cellular | Normal operation |
-| Blinking green | Connecting to WiFi | Wait for connection |
-| Blinking cyan | Connecting to cellular | Wait for connection |
-| Solid blue | Setup mode | Configure network |
-| Blinking blue | Hotspot active | Connect to configure |
-| Solid amber | Battery low | Check power source |
-| Solid red | Error | See error section |
-| Blinking red | Critical error | Contact support |
+The Grillo Pulse has two RGB status LEDs on the PCB:
+
+### Network LED
+
+| Color | Meaning | Action |
+|-------|---------|--------|
+| Blue pulsing | Connecting or provisioning mode | Wait, or configure WiFi/APN |
+| Green | Connected to network | Normal operation |
+| Red | Connection failed | Check network setup |
+
+### Sensor LED
+
+| Color | Meaning | Action |
+|-------|---------|--------|
+| Green | Sensors operational | Normal operation |
+| Yellow | Sensor degraded | Check sensor status in dashboard |
+| Red | Sensor failed | Contact support |
+
+### Both LEDs
+
+| Color | Meaning | Action |
+|-------|---------|--------|
+| Purple blinking | OTA firmware update in progress | Wait for update to complete |
 | Off | No power | Check power connection |
 
 ## Common issues
@@ -236,7 +248,35 @@ To completely reset your Grillo Pulse:
 Factory reset clears all settings including WiFi configuration, cellular APN, and provisioning. You'll need to set up the sensor from scratch.
 :::
 
+## Firmware updates (OTA)
+
+The Grillo Pulse supports over-the-air firmware updates:
+
+- **Update indicator** - Both LEDs blink purple during update
+- **Automatic rollback** - If update fails verification, device automatically reverts to previous firmware
+- **Do not power off** - Wait for update to complete (LEDs return to normal)
+- **Checksum verification** - Updates are verified before applying
+
+## Automatic recovery
+
+The Grillo Pulse has built-in recovery mechanisms:
+
+| Situation | Automatic Response |
+|-----------|-------------------|
+| Invalid WiFi credentials | Auto-clears credentials, restarts into provisioning mode |
+| Network dropout | Retries connection automatically |
+| Bad firmware update | Auto-rollback to previous working version |
+| Sensor error | Reports degraded status to dashboard |
+
 ## Diagnostic information
+
+The device automatically reports status to Grillo Cloud every 30 seconds, including:
+- Connection type and signal strength
+- Battery voltage and charging status
+- Memory usage and uptime
+- Time synchronization status
+- GPS location (if available)
+- Temperature
 
 When contacting support, gather this information:
 

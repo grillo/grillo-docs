@@ -9,8 +9,7 @@ This page describes all components included with your Grillo One sensor.
 
 ## Package contents
 
-![Grillo One unboxing](/img/placeholder-unboxing-one.svg)
-<!-- TODO: Replace with actual unboxing photo -->
+<img src="/img/grillo-one-contents.jpg" alt="Grillo One package contents" style={{maxWidth: '800px', width: '100%'}} />
 
 ### 1. Grillo One sensor unit
 

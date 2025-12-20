@@ -129,20 +129,31 @@ The Grillo Pulse is designed for outdoor use, but proper installation ensures lo
 
 ## Power considerations
 
-The Grillo Pulse accepts 6-10V DC input, making it ideal for solar-powered installations.
+The Grillo Pulse accepts 6-10V DC input via its waterproof cable connector, making it ideal for solar-powered and remote installations.
+
+### DC power input
+
+For permanent installations:
+- **Voltage** - 6-10V DC input
+- **Connector** - Waterproof cable connector (same port used for solar power)
+- **Power consumption** - 1.32W (400mA at 3.3V)
 
 ### Solar power setup
 
 - **Solar panel** - 6-10V output, sized for your location's sunlight availability
 - **Battery** - External LiPo battery for overnight and cloudy operation
 - **Charge controller** - Recommended for optimal battery management
-- **Power consumption** - 1.32W (400mA at 3.3V)
+- Uses the same waterproof connector as DC power input
 
 ### USB power
 
-For temporary setups or indoor use:
-- USB port can provide power and firmware updates
+The USB port is primarily intended for firmware updates:
+- Can be used for powering the device during testing or bench work
 - Not recommended for permanent outdoor installations
+
+:::caution Avoid dual power sources
+While the Grillo Pulse has protection diodes to prevent issues from multiple power inputs, it is not advisable to power the device from USB and DC power simultaneously. Use one power source at a time.
+:::
 
 ### Power cable routing
 

@@ -49,44 +49,47 @@ The Grillo Pulse must be installed level for accurate seismic readings. The 4.5H
 
 ## Mounting options
 
-### Option 1: Ground mounting (Recommended for best data)
+### Option 1: Floor/ground mounting (Recommended for best data)
 
-Direct installation on a solid surface:
+The sensor must be mounted on a **stiff structural element**:
 
-1. Select a flat, stable location on concrete or bedrock
-2. Clean the mounting surface
-3. Attach the mounting plate using appropriate anchors
-4. Secure the sensor to the mounting plate
-5. Verify level and stability
-6. Connect power and antenna
+- Concrete floor slab (preferred)
+- Bedrock or stable compacted ground
+- Steel beam or column base
 
-**Best for:** Permanent installations with solid foundation
+**Installation steps:**
 
-### Option 2: Pole mounting
+1. Clean the mounting surface thoroughly
+2. Remove all dust, debris, and loose material
+3. Place the sensor on the prepared surface
+4. Use a spirit level to ensure the sensor is horizontal
+5. Mark screw hole positions through the mounting holes
+6. Drill holes and insert appropriate anchors
+7. Position the sensor and insert screws through mounting holes
+8. Tighten screws firmly — **the sensor must not move**
+9. Connect power and antenna
 
-For locations without suitable ground surface:
+:::warning Secure mounting required
+A loose sensor will produce unreliable data. Ensure all screws are tight and the device cannot move when touched.
+:::
 
-1. Select a sturdy pole or post (metal or wood)
-2. Attach the pole mounting bracket at desired height
-3. Secure the sensor to the bracket
-4. Route cables along the pole
-5. Verify stability and level
-6. Connect power and antenna
+### Option 2: Wall mounting
 
-**Best for:** Remote sites, fence lines, temporary deployments
+If mounting on a structural wall:
 
-### Option 3: Wall mounting
+1. Select a solid structural wall (concrete or masonry — avoid hollow structures)
+2. Position at floor level where possible
+3. Clean the mounting surface
+4. Place the sensor with the **USB port facing down**
+5. Use a spirit level to ensure horizontal alignment
+6. Mark and drill mounting holes
+7. Install appropriate anchors
+8. Secure the sensor — it must not move
+9. Connect power and antenna
 
-For building-attached installations:
-
-1. Select a solid exterior wall (avoid hollow structures)
-2. Mark and drill mounting holes
-3. Install appropriate anchors
-4. Attach the mounting bracket
-5. Secure the sensor
-6. Verify level and stability
-
-**Best for:** Building perimeters, semi-outdoor locations
+:::warning Wall mounting metadata
+When a sensor is wall-mounted, you must update its configuration in Grillo Cloud to indicate the mounting orientation. This ensures correct data interpretation.
+:::
 
 ## LTE antenna placement
 
@@ -103,7 +106,6 @@ For cellular connectivity, antenna placement significantly affects signal qualit
 
 1. **Direct attachment** - Screw directly into sensor's SMA port
 2. **Remote mounting** - Use SMA extension cable to position antenna optimally
-3. **Pole mounting** - Attach to top of mounting pole for best reception
 
 ## Weatherproofing
 

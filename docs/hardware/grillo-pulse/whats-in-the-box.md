@@ -59,8 +59,7 @@ Printed card with basic setup instructions and QR code for online documentation.
 
 ## Sensor unit details
 
-![Grillo Pulse sensor diagram](/img/placeholder-pulse-diagram.svg)
-<!-- TODO: Replace with actual diagram -->
+<img src="/img/grillo-pulse-sensor.jpg" alt="Grillo Pulse sensor unit" style={{maxWidth: '800px', width: '100%'}} />
 
 ### PCB layout
 

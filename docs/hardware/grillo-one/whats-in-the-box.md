@@ -43,8 +43,7 @@ Printed card with basic setup instructions and QR code for online documentation.
 
 ## Sensor unit details
 
-![Grillo One sensor diagram](/img/placeholder-one-diagram.svg)
-<!-- TODO: Replace with actual diagram -->
+<img src="/img/grillo-one-sensor.jpg" alt="Grillo One sensor unit" style={{maxWidth: '800px', width: '100%'}} />
 
 ### Status LEDs
 

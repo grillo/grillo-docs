@@ -142,8 +142,9 @@ For permanent installations:
 
 - **Solar panel** - 6-10V output, sized for your location's sunlight availability
 - **Battery** - External LiPo battery for overnight and cloudy operation
+- **Battery port** - Dedicated waterproof connector for LiPo battery (same connector type as DC power input)
 - **Charge controller** - Recommended for optimal battery management
-- Uses the same waterproof connector as DC power input
+- Solar input uses the same waterproof connector as DC power input
 
 ### USB power
 

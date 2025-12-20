@@ -9,7 +9,7 @@ This page describes all components included with your Grillo Pulse sensor.
 
 ## Package contents
 
-<img src="/img/grillo-pulse-contents.jpg" alt="Grillo Pulse package contents" style={{maxWidth: '800px', width: '100%'}} />
+<img src="/img/grillo-pulse-contents1.jpg" alt="Grillo Pulse package contents" style={{maxWidth: '800px', width: '100%'}} />
 
 ### 1. Grillo Pulse sensor unit (PCB)
 

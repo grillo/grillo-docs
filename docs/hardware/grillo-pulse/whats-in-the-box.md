@@ -35,17 +35,14 @@ If ordered with enclosure:
 
 ### 3. LTE antenna
 
-External antenna for cellular connectivity:
-- SMA connector
-- Omnidirectional pattern
-- Suitable for outdoor mounting
+Internal antenna for cellular connectivity (built into enclosure).
 
 ### 4. Power cable
 
-For connecting to external power source:
+SP13 male to female DC barrel connector cable:
+- Connects to female WEIPU SP13 port on enclosure
 - Compatible with solar panels (6-10V input)
-- Compatible with external LiPo batteries
-- Weatherproof connectors
+- Compatible with external power supplies
 
 ### 5. Quick start guide
 

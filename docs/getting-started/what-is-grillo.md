@@ -11,7 +11,7 @@ Grillo is an earthquake technology company on a mission to democratize seismic m
 
 <!-- TODO: Add official mission statement from grillo.io -->
 
-Traditional seismic monitoring has been limited to well-funded institutions with expensive equipment. Grillo is changing this by providing affordable, easy-to-deploy sensors that anyone can use to build earthquake monitoring networks.
+Traditional seismic monitoring has relied on expensive equipment accessible only to well-funded institutions. Grillo's affordable, easy-to-deploy sensors democratize earthquake monitoring—enabling anyone to build networks while allowing established institutions to achieve denser deployments for more detailed seismic data.
 
 ## The Grillo approach
 

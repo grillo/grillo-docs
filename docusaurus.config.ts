@@ -50,7 +50,12 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/', // Docs as homepage
           // Enable "edit this page" links pointing to your repo
-          editUrl: 'https://github.com/grillo/grillo-docs/tree/main/',
+          editUrl: ({ locale, docPath }) => {
+            if (locale === 'en') {
+              return `https://github.com/grillo/grillo-docs/tree/main/docs/${docPath}`;
+            }
+            return `https://github.com/grillo/grillo-docs/tree/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+          },
         },
         blog: false,
         theme: {

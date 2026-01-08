@@ -31,7 +31,11 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: { label: 'English' },
+      fr: { label: 'Français' },
+    },
   },
 
   plugins: [
@@ -78,6 +82,10 @@ const config: Config = {
         {
           href: 'https://grillo.io',
           label: 'Grillo.io',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],

@@ -1,0 +1,50 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Products": {
+    "message": "Produits",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.Company": {
+    "message": "Entreprise",
+    "description": "The title of the footer links column with title=Company in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Premiers pas",
+    "description": "The label of footer link with label=Getting Started linking to /getting-started"
+  },
+  "link.item.label.Hardware Setup": {
+    "message": "Installation du matériel",
+    "description": "The label of footer link with label=Hardware Setup linking to /hardware/grillo-one"
+  },
+  "link.item.label.Dashboard Guide": {
+    "message": "Guide du tableau de bord",
+    "description": "The label of footer link with label=Dashboard Guide linking to /dashboard"
+  },
+  "link.item.label.Grillo One": {
+    "message": "Grillo One",
+    "description": "The label of footer link with label=Grillo One linking to /hardware/grillo-one"
+  },
+  "link.item.label.Grillo Pulse": {
+    "message": "Grillo Pulse",
+    "description": "The label of footer link with label=Grillo Pulse linking to /hardware/grillo-pulse"
+  },
+  "link.item.label.Grillo Cloud": {
+    "message": "Grillo Cloud",
+    "description": "The label of footer link with label=Grillo Cloud linking to https://cloud.grillo.io"
+  },
+  "link.item.label.Grillo.io": {
+    "message": "Grillo.io",
+    "description": "The label of footer link with label=Grillo.io linking to https://grillo.io"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Contacter le support",
+    "description": "The label of footer link with label=Contact Support linking to /support/contact"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Grillo Ltd. Tous droits réservés.",
+    "description": "The footer copyright"
+  }
+}

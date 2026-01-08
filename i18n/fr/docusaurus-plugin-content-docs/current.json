@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Premiers pas",
+    "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Hardware": {
+    "message": "Matériel",
+    "description": "The label for category 'Hardware' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Grillo One": {
+    "message": "Grillo One",
+    "description": "The label for category 'Grillo One' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Grillo Pulse": {
+    "message": "Grillo Pulse",
+    "description": "The label for category 'Grillo Pulse' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Dashboard": {
+    "message": "Tableau de bord",
+    "description": "The label for category 'Dashboard' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Account": {
+    "message": "Compte",
+    "description": "The label for category 'Account' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Organizations": {
+    "message": "Organisations",
+    "description": "The label for category 'Organizations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Networks": {
+    "message": "Réseaux",
+    "description": "The label for category 'Networks' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Sensors": {
+    "message": "Capteurs",
+    "description": "The label for category 'Sensors' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Paramètres",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Events": {
+    "message": "Événements",
+    "description": "The label for category 'Events' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Alerts": {
+    "message": "Alertes",
+    "description": "The label for category 'Alerts' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Concepts": {
+    "message": "Concepts",
+    "description": "The label for category 'Concepts' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.API Reference": {
+    "message": "Référence API",
+    "description": "The label for category 'API Reference' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Support": {
+    "message": "Assistance",
+    "description": "The label for category 'Support' in sidebar 'tutorialSidebar'"
+  }
+}

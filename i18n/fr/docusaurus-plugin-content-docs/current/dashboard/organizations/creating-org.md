@@ -17,7 +17,7 @@ Ce guide vous accompagne dans la création d'une nouvelle organisation dans Gril
 
 1. Connectez-vous à [cloud.grillo.io](https://cloud.grillo.io)
 2. Cliquez sur le menu déroulant de l'organisation dans la navigation supérieure
-3. Sélectionnez **« Créer une nouvelle organisation »**
+3. Sélectionnez **« Créer une nouvelle organisation »** 
 
 ![Créer une organisation](/img/placeholder-create-org.svg)
 <!-- TODO: Replace with actual screenshot -->

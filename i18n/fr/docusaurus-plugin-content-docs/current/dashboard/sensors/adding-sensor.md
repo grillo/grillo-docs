@@ -15,7 +15,7 @@ Avant d'ajouter un capteur, assurez-vous que :
 - [ ] Le capteur est connecté à Internet
 - [ ] Le capteur est provisionné sur Grillo Cloud
 - [ ] Vous avez le numéro de série du capteur
-- [ ] Vous avez le rôle Membre ou supérieur dans l'organisation
+- [ ] Vous avez le rôle Utilisateur ou supérieur dans l'organisation
 
 ## Ajouter un capteur
 

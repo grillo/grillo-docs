@@ -170,13 +170,13 @@ Supprimer un réseau :
 
 ## Paramètres par rôle
 
-| Paramètre | Propriétaire | Admin | Membre | Lecteur |
-|-----------|--------------|-------|--------|---------|
-| Voir les paramètres | Oui | Oui | Oui | Oui |
-| Modifier les paramètres généraux | Oui | Oui | Non | Non |
-| Modifier les paramètres de données | Oui | Oui | Non | Non |
-| Modifier les paramètres d'événements | Oui | Oui | Non | Non |
-| Supprimer le réseau | Oui | Oui | Non | Non |
+| Paramètre | Propriétaire | Admin | Utilisateur |
+|-----------|--------------|-------|-------------|
+| Voir les paramètres | Oui | Oui | Oui |
+| Modifier les paramètres généraux | Oui | Oui | Non |
+| Modifier les paramètres de données | Oui | Oui | Non |
+| Modifier les paramètres d'événements | Oui | Oui | Non |
+| Supprimer le réseau | Oui | Oui | Non |
 
 ## Dépannage
 

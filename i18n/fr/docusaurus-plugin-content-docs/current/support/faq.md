@@ -80,8 +80,7 @@ Oui. Vous pouvez être membre de plusieurs organisations et basculer entre elles
 
 | Rôle | Peut faire |
 |------|------------|
-| Lecteur | Voir les données et capteurs |
-| Membre | Ajouter et configurer des capteurs |
+| Utilisateur | Voir les données, ajouter et configurer des capteurs |
 | Admin | Gérer les membres et réseaux |
 | Propriétaire | Contrôle total, facturation, supprimer l'org |
 

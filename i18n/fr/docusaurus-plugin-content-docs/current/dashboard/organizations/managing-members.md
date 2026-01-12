@@ -64,8 +64,8 @@ Pour inviter plusieurs personnes à la fois :
 ### Qui peut changer les rôles ?
 
 - Les **Propriétaires** peuvent changer le rôle de n'importe qui
-- Les **Admins** peuvent changer les rôles des Membres et Lecteurs
-- Les Membres et Lecteurs ne peuvent pas changer les rôles
+- Les **Admins** peuvent changer les Utilisateurs en Admin (et vice versa)
+- Les Utilisateurs ne peuvent pas changer les rôles
 
 ### Comment changer un rôle
 
@@ -129,13 +129,13 @@ Si vous êtes le seul propriétaire :
 
 ## Résumé des permissions des membres
 
-| Action | Propriétaire | Admin | Membre | Lecteur |
-|--------|--------------|-------|--------|---------|
-| Voir les membres | Oui | Oui | Oui | Oui |
-| Inviter des membres | Oui | Oui | Non | Non |
-| Changer les rôles | Oui | Limité | Non | Non |
-| Supprimer des membres | Oui | Oui | Non | Non |
-| Transférer la propriété | Oui | Non | Non | Non |
+| Action | Propriétaire | Admin | Utilisateur |
+|--------|--------------|-------|-------------|
+| Voir les membres | Oui | Oui | Oui |
+| Inviter des membres | Oui | Oui | Non |
+| Changer les rôles | Oui | Limité | Non |
+| Supprimer des membres | Oui | Oui | Non |
+| Transférer la propriété | Oui | Non | Non |
 
 [Guide détaillé des rôles →](/dashboard/organizations/user-roles)
 
@@ -144,9 +144,8 @@ Si vous êtes le seul propriétaire :
 ### Principe du moindre privilège
 
 - Donnez aux utilisateurs le rôle minimum dont ils ont besoin
-- Lecteurs pour l'accès en lecture seule
-- Membres pour les tâches opérationnelles
-- Admins pour la gestion de l'équipe
+- Utilisateurs pour le travail quotidien avec les capteurs
+- Admins pour la gestion de l'équipe et des réseaux
 
 ### Audits réguliers
 
@@ -162,7 +161,6 @@ Lors de l'ajout de nouveaux membres d'équipe :
 1. Envoyez une invitation avec le rôle approprié
 2. Partagez les liens de documentation pertinents
 3. Informez-les des réseaux auxquels ils auront accès
-4. Envisagez de commencer avec le rôle Lecteur jusqu'à ce qu'ils soient formés
 
 ## Dépannage
 

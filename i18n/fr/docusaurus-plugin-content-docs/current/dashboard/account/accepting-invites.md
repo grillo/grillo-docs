@@ -59,8 +59,7 @@ Votre rôle détermine ce que vous pouvez faire dans l'organisation :
 
 | Rôle | Capacités |
 |------|-----------|
-| Lecteur | Voir les capteurs et les données |
-| Membre | Ajouter des capteurs, modifier les configurations |
+| Utilisateur | Voir les données, ajouter et configurer des capteurs |
 | Admin | Gérer les membres, créer des réseaux |
 | Propriétaire | Contrôle total, facturation, supprimer l'org |
 

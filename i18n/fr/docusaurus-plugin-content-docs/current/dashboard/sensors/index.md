@@ -104,10 +104,10 @@ Tâches courantes des capteurs :
 
 ## Permissions
 
-| Action | Propriétaire | Admin | Membre | Lecteur |
-|--------|--------------|-------|--------|---------|
-| Voir les capteurs | Oui | Oui | Oui | Oui |
-| Ajouter des capteurs | Oui | Oui | Oui | Non |
-| Configurer les capteurs | Oui | Oui | Oui | Non |
-| Supprimer des capteurs | Oui | Oui | Oui | Non |
-| Exporter les données | Oui | Oui | Oui | Non |
+| Action | Propriétaire | Admin | Utilisateur |
+|--------|--------------|-------|-------------|
+| Voir les capteurs | Oui | Oui | Oui |
+| Ajouter des capteurs | Oui | Oui | Oui |
+| Configurer les capteurs | Oui | Oui | Oui |
+| Supprimer des capteurs | Oui | Oui | Oui |
+| Exporter les données | Oui | Oui | Oui |

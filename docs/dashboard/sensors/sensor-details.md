@@ -14,8 +14,7 @@ Access sensor details by:
 - Clicking a row in the table view
 - Using the search to find a sensor
 
-![Sensor detail pane](/img/placeholder-sensor-detail.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Sensor detail pane](/img/screenshots/07-sensor-info.png)
 
 ## Detail pane sections
 

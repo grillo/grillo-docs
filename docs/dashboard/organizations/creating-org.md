@@ -19,8 +19,7 @@ This guide walks you through creating a new organization in Grillo Cloud.
 2. Click on the organization dropdown in the top navigation
 3. Select **"Create new organization"**
 
-![Create organization](/img/placeholder-create-org.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Create organization](/img/screenshots/12-organization-edit.png)
 
 ### 2. Enter organization details
 

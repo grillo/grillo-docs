@@ -13,8 +13,7 @@ The map view provides a geographic visualization of your sensors, showing their 
 2. Click the **"Map"** tab or icon
 3. The map will display all sensors in the network
 
-![Map view](/img/placeholder-map-view.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Map view](/img/screenshots/06-sensors-map.png)
 
 ## Map interface
 

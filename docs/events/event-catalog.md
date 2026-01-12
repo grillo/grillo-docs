@@ -13,8 +13,7 @@ The event catalog is a searchable database of all earthquakes detected by your n
 2. Click **"Events"** in the sidebar
 3. The event catalog opens
 
-![Event catalog](/img/placeholder-event-catalog.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Event catalog](/img/screenshots/09-events.png)
 
 ## Catalog interface
 

@@ -25,8 +25,7 @@ This guide walks you through creating a new seismic network in Grillo Cloud.
 1. Click **"Create network"** or the **"+"** button
 2. The network creation form will appear
 
-![Create network](/img/placeholder-create-network.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Create network](/img/screenshots/04-network-create.png)
 
 ### 3. Enter network details
 

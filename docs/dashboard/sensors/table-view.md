@@ -13,8 +13,7 @@ The table view displays your sensors in a sortable, filterable list format, idea
 2. Click the **"Table"** tab or list icon
 3. Sensors are displayed in a table format
 
-![Table view](/img/placeholder-table-view.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Table view](/img/screenshots/05-sensors.png)
 
 ## Table columns
 

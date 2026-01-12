@@ -13,8 +13,7 @@ Understanding the detailed information available for each detected earthquake ev
 2. Click on an event row
 3. The event detail view opens
 
-![Event details](/img/placeholder-event-details.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Event details](/img/screenshots/10-events-map.png)
 
 ## Event detail sections
 

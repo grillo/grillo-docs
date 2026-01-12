@@ -58,14 +58,11 @@ To join an existing organization, you need an invitation from an admin:
 
 ## Organization roles
 
-Different roles have different permissions:
-
 | Role | Description |
 |------|-------------|
 | **Owner** | Full control, billing, can delete organization |
-| **Admin** | Manage members and networks, most settings |
-| **Member** | Work with sensors and data, limited settings |
-| **Viewer** | View-only access to data and sensors |
+| **Admin** | Manage members, networks, and settings |
+| **User** | Work with sensors and data |
 
 [Detailed roles guide →](/dashboard/organizations/user-roles)
 

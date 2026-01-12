@@ -7,8 +7,7 @@ title: Dashboard
 
 The Grillo Cloud dashboard at [cloud.grillo.io](https://cloud.grillo.io) is your central hub for managing sensors, networks, and viewing seismic data.
 
-![Dashboard overview](/img/placeholder-dashboard.svg)
-<!-- TODO: Replace with actual dashboard screenshot -->
+![Dashboard overview](/img/screenshots/03-networks.png)
 
 ## Key features
 

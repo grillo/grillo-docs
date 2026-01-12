@@ -80,8 +80,7 @@ Yes. You can be a member of multiple organizations and switch between them in th
 
 | Role | Can do |
 |------|--------|
-| Viewer | View data and sensors |
-| Member | Add and configure sensors |
+| User | View data, add and configure sensors |
 | Admin | Manage members and networks |
 | Owner | Full control, billing, delete org |
 

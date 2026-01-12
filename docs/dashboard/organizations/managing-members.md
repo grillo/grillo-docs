@@ -64,8 +64,8 @@ To invite multiple people at once:
 ### Who can change roles?
 
 - **Owners** can change anyone's role
-- **Admins** can change roles of Members and Viewers
-- Members and Viewers cannot change roles
+- **Admins** can change Users to Admin (and vice versa)
+- Users cannot change roles
 
 ### How to change a role
 
@@ -129,13 +129,13 @@ If you're the only owner:
 
 ## Member permissions summary
 
-| Action | Owner | Admin | Member | Viewer |
-|--------|-------|-------|--------|--------|
-| View members | Yes | Yes | Yes | Yes |
-| Invite members | Yes | Yes | No | No |
-| Change roles | Yes | Limited | No | No |
-| Remove members | Yes | Yes | No | No |
-| Transfer ownership | Yes | No | No | No |
+| Action | Owner | Admin | User |
+|--------|-------|-------|------|
+| View members | Yes | Yes | Yes |
+| Invite members | Yes | Yes | No |
+| Change roles | Yes | Limited | No |
+| Remove members | Yes | Yes | No |
+| Transfer ownership | Yes | No | No |
 
 [Detailed roles guide →](/dashboard/organizations/user-roles)
 
@@ -144,9 +144,8 @@ If you're the only owner:
 ### Principle of least privilege
 
 - Give users the minimum role they need
-- Viewers for read-only access
-- Members for operational tasks
-- Admins for team management
+- Users for day-to-day sensor work
+- Admins for team and network management
 
 ### Regular audits
 
@@ -162,7 +161,6 @@ When adding new team members:
 1. Send invitation with appropriate role
 2. Share relevant documentation links
 3. Brief them on the networks they'll access
-4. Consider starting with Viewer role until trained
 
 ## Troubleshooting
 

@@ -48,3 +48,14 @@
   --ifm-navbar-background-color: #334155;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Dashboard screenshot styling */
+.markdown img {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .markdown img {
+  border-color: #475569;
+}

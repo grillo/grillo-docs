@@ -15,7 +15,7 @@ Before adding a sensor, ensure:
 - [ ] Sensor is connected to the internet
 - [ ] Sensor is provisioned to Grillo Cloud
 - [ ] You have the sensor's serial number
-- [ ] You have Member role or higher in the organization
+- [ ] You have User role or higher in the organization
 
 ## Adding a sensor
 

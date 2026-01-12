@@ -59,8 +59,7 @@ Your role determines what you can do in the organization:
 
 | Role | Capabilities |
 |------|--------------|
-| Viewer | View sensors and data |
-| Member | Add sensors, edit configurations |
+| User | View data, add and configure sensors |
 | Admin | Manage members, create networks |
 | Owner | Full control, billing, delete org |
 

@@ -26,8 +26,7 @@ Grillo Cloud supports multiple authentication methods:
 5. Grant Grillo the requested permissions
 6. Complete your profile if prompted
 
-![Google sign-up](/img/placeholder-google-signup.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Google sign-up](/img/screenshots/01-login.png)
 
 ## Sign up with Microsoft
 
@@ -38,8 +37,7 @@ Grillo Cloud supports multiple authentication methods:
 5. Grant Grillo the requested permissions
 6. Complete your profile if prompted
 
-![Microsoft sign-up](/img/placeholder-ms-signup.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Microsoft sign-up](/img/screenshots/02-register.png)
 
 ## Sign up with email
 

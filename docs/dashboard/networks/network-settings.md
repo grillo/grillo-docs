@@ -170,13 +170,13 @@ Deleting a network:
 
 ## Settings by role
 
-| Setting | Owner | Admin | Member | Viewer |
-|---------|-------|-------|--------|--------|
-| View settings | Yes | Yes | Yes | Yes |
-| Edit general settings | Yes | Yes | No | No |
-| Edit data settings | Yes | Yes | No | No |
-| Edit event settings | Yes | Yes | No | No |
-| Delete network | Yes | Yes | No | No |
+| Setting | Owner | Admin | User |
+|---------|-------|-------|------|
+| View settings | Yes | Yes | Yes |
+| Edit general settings | Yes | Yes | No |
+| Edit data settings | Yes | Yes | No |
+| Edit event settings | Yes | Yes | No |
+| Delete network | Yes | Yes | No |
 
 ## Troubleshooting
 

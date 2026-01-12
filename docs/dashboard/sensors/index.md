@@ -104,10 +104,10 @@ Common sensor tasks:
 
 ## Permissions
 
-| Action | Owner | Admin | Member | Viewer |
-|--------|-------|-------|--------|--------|
-| View sensors | Yes | Yes | Yes | Yes |
-| Add sensors | Yes | Yes | Yes | No |
-| Configure sensors | Yes | Yes | Yes | No |
-| Remove sensors | Yes | Yes | Yes | No |
-| Export data | Yes | Yes | Yes | No |
+| Action | Owner | Admin | User |
+|--------|-------|-------|------|
+| View sensors | Yes | Yes | Yes |
+| Add sensors | Yes | Yes | Yes |
+| Configure sensors | Yes | Yes | Yes |
+| Remove sensors | Yes | Yes | Yes |
+| Export data | Yes | Yes | Yes |

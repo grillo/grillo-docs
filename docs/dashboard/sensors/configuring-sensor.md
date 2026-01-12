@@ -13,8 +13,7 @@ Learn how to configure sensor settings remotely from the Grillo Cloud dashboard.
 2. Click the **"Configuration"** tab or **"Edit"** button
 3. The configuration form will open
 
-![Sensor configuration](/img/placeholder-sensor-config.svg)
-<!-- TODO: Replace with actual screenshot -->
+![Sensor configuration](/img/screenshots/08-sensor-edit.png)
 
 ## Configuration categories
 

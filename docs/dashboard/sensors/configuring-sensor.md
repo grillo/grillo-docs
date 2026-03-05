@@ -52,6 +52,27 @@ Configure how the sensor appears in the dashboard:
 | Description | Notes about the installation |
 | Tags | Labels for organization |
 
+### Data server {#data-server}
+
+Configure where the sensor sends its seismic waveform data. This is the key setting for [hybrid deployments](/getting-started/deployment-modes#mode-2-hybrid-cloud-monitoring--on-premise-seismic-processing).
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Data server URI | CoAP endpoint for seismic data | `coap://ingest.grillo.io:5684` |
+
+**Full Cloud mode (default):** Leave this as the default (`coap://ingest.grillo.io:5684`). Seismic data goes to Grillo Cloud for detection and processing.
+
+**Hybrid mode:** Set this to your own server running [coap2seis](/guides/on-premise-integration):
+```
+coap://<your-server-ip>:5684
+```
+
+After saving, the new data server address is pushed to the sensor via the SOH response channel. The sensor begins sending seismic data to the new endpoint on its next connection cycle. SOH messages continue going to Grillo Cloud regardless of this setting.
+
+:::note
+Changing the data server only affects seismic waveform data. Device monitoring via SOH always goes to Grillo Cloud.
+:::
+
 ### Data settings
 
 Configure data collection parameters:

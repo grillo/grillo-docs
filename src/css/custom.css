@@ -1,61 +1,158 @@
-/* Import Grillo fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+/* Grillo Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Primary green - darker for light mode readability */
-  --ifm-color-primary: #15803d;
-  --ifm-color-primary-dark: #166534;
-  --ifm-color-primary-darker: #14532d;
-  --ifm-color-primary-darkest: #052e16;
-  --ifm-color-primary-light: #16a34a;
-  --ifm-color-primary-lighter: #22c55e;
-  --ifm-color-primary-lightest: #4ade80;
+  /* Primary orange */
+  --ifm-color-primary: #E67237;
+  --ifm-color-primary-dark: #d4612a;
+  --ifm-color-primary-darker: #c85a27;
+  --ifm-color-primary-darkest: #a44a20;
+  --ifm-color-primary-light: #ea854f;
+  --ifm-color-primary-lighter: #ec8f5c;
+  --ifm-color-primary-lightest: #f1a880;
 
-  /* Background/text */
-  --ifm-background-color: #f0f4f8;
-  --ifm-background-surface-color: #ffffff;
-  --ifm-font-color-base: #334155;
+  /* Background/text — light mode */
+  --ifm-background-color: #FEFEFE;
+  --ifm-background-surface-color: #FEFEFE;
+  --ifm-font-color-base: #1F2937;
 
   /* Fonts */
-  --ifm-font-family-base: 'DM Sans', system-ui, sans-serif;
-  --ifm-font-family-monospace: 'IBM Plex Mono', monospace;
+  --ifm-font-family-base: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --ifm-font-family-monospace: 'Geist Mono', 'JetBrains Mono', monospace;
+  --ifm-heading-font-weight: 500;
 
-  /* Radius */
-  --ifm-border-radius: 0.5rem;
-  --ifm-code-border-radius: 0.375rem;
+  /* Sharp corners — defining brand trait */
+  --ifm-border-radius: 0px;
+  --ifm-code-border-radius: 0px;
+  --ifm-global-radius: 0px;
+  --ifm-card-border-radius: 0px;
+  --ifm-button-border-radius: 0px;
+  --ifm-alert-border-radius: 0px;
+  --ifm-pagination-border-radius: 0px;
 
   /* Code */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   /* Navbar */
-  --ifm-navbar-background-color: #ffffff;
-  --ifm-navbar-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ifm-navbar-background-color: #FEFEFE;
+  --ifm-navbar-shadow: 0 1px 3px hsl(0 0% 0% / 0.05);
+
+  /* Footer */
+  --ifm-footer-background-color: #141414;
+  --ifm-footer-color: #F5F5F5;
+  --ifm-footer-link-color: #8B8B8B;
+  --ifm-footer-link-hover-color: #F5F5F5;
+
+  /* Borders */
+  --ifm-hr-border-color: #E5E7EB;
+  --ifm-toc-border-color: #E5E7EB;
+  --ifm-table-border-color: #E5E7EB;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #4ade80;
-  --ifm-color-primary-dark: #22c55e;
-  --ifm-color-primary-darker: #16a34a;
-  --ifm-color-primary-darkest: #15803d;
-  --ifm-color-primary-light: #86efac;
-  --ifm-color-primary-lighter: #bbf7d0;
-  --ifm-color-primary-lightest: #dcfce7;
+  --ifm-color-primary: #ea854f;
+  --ifm-color-primary-dark: #E67237;
+  --ifm-color-primary-darker: #d4612a;
+  --ifm-color-primary-darkest: #a44a20;
+  --ifm-color-primary-light: #f1a880;
+  --ifm-color-primary-lighter: #f4b896;
+  --ifm-color-primary-lightest: #f9d5be;
 
-  --ifm-background-color: #1e293b;
-  --ifm-background-surface-color: #334155;
-  --ifm-font-color-base: #e2e8f0;
-  --ifm-navbar-background-color: #334155;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #141414;
+  --ifm-background-surface-color: #1C1C1C;
+  --ifm-font-color-base: #F5F5F5;
+  --ifm-navbar-background-color: #141414;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+
+  /* Borders */
+  --ifm-hr-border-color: #2A2A2A;
+  --ifm-toc-border-color: #2A2A2A;
+  --ifm-table-border-color: #2A2A2A;
 }
 
-/* Dashboard screenshot styling */
+/* Heading typography — tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
+/* Sharp corners on all elements */
+.navbar,
+.navbar__item,
+.dropdown__menu,
+.menu__link,
+.tabs__item,
+.badge,
+.alert,
+.pagination-nav__link,
+.table-of-contents,
+.breadcrumbs__link,
+.footer {
+  border-radius: 0px !important;
+}
+
+/* Code blocks */
+pre, code {
+  border-radius: 0px !important;
+}
+
+/* Cards (doc cards, category index) */
+.card {
+  border-radius: 0px !important;
+  border: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Button hover */
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Sidebar active link uses primary orange */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Image styling */
 .markdown img {
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 0px;
+  box-shadow: 0 1px 3px hsl(0 0% 0% / 0.05);
 }
 
-[data-theme='dark'] .markdown img {
-  border-color: #475569;
+/* Admonitions — sharp corners */
+.admonition {
+  border-radius: 0px !important;
+}
+
+/* Search input */
+.navbar__search-input {
+  border-radius: 0px !important;
+}
+
+/* TOC link styling */
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Footer override for consistent dark look */
+.footer--dark {
+  background-color: #141414;
+}
+
+.footer--dark .footer__link-item {
+  color: #8B8B8B;
+}
+
+.footer--dark .footer__link-item:hover {
+  color: #F5F5F5;
+}
+
+.footer--dark .footer__title {
+  color: #F5F5F5;
+}
+
+.footer--dark .footer__copyright {
+  color: #8B8B8B;
 }

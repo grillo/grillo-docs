@@ -15,6 +15,23 @@ Grillo provides a complete earthquake monitoring solution consisting of:
 2. **Grillo Cloud** - A web dashboard (cloud.grillo.io) for managing sensors and viewing data
 3. **Events System** - Advanced earthquake detection and alerting (optional add-on)
 
+## Choose your deployment mode
+
+Before getting started, decide how you want to use Grillo:
+
+| | Full Cloud | Hybrid (Cloud + On-Premise) |
+|-|-----------|---------------------------|
+| **SOH / device monitoring** | Grillo Cloud | Grillo Cloud |
+| **Seismic data processing** | Grillo Cloud | Your own server |
+| **Earthquake detection** | Automatic via Grillo Cloud | Your own pipeline (Earthworm, etc.) |
+| **Best for** | Turnkey deployments | Institutions with existing infrastructure |
+
+**[Full Cloud](/getting-started/deployment-modes#mode-1-full-cloud-grillo-cloud-handles-everything):** Grillo Cloud ingests everything — SOH and seismic data — and handles detection, alerting, and visualization. Follow this guide as-is.
+
+**[Hybrid](/getting-started/deployment-modes#mode-2-hybrid-cloud-monitoring--on-premise-seismic-processing):** Grillo Cloud monitors your devices via SOH, but seismic data goes to your server where [coap2seis](/guides/on-premise-integration) converts it for Earthworm or MiniSEED. Follow this guide for initial setup, then see [On-Premise Integration](/guides/on-premise-integration) to configure the data redirect.
+
+[Learn more about deployment modes](/getting-started/deployment-modes)
+
 ## Getting started checklist
 
 ### 1. Choose your sensor
@@ -65,7 +82,8 @@ Once your sensor is online:
 
 - [Configure sensor settings](/dashboard/sensors/configuring-sensor) - Set station name, location, and metadata
 - [Monitor sensor health](/dashboard/sensors/sensor-status) - Check connectivity and data quality
-- [Explore the Events system](/events) - Set up earthquake detection and alerts
+- **Full Cloud users:** [Explore the Events system](/events) - Set up earthquake detection and alerts
+- **Hybrid users:** [Set up on-premise integration](/guides/on-premise-integration) - Configure coap2seis and redirect seismic data to your server
 
 ## Typical setup time
 

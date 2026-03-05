@@ -13,6 +13,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'getting-started/what-is-grillo',
         'getting-started/choosing-your-sensor',
+        'getting-started/deployment-modes',
       ],
     },
     {
@@ -167,6 +168,13 @@ const sidebars: SidebarsConfig = {
         'concepts/earthquake-early-warning',
         'concepts/sensor-placement',
         'concepts/data-quality',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Guides',
+      items: [
+        'guides/on-premise-integration',
       ],
     },
     {

@@ -37,11 +37,18 @@ Instead of relying on a few expensive sensors, Grillo enables dense networks of 
 
 The Grillo Cloud platform (cloud.grillo.io) provides:
 
-- Real-time sensor monitoring
+- Real-time sensor monitoring and device health
 - Network management tools
 - Earthquake detection algorithms
 - Alert distribution systems
 - Data visualization and export
+
+### Flexible data routing
+
+Grillo supports two [deployment modes](/getting-started/deployment-modes):
+
+- **Full Cloud** — Grillo Cloud handles everything: device monitoring, seismic data ingestion, earthquake detection, and alerting
+- **Hybrid** — Grillo Cloud monitors your devices, while seismic waveform data goes to your own server for processing with tools like Earthworm or SeisComP via [coap2seis](/guides/on-premise-integration)
 
 ## Products
 

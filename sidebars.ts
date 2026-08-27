@@ -31,6 +31,26 @@ const sidebars: SidebarsConfig = {
             'hardware/grillo-pulse/troubleshooting',
           ],
         },
+        {
+          type: 'category',
+          label: 'Grillo One',
+          link: {
+            type: 'generated-index',
+            slug: '/hardware/grillo-one',
+            description: 'Documentation for Grillo One is coming soon.',
+          },
+          items: ['hardware/grillo-one/coming-soon'],
+        },
+        {
+          type: 'category',
+          label: 'Grillo Slide',
+          link: {
+            type: 'generated-index',
+            slug: '/hardware/grillo-slide',
+            description: 'Product and setup documentation for Grillo Slide is coming soon.',
+          },
+          items: ['hardware/grillo-slide/coming-soon'],
+        },
       ],
     },
     {

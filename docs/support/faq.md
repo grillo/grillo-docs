@@ -6,7 +6,7 @@ title: Frequently Asked Questions
 
 ## Which products do these docs cover?
 
-The supported navigation currently covers Grillo Pulse, hosted Grillo Platform, and its Earthquake Monitoring module. Grillo One is awaiting a separate documentation review. Local Platform installation documentation will be added later.
+The supported navigation currently covers Grillo Pulse, hosted Grillo Platform, and its Earthquake Monitoring module. Grillo One and Grillo Slide documentation is coming soon.
 
 ## Where is Grillo Platform?
 

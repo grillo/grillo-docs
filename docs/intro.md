@@ -27,7 +27,7 @@ Set up Grillo seismic sensors, manage them in Grillo Platform, and understand th
 </div>
 
 :::note Current scope
-These docs cover Grillo Pulse and the hosted Grillo Platform at [cloud.grillo.io](https://cloud.grillo.io). Grillo One is being reviewed separately. Documentation for a local Platform deployment will be added when that product is ready.
+These docs cover Grillo Pulse and the hosted Grillo Platform at [cloud.grillo.io](https://cloud.grillo.io). Grillo One and Grillo Slide are listed as coming soon; their setup documentation will be published when ready.
 :::
 
 ## New installation checklist

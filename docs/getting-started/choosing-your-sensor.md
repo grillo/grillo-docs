@@ -4,7 +4,7 @@ title: Choosing Your Sensor
 
 # Choosing Your Sensor
 
-This documentation currently provides a verified-documentation track for **Grillo Pulse**. The Grillo One documentation and current product specifications will be reviewed separately.
+This documentation currently provides a complete setup track for **Grillo Pulse**. Grillo One and Grillo Slide are listed as coming soon; their product and setup documentation will be published when ready.
 
 ## Grillo Pulse
 

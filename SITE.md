@@ -33,6 +33,14 @@ The documentation is currently English-only while the operational content is cor
 - Physical Installation
 - Troubleshooting
 
+#### Grillo One
+
+- Coming Soon
+
+#### Grillo Slide
+
+- Coming Soon
+
 ### Grillo Platform
 
 - Create an Account

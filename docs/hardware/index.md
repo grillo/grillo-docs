@@ -10,6 +10,16 @@ Grillo Pulse combines a vertical geophone and a low-noise triaxial MEMS accelero
 
 [Install Grillo Pulse →](/hardware/grillo-pulse/quick-start)
 
-## Other products
+## Coming soon
 
-Additional product guides will be added here as they become available. Grillo One documentation is currently under review; contact [Grillo Support](/support/contact) for the instructions applicable to your sensor.
+### Grillo One
+
+Setup and operating documentation for Grillo One is being prepared.
+
+[View the Grillo One placeholder →](/hardware/grillo-one)
+
+### Grillo Slide
+
+Product information, setup instructions, and availability details for Grillo Slide will be published when ready.
+
+[View the Grillo Slide placeholder →](/hardware/grillo-slide)

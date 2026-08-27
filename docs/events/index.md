@@ -1,54 +1,38 @@
 ---
-sidebar_position: 4
-title: Events
+title: Earthquake Monitoring
 ---
 
-# Events & Detection
+# Earthquake Monitoring
 
-Grillo Cloud's earthquake detection system automatically identifies seismic events from your network and alerts you in real-time.
+Earthquake Monitoring, powered by SISTEM, is a Grillo Platform module for real-time earthquake detection, event cataloging, and earthquake early-warning workflows. It uses data from the sensor networks managed in Platform.
 
-:::info Premium Feature
-Event detection is available as an add-on. [Contact sales](https://grillo.io) for pricing.
+Availability and alert delivery depend on the organization's deployment.
+
+## Events
+
+The current Events interface supports:
+
+- Events for the selected seismic network
+- Start and end date filtering
+- Sorting by time or magnitude
+- Pagination
+- Table and map views
+- Event location, magnitude, depth, and issue time
+- Associated picks and amplitudes when available
+- Refresh when a new event notification arrives
+
+[Use the event catalog →](/events/event-catalog)
+
+## Live
+
+The current Live page is a simulation and visualization tool built with mock event and station data. It must not be treated as an operational real-time warning display.
+
+[Use the Live simulation →](/events/live-map)
+
+:::warning Not a protective-action authority
+Do not rely on the Live simulation as an official public warning source. Earthquake detection and early warning have unavoidable uncertainty and blind-zone limitations. Follow instructions from the responsible local authorities.
 :::
 
-## Live Map
+## Availability
 
-Watch earthquakes unfold in real-time with the Live Map. See station detections as they happen and visualize P and S wave propagation as expanding circles from the epicenter.
-
-![Live Map](/img/screenshots/11-live-map.png)
-
-[Live Map guide →](/events/live-map)
-
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| [Live Map](/events/live-map) | Real-time visualization of detections and wave propagation |
-| [Event Catalog](/events/event-catalog) | Searchable database of all detected earthquakes |
-| [Event Details](/events/event-details) | Magnitude, location, depth, and waveform data |
-| [Alerts](/events/alerts) | Email, webhook, and API notifications |
-| [Data Export](/events/data-export) | CSV, JSON, QuakeML, and KML formats |
-
-## How it works
-
-```
-Sensor Data → Detection Algorithm → Event Processing → Alerts & Catalog
-```
-
-[How detection works →](/events/how-detection-works)
-
-## Requirements
-
-| Requirement | Minimum | Recommended |
-|-------------|---------|-------------|
-| Sensors | 4 | 10+ |
-| Coverage | 10 km radius | 50+ km radius |
-| Online sensors | 3+ | 80%+ |
-| Location accuracy | 100m | 10m |
-
-## Getting started
-
-1. [Contact sales](https://grillo.io) to enable Events for your network
-2. Ensure sensors have accurate locations configured
-3. Enable detection in Network Settings
-4. Configure [alert thresholds](/events/alerts/alert-configuration)
+Module configuration, alert delivery, exports, and integrations depend on the deployment. Self-service email, SMS, webhook, API-key, and export controls are not currently available in the Platform interface.

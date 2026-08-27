@@ -1,51 +1,49 @@
 ---
 sidebar_position: 1
 slug: /
-title: Welcome to Grillo Docs
+title: Grillo Documentation
 ---
 
-# Welcome to Grillo Documentation
+# Grillo Documentation
 
-Grillo provides affordable, IoT-enabled seismic sensors that empower communities and organizations to build their own earthquake monitoring networks.
+Set up Grillo seismic sensors, manage them in Grillo Platform, and understand the earthquake information produced by your network.
 
-## Two ways to use Grillo
+<div className="docs-journey-grid">
+  <div className="docs-journey-card">
+    <h2>Install a Grillo Pulse</h2>
+    <p>Identify your hardware, claim the sensor, prepare connectivity, install it, and verify that it is reporting.</p>
+    <a href="/hardware/grillo-pulse/quick-start">Start the Pulse guide →</a>
+  </div>
+  <div className="docs-journey-card">
+    <h2>Set up Grillo Platform</h2>
+    <p>Create an account and organization, create a seismic network, and claim your first sensor.</p>
+    <a href="/dashboard">Start the Platform guide →</a>
+  </div>
+  <div className="docs-journey-card">
+    <h2>Use Platform modules</h2>
+    <p>Explore Earthquake Monitoring and learn about modules planned for other monitoring applications.</p>
+    <a href="/events">Explore Earthquake Monitoring →</a>
+  </div>
+</div>
 
-Grillo supports two deployment modes — choose based on your needs:
+:::note Current scope
+These docs cover Grillo Pulse and the hosted Grillo Platform at [cloud.grillo.io](https://cloud.grillo.io). Grillo One is being reviewed separately. Documentation for a local Platform deployment will be added when that product is ready.
+:::
 
-- **[Full Cloud](/getting-started/deployment-modes#mode-1-full-cloud-grillo-cloud-handles-everything)** — Grillo Cloud ingests all data and handles earthquake detection, alerting, and visualization. Ideal for turnkey deployments.
-- **[Hybrid (Cloud + On-Premise)](/getting-started/deployment-modes#mode-2-hybrid-cloud-monitoring--on-premise-seismic-processing)** — Use Grillo Cloud for device monitoring, but send seismic data to your own server for processing with Earthworm, MiniSEED, or other tools via [coap2seis](/guides/on-premise-integration).
+## New installation checklist
 
-[Learn more about deployment modes](/getting-started/deployment-modes)
+1. Confirm the model, hardware revision, and connectivity variant on your order or device label.
+2. [Create your Platform account](/dashboard/account/creating-account).
+3. Create or select an organization.
+4. [Create a seismic network](/dashboard/networks/creating-network).
+5. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID.
+6. Follow the installation guide for your exact sensor variant.
+7. Verify its status, last-seen time, connectivity, and power information in Platform.
 
-## What you'll find here
-
-This documentation covers everything you need to get started with Grillo's earthquake monitoring ecosystem:
-
-- **[Getting Started](/getting-started)** - New to Grillo? Start here for an overview and setup guides
-- **[Hardware Setup](/hardware/grillo-one)** - Detailed guides for Grillo One and Grillo Pulse sensors
-- **[Dashboard Guide](/dashboard)** - Learn to use the Grillo Cloud platform at cloud.grillo.io
-- **[Events & Alerts](/events)** - Configure earthquake detection and real-time alerts
-- **[On-Premise Integration](/guides/on-premise-integration)** - Send seismic data to your own server with coap2seis
-- **[API Reference](/api)** - Integrate Grillo data into your applications
-
-## Quick links
-
-| I want to... | Go to... |
-|--------------|----------|
-| Set up my new Grillo One sensor | [Grillo One Setup Guide](/hardware/grillo-one) |
-| Set up my new Grillo Pulse sensor | [Grillo Pulse Setup Guide](/hardware/grillo-pulse) |
-| Create an account on the dashboard | [Creating an Account](/dashboard/account/creating-account) |
-| Add a sensor to my network | [Adding a Sensor](/dashboard/sensors/adding-sensor) |
-| Use Grillo Cloud for everything | [Full Cloud Mode](/getting-started/deployment-modes#mode-1-full-cloud-grillo-cloud-handles-everything) |
-| Send seismic data to my own server | [On-Premise Integration](/guides/on-premise-integration) |
-| View detected earthquakes | [Event Catalog](/events/event-catalog) |
-| Integrate with the API | [API Overview](/api) |
+:::warning Verify hardware before applying power
+Pulse power and USB requirements vary by hardware revision. Do not use a generic power supply or assume USB can power the sensor. Follow the documentation supplied with your unit or contact Grillo Support if its revision-specific instructions are unavailable.
+:::
 
 ## Need help?
 
-- Check our [FAQ](/support/faq) for common questions
-- [Contact Support](/support/contact) for additional assistance
-
----
-
-*Looking for the main Grillo website? Visit [grillo.io](https://grillo.io)*
+Read the [support FAQ](/support/faq) or [contact Grillo Support](/support/contact). Include the Device ID, hardware revision, connectivity variant, and a description of what you see in Platform.

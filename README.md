@@ -1,64 +1,69 @@
 # Grillo Docs
 
-Documentation site at [docs.grillo.io](https://docs.grillo.io). Covers hardware setup, dashboard usage, EEW concepts, and API reference for the Grillo sensor ecosystem. Built with Docusaurus 3.9, available in English and French.
+English documentation for [docs.grillo.io](https://docs.grillo.io), covering Grillo products, hosted Grillo Platform and its modules, seismic concepts, and support.
 
-## 🚀 Quick Start
-
-```bash
-npm install
-npm run start             # Dev server at http://localhost:3000
-npm run start -- --locale fr  # Start in French
-npm run build             # Build all locales
-```
-
-## 📂 Content Structure
-
-```
-docs/                     # English documentation (default)
-├── getting-started/      # Setup guides
-├── hardware/             # Pulse and One sensor docs
-├── dashboard/            # Cloud dashboard usage
-├── events/               # Seismic event documentation
-├── concepts/             # EEW technical concepts
-├── api/                  # API reference
-└── support/              # Troubleshooting
-
-i18n/fr/                  # French translations (mirrors English structure)
-```
-
-See [SITE.md](SITE.md) for a complete visual tree of all pages.
-
-## 🌐 Localization
-
-| Language | Source | Status |
-|----------|--------|--------|
-| English | `docs/` | Default |
-| French | `i18n/fr/docusaurus-plugin-content-docs/current/` | Translation |
-
-French files must mirror the English directory structure exactly. Build generates both locales.
-
-## 🛠️ Development
+## Quick start
 
 ```bash
-npm run start             # Dev server with hot reload
-npm run build             # Production build (both locales)
-npx kill-port 3000        # If port is in use
+npm ci
+npm run start
 ```
 
-### Image Guidelines
+The local site runs at `http://localhost:3000`.
 
-- Landscape images: 800px wide
-- Portrait images: 800px tall
+## Checks
 
-## 🚀 Deployment
+```bash
+npm run typecheck
+npm run build
+```
 
-Deployed to GitHub Pages. Push to main triggers build and deploy.
+The production build fails on broken internal links.
 
-## 🔗 Related Repos
+## Content structure
 
-| Repo | What It Documents |
-|------|------------------|
-| [grillo-firmware-pulse](../grillo-firmware-pulse) | Pulse sensor hardware setup and configuration |
-| [grillo-firmware-one](../grillo-firmware-one) | One sensor hardware setup and configuration |
-| [grillo-cloud-frontend](../grillo-cloud-frontend) | Dashboard features and usage |
-| [grillo-web](../grillo-web) | Public website that links to these docs |
+```text
+docs/
+├── getting-started/      # Journey selection and ecosystem overview
+├── hardware/             # Product-specific hardware documentation
+│   └── grillo-pulse/
+├── dashboard/            # Hosted Grillo Platform
+├── events/               # Earthquake Monitoring module
+├── modules/              # Current and upcoming Platform modules
+├── concepts/             # Seismic and EEW background
+└── support/              # FAQ and contact
+```
+
+The **Products** sidebar level is intentionally generic. Add future product families as nested sections rather than flattening every device into top-level navigation. Monitoring applications belong under **Grillo Platform → Modules**, with separate documentation for each workflow.
+
+See [SITE.md](SITE.md) for the supported navigation.
+
+## Content rules
+
+- Document only behavior verified against the implementing repository and target release.
+- Write for sensor owners and Platform operators; keep internal hardware and firmware implementation details out of public guides.
+- Treat `grillo-web` as product-positioning context, not an electrical or API authority.
+- Use **claim sensor**, **Device ID**, **station code**, **organization**, and **network** consistently with Grillo Platform.
+- Do not publish planned controls, placeholder values, unapproved warranty terms, or an API without a deployed contract.
+- Keep documentation English-only until the content and translation process are stable.
+
+## Images
+
+- Use current product and Platform images only.
+- Add descriptive alt text.
+- Keep interface text readable at common documentation widths.
+- Avoid placeholder diagrams in published pages.
+
+## Related repositories
+
+| Repository | Documentation relationship |
+|---|---|
+| `../grillo-sensor-pulse` | Pulse hardware and firmware source of truth |
+| `../grillo-cloud-frontend` | Current implementation of hosted Grillo Platform |
+| `../grillo-client-backend` | Earthquake Monitoring processing |
+| `../grillo-cloud-backend` | Device-health ingestion |
+| `../grillo-web` | Public product positioning |
+
+## Deployment
+
+GitHub Actions builds and deploys the site to GitHub Pages after changes reach `main`.

@@ -1,283 +1,100 @@
 ---
-sidebar_position: 5
 title: Data Quality
 ---
 
-# Data Quality
+# Seismic Data Quality
 
-Understanding and ensuring good seismic data quality from your Grillo sensors.
+Data quality describes whether a recording is complete, correctly timed, correctly identified, and suitable for its intended use. A waveform can look clean while still having incorrect timing or metadata.
 
-## What is data quality?
+## Quality dimensions
 
-Data quality refers to how well your seismic recordings represent actual ground motion, free from noise and artifacts.
+| Dimension | Questions to ask |
+|---|---|
+| Completeness | Are expected samples present without unexplained gaps or duplicates? |
+| Timing | Are timestamps synchronized, monotonic, and accurate enough for the application? |
+| Noise | Can target signals be distinguished from ambient and instrument noise? |
+| Calibration | Are counts convertible to physical units using a known response? |
+| Orientation | Are channel axes and sensor level documented correctly? |
+| Metadata | Are network, station, location, coordinates, elevation, and sample rate correct? |
+| Dynamic range | Does the channel resolve weak motion without clipping strong motion? |
 
-### Good quality data
+Quality is application-specific. A channel useful for strong local shaking may be too noisy for small distant events, while a sensitive geophone may clip motion that an accelerometer records correctly.
 
-- Clear earthquake signals when events occur
-- Low background noise
-- Consistent, continuous recording
-- Accurate timing
+## Common noise sources
 
-### Poor quality data
+### Environmental
 
-- Excessive noise obscuring signals
-- Gaps in recording
-- Timing errors
-- Artifacts from installation issues
+- Wind and pressure changes
+- Ocean-generated microseisms
+- Rain and water flow
+- Temperature changes
+- Animals and vegetation interacting with the installation
 
-## Why quality matters
+### Human activity
 
-### For earthquake detection
+- Traffic and rail
+- Machinery, HVAC, pumps, and generators
+- Construction
+- Footsteps, doors, and handling
 
-| Quality level | Detection capability |
-|---------------|---------------------|
-| High quality | Detect smaller events, accurate parameters |
-| Medium quality | Detect moderate events, some errors |
-| Poor quality | Miss events, false triggers, wrong parameters |
+### Installation and system artifacts
 
-### For early warning
+- Loose or flexible mounting
+- Incorrect leveling or orientation
+- Cable movement or strain
+- Electrical interference or poor grounding
+- Network outages and queue overflows
+- Clock steps, drift, or loss of synchronization
+- Incorrect sample-rate or station metadata
 
-Fast, accurate detection requires:
-- Clear P-wave onsets
-- Low false trigger rate
-- Reliable timing
+## Establish a baseline
 
-### For research
+After installation, collect enough quiet and active periods to represent normal site behavior. Preserve:
 
-Scientific applications need:
-- Consistent data characteristics
-- Documented installation
-- Known instrument response
+- Representative waveform plots
+- Data completeness
+- Noise spectra or power spectral density where available
+- Timing-source status
+- Typical daily and weekly patterns
+- Known machinery schedules and site activity
 
-## Noise sources
+A baseline makes later changes easier to detect. Compare a station with its own history as well as with nearby stations; two sites should not be assumed to have identical noise.
 
-### Natural noise
-
-| Source | Characteristics |
-|--------|-----------------|
-| Wind | Variable, affects exposed sites |
-| Ocean waves (microseisms) | Continuous, low frequency |
-| Weather | Rain, thunder |
-| Biological | Animals near sensor |
-
-### Anthropogenic (human-caused) noise
-
-| Source | Characteristics |
-|--------|-----------------|
-| Traffic | Variable by time of day |
-| Machinery | Often periodic |
-| Construction | Intermittent, intense |
-| HVAC | Continuous when operating |
-| Walking | Impulsive, irregular |
-
-### Sensor/installation noise
-
-| Source | Characteristics |
-|--------|-----------------|
-| Poor coupling | Resonances, weak signal |
-| Loose mounting | Spikes, instability |
-| Tilting | DC offset changes |
-| Electronics | High-frequency noise |
-
-## Assessing quality
-
-### Visual inspection
-
-Look at waveforms for:
-- Background noise level
-- Unusual patterns
-- Gaps or spikes
-- Consistency
-
-### Quality metrics
-
-Common measures:
-
-| Metric | Description |
-|--------|-------------|
-| RMS noise | Root-mean-square of background |
-| PSD | Power spectral density |
-| Data completeness | Percentage of expected data |
-| Timing quality | Clock accuracy |
-
-### Comparative analysis
-
-Compare sensors:
-- Similar sites should have similar noise
-- Outliers indicate problems
-- Consistent characteristics across network
-
-## Improving data quality
-
-### Site improvements
-
-1. **Move away from noise sources**
-   - Relocate sensor if possible
-   - Address source if controllable
-
-2. **Better coupling**
-   - Direct contact with solid surface
-   - Remove soft materials underneath
-
-3. **Environmental control**
-   - Stable temperature
-   - Protected from drafts
-   - Away from direct sunlight
-
-### Installation improvements
-
-1. **Level the sensor**
-   - Use bubble level
-   - Adjust mounting
-
-2. **Secure mounting**
-   - No wobble
-   - Won't shift over time
-
-3. **Cable management**
-   - No tension on sensor
-   - Protected from disturbance
-
-### Operational practices
-
-1. **Regular monitoring**
-   - Check data quality dashboards
-   - Compare to baseline
-
-2. **Prompt issue resolution**
-   - Investigate anomalies
-   - Fix problems quickly
-
-3. **Documentation**
-   - Record installation details
-   - Note any changes
-
-## Common quality issues
-
-### High noise floor
-
-**Symptoms:** Background level higher than expected
-
-**Possible causes:**
-- HVAC or machinery nearby
-- Traffic vibration
-- Poor installation site
-- Electrical interference
-
-**Solutions:**
-- Relocate sensor
-- Address noise source
-- Improve installation
-
-### Spikes/glitches
-
-**Symptoms:** Sudden jumps in data
-
-**Possible causes:**
-- Loose sensor
-- Cable issues
-- Electrical interference
-- Nearby impacts
-
-**Solutions:**
-- Secure sensor
-- Check cables
-- Shield from interference
-- Identify impact source
+## Diagnose a problem
 
 ### Data gaps
 
-**Symptoms:** Missing data periods
+Check power, device uptime, local connectivity, server ingestion, and whether queued data was dropped. Determine whether the sensor stopped sampling or only stopped transmitting.
 
-**Possible causes:**
-- Network connectivity issues
-- Power outages
-- Sensor malfunction
-- Server issues
+### Spikes or steps
 
-**Solutions:**
-- Improve network reliability
-- Add power backup
-- Check sensor health
-- Contact support
+Check handling, loose mounts, cable impacts, power events, clock corrections, and nearby impulsive activity. Compare the same timestamp across nearby stations.
 
-### High-frequency noise
+### Elevated or periodic noise
 
-**Symptoms:** Excessive noise at high frequencies
+Compare timing with machinery, traffic, weather, and occupancy. Inspect spectra to identify stable frequencies and harmonics. Relocate or isolate the source when practical rather than filtering blindly.
 
-**Possible causes:**
-- Electrical interference
-- Sensor electronics
-- Nearby equipment
+### Clipping or flat-topped signals
 
-**Solutions:**
-- Check power source
-- Add filtering (if available)
-- Relocate sensor
+Check channel range, gain, sensor orientation, and installation. Clipped samples cannot be recovered by later processing.
 
-## Quality and network performance
+### Timing anomalies
 
-### Detection threshold
+Compare arrival times across stations and review time-source telemetry. Timing quality is essential for association and location even when individual waveforms look reasonable.
 
-Higher noise = higher detection threshold
-- Good quality sites detect M2-3
-- Noisy sites may only detect M4+
+## Quality-control practice
 
-### Location accuracy
+1. Monitor completeness and timing continuously.
+2. Review noise and waveform examples on a regular schedule appropriate to the network.
+3. Alert on meaningful changes from each station's baseline.
+4. Record maintenance and configuration changes.
+5. Exclude or down-weight unsuitable channels in processing rather than hiding problems.
+6. Revalidate after relocation, firmware changes, power work, or antenna changes.
 
-Quality affects location:
-- Clear arrivals = precise timing
-- Noisy data = uncertain picks
-- Network average determines accuracy
+Grillo Platform currently emphasizes device health rather than full waveform quality analysis. Use the destination seismic system and deployment-specific tooling for spectra, calibration, completeness, and detailed waveform review.
 
-### False triggers
+## Further reading
 
-Noise causes false triggers:
-- Looks like earthquake signal
-- Wastes processing resources
-- May cause false alerts
-
-## Monitoring quality over time
-
-### Establish baseline
-
-When sensor is installed:
-- Record typical noise levels
-- Document expected characteristics
-- Set quality thresholds
-
-### Track changes
-
-Monitor for:
-- Increasing noise (new source?)
-- Sudden changes (installation issue?)
-- Seasonal variations (weather, HVAC)
-
-### Regular review
-
-Schedule periodic review:
-- Weekly spot checks
-- Monthly quality reports
-- Quarterly comprehensive review
-
-## Quality vs quantity trade-off
-
-### Dense networks
-
-More sensors can compensate for some quality issues:
-- Redundancy covers gaps
-- Bad sensors can be excluded
-- Statistics improve with numbers
-
-### Minimum quality standards
-
-Even in dense networks, maintain minimums:
-- Sensors must detect target events
-- Timing must be accurate
-- Data must be usable
-
-## Related guides
-
+- [EarthScope: MUSTANG Quality Assurance](https://service.iris.edu/mustang/)
 - [Sensor placement](/concepts/sensor-placement)
-- [Physical installation - Grillo One](/hardware/grillo-one/physical-installation)
-- [Troubleshooting](/hardware/grillo-one/troubleshooting)
+- [Pulse troubleshooting](/hardware/grillo-pulse/troubleshooting)

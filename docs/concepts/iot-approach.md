@@ -1,242 +1,91 @@
 ---
-sidebar_position: 2
-title: The IoT Approach
+title: Connected Sensor Networks
 ---
 
-# The IoT Approach to Seismology
+# Connected Sensor Networks
 
-How Internet of Things (IoT) technology is revolutionizing earthquake monitoring.
+Connected sensing combines compact instruments, standard communications, remote health telemetry, and centralized processing. It can make dense deployments practical, but connectivity does not replace good instrumentation or network design.
 
-## Traditional seismology challenges
+## What connected stations enable
 
-### High costs
+- Remote inventory and health monitoring
+- Rapid identification of power and communications outages
+- Real-time or near-real-time data delivery
+- Centralized station metadata
+- Incremental network expansion
+- Automated processing across many stations
 
-Traditional seismic equipment:
-- Research-grade sensors: $10,000-$100,000+
-- Professional installation required
-- Ongoing maintenance costs
-- Specialized expertise needed
+These benefits depend on secure operations, reliable power, correct timing, and a maintained data path from the field to its destination.
 
-### Limited access
+## Instrument choice still matters
 
-Seismic monitoring has been restricted to:
-- Government agencies
-- Research institutions
-- Well-funded organizations
+Different sensing technologies serve different objectives:
 
-### Sparse networks
+- MEMS accelerometers are well suited to strong motion and can provide wide dynamic range in compact systems.
+- Geophones and short-period seismometers improve sensitivity to weaker local and regional signals over their useful frequency range.
+- Broadband instruments support weak and long-period observations required by many research networks.
 
-Due to costs:
-- Limited number of stations
-- Large gaps in coverage
-- Rural/developing areas underserved
+Grillo Pulse combines a vertical geophone with a triaxial MEMS accelerometer. A mixed network can also combine Pulse with other station types, provided processing uses correct responses, sample rates, orientations, and channel metadata.
 
-## The IoT revolution
+Avoid broad labels such as “consumer-grade” or fixed magnitude thresholds. Sensor usefulness depends on noise, coupling, gain, frequency response, distance, geology, and the target signal—not price category alone.
 
-### MEMS technology
+## Communications trade-offs
 
-Micro-Electro-Mechanical Systems (MEMS) sensors:
-- Small, inexpensive accelerometers
-- Mass-produced for smartphones
-- Sufficient sensitivity for earthquakes
-- Continuous improvement
+### Ethernet
 
-### Cloud connectivity
+- Stable wired link where infrastructure exists
+- Straightforward DHCP and firewall management
+- Cable routing and surge/environmental protection may be required
 
-Modern IoT sensors connect via:
-- WiFi networks
-- Cellular (LTE/4G)
-- Always-on connection
-- Real-time data streaming
+### Cellular
 
-### Affordable hardware
+- Useful where wired infrastructure is unavailable
+- Depends on carrier bands, coverage, SIM lifecycle, APN, data allowance, and antenna placement
+- Carrier-grade NAT favors device-initiated outbound communication
 
-Cost comparison:
+### Wi-Fi
 
-| Component | Traditional | IoT (Grillo) |
-|-----------|-------------|--------------|
-| Sensor | $10,000+ | ~$100 |
-| Installation | Professional | DIY |
-| Connectivity | Dedicated | Internet |
-| Maintenance | High | Low |
+- Convenient at managed sites
+- Depends on credentials, radio coverage, interference, and access-point policy
+- Credential recovery can require site access if not designed carefully
 
-## Benefits of IoT seismology
+No communication path should be assumed reliable without site testing. Network operations should distinguish “the sensor is sampling” from “the server is receiving data.”
 
-### Accessibility
+## Edge and central processing
 
-Anyone can deploy sensors:
-- Schools and universities
-- Community groups
-- Businesses
-- Homeowners
+Field devices can batch samples, report health, and recover local links. Central services can combine stations, retain data, monitor fleet status, and detect events.
 
-### Density
+Design decisions include:
 
-Lower costs enable:
-- More sensors per area
-- Better coverage
-- Improved detection
-- Higher accuracy
+- How much data is buffered during an outage
+- Whether real-time latency or complete recovery has priority
+- How firmware and configuration changes are authenticated
+- How station identity and metadata are managed
+- How clocks recover after power or network loss
+- How operators observe failures across the complete pipeline
 
-### Scalability
+## Security and maintenance
 
-Easy to expand:
-- Add sensors incrementally
-- No infrastructure buildout
-- Rapid deployment
-- Flexible growth
+A connected station is an operational system. Plan for:
 
-### Real-time data
+- Unique device identity
+- Outbound network policy
+- Credential and SIM management
+- Signed and hardware-compatible firmware releases
+- Variant-safe updates and rollback testing
+- Monitoring and incident response
+- Physical security and controlled service access
+- Documented ownership for field and cloud components
 
-Cloud-connected sensors provide:
-- Immediate data availability
-- Remote monitoring
-- Automated detection
-- Fast alerts
+## Grillo architecture
 
-## Grillo's IoT approach
+Grillo Platform manages organizations, networks, claimed devices, station metadata, and device-health information. Its Earthquake Monitoring module, powered by SISTEM, processes seismic observations into events for configured deployments.
 
-### Sensor design
-
-Grillo sensors are built for:
-- Easy installation
-- Reliable operation
-- Remote management
-- Cost-effectiveness
-
-### Cloud platform
-
-Grillo Cloud provides:
-- Centralized management
-- Automatic processing
-- Event detection
-- Alert delivery
-
-### Community building
-
-Enabling:
-- Citizen science participation
-- Local earthquake awareness
-- Research collaboration
-- Data sharing
-
-## Use cases enabled by IoT
-
-### Community early warning
-
-**Previously impossible:**
-- Too expensive for communities
-- Required institutional backing
-
-**Now achievable:**
-- Affordable community networks
-- Self-managed systems
-- Local ownership
-
-### Dense urban monitoring
-
-**Traditional approach:**
-- Few expensive stations
-- Sparse coverage
-
-**IoT approach:**
-- Many affordable sensors
-- Building-level coverage
-- Block-by-block monitoring
-
-### Developing regions
-
-**Traditional barriers:**
-- High cost prohibitive
-- Infrastructure requirements
-
-**IoT solution:**
-- Cellular connectivity
-- Low-cost sensors
-- Rapid deployment
-
-### Research applications
-
-**New possibilities:**
-- Large-N experiments
-- Disposable deployments
-- Citizen science data
-- Hyperlocal studies
-
-## Data quality considerations
-
-### MEMS vs traditional sensors
-
-| Aspect | MEMS | Traditional |
-|--------|------|-------------|
-| Noise floor | Higher | Lower |
-| Dynamic range | Narrower | Wider |
-| Frequency response | Limited | Broad |
-| Sensitivity | Lower | Higher |
-
-### When IoT sensors excel
-
-- Detecting moderate to large earthquakes (M3+)
-- Dense network deployments
-- Urban environments
-- Real-time applications
-
-### When traditional sensors needed
-
-- Detecting very small earthquakes
-- Research-quality recordings
-- Quiet site requirements
-- Very distant events
-
-### Complementary deployment
-
-Best results combine:
-- IoT sensors for density and coverage
-- Traditional sensors for quality and sensitivity
-- Optimal use of both technologies
-
-## The future of IoT seismology
-
-### Trends
-
-**Improving sensors:**
-- Lower noise MEMS
-- Better frequency response
-- Lower power consumption
-
-**Better connectivity:**
-- 5G networks
-- Satellite IoT
-- Mesh networking
-
-**Smarter processing:**
-- Edge computing
-- Machine learning
-- Automated quality control
-
-### Expanding applications
-
-- Structural health monitoring
-- Induced seismicity detection
-- Volcanic monitoring
-- Landslide detection
-
-## Getting involved
-
-### Deploy Grillo sensors
-
-- [Get Grillo sensors](https://grillo.io)
-- [Setup guides](/getting-started)
-- Join the monitoring community
-
-### Contribute data
-
-- Share for research
-- Support early warning
-- Help map seismicity
+Customer integrations and local deployment models should receive their own operational documentation rather than being treated as automatic properties of the sensor.
 
 ## Related concepts
 
 - [Seismic networks](/concepts/seismic-networks)
-- [Data quality](/concepts/data-quality)
 - [Sensor placement](/concepts/sensor-placement)
+- [Data quality](/concepts/data-quality)
+- [Earthquake early warning](/concepts/earthquake-early-warning)

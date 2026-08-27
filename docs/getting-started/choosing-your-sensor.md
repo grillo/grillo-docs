@@ -1,138 +1,40 @@
 ---
-sidebar_position: 3
 title: Choosing Your Sensor
 ---
 
 # Choosing Your Sensor
 
-Grillo offers two sensor models to fit different deployment scenarios. This guide will help you choose the right one for your needs.
-
-## Quick comparison
-
-| Feature | Grillo One | Grillo Pulse |
-|---------|------------|--------------|
-| **Sensors** | MEMS accelerometer (3 channels) | MEMS accelerometer + geophone (4 channels) |
-| **Detection range** | Small to strong motion | Micro-seismic to strong motion |
-| **Connectivity** | WiFi / Ethernet | WiFi / Cellular (LTE) |
-| **Power** | USB-C | DC / solar + battery backup |
-| **Installation** | Indoor | Indoor / Outdoor |
-| **Setup complexity** | Simple | Moderate |
-
-## Grillo One
-
-<img src="/img/grillo-one-case.jpg" alt="Grillo One sensor" style={{maxWidth: '800px', width: '100%'}} />
-
-The Grillo One uses a low-noise MEMS accelerometer (3 channels) to capture ground motion from small to strong events.
-
-### Ideal for
-
-- **Fixed indoor installations** - Buildings with reliable power and network
-- **Structural monitoring** - Building vibration and ground motion detection
-- **Strong motion recording** - Capturing local and regional earthquakes
-
-### Connectivity options
-
-1. **WiFi** - Connect to your existing wireless network
-2. **Ethernet** - Direct wired connection for maximum reliability
-
-### Requirements
-
-- USB-C power source
-- WiFi network (2.4 GHz) or Ethernet connection
-- Indoor installation location
-- Solid mounting surface (floor or wall)
-
-### Advantages
-
-- Simplest setup process
-- Lower cost
-- Reliable wired option available
-- Ideal for most indoor use cases
-
-[View Grillo One Setup Guide](/hardware/grillo-one)
-
----
+This documentation currently provides a verified-documentation track for **Grillo Pulse**. The Grillo One documentation and current product specifications will be reviewed separately.
 
 ## Grillo Pulse
 
-<img src="/img/grillo-pulse-case.jpg" alt="Grillo Pulse sensor" style={{maxWidth: '800px', width: '100%'}} />
+Pulse combines:
 
-The Grillo Pulse combines the same low-noise MEMS accelerometer as the Grillo One with a vertical geophone, providing 4 channels of seismic data. This allows it to capture micro-seismic events up to strong shaking.
+- One vertical geophone channel
+- Three MEMS accelerometer channels
+- GNSS hardware for position/timebase development
+- Real-time device-health and seismic data transmission
+- Connectivity-specific cellular and Ethernet hardware variants
 
-### Ideal for
+Choose the variant specified for the site and integration. Wi-Fi hardware is present, but customer availability and fallback behavior depend on the shipping firmware and must not be assumed.
 
-- **Remote field sites** - Areas without WiFi coverage
-- **Seismic research** - High-sensitivity monitoring with geophone
-- **Outdoor installations** - Weather-resistant enclosure
-- **Temporary deployments** - Events, research campaigns
+Pulse is intended for network deployment and remote or field installations, subject to the enclosure and power system supplied with the order.
 
-### Connectivity options
+[Install a Grillo Pulse →](/hardware/grillo-pulse)
 
-1. **WiFi** - When available, uses less power than cellular
-2. **Cellular (LTE)** - Connect anywhere with cell coverage
+## Grillo One
 
-### Power options
+Grillo One is a MEMS strong-motion sensor commonly used with Ethernet or Wi-Fi. Its existing documentation is under review, so contact Grillo for the current setup procedure and specifications.
 
-The Pulse accepts DC power through a waterproof cable input:
+## Before ordering or deploying
 
-- **AC adapter** - Standard mains power with included adapter
-- **Solar panel** - For off-grid deployments
-- **Battery backup** - Internal battery maintains operation during outages
+Confirm with Grillo:
 
-### Requirements
+1. Required sensitivity and channels
+2. Indoor or outdoor installation
+3. Cellular, Ethernet, or Wi-Fi availability at the site
+4. Power and backup requirements
+5. Destination for waveform data
+6. Which Grillo Platform modules are required
 
-- DC power source (AC adapter or solar panel)
-- Cellular coverage (if using cellular mode)
-- SIM card with active data plan (for cellular)
-- Suitable mounting location
-
-### Advantages
-
-- Cellular connectivity for remote locations
-- Solar-compatible for off-grid sites
-- Battery backup for power outages
-- Weather-resistant design
-- Flexible deployment options
-
-<!-- TODO: Add supported carriers/bands -->
-
-[View Grillo Pulse Setup Guide](/hardware/grillo-pulse)
-
----
-
-## Decision guide
-
-### Choose Grillo One if:
-
-- You have reliable WiFi or Ethernet at your location
-- The sensor will be installed indoors
-- You want the simplest setup experience
-- You don't need cellular connectivity
-
-### Choose Grillo Pulse if:
-
-- You need to deploy in a location without WiFi
-- The installation may be outdoors
-- You need battery backup for power outages
-- You want flexibility to relocate the sensor
-
-## Can I use both?
-
-Yes! Many networks combine both sensor types for different purposes:
-
-- **Grillo Pulse** sensors in the field for early earthquake detection (high-sensitivity geophone captures events first)
-- **Grillo One** sensors at population centers for recording shaking intensity
-
-This combination works well for early warning systems: Pulse sensors detect earthquakes near the source, while One sensors measure the impact where people are located.
-
-Both sensor types work seamlessly together in the same network on Grillo Cloud.
-
-## Still unsure?
-
-If you're not sure which sensor is right for your deployment:
-
-1. Consider your **connectivity options** - Do you have reliable WiFi/Ethernet?
-2. Consider your **installation environment** - Indoor or outdoor?
-3. Consider your **power reliability** - Do you need battery backup?
-
-[Contact Grillo Support](/support/contact) for personalized recommendations.
+[Contact Grillo Support](/support/contact) for deployment guidance.

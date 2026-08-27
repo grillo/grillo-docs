@@ -1,221 +1,42 @@
 ---
-sidebar_position: 3
 title: Event Catalog
 ---
 
 # Event Catalog
 
-The event catalog is a searchable database of all earthquakes detected by your network.
+Open **Events** in Grillo Platform after selecting a seismic network.
 
-## Accessing the catalog
+![Event catalog in Grillo Platform](/img/screenshots/09-events.png)
 
-1. Navigate to your network
-2. Click **"Events"** in the sidebar
-3. The event catalog opens
+## Filter and refresh
 
-![Event catalog](/img/screenshots/09-events.png)
+Use the date-range control to choose start and end dates. Use the refresh button to request current results. Platform also refreshes the selected network's catalog when it receives a new event notification.
 
-## Catalog interface
+Results are returned in pages of up to 100 events.
 
-### Event list
+## Table view
 
-Events are displayed in a table with:
+The table shows:
 
-| Column | Description |
-|--------|-------------|
-| Date/Time | When the event occurred |
-| Magnitude | Event magnitude |
-| Location | Epicenter location |
-| Depth | Hypocenter depth |
-| Status | Confirmed/Preliminary |
+- Event ID
+- Issue time
+- Magnitude
+- Location coordinates
 
-### Sorting
+Select the Time or Magnitude heading to change sorting. Select an event to open its details.
 
-Click column headers to sort:
-- By date (newest/oldest)
-- By magnitude (largest/smallest)
-- By location (alphabetically)
+## Map view
 
-### Filtering
+Switch to map view to inspect event locations alongside sensors from the selected network. Selecting coordinates from an event can also move the interface to its map location.
 
-Filter events by:
-- Date range
-- Magnitude range
-- Location area
-- Event status
+## Network selection
 
-## Searching events
+Events are scoped to the selected network. If no results appear:
 
-### Date range
+1. Confirm the correct organization.
+2. Select the intended network.
+3. Widen the date range.
+4. Refresh the catalog.
+5. Confirm that the Earthquake Monitoring module is enabled and events exist for that network.
 
-1. Click the date picker
-2. Select start date
-3. Select end date
-4. Apply filter
-
-### Magnitude range
-
-1. Set minimum magnitude
-2. Set maximum magnitude (optional)
-3. Apply filter
-
-### Geographic area
-
-1. Click "Map filter"
-2. Draw a rectangle or polygon
-3. Only events in the area are shown
-
-### Quick filters
-
-Preset filters for common queries:
-- **Today** - Events from current day
-- **This week** - Last 7 days
-- **This month** - Last 30 days
-- **M3+** - Magnitude 3 and above
-- **M5+** - Magnitude 5 and above
-
-## Event details
-
-Click an event to view details:
-- Full event parameters
-- Station data
-- Waveforms
-- Location map
-
-[Event details guide →](/events/event-details)
-
-## Event parameters
-
-### Origin information
-
-| Parameter | Description |
-|-----------|-------------|
-| Origin time | When the earthquake occurred |
-| Latitude | Epicenter latitude |
-| Longitude | Epicenter longitude |
-| Depth | Depth below surface |
-| Location name | Nearest geographic reference |
-
-### Magnitude
-
-| Parameter | Description |
-|-----------|-------------|
-| Magnitude value | Size of the earthquake |
-| Magnitude type | How magnitude was calculated |
-| Uncertainty | Margin of error |
-
-### Quality metrics
-
-| Parameter | Description |
-|-----------|-------------|
-| Stations used | Number of sensors in solution |
-| Azimuthal gap | Angular coverage around event |
-| RMS | Residual fit quality |
-| Status | Automatic vs reviewed |
-
-## Catalog statistics
-
-View summary statistics:
-- Total events in period
-- Magnitude distribution
-- Events over time (histogram)
-- Geographic distribution
-
-## Export options
-
-### Export formats
-
-| Format | Best for |
-|--------|----------|
-| CSV | Spreadsheets, general analysis |
-| JSON | Programming, APIs |
-| QuakeML | Seismological software |
-| KML | Google Earth, mapping |
-
-### Exporting data
-
-1. Set your filters
-2. Click **"Export"**
-3. Choose format
-4. Download file
-
-### Export contents
-
-Exports include:
-- All events matching current filters
-- Full event parameters
-- Configurable columns
-
-## Automatic catalog updates
-
-The catalog updates automatically:
-- New events appear when detected
-- Existing events update if revised
-- Real-time refresh option available
-
-### Refresh settings
-
-| Option | Behavior |
-|--------|----------|
-| Auto-refresh | Updates every N seconds |
-| Manual refresh | Click to update |
-| Notifications | Alert on new events |
-
-## Working with the catalog
-
-### Reviewing events
-
-For quality control:
-1. Sort by most recent
-2. Review each new event
-3. Check location and magnitude
-4. Flag questionable events
-
-### Research queries
-
-For analysis:
-1. Set date range for study period
-2. Filter to area of interest
-3. Export data
-4. Analyze externally
-
-### Reporting
-
-For regular reports:
-1. Set up recurring filters
-2. Export at regular intervals
-3. Include in reports
-
-## Catalog retention
-
-<!-- TODO: Confirm actual retention periods -->
-
-| Tier | Retention |
-|------|-----------|
-| Standard | 1 year |
-| Premium | 5 years |
-| Archive | Available on request |
-
-## Integration
-
-### API access
-
-Query the catalog programmatically:
-- RESTful API endpoints
-- Real-time event feed
-- Historical queries
-
-[API documentation →](/api)
-
-### Webhook delivery
-
-Receive events automatically:
-- Configure webhook endpoint
-- New events pushed immediately
-- Full event data in payload
-
-## Related guides
-
-- [Event details](/events/event-details)
-- [Data export](/events/data-export)
-- [API integration](/events/alerts/api-integration)
+The current customer interface does not provide the CSV, JSON, QuakeML, or KML export workflow described by older documentation.

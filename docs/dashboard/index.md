@@ -1,120 +1,53 @@
 ---
-sidebar_position: 3
-title: Dashboard
+title: Grillo Platform
 ---
 
-# Grillo Cloud Dashboard
+# Grillo Platform
 
-The Grillo Cloud dashboard at [cloud.grillo.io](https://cloud.grillo.io) is your central hub for managing sensors, networks, and viewing seismic data.
+Grillo Platform at [cloud.grillo.io](https://cloud.grillo.io) is the hosted application for managing networks of Grillo sensors. Optional modules add workflows for specific monitoring applications.
 
-![Dashboard overview](/img/screenshots/03-networks.png)
+## What you can do
 
-## Key features
+- Create and switch between organizations
+- Invite organization members
+- Create FDSN-named seismic networks
+- Claim pre-registered sensors by Device ID
+- View sensors in table and map views
+- Edit station code and location metadata
+- Inspect connectivity, signal, power, battery, SIM, firmware, and last-seen information when reported by a sensor
+- Use enabled modules for real-time earthquake cataloging and early warning
 
-- **Account management** - Sign up, manage profile, security settings
-- **Organizations** - Create and manage teams
-- **Networks** - Build and configure seismic networks
-- **Sensors** - Monitor and configure your devices
-- **Events** - View detected earthquakes and alerts (premium feature)
+## First-sensor workflow
 
-## Dashboard hierarchy
+1. [Create an account](/dashboard/account/creating-account).
+2. Create or select an [organization](/dashboard/organizations).
+3. [Create a network](/dashboard/networks/creating-network).
+4. Select that network in Platform.
+5. [Claim the sensor](/dashboard/sensors/adding-sensor) using its Device ID and station code.
+6. [Add location metadata](/dashboard/sensors/configuring-sensor).
+7. Power and connect the sensor according to its hardware guide.
+8. [Verify its status](/dashboard/sensors/sensor-status).
 
-Understanding how Grillo Cloud is organized:
+## Platform modules
 
-```
-Account
-└── Organizations (you can belong to multiple)
-    └── Networks (seismic networks within an org)
-        └── Sensors (devices within a network)
-            └── Events (detected from network data)
-```
+Modules build on the sensors, networks, users, and metadata managed in Grillo Platform.
 
-## Getting started
+- **Earthquake Monitoring**, powered by SISTEM, supports real-time earthquake detection, cataloging, and early-warning workflows. Available views and alert delivery depend on the deployment.
+- **Structural Health Monitoring** is coming soon.
 
-### 1. Create an account
+[Explore Earthquake Monitoring →](/events)
 
-Sign up using Google, Microsoft, or email at [cloud.grillo.io](https://cloud.grillo.io).
+## Navigation
 
-[Account setup guide →](/dashboard/account/creating-account)
+The application sidebar contains:
 
-### 2. Set up your organization
+- **Networks** — create and select seismic networks
+- **Sensors** — table, map, details, claim, edit, and unclaim workflows
+- **Events** — event catalog for the selected network
+- **Live** — a visualization/simulation area; see [Live view](/events/live-map)
 
-Create an organization or join an existing one via invitation.
+The organization switcher is at the top of the sidebar. Account, Billing, Settings, language, and logout actions are in the user menu at the bottom.
 
-[Organizations guide →](/dashboard/organizations)
-
-### 3. Create a network
-
-Set up your first seismic network to start adding sensors.
-
-[Creating a network →](/dashboard/networks/creating-network)
-
-### 4. Add your sensors
-
-Register your Grillo devices and start collecting data.
-
-[Adding sensors →](/dashboard/sensors/adding-sensor)
-
-## Dashboard sections
-
-### Account
-Manage your personal account settings, security, and preferences.
-- [Creating an account](/dashboard/account/creating-account)
-- [Accepting invites](/dashboard/account/accepting-invites)
-- [Profile settings](/dashboard/account/profile-settings)
-- [Security](/dashboard/account/security)
-
-### Organizations
-Manage teams and access to seismic networks.
-- [Overview](/dashboard/organizations)
-- [Creating an organization](/dashboard/organizations/creating-org)
-- [Managing members](/dashboard/organizations/managing-members)
-- [User roles](/dashboard/organizations/user-roles)
-
-### Networks
-Configure and monitor your seismic networks.
-- [Overview](/dashboard/networks)
-- [Creating a network](/dashboard/networks/creating-network)
-- [Network settings](/dashboard/networks/network-settings)
-- [Best practices](/dashboard/networks/network-best-practices)
-
-### Sensors
-View, configure, and monitor your Grillo devices.
-- [Overview](/dashboard/sensors)
-- [Adding a sensor](/dashboard/sensors/adding-sensor)
-- [Map view](/dashboard/sensors/map-view)
-- [Table view](/dashboard/sensors/table-view)
-- [Sensor details](/dashboard/sensors/sensor-details)
-- [Configuring sensors](/dashboard/sensors/configuring-sensor)
-- [Station naming (FDSN)](/dashboard/sensors/station-naming)
-- [Location info](/dashboard/sensors/location-info)
-- [Sensor status](/dashboard/sensors/sensor-status)
-
-### Settings
-Configure dashboard preferences and integrations.
-- [Overview](/dashboard/settings)
-- [Notifications](/dashboard/settings/notifications)
-- [API keys](/dashboard/settings/api-keys)
-
-## Browser support
-
-Grillo Cloud dashboard works best in modern browsers:
-
-| Browser | Minimum Version |
-|---------|----------------|
-| Chrome | 90+ |
-| Firefox | 90+ |
-| Safari | 14+ |
-| Edge | 90+ |
-
-## Mobile access
-
-The dashboard is responsive and works on mobile devices. For the best experience on phones and tablets:
-- Use landscape mode for map views
-- Use portrait mode for tables and lists
-- Pinch to zoom on maps
-
-## Need help?
-
-- [FAQ](/support/faq)
-- [Contact support](/support/contact)
+:::note Module availability
+Not every organization has every Platform module enabled. The Settings page does not currently provide the API-key, webhook, or alert-rule management described by older versions of these docs.
+:::

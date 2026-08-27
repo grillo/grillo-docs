@@ -1,204 +1,66 @@
 ---
-sidebar_position: 1
 title: Seismic Networks
 ---
 
-# Understanding Seismic Networks
+# Seismic Networks
 
-A seismic network is a collection of sensors working together to monitor earthquake activity across a geographic area.
+A seismic network combines observations from multiple stations to detect, locate, and characterize earthquakes across an area.
 
-## What is a seismic network?
+## Why multiple stations matter
 
-A seismic network consists of:
-- **Multiple sensors** distributed across an area
-- **Central processing** to combine data
-- **Detection systems** to identify earthquakes
-- **Communication systems** to transmit data
+A single station can record ground motion, but one waveform normally cannot determine a unique earthquake origin. A network compares arrival times and amplitudes across stations.
 
-## Benefits of networked monitoring
+Multiple stations help a processing system:
 
-### Better than single sensors
+- Distinguish local noise from signals observed across an area
+- Associate arrivals with the same earthquake
+- Estimate origin time, latitude, longitude, and depth
+- Estimate magnitude from measurements at different distances
+- Continue operating when individual stations or links fail
 
-| Capability | Single sensor | Network |
-|------------|---------------|---------|
-| Detection | Limited area | Wide coverage |
-| Location | Cannot locate | Triangulation possible |
-| Accuracy | Lower | Higher with more stations |
-| Redundancy | Single point of failure | Continues if sensors fail |
-
-### What networks enable
-
-**Earthquake detection:**
-- Identify events from multiple stations
-- Reduce false positives
-- Detect smaller events
-
-**Earthquake location:**
-- Triangulate epicenter from arrival times
-- Estimate depth
-- Refine with more stations
-
-**Magnitude calculation:**
-- Average amplitude from multiple stations
-- More accurate estimates
-- Reduce site effects
-
-**Early warning:**
-- Detect P-waves quickly
-- Alert before S-waves arrive
-- Faster with dense networks
+More stations do not automatically produce better results. Site noise, timing, calibration, uptime, telemetry, and geographic distribution all affect network performance.
 
 ## Network geometry
 
-### Spacing considerations
+Stations should provide useful coverage around the earthquakes and assets of interest. A network concentrated on one side of an event generally constrains its location less well than stations distributed around it.
 
-| Spacing | Detection capability | Location accuracy |
-|---------|---------------------|-------------------|
-| Dense (1-10 km) | Very small events | Very high |
-| Moderate (10-50 km) | Small to moderate | Good |
-| Sparse (50-100 km) | Moderate events | Moderate |
-| Regional (100+ km) | Large events | Lower |
+Design depends on the objective:
 
-### Coverage patterns
+- **Regional cataloging** prioritizes broad, stable geographic coverage.
+- **Local seismicity studies** often require closer station spacing around a target area.
+- **Earthquake early warning** prioritizes rapid detection near likely source regions and reliable delivery toward exposed areas.
+- **Structural monitoring** places instruments according to the structure and engineering question, not only regional geometry.
 
-**Grid pattern:**
-- Even spacing
-- Uniform coverage
-- Good for general monitoring
+There is no universal spacing or minimum station count. Appropriate geometry depends on expected event sizes and depths, attenuation, local geology, ambient noise, sensor sensitivity, and the processing method. Validate a proposed design with a seismologist or network engineer.
 
-**Targeted pattern:**
-- Denser near faults
-- Sparser in low-risk areas
-- Efficient resource use
+## Station diversity
 
-**Perimeter pattern:**
-- Sensors around area of interest
-- Good for facility monitoring
-- Detects approaching events
+A network can combine different instruments:
 
-## Building effective networks
+- Broadband seismometers for weak and distant motion
+- Short-period geophones for local and regional signals
+- Strong-motion accelerometers for larger shaking
+- Dual-sensor stations such as Grillo Pulse
 
-### Minimum viable network
+Mixed networks can extend dynamic range and coverage, but processing needs correct station metadata, channel names, sample rates, orientation, timing, and instrument response.
 
-For basic earthquake detection:
-- 4+ sensors minimum
-- Reasonable geographic spread
-- Multiple sensors within detection range
+## Operating a network
 
-### Growing your network
+Reliable operations require more than installing hardware:
 
-Priorities when expanding:
-1. Fill coverage gaps
-2. Increase density in priority areas
-3. Add redundancy for reliability
-4. Extend geographic coverage
+1. Maintain accurate station coordinates, elevation, and identifiers.
+2. Monitor station uptime, timing, connectivity, and data completeness.
+3. Establish a noise baseline after installation.
+4. Record hardware, firmware, orientation, and site changes.
+5. Investigate correlated outages and changes in detection performance.
+6. Test the complete path from sensor to event processing and alert delivery.
 
-### Network design principles
+In Grillo Platform, an organization contains one or more named networks, and claimed sensors belong to a network. That administrative grouping helps scope access and processing, but it does not by itself guarantee scientifically adequate geometry.
 
-**Adequate density:**
-- Enough sensors to detect target events
-- Consider expected magnitudes
-- Account for attenuation
+## Further reading
 
-**Good geometry:**
-- Sensors surround area of interest
-- Avoid gaps in coverage
-- Consider azimuthal coverage
-
-**Data quality:**
-- Good installation sites
-- Reliable connectivity
-- Consistent sensor types
-
-## Traditional vs IoT networks
-
-### Traditional seismological networks
-
-| Aspect | Traditional |
-|--------|-------------|
-| Sensors | Research-grade, expensive |
-| Cost | High per station |
-| Deployment | Complex, professional |
-| Maintenance | Specialized |
-| Data | High quality |
-
-### IoT/MEMS networks (Grillo approach)
-
-| Aspect | IoT/MEMS |
-|--------|----------|
-| Sensors | Affordable, consumer-grade |
-| Cost | Low per station |
-| Deployment | Simple, plug-and-play |
-| Maintenance | Minimal |
-| Data | Good quality, higher noise |
-
-### Complementary approaches
-
-Modern networks often combine both:
-- Traditional sensors for high-quality backbone
-- IoT sensors for density and coverage
-- Best of both worlds
-
-## Network operations
-
-### Monitoring
-
-Regular activities:
-- Check sensor status daily
-- Review data quality weekly
-- Address offline sensors promptly
-- Monitor detection performance
-
-### Maintenance
-
-Periodic tasks:
-- Physical inspections
-- Firmware updates
-- Calibration checks
-- Site condition review
-
-### Expansion
-
-Growing the network:
-- Identify coverage needs
-- Select new sites
-- Deploy sensors
-- Validate performance
-
-## Real-world examples
-
-### Urban early warning
-
-**Goal:** Provide seconds of warning before strong shaking
-
-**Design:**
-- Dense network in urban area
-- 1-5 km sensor spacing
-- Focus on rapid detection
-- Integration with alert systems
-
-### Regional monitoring
-
-**Goal:** Catalog earthquakes across a region
-
-**Design:**
-- Moderate spacing (20-50 km)
-- Coverage of known fault zones
-- Balance detection and location
-- Long-term operation
-
-### Facility protection
-
-**Goal:** Protect critical infrastructure
-
-**Design:**
-- Sensors surrounding facility
-- Additional sensors at structure
-- Fast detection for automated response
-- Redundant connectivity
-
-## Related concepts
-
-- [The IoT approach](/concepts/iot-approach)
-- [Earthquake early warning](/concepts/earthquake-early-warning)
-- [Network best practices](/dashboard/networks/network-best-practices)
+- [USGS: Monitoring Earthquakes](https://www.usgs.gov/programs/earthquake-hazards/monitoring-earthquakes)
+- [EarthScope Consortium: Seismic Instrumentation](https://www.earthscope.org/education-and-outreach/instrumentation/)
+- [Create a network in Grillo Platform](/dashboard/networks/creating-network)
+- [Sensor placement](/concepts/sensor-placement)
+- [Data quality](/concepts/data-quality)

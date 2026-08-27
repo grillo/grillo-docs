@@ -1,159 +1,81 @@
 # Grillo Docs Site Map
 
-## Locales
+The documentation is currently English-only while the operational content is corrected and verified.
 
-| Locale | Label | URL Path |
-|--------|-------|----------|
-| English (default) | English | `/` |
-| French | Français | `/fr/` |
-
-## Site Structure
-
-```
-/                           # Introduction (English)
-├── getting-started/        # Getting Started
-│   ├── what-is-grillo
-│   └── choosing-your-sensor
-│
-├── hardware/               # Hardware
-│   ├── grillo-one/
-│   │   ├── whats-in-the-box
-│   │   ├── physical-installation
-│   │   ├── network-setup
-│   │   ├── provisioning
-│   │   └── troubleshooting
-│   │
-│   └── grillo-pulse/
-│       ├── whats-in-the-box
-│       ├── physical-installation
-│       ├── network-setup
-│       ├── sim-card-setup
-│       ├── provisioning
-│       └── troubleshooting
-│
-├── dashboard/              # Dashboard
-│   ├── account/
-│   │   ├── creating-account
-│   │   ├── accepting-invites
-│   │   ├── profile-settings
-│   │   └── security
-│   │
-│   ├── organizations/
-│   │   ├── creating-org
-│   │   ├── managing-members
-│   │   └── user-roles
-│   │
-│   ├── networks/
-│   │   ├── creating-network
-│   │   ├── network-settings
-│   │   └── network-best-practices
-│   │
-│   ├── sensors/
-│   │   ├── adding-sensor
-│   │   ├── map-view
-│   │   ├── table-view
-│   │   ├── sensor-details
-│   │   ├── configuring-sensor
-│   │   ├── station-naming
-│   │   ├── location-info
-│   │   └── sensor-status
-│   │
-│   └── settings/
-│       ├── notifications
-│       └── api-keys
-│
-├── events/                 # Events
-│   ├── how-detection-works
-│   ├── event-catalog
-│   ├── event-details
-│   ├── alerts/
-│   │   ├── alert-configuration
-│   │   └── api-integration
-│   └── data-export
-│
-├── concepts/               # Concepts
-│   ├── seismic-networks
-│   ├── iot-approach
-│   ├── earthquake-early-warning
-│   ├── sensor-placement
-│   └── data-quality
-│
-├── api/                    # API Reference
-│   ├── authentication
-│   ├── endpoints
-│   ├── webhooks
-│   └── rate-limits
-│
-└── support/                # Support
-    ├── faq
-    ├── contact
-    └── warranty
+```text
+/                           # Task-based documentation home
+├── getting-started/        # Product overview and journey selection
+├── hardware/
+│   └── grillo-pulse/       # Revision-aware Pulse installation
+├── dashboard/              # Grillo Platform onboarding and network management
+├── events/                 # Platform Earthquake Monitoring module
+├── modules/                # Current and upcoming Platform modules
+├── concepts/               # Seismic and EEW background
+└── support/                # FAQ and contact information
 ```
 
-## i18n Folder Structure
+## Supported navigation
 
-```
-i18n/
-└── fr/                                         # French translations
-    ├── code.json                               # UI strings (buttons, labels, etc.)
-    ├── docusaurus-theme-classic/
-    │   ├── navbar.json                         # Navbar translations
-    │   └── footer.json                         # Footer translations
-    ├── docusaurus-plugin-content-docs/
-    │   └── current.json                        # Sidebar category labels
-    └── docusaurus-plugin-content-docs/
-        └── current/                            # Translated markdown docs
-            ├── intro.md
-            ├── getting-started/
-            ├── hardware/
-            ├── dashboard/
-            ├── events/
-            ├── concepts/
-            ├── api/
-            └── support/
-```
+### Start Here
 
-## Page Count
+- What Is Grillo?
+- Choosing Your Sensor
 
-| Section | Pages |
-|---------|-------|
-| Getting Started | 3 |
-| Hardware | 14 |
-| Dashboard | 20 |
-| Events | 8 |
-| Concepts | 5 |
-| API Reference | 5 |
-| Support | 3 |
-| **Total per locale** | **58** |
+### Products
 
-## Adding a New Locale
+#### Grillo Pulse
 
-1. Add the locale to `docusaurus.config.ts`:
-   ```ts
-   i18n: {
-     defaultLocale: 'en',
-     locales: ['en', 'fr', 'es'],  // Add new locale here
-     localeConfigs: {
-       en: { label: 'English' },
-       fr: { label: 'Français' },
-       es: { label: 'Español' },   // Add label here
-     },
-   },
-   ```
+- Pulse Quick Start
+- Inspect and Identify the Sensor
+- Claim in Grillo Platform
+- Connectivity
+- Cellular and SIM Setup
+- Physical Installation
+- Troubleshooting
 
-2. Generate translation files:
-   ```bash
-   npm run write-translations -- --locale es
-   ```
+### Grillo Platform
 
-3. Copy docs to translate:
-   ```bash
-   cp -r docs/* i18n/es/docusaurus-plugin-content-docs/current/
-   ```
+- Create an Account
+- Organizations
+- Manage Members
+- Create a Network
+- Claim a Sensor
+- Sensor Table
+- Sensor Map
+- Sensor Details
+- Edit a Sensor
+- Verify Sensor Status
+- Billing and Plan
 
-4. Translate the JSON files in `i18n/es/` and markdown files in `i18n/es/docusaurus-plugin-content-docs/current/`
+#### Modules
 
-5. Test locally:
-   ```bash
-   npm run start -- --locale es
-   ```
+##### Earthquake Monitoring
+
+- Event Catalog
+- Event Details
+- Live Simulation
+- How Detection Works
+
+##### Structural Health Monitoring
+
+- Coming Soon
+
+### Concepts
+
+- Seismic Networks
+- Sensor Placement
+- Data Quality
+- Earthquake Early Warning
+- IoT Approach
+
+### Support
+
+- Frequently Asked Questions
+- Contact Support
+
+## Deferred content
+
+- Grillo One will be reviewed against its current hardware and firmware.
+- Local Grillo Platform deployment documentation will be added when ready.
+- Public API documentation will return after a deployed, versioned API contract is approved.
+- Additional languages will return after the English operational guides are stable.

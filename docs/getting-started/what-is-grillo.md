@@ -1,124 +1,35 @@
 ---
-sidebar_position: 2
-title: What is Grillo?
+title: What Is Grillo?
 ---
 
-# What is Grillo?
+# What Is Grillo?
 
-Grillo is an earthquake technology company on a mission to democratize seismic monitoring and earthquake early warning.
+Grillo builds connected seismic sensors and software for operating dense earthquake-monitoring networks.
 
-## Our mission
+## Grillo Pulse
 
-<!-- TODO: Add official mission statement from grillo.io -->
+Grillo Pulse combines a vertical geophone and a triaxial MEMS accelerometer. Current hardware is produced in connectivity-specific variants. See the [Pulse guide](/hardware/grillo-pulse) before connecting power or networking equipment.
 
-Traditional seismic monitoring has relied on expensive equipment accessible only to well-funded institutions. Grillo's affordable, easy-to-deploy sensors democratize earthquake monitoring—enabling anyone to build networks while allowing established institutions to achieve denser deployments for more detailed seismic data.
+## Grillo Platform
 
-## The Grillo approach
+[Grillo Platform](https://cloud.grillo.io) is the hosted application used to:
 
-### IoT-enabled sensors
+- Organize sensors by organization and seismic network
+- Claim pre-registered devices by Device ID
+- Assign FDSN station codes and location metadata
+- View sensors in table and map views
+- Monitor online state, last-seen time, connectivity, signal, and power information
+- Use enabled modules for monitoring applications
 
-Grillo sensors are designed from the ground up as Internet of Things (IoT) devices:
+## Platform modules
 
-- **Affordable** - A fraction of the cost of traditional seismometers
-- **Easy to deploy** - No specialized training required
-- **Always connected** - Real-time data streaming to the cloud
-- **Remotely managed** - Configure and update sensors from anywhere
+Platform modules use the sensors, networks, and metadata already managed in Grillo Platform.
 
-### Distributed networks
+- **Earthquake Monitoring**, powered by SISTEM, supports real-time earthquake detection, event cataloging, and early-warning workflows.
+- **Structural Health Monitoring** is coming soon.
 
-Instead of relying on a few expensive sensors, Grillo enables dense networks of affordable sensors:
+Module availability and features depend on the organization's deployment.
 
-- Better coverage with more sensors
-- Faster detection through proximity to events
-- Community participation in monitoring
-- Redundancy through distributed architecture
+## Data integrations
 
-### Cloud-native platform
-
-The Grillo Cloud platform (cloud.grillo.io) provides:
-
-- Real-time sensor monitoring and device health
-- Network management tools
-- Earthquake detection algorithms
-- Alert distribution systems
-- Data visualization and export
-
-### Flexible data routing
-
-Grillo supports two [deployment modes](/getting-started/deployment-modes):
-
-- **Full Cloud** — Grillo Cloud handles everything: device monitoring, seismic data ingestion, earthquake detection, and alerting
-- **Hybrid** — Grillo Cloud monitors your devices, while seismic waveform data goes to your own server for processing with tools like Earthworm or SeisComP via [coap2seis](/guides/on-premise-integration)
-
-## Products
-
-### Grillo One
-
-The Grillo One is designed for fixed indoor installations with reliable power and network connectivity.
-
-- WiFi and Ethernet connectivity
-- Ideal for offices, schools, and homes
-- [Learn more about Grillo One](/hardware/grillo-one)
-
-### Grillo Pulse
-
-The Grillo Pulse adds cellular connectivity and is designed for remote or field deployments.
-
-- WiFi and cellular (LTE) connectivity
-- Battery backup capability
-- Suitable for outdoor/remote installations
-- [Learn more about Grillo Pulse](/hardware/grillo-pulse)
-
-### Grillo Cloud
-
-The web-based platform for managing your seismic network:
-
-- Account and organization management
-- Sensor monitoring and configuration
-- Network visualization
-- Event detection and alerting
-- [Explore the Dashboard Guide](/dashboard)
-
-## Use cases
-
-### Research institutions
-
-Universities and research organizations use Grillo to:
-- Expand seismic monitoring coverage
-- Conduct earthquake research
-- Engage students in real-world seismology
-
-### Schools and education
-
-Educational institutions deploy Grillo sensors to:
-- Teach earth science concepts
-- Participate in citizen science
-- Build local earthquake awareness
-
-### Governments and civil protection
-
-Government agencies use Grillo networks for:
-- Public earthquake early warning systems
-- Infrastructure monitoring
-- Emergency response planning
-
-### Businesses and industry
-
-Companies deploy Grillo sensors to:
-- Protect critical infrastructure
-- Enable automatic safety responses
-- Meet regulatory requirements
-
-### Communities
-
-Community groups use Grillo to:
-- Build neighborhood monitoring networks
-- Increase local earthquake awareness
-- Contribute to regional seismic data
-
-## Learn more
-
-- [Choosing between Grillo One and Pulse](/getting-started/choosing-your-sensor)
-- [Understanding seismic networks](/concepts/seismic-networks)
-- [The IoT approach to seismology](/concepts/iot-approach)
-- [Visit grillo.io](https://grillo.io) for more information
+Grillo sensors can be integrated with customer seismic systems. Integration details depend on the contracted deployment and should be confirmed with Grillo before installation. A public API reference will be published when a versioned external API contract is available.

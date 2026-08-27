@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Grillo Docs',
   tagline: 'Earthquake monitoring made simple',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/grillo-mark-orange.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -31,11 +31,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
-    localeConfigs: {
-      en: { label: 'English' },
-      fr: { label: 'Français' },
-    },
+    locales: ['en'],
   },
 
   plugins: [
@@ -50,12 +46,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/', // Docs as homepage
           // Enable "edit this page" links pointing to your repo
-          editUrl: ({ locale, docPath }) => {
-            if (locale === 'en') {
-              return `https://github.com/grillo/grillo-docs/tree/main/docs/${docPath}`;
-            }
-            return `https://github.com/grillo/grillo-docs/tree/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
-          },
+          editUrl: ({ docPath }) =>
+            `https://github.com/grillo/grillo-docs/tree/main/docs/${docPath}`,
         },
         blog: false,
         theme: {
@@ -69,28 +61,25 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/screenshots/11-live-map.png',
     colorMode: {
+      defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Grillo',
+      title: 'grillo · docs',
       logo: {
-        alt: 'Grillo Logo',
-        src: 'img/grillo-logo-black.svg',
-        srcDark: 'img/grillo-logo-white.svg',
+        alt: 'Grillo',
+        src: 'img/grillo-mark-orange.png',
       },
       items: [
         {
           href: 'https://cloud.grillo.io',
-          label: 'Dashboard',
+          label: 'Open Grillo Platform',
           position: 'right',
+          className: 'navbar__platform-link',
         },
         {
           href: 'https://grillo.io',
           label: 'Grillo.io',
-          position: 'right',
-        },
-        {
-          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -106,11 +95,11 @@ const config: Config = {
               to: '/getting-started',
             },
             {
-              label: 'Hardware Setup',
-              to: '/hardware/grillo-one',
+              label: 'Install Grillo Pulse',
+              to: '/hardware/grillo-pulse',
             },
             {
-              label: 'Dashboard Guide',
+              label: 'Grillo Platform',
               to: '/dashboard',
             },
           ],
@@ -119,15 +108,11 @@ const config: Config = {
           title: 'Products',
           items: [
             {
-              label: 'Grillo One',
-              to: '/hardware/grillo-one',
-            },
-            {
               label: 'Grillo Pulse',
               to: '/hardware/grillo-pulse',
             },
             {
-              label: 'Grillo Cloud',
+              label: 'Grillo Platform',
               href: 'https://cloud.grillo.io',
             },
           ],

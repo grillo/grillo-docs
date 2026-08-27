@@ -1,265 +1,87 @@
 ---
-sidebar_position: 4
 title: Sensor Placement
 ---
 
-# Sensor Placement Best Practices
+# Sensor Placement
 
-Proper sensor placement is crucial for data quality and network effectiveness.
+A seismic station should measure motion of the ground or structure of interest while minimizing unrelated vibration. The correct site depends on the instrument and monitoring objective.
 
-## Why placement matters
+## Select a stable site
 
-Sensor placement affects:
-- **Signal quality** - Good placement captures earthquakes clearly
-- **Noise levels** - Poor placement adds unwanted signals
-- **Detection capability** - Position affects what you can detect
-- **Data usefulness** - Scientific value depends on installation
+Prefer a location with:
 
-## Site selection principles
+- Rigid coupling to a concrete slab, foundation, bedrock, or purpose-built pier
+- Low vibration from machinery, traffic, doors, and footfall
+- Stable temperature and protection appropriate to the enclosure
+- Reliable power and communications
+- Safe access for inspection and maintenance
+- Low risk of flooding, tampering, cable damage, or antenna obstruction
 
-### Ideal characteristics
+Ground-floor or basement installations are normally more representative of ground motion than upper floors. An upper-floor sensor can be useful for structural response, but its waveform includes the building's motion and must be documented accordingly.
 
-The best sensor locations have:
+## Investigate noise rather than using fixed distances
 
-| Characteristic | Why it matters |
-|----------------|----------------|
-| Solid foundation | Better coupling to ground motion |
-| Low noise | Cleaner seismic signals |
-| Stable environment | Consistent data quality |
-| Reliable power | Continuous operation |
-| Network connectivity | Real-time data transmission |
+Vibration sources vary too much for one universal separation distance. A small pump rigidly connected to the same slab can matter more than a larger machine farther away, and road or rail noise depends on ground conditions and traffic.
 
-### Location hierarchy
+Survey the proposed site while likely noise sources are active. Consider:
 
-From best to acceptable:
+- HVAC equipment, pumps, generators, compressors, and elevators
+- Vehicles, railways, construction, and pedestrian traffic
+- Wind acting on an enclosure, pole, antenna, or loose cable
+- Water flow, rain impact, and vegetation
+- Electrical equipment and poor power supplies
 
-1. **Bedrock** - Lowest noise, best coupling
-2. **Concrete slab on grade** - Very good
-3. **Solid floor (ground level)** - Good
-4. **Upper floors** - Acceptable with considerations
-5. **Loose/soft surface** - Avoid if possible
+If possible, compare candidate sites using waveform or noise-spectrum measurements before permanent installation.
 
-## Floor selection
+## Mount rigidly
 
-### Ground floor recommended
+- Clean loose material from the mounting surface.
+- Use mounting hardware suitable for the substrate.
+- Prevent rocking, sliding, and rotation.
+- Keep cable tension and movement from transferring force to the sensor.
+- Avoid carpet, foam, raised-floor panels, and flexible poles unless the monitoring objective specifically requires them.
+- Recheck fasteners and leveling after installation.
 
-Ground floor or basement is ideal:
-- Closest to actual ground motion
-- Less building amplification
-- More representative data
+For outdoor equipment, use a stable pad or pier and an enclosure installation approved for local weather, drainage, and security conditions.
 
-### Upper floor considerations
+## Orient and level the instrument
 
-If upper floors are necessary:
-- Data affected by building response
-- Amplification at certain frequencies
-- Still useful for many applications
-- Document floor level in metadata
+Follow the reference surface and axis marks for the exact sensor and enclosure.
 
-## Foundation types
+- A vertical geophone must remain upright and level within its specified tolerance.
+- Horizontal accelerometer axes should use a recorded orientation.
+- If axes are not aligned to geographic north/east, record the actual azimuth so data can be interpreted or rotated correctly.
+- Do not infer orientation from a connector because board and enclosure layouts can change.
 
-### Concrete slab
+## Record station metadata
 
-Best common foundation:
-- Direct coupling to ground
-- Stable platform
-- Low local noise
+At installation, record:
 
-Installation: Place directly on clean concrete.
+- Device ID and station code
+- Coordinates and elevation
+- Sensor and enclosure revision
+- Mounting surface and method
+- Axis orientation and level
+- Floor or structural location
+- Power and communications arrangement
+- Nearby noise sources
+- Installation date and photographs
 
-### Raised floor
+Update this record whenever equipment or site conditions change.
 
-Common in offices/data centers:
-- Avoid if possible
-- If necessary, extend mount to slab below
-- Document installation type
+## Verify after installation
 
-### Carpet/soft flooring
+A station is not accepted merely because it appears Online. Confirm:
 
-Problematic surface:
-- Damping affects high frequencies
-- Sensor may shift
-- Consider rigid platform underneath
-
-## Distance from noise sources
-
-### Sources to avoid
-
-| Source | Minimum distance | Notes |
-|--------|------------------|-------|
-| HVAC equipment | 3+ meters | Continuous vibration |
-| Elevators | 5+ meters | Intermittent noise |
-| Heavy machinery | 10+ meters | Depends on machine |
-| Major roads | 20+ meters | Traffic vibration |
-| Rail lines | 50+ meters | Significant noise |
-
-### Indoor noise sources
-
-- Air handling units
-- Generators
-- Pumps and compressors
-- Large motors
-- Server rooms (fans)
-
-### Outdoor considerations
-
-- Vehicle traffic
-- Construction
-- Industrial activity
-- Railways
-- Aircraft (near airports)
-
-## Orientation and leveling
-
-### Proper orientation
-
-For accurate directional data:
-- Note sensor orientation marking
-- Align to north if specified
-- Document actual orientation
-- Consistent across network helps
-
-### Leveling
-
-Critical for data quality:
-- Use a bubble level
-- Sensor must be horizontal
-- Adjust mounting as needed
-- Re-check periodically
-
-### Stability
-
-Prevent movement:
-- Secure mounting
-- Anti-slip surface/pads
-- No wobble when touched
-- Won't shift over time
-
-## Installation environments
-
-### Office buildings
-
-**Good locations:**
-- Ground floor, away from HVAC
-- Utility rooms with solid floors
-- Storage areas (if stable)
-
-**Avoid:**
-- Near elevator shafts
-- HVAC mechanical rooms
-- Floors with heavy foot traffic
-
-### Schools
-
-**Good locations:**
-- Basement if available
-- Ground floor storage/utility
-- Science labs (stable tables)
-
-**Avoid:**
-- Gymnasiums (activity)
-- Music rooms (vibration)
-- Near playground equipment
-
-### Residential
-
-**Good locations:**
-- Basement floor
-- Ground floor closet
-- Garage slab
-
-**Avoid:**
-- Near washing machines
-- Near HVAC equipment
-- Upper floors if possible
-
-### Industrial facilities
-
-**Good locations:**
-- Office areas away from production
-- Utility buildings
-- Perimeter locations
-
-**Avoid:**
-- Production floors
-- Near heavy equipment
-- High-vibration areas
-
-## Outdoor installations (Grillo Pulse)
-
-### Ground installations
-
-- Concrete pad or bedrock
-- Away from trees (root movement)
-- Good drainage
-- Clear of flood zones
-
-### Pole mounting
-
-- Sturdy pole/post
-- Minimal flex in wind
-- Low as practical
-- Proper leveling
-
-### Environmental protection
-
-- Shade from direct sun
-- Protection from extreme weather
-- Away from sprinklers
-- Secure from animals
-
-## Common mistakes
-
-### Poor site selection
-
-| Mistake | Problem | Solution |
-|---------|---------|----------|
-| Near HVAC | Constant noise | Relocate away |
-| On carpet | Damping/instability | Use rigid base |
-| Upper floor | Building effects | Move to ground floor |
-| Near traffic | Traffic noise | Increase distance |
-
-### Installation errors
-
-| Mistake | Problem | Solution |
-|---------|---------|----------|
-| Not level | Incorrect data | Re-level sensor |
-| Loose mounting | Sensor moves | Secure properly |
-| Cable tension | May shift sensor | Allow cable slack |
-| Poor coupling | Weak signals | Direct floor contact |
-
-## Verification
-
-### After installation
-
-Check:
-- [ ] Sensor is level
-- [ ] Mounting is secure
-- [ ] No wobble or movement
-- [ ] Away from noise sources
-- [ ] Power and network stable
-- [ ] Data quality looks good
-
-### Periodic checks
-
-Review regularly:
-- Physical stability
-- Changed noise sources
-- Data quality trends
-- Environmental changes
-
-## Documentation
-
-Record for each sensor:
-- Exact location (coordinates)
-- Floor/level
-- Surface type
-- Nearby equipment
-- Installation date
-- Photos
+1. Current telemetry reaches the intended system.
+2. Timing and station metadata are correct.
+3. Waveforms are continuous and plausible.
+4. Background noise is suitable for the monitoring objective.
+5. Known local activity is recognizable and does not saturate the channel.
+6. The enclosure, cables, antennas, and mount are secure.
 
 ## Related guides
 
-- [Physical installation - Grillo One](/hardware/grillo-one/physical-installation)
-- [Physical installation - Grillo Pulse](/hardware/grillo-pulse/physical-installation)
+- [Pulse physical installation](/hardware/grillo-pulse/physical-installation)
 - [Data quality](/concepts/data-quality)
+- [Pulse troubleshooting](/hardware/grillo-pulse/troubleshooting)

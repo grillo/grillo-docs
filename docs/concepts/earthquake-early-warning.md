@@ -1,228 +1,77 @@
 ---
-sidebar_position: 3
 title: Earthquake Early Warning
 ---
 
-# Earthquake Early Warning (EEW)
+# Earthquake Early Warning
 
-Understanding how earthquake early warning systems work and how Grillo enables this technology.
+Earthquake early warning (EEW) detects an earthquake after it begins and attempts to notify locations before damaging shaking reaches them. It is not earthquake prediction.
 
-## What is earthquake early warning?
+## Why warning can be possible
 
-Earthquake Early Warning (EEW) systems detect earthquakes and send alerts **before strong shaking arrives** at a location.
+Seismic waves travel through the Earth much more slowly than electronic messages. A system can detect early arrivals, estimate the event and expected shaking, and distribute a message while stronger waves are still traveling toward more distant locations.
 
-This is possible because:
-- Electronic signals travel faster than seismic waves
-- P-waves (faster, weaker) arrive before S-waves (slower, stronger)
-- Warning time increases with distance from earthquake
-
-## How EEW works
-
-### The physics
-
-```
-Earthquake occurs
+```text
+Earthquake begins
       ↓
-P-waves radiate outward (faster, ~6 km/s)
+Stations detect initial motion
       ↓
-Sensors detect P-waves
+Processing associates observations and estimates the event
       ↓
-System calculates location & magnitude
+Expected shaking is evaluated for target locations
       ↓
-Alerts sent electronically (speed of light)
+Alerts are distributed
       ↓
-People/systems receive warning
-      ↓
-S-waves arrive (slower, ~3.5 km/s, stronger shaking)
+Strong shaking reaches locations that are far enough away
 ```
 
-### Warning time
+Every step consumes time. Warning time depends on the earthquake, station geometry, detection thresholds, processing, communications, alert policy, and recipient's distance from the source. A fixed table of warning time by epicentral distance is misleading because depth, wave speeds, network layout, and latency vary.
 
-The warning time depends on:
+## Blind zone
 
-| Factor | Effect |
-|--------|--------|
-| Distance from earthquake | More distance = more time |
-| Network density | Denser = faster detection |
-| Processing speed | Faster = more warning |
-| Alert delivery | Electronic = nearly instant |
+Locations close to the source can experience strong shaking before the system has enough observations to issue a useful alert. No network density or communications technology eliminates this blind zone completely.
 
-### Typical warning times
+## Initial estimates change
 
-| Distance from epicenter | Approximate warning |
-|-------------------------|---------------------|
-| 10 km | 0-5 seconds |
-| 30 km | 5-15 seconds |
-| 50 km | 10-20 seconds |
-| 100 km | 20-40 seconds |
+The earliest data represent only the beginning of a rupture. Automated estimates can change as:
 
-:::note
-Areas very close to the earthquake may receive no warning before strong shaking.
-:::
+- More stations detect the event
+- The rupture grows
+- Noisy or incorrect picks are rejected
+- Magnitude calculations receive longer waveform windows
 
-## What can you do with seconds?
+Alert design must account for late, missed, false, and updated messages. Automated actions should be based on an engineering risk assessment, not only a magnitude threshold.
 
-### Personal safety
-
-Even a few seconds allows:
-- Drop, Cover, Hold On
-- Move away from hazards
-- Alert others
-- Mental preparation
-
-### Automatic actions
-
-Systems can automatically:
-- Stop elevators at nearest floor
-- Open fire station doors
-- Slow or stop trains
-- Shut off gas valves
-- Save computer data
-- Initiate safe shutdown procedures
-
-### Every second counts
-
-Studies show significant benefits:
-- Reduced injuries from falling objects
-- Faster emergency response
-- Less secondary damage (fires, etc.)
-- Better psychological outcomes
-
-## EEW components
+## Components of an EEW service
 
 ### Detection network
 
-Dense seismic sensor network:
-- Detects P-waves quickly
-- Multiple stations confirm
-- Covers area of interest
+Stations require suitable geometry, low enough noise, accurate timing, reliable telemetry, and known metadata.
 
-### Processing system
+### Processing
 
-Central system that:
-- Receives sensor data
-- Detects earthquakes
-- Calculates parameters
-- Generates alerts
+The system identifies candidate arrivals, associates stations, estimates source parameters, predicts expected shaking, and decides whether alert criteria are met.
 
-### Alert distribution
+### Alert delivery
 
-Methods to reach people:
-- Smartphone apps
-- Sirens
-- Broadcast alerts
-- Direct system integration
+Messages may be delivered through public warning channels, applications, sirens, or direct machine interfaces. Delivery latency and availability must be measured end to end.
 
-## Grillo and EEW
+### Prepared response
 
-### Enabling affordable EEW
+A warning is useful only when recipients know what to do. Procedures, training, accessibility, testing, and fallback behavior are part of the system.
 
-Grillo makes EEW accessible by:
-- Lowering sensor costs
-- Simplifying deployment
-- Providing cloud processing
-- Enabling alert distribution
+## Appropriate actions
 
-### Building EEW networks
+Depending on jurisdiction and engineering review, warnings can support actions such as prompting people to Drop, Cover, and Hold On or placing controlled systems into a safer state. Automatic control of trains, utilities, industrial processes, elevators, or medical systems requires specialist design, fail-safe behavior, and approval from the responsible operators.
 
-With Grillo you can:
-1. Deploy dense sensor networks
-2. Enable automatic detection
-3. Configure alert rules
-4. Integrate with response systems
+## Grillo Earthquake Monitoring
 
-### Requirements for EEW
+Grillo sensors can provide observations to a network. The Platform's Earthquake Monitoring module, powered by SISTEM, can produce automated event information for configured deployments. The current Platform Live page is a simulation, not an operational public-warning feed. Alert delivery and external integrations are deployment-specific and are not self-service controls in the current Platform UI.
 
-| Requirement | Grillo solution |
-|-------------|-----------------|
-| Dense sensors | Affordable Grillo sensors |
-| Fast detection | Grillo Cloud processing |
-| Alert delivery | Webhook/API integration |
-| Reliability | Cloud infrastructure |
+Do not present a sensor installation as an operational EEW system until the complete detection, alerting, governance, and response chain has been validated.
 
-## EEW limitations
+## Further reading
 
-### No warning near epicenter
-
-Very close to the earthquake:
-- S-waves arrive almost immediately
-- Not enough time for detection and alert
-- "Blind zone" near epicenter
-
-### Not earthquake prediction
-
-EEW is **not prediction**:
-- Cannot predict earthquakes before they occur
-- Only warns after earthquake starts
-- Based on detected waves, not forecasts
-
-### Dependent on network
-
-Warning quality depends on:
-- Network coverage
-- Sensor density
-- System reliability
-- Alert delivery speed
-
-### False alerts possible
-
-Systems may:
-- Trigger on non-earthquake signals
-- Have incorrect initial estimates
-- Update parameters as data arrives
-
-## Global EEW systems
-
-### Operational systems
-
-| System | Region | Since |
-|--------|--------|-------|
-| JMA | Japan | 2007 |
-| ShakeAlert | US West Coast | 2019 |
-| SASMEX | Mexico | 1991 |
-| Various | Taiwan, South Korea, others | Various |
-
-### Grillo contributions
-
-Grillo technology supports EEW in:
-- Mexico (school networks)
-- Chile (community networks)
-- Various research deployments
-
-## Implementing EEW with Grillo
-
-### Step 1: Build your network
-
-- Deploy Grillo sensors across your area
-- Ensure adequate density (varies by goal)
-- Maintain high online percentage
-
-### Step 2: Enable detection
-
-- Subscribe to Events feature
-- Configure detection parameters
-- Validate detection performance
-
-### Step 3: Set up alerts
-
-- Configure alert thresholds
-- Set up delivery channels
-- Test alert delivery
-
-### Step 4: Integrate systems
-
-- Connect to building systems
-- Develop response procedures
-- Train occupants/staff
-
-### Step 5: Maintain and improve
-
-- Monitor system performance
-- Address issues promptly
-- Expand coverage over time
-
-## Related concepts
-
-- [Seismic networks](/concepts/seismic-networks)
-- [How detection works](/events/how-detection-works)
-- [Alert configuration](/events/alerts)
+- [USGS ShakeAlert](https://www.usgs.gov/programs/earthquake-hazards/science/shakealert)
+- [Earthquake Country Alliance: Drop, Cover, and Hold On](https://www.earthquakecountry.org/step5/)
+- [How earthquake detection works](/events/how-detection-works)
+- [Earthquake Monitoring](/events)

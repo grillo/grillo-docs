@@ -68,7 +68,7 @@ const sidebars: SidebarsConfig = {
               type: 'category',
               label: 'Structural Health Monitoring',
               link: {type: 'doc', id: 'modules/structural-health-monitoring'},
-              items: [],
+              items: ['modules/structural-health-monitoring-status'],
             },
           ],
         },

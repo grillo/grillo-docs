@@ -22,10 +22,6 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a US
 | Status lights | Inside the enclosure only. Use Grillo Cloud to check the sensor. |
 | Managed in | [Grillo Cloud](/dashboard) |
 
-## Off-grid power
-
-Pulse has one power input: 12 V DC. It has no solar charger or battery connection of its own. For a site without mains power, use a solar charge controller and battery that together supply a steady 12 V DC to the Pulse. Size the panel and battery for the site's sunlight and for the days of autonomy you need, and ask Grillo Support if you need help.
-
 ## Two variants
 
 The two variants are the same sensor with a different connection. Check your order or the enclosure label to see which one you have.
@@ -49,6 +45,10 @@ In Grillo Cloud:
 - The sensor is **online** and **Last Seen** is current.
 - The connection type matches the variant: Cellular or Ethernet.
 - The coordinates and location name are correct.
+
+## Off-grid power
+
+Pulse has one power input: 12 V DC. It has no solar charger or battery connection of its own. For a site without mains power, use a solar charge controller and battery that together supply a steady 12 V DC to the Pulse. Size the panel and battery for the site's sunlight and for the days of autonomy you need, and ask Grillo Support if you need help.
 
 :::note Earlier Pulse units
 This guide covers the current Grillo Pulse. Units installed before 2026 use different hardware and firmware. If you look after one of those, [contact Grillo Support](/support/contact) for its procedures.

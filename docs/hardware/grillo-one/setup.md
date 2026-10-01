@@ -38,7 +38,12 @@ With no Ethernet link and no Wi-Fi details saved, Grillo One starts its own setu
 4. Under **WiFi Configuration**, choose your network from the list or type its name.
 5. Enter the Wi-Fi password and select **Connect**.
 
-The sensor saves the details, restarts, and joins your network. The `GrilloOne-XXXX` network disappears. From then on it reconnects to the same Wi-Fi network by itself every time it starts.
+<div className="docs-screenshot-pair">
+  <img src="/img/screenshots/one-wifi-setup.png" alt="The Grillo One WiFi Configuration page on a phone, listing nearby networks with fields for the network name and password" width="300" />
+  <img src="/img/screenshots/one-wifi-configured.png" alt="The Grillo One setup page confirming WiFi configured, and that the device will restart and connect to the chosen network" width="300" />
+</div>
+
+The page confirms **WiFi configured!** The sensor saves the details, restarts, and joins your network. The `GrilloOne-XXXX` network disappears. From then on it reconnects to the same Wi-Fi network by itself every time it starts.
 
 If you plug in an Ethernet cable while the setup network is running, the sensor switches to Ethernet and skips Wi-Fi setup.
 

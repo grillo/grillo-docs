@@ -48,7 +48,7 @@ The **Ground movement** chart shows a rover's position relative to its baseline,
 - Movement is the rover's position minus the base's position, measured in the same cycle.
 - The baseline is the rover's first valid reading. Everything after is measured against it.
 - Only readings with a precise fix (RTK Fixed) are plotted. Gaps mark missed cycles, readings without a fix, or a baseline change.
-- Single readings scatter by up to about 2 cm. Judge movement from the trend over several days, not from one point.
+- Single readings scatter by up to about 2 cm. Judge movement from the trend over several days, not from one point. See [Landslide Monitoring with GNSS](/concepts/landslide-monitoring) for how to read the results.
 
 Switch from **Chart** to **Readings** to see each reading with its fix quality and timestamps.
 
@@ -65,8 +65,8 @@ Reset the baseline when a device has been deliberately moved or remounted, so th
 
 The rover's next valid reading becomes the new zero. Earlier movement is no longer measured against the old baseline, so note the values before you reset.
 
-Reset the whole sensor group after moving the base or its antenna. Moving the base shifts every rover's movement by the same amount.
+Reset the whole sensor group after moving the base or its antenna. Moving the base shifts every rover's movement by the same amount. If the base is now in a new place, first [survey it again](/hardware/grillo-slide/installation#survey-the-base) with its **RESET** button, then reset the baseline.
 
 ## Devices awaiting setup
 
-A device listed as **Awaiting setup** has been linked to your account but has not finished setup in the Grillo Field app. It does not report until setup is complete.
+A device listed as **Awaiting setup** has been linked to your account but has not finished setup in the Grillo Field app. It does not report until setup is complete. Kits are normally set up by Grillo before shipping, so contact Grillo Support if a device stays in this state.

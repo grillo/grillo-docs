@@ -16,11 +16,10 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 
 [Grillo Cloud](/dashboard) at [cloud.grillo.io](https://cloud.grillo.io) is the web application for Pulse and One. Use it to:
 
-- Claim sensors by Device ID and assign FDSN station codes
+- Claim sensors by Device ID or QR code and assign FDSN station codes
 - See sensors in a table and on a map
 - Monitor online status, connectivity, signal, power, and firmware
 - Update firmware over the air
-- Send seismic data to your own server
 
 ### SISTEM add-on
 
@@ -28,8 +27,16 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 
 ## Grillo Cloud for Slide
 
-[Grillo Cloud for Slide](/slide-cloud) at [slide.grillo.io](https://slide.grillo.io) shows each rover's movement, device health, and battery, and lets you export the data.
+[Grillo Cloud for Slide](/slide-cloud) at [slide.grillo.io](https://slide.grillo.io) shows each rover's movement, device health, and battery, and lets you export the data and raw GNSS files. Slide firmware is updated over the air.
+
+## Grillo Field app
+
+**Grillo Field** is the phone app for setting up Grillo Slide over Bluetooth, including the base's APN. It is on Android now; the iPhone version is coming soon.
 
 ## Your own seismic system
 
-Pulse and One can send their seismic data to a server you run instead of Grillo. See [Send Data to Your Own Server](/dashboard/data/data-server).
+Pulse and One can send their seismic data to a server you run, such as Earthworm or SeisComP, instead of Grillo. Grillo switches this on for your project, and you keep managing the sensors in Grillo Cloud. See [Send Data to Your Own Server](/dashboard/data/data-server).
+
+## Getting help
+
+Use the chat messenger on this site, or see [Contact Support](/support/contact).

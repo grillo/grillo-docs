@@ -6,33 +6,33 @@ title: Projects
 
 A project holds one team's sensors, events, and members. Everything you see in Grillo Cloud belongs to the active project.
 
-Grillo creates projects. To get a new one, [contact Grillo Support](/support/contact).
+Grillo creates and manages projects for you. To get a new project, or to change an existing one, [contact Grillo Support](/support/contact).
 
 ## Switch projects
 
 If you belong to more than one project, use the project switcher at the top of the sidebar. Grillo Cloud reloads and shows that project's sensors, events, and members.
 
-## Project Settings
+## What Grillo manages for you
 
-Open **Project Settings** in the sidebar under **Administration**.
+These are handled by Grillo's administrators. Ask Grillo Support to change any of them:
 
-![Project settings in Grillo Cloud](/img/screenshots/12-organization-edit.png)
+- Creating a project, and its name and FDSN network code
+- Adding and removing people, and their roles
+- The project's logo and branding
+- Where the project's sensors send their seismic data. See [Send Data to Your Own Server](/dashboard/data/data-server).
 
-| Section | What it contains | Who can change it |
-|---|---|---|
-| Branding | Project logo (PNG or JPG, up to 2 MB) and whether the sidebar shows the logo, the name, or both | Owner |
-| Information | Project name and slug | Owner |
-| Members | Everyone in the project, with their role | Owner and admins change roles; only the owner removes members |
-| Invitations | Pending invitations | Owner and admins |
-| Seismic Data Server | Where the project's sensors send seismic data | Owner and admins |
-
-See [Manage Members](/dashboard/organizations/managing-members) and [Send Data to Your Own Server](/dashboard/data/data-server).
+The **Administration** area of Grillo Cloud is used by Grillo staff for this and is not available to customers.
 
 ## Roles
 
-- **Owner** — full control of the project, including its name, branding, and removing members
-- **Admin** — invites members, changes member roles, and sets the seismic data server
-- **Member** — works with sensors and data
+Each person in a project has a role, which controls what they can do with its sensors.
+
+| Role | Can do |
+|---|---|
+| **Member** | Claim sensors, and see sensors, their health, and SISTEM data where enabled |
+| **Admin** and **Owner** | Everything a member can, plus edit a sensor's station code and location, update its firmware, and unclaim it |
+
+To change someone's role, [contact Grillo Support](/support/contact).
 
 ## Leave a project
 

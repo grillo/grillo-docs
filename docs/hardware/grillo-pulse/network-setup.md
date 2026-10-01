@@ -12,7 +12,7 @@ Pulse Cellular connects over LTE using the SIM Grillo fits and sets up. You do n
 
 1. Fit the antennas to their matching labelled connectors.
 2. Check there is mobile coverage at the installation point.
-3. Connect power.
+3. Plug the 12 V supply into the external power connector.
 
 The first connection can take up to 5 minutes. See [Cellular and SIM](/hardware/grillo-pulse/sim-card-setup) for coverage and SIM details.
 
@@ -20,8 +20,8 @@ The first connection can take up to 5 minutes. See [Cellular and SIM](/hardware/
 
 Pulse Ethernet connects to a wired 10/100 network.
 
-1. Connect the network cable through the weatherproof cable entry.
-2. Connect power.
+1. Feed the network cable through the weatherproof Ethernet entry on the enclosure and tighten it so it seals around the cable.
+2. Plug the 12 V supply into the external power connector.
 
 The network must:
 

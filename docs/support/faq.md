@@ -17,7 +17,7 @@ The two use separate accounts.
 
 ## How do I get an account?
 
-Grillo Cloud accounts are by invitation. Grillo invites the owner of a new project, and owners and admins invite their colleagues. See [Create an Account](/dashboard/account/creating-account). For Slide, Grillo creates your sign-in.
+Grillo Cloud accounts are by invitation. Grillo creates projects and invites the people in them; to add a colleague, contact Grillo Support. See [Create an Account](/dashboard/account/creating-account). For Slide, Grillo creates your sign-in.
 
 ## What is a Device ID?
 

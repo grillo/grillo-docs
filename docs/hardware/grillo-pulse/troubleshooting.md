@@ -44,12 +44,12 @@ Before contacting support, record:
 ## Sensor is offline
 
 1. Check **Last Seen** and the sensor's [connection history](/dashboard/sensors/sensor-details#connection-history) to see when it stopped reporting and whether it has been dropping out.
-2. Check the 12 V supply is connected and has power. With no lights at all, the sensor has no power.
+2. Check the 12 V supply is plugged into the external power connector and has power. With no lights at all, the sensor has no power.
 3. **Red light on:**
    - Pulse Cellular: check the antennas and the mobile coverage at the site.
-   - Pulse Ethernet: check the cable, that the port is live, and that the network gives out addresses by DHCP.
+   - Pulse Ethernet: check the cable is fully seated through the weatherproof entry, that the port is live, and that the network gives out addresses by DHCP.
 4. **Green light on, but offline in Grillo Cloud:** the network is probably blocking outbound UDP on ports 5683 and 5684. Ask the network administrator.
-5. Restart the sensor: disconnect the 12 V supply, wait 30 seconds, and reconnect it.
+5. Restart the sensor: unplug the 12 V supply from the external connector, wait 30 seconds, and reconnect it.
 6. Give it up to 5 minutes (cellular) or 1 minute (Ethernet), then refresh Grillo Cloud.
 7. Contact support if it stays offline.
 

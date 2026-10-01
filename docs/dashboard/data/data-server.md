@@ -28,18 +28,13 @@ Sensors send waveform packets over CoAP on UDP, by default to port 5684. Your se
 - Accept inbound UDP on the port you choose
 - Run software that receives Grillo's waveform packets and passes them to your seismic system
 
-[Contact Grillo Support](/support/contact) for the receiver software and for help connecting it to Earthworm or SeisComP. Set this up and test it before you change the setting.
+[Contact Grillo Support](/support/contact) for the receiver software and for help connecting it to Earthworm or SeisComP. Set this up and test it before you ask for the switch.
 
 ## Set the data server
 
-Project owners and admins can change this.
+Grillo sets this for you. [Contact Grillo Support](/support/contact) with your project name and your server as `host:port`, for example `seismic.example.org:5684`.
 
-1. Open **Project Settings**.
-2. Find **Seismic Data Server**.
-3. Enter your server as `host:port`, for example `seismic.example.org:5684`.
-4. Select **Save**, then **Confirm**.
-
-Each sensor switches at its next health check-in, about a minute later. The sidebar then shows **Sending to** followed by your server.
+Each sensor switches at its next health check-in, about a minute after the change. The sidebar then shows **Sending to** followed by your server.
 
 ## Check that it worked
 
@@ -50,4 +45,4 @@ If packets are not arriving, check that the hostname resolves from the sensors' 
 
 ## Go back to Grillo
 
-Open **Project Settings**, select **Clear** next to the data server, and confirm. Sensors return to sending data to Grillo at their next check-in.
+Ask Grillo Support to clear the data server. Sensors return to sending data to Grillo at their next check-in.

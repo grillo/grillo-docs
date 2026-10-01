@@ -40,12 +40,12 @@ The SIM is supplied and set up by Grillo; there is nothing to configure.
 
 **Pulse Ethernet**
 
-- [ ] Connect it to a network port that gives out addresses automatically (DHCP).
+- [ ] Feed the network cable through the weatherproof Ethernet entry and connect it to a port that gives out addresses automatically (DHCP).
 - [ ] Make sure the network allows outbound UDP on ports 5683 and 5684.
 
 ## 4. Power on
 
-Connect the 12 V supply. The sensor starts, connects, and begins reporting.
+Plug the 12 V supply into the external power connector on the enclosure. You do not need to open the enclosure. The sensor starts, connects, and begins reporting.
 
 - Pulse Ethernet usually comes online within a minute.
 - Pulse Cellular can take up to 5 minutes the first time, while it registers on the mobile network and sets its clock.

@@ -41,9 +41,10 @@ The geophone measures vertical motion, so the enclosure must be installed in the
 
 ## Power and weatherproofing
 
-- Use only the 12 V supply provided for the sensor.
+- Power the sensor through its external 12 V connector, using only the supply provided. There is no need to open the enclosure.
 - Do not connect anything to the USB ports. USB cannot power the sensor, and a powered USB cable can damage it.
 - Do not open or modify the enclosure unless the supplied procedure requires it.
+- On Pulse Ethernet, make sure the weatherproof Ethernet entry is tightened around the cable.
 - Inspect seals, cable entries, and strain relief before applying power.
 - Ensure cables cannot collect or direct water into the enclosure.
 

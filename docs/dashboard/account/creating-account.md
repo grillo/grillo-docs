@@ -2,34 +2,37 @@
 title: Create an Account
 ---
 
-# Create a Grillo Platform Account
+# Create a Grillo Cloud Account
 
-Open [cloud.grillo.io](https://cloud.grillo.io) and choose **Sign up**.
+Grillo Cloud accounts are created by invitation. You need an invitation to a project before you can sign up.
 
-## Sign-up options
+## Get an invitation
 
-Platform currently supports:
+- **New customers:** Grillo creates your project and invites its owner by email. If you have sensors but no invitation, [contact Grillo Support](/support/contact).
+- **Joining an existing project:** ask a project owner or admin to [invite you](/dashboard/organizations/managing-members).
 
-- Email and password
-- Google
-- Microsoft
+## Sign up
 
-## Email and password
+1. Open the link in the invitation email, or go to [cloud.grillo.io](https://cloud.grillo.io) and choose **Sign up**.
+2. Use the same email address the invitation was sent to. Sign-up is refused for any other address.
+3. Choose one of:
+   - **Email and password.** Enter your name and a password of at least 8 characters with uppercase, lowercase, a number, and a special character.
+   - **Google** or **Microsoft.** Sign in with the account that owns the invited address.
+4. If you signed up with email and password, open the verification link Grillo Cloud emails you. Use **Resend verification email** if it does not arrive.
 
-1. Enter your name and email address.
-2. Enter the same password in both password fields.
-3. Use at least 8 characters.
-4. Select **Create account**.
-5. Platform redirects to Networks after the account is created.
+After you accept the invitation, the project appears in the project switcher at the top of the sidebar.
 
-## Google or Microsoft
+## Sign in
 
-Select the relevant provider and complete its authorization flow. Platform redirects to Networks after successful authentication.
+Go to [cloud.grillo.io](https://cloud.grillo.io) and sign in with your email and password, Google, or Microsoft.
+
+To reset a password, enter your email on the login page and select **Forgot your password?**. Grillo Cloud emails a reset link.
+
+## "No Projects Yet"
+
+This page means your account exists but does not belong to a project. Ask a project owner or admin to invite you, or contact Grillo Support.
 
 ## Next steps
 
-1. Create or select an [organization](/dashboard/organizations).
-2. [Create a network](/dashboard/networks/creating-network).
-3. [Claim a sensor](/dashboard/sensors/adding-sensor).
-
-If you received an organization invitation, follow its link and sign in with the invited email address.
+1. [Claim a sensor](/dashboard/sensors/adding-sensor).
+2. [Invite your team](/dashboard/organizations/managing-members).

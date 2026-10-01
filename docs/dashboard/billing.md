@@ -1,20 +1,27 @@
 ---
-title: Billing and Plan
+title: Account, Billing, and Settings
 ---
 
-# Billing and Plan Information
+# Account, Billing, and Settings
 
-Open the user menu at the bottom of the Platform sidebar and select **Billing**.
+These pages are in the user menu at the bottom of the Grillo Cloud sidebar.
 
-The current page shows:
+## Account
 
-- Current plan name and status
-- Network limit
-- Plan expiration, where applicable
-- Sensors-per-network allowance
-- Data-retention summary
-- Priority-support inclusion for applicable plans
+**Account** shows your name and email, and lists the projects you belong to. Use **Leave** to remove yourself from a project.
 
-The page is informational. Contact Grillo to purchase, renew, or change a plan.
+## Billing
 
-Plan values displayed in your account are authoritative for that organization. Public documentation does not duplicate numeric limits because commercial plans can change.
+**Billing** shows your current plan, its status, and its expiry date, along with the plan's data retention and support level.
+
+The page is read-only. To buy, renew, or change a plan, or to add [SISTEM](/events), [contact Grillo](/support/contact).
+
+## Settings
+
+**Settings** has one working control: **Guided Tours**. Use **Restart Tour** to replay the walkthrough for a page, or **Reset All Tours** to replay them all.
+
+The other sections on the page (user preferences, notification settings, and API keys) are placeholders. They cannot be changed yet, and Grillo Cloud does not currently issue API keys.
+
+## Language
+
+Choose **Language** in the user menu to switch between English and French.

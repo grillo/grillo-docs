@@ -1,30 +1,31 @@
 ---
-title: Create a Network
+title: Network and Station Codes
 ---
 
-# Create a Seismic Network
+# Network and Station Codes
 
-A sensor must be claimed into a network. Network selection also filters the Sensors and Events areas of Platform.
+Grillo Cloud names seismic stations with FDSN codes so your data lines up with other seismic software.
 
-## Create the network
+## Network code
 
-1. Sign in to [Grillo Platform](https://cloud.grillo.io).
-2. Select the intended organization from the organization switcher.
-3. Open **Networks**.
-4. Select **Create Network**.
-5. Enter a network code containing 1–5 uppercase letters or numbers.
-6. Select **Create**.
+Each project has one FDSN network code. Grillo sets it when it creates your project, so there is no network to create or select in Grillo Cloud.
 
-![Create Network dialog in Grillo Platform](/img/screenshots/04-network-create.png)
+Tell Grillo which code you want when you order. Use a code assigned to you by the [FDSN](https://www.fdsn.org/networks/) for operational data. An invented code can collide with someone else's network. To change the code later, [contact Grillo Support](/support/contact).
 
-Platform automatically converts typed letters to uppercase.
+## Station codes
 
-Examples of valid codes include `PR`, `MX`, and `TEST1`. Use an assigned FDSN network code for operational seismic data. A locally invented code may conflict with an existing code outside your organization.
+You choose a station code when you [claim a sensor](/dashboard/sensors/adding-sensor) and can change it later in [Edit Sensor](/dashboard/sensors/configuring-sensor).
 
-## Select the network
+- 2–8 uppercase letters or numbers
+- Unique within your project
 
-Select its card on the Networks page. Platform stores the selected network and uses it to filter sensors and events.
+Plan your station names before you start claiming. A consistent scheme is easier to work with than the default, which is the last four characters of the Device ID.
 
-## Next step
+## Channels
 
-[Claim your first sensor →](/dashboard/sensors/adding-sensor)
+| Channel | Sensor | Recorded by |
+|---|---|---|
+| `EHZ` | Vertical geophone | Grillo Pulse |
+| `HNZ` | Accelerometer, vertical | Grillo Pulse, Grillo One |
+| `HNN` | Accelerometer, north | Grillo Pulse, Grillo One |
+| `HNE` | Accelerometer, east | Grillo Pulse, Grillo One |

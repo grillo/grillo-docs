@@ -4,42 +4,43 @@ title: Start Here
 
 # Start Here
 
-Grillo combines seismic sensing hardware with software for managing stations and, where enabled, detecting earthquakes.
+Grillo makes sensors for monitoring earthquakes and landslides, and the cloud software to manage them and use their data.
 
 ## Choose your path
 
 | Your goal | Start here |
 |---|---|
-| Install a new Grillo Pulse | [Pulse Quick Start](/hardware/grillo-pulse/quick-start) |
-| Create a Platform account and network | [Grillo Platform onboarding](/dashboard) |
-| Claim a sensor you already have | [Claim a sensor](/dashboard/sensors/adding-sensor) |
-| Check whether a sensor is reporting | [Sensor status](/dashboard/sensors/sensor-status) |
-| View detected earthquakes | [Earthquake Monitoring](/events) |
+| Install a Grillo Pulse | [Pulse Quick Start](/hardware/grillo-pulse/quick-start) |
+| Install a Grillo One | [Grillo One](/hardware/grillo-one) |
+| Install a Grillo Slide kit | [Grillo Slide](/hardware/grillo-slide) |
+| Get a Grillo Cloud account | [Create an Account](/dashboard/account/creating-account) |
+| Claim a sensor you already have | [Claim a Sensor](/dashboard/sensors/adding-sensor) |
+| Check whether a sensor is reporting | [Verify Sensor Status](/dashboard/sensors/sensor-status) |
+| View or download seismic data | [View and Download Waveforms](/dashboard/data/waveforms) |
+| Send seismic data to your own server | [Send Data to Your Own Server](/dashboard/data/data-server) |
+| Update sensor firmware | [Update Firmware](/dashboard/sensors/firmware-updates) |
+| See detected earthquakes | [SISTEM add-on](/events) |
+| Read landslide movement data | [Grillo Cloud for Slide](/slide-cloud) |
 
 ## How the products fit together
 
-- **Grillo Pulse** records seismic motion and sends device-health and waveform data.
-- **Grillo Platform** manages organizations, networks, station metadata, sensor inventory, and device health.
-- **Earthquake Monitoring**, powered by SISTEM, is a Platform module for real-time earthquake cataloging and early-warning workflows.
+| Product | What it is | Managed in |
+|---|---|---|
+| **Grillo Pulse** | Seismic sensor with a geophone and accelerometer | Grillo Cloud, [cloud.grillo.io](https://cloud.grillo.io) |
+| **Grillo One** | Strong-motion seismic sensor with an accelerometer | Grillo Cloud, [cloud.grillo.io](https://cloud.grillo.io) |
+| **Grillo Slide** | GNSS base and rovers that measure ground movement | Grillo Cloud for Slide, [slide.grillo.io](https://slide.grillo.io) |
 
-An account may contain multiple organizations. Each organization can contain seismic networks, and each claimed sensor belongs to one network.
+**SISTEM** is an optional add-on to Grillo Cloud for Pulse and One. It detects earthquakes automatically and builds an event catalog. Without it, Grillo Cloud is for sensor management and data access.
 
-```text
-Account
-└── Organization
-    └── Network
-        └── Claimed sensors
-```
+Pulse and Slide use separate dashboards and separate sign-ins.
 
-## Before installing hardware
+## Before installing a seismic sensor
 
-Collect the following information:
+Have these ready:
 
-- Device ID: 12 uppercase hexadecimal characters, normally based on the Wi-Fi MAC address
-- Hardware model and revision
-- Cellular or Ethernet variant
-- Intended FDSN network and station codes
-- Installation coordinates and elevation
-- Approved power supply and cables for that hardware revision
+- Device ID: 12 uppercase hexadecimal characters, printed on the sensor label
+- The FDSN station code you want for the sensor
+- Installation coordinates and elevation, or a phone to capture them on site
+- The power supply and cables supplied with the sensor
 
-For remote sites, claim and bench-test the sensor before traveling whenever possible.
+For a remote site, claim and bench-test the sensor before you travel.

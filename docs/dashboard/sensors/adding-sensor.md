@@ -4,42 +4,45 @@ title: Claim a Sensor
 
 # Claim a Sensor
 
-Claiming associates a pre-registered device with the selected organization and seismic network. It does not configure the sensor's physical network connection.
+Claiming adds a sensor to your project. It does not connect the sensor to the internet; that is part of the hardware setup.
 
 ## Before you begin
 
 You need:
 
-- An active organization
-- A seismic network
-- The sensor's 12-character Device ID
-- A unique FDSN station code containing 2–8 uppercase letters or numbers
+- The sensor's 12-character Device ID, for example `A0B1C2D3E4F5`. It is printed on the sensor label and encoded in the label's QR code.
+- A [station code](/dashboard/networks/creating-network#station-codes): 2–8 uppercase letters or numbers, unique in your project.
 
-The Device ID is uppercase hexadecimal, for example `A0B1C2D3E4F5`. Record it before closing or installing the enclosure.
+Record the Device ID before you close or install the enclosure.
 
 ## Claim the sensor
 
-1. Open **Networks** and select the destination network.
+1. Select the right project in the project switcher.
 2. Open **Sensors**.
-3. Select the claim button in the empty state or the floating add button.
-4. In **Claim New Sensor**, enter the Device ID or use the camera button to scan its QR code.
-5. Enter the station code. Platform suggests the last four Device ID characters when the field is empty; replace that suggestion if it does not follow your station naming plan.
+3. Select the **+** button at the top of the page, or **Claim your first sensor** if the list is empty.
+4. In **Claim New Sensor**, type the Device ID or select the camera button to scan the label's QR code.
+5. Enter the station code. Grillo Cloud fills in the last four characters of the Device ID; replace them with your own station name.
 6. Select **Claim Device**.
 
-The sensor appears in the selected network after a successful claim.
+The sensor appears in the table straight away. It shows **offline** until it is powered and connected.
 
 ## Common errors
 
-- **Device not found** — verify all 12 hexadecimal characters. The device must exist in Grillo inventory before it can be claimed.
-- **Device already claimed** — an existing organization owns it. Ask that organization's owner to unclaim it or contact support.
-- **Invalid Device ID** — remove separators and use exactly 12 characters from `0–9` and `A–F`.
-- **Duplicate station code** — choose a station code not already used in the network.
-- **No network selected** — return to Networks and select the destination network.
+| Message | What to do |
+|---|---|
+| Device not found | Check all 12 characters. The sensor must be in Grillo's inventory; contact support if it is new and still not found. |
+| Device is already claimed | Another project holds it. Ask that project to unclaim it, or contact support. |
+| Invalid Device ID format | Remove spaces and separators. Use exactly 12 characters from `0–9` and `A–F`. |
+| Station code already exists | Choose a station code no other sensor in the project uses. |
 
-## Claiming versus connectivity
+## Unclaim a sensor
 
-A claimed sensor can still appear offline. Complete the revision-specific hardware and connectivity procedure, then use [sensor status](/dashboard/sensors/sensor-status) to verify reporting.
+Open the sensor's details, select **Unclaim Sensor**, and type `unclaim` to confirm. Owners and admins can unclaim.
 
-:::note Bulk import
-Platform has an administrative inventory import endpoint, but the current customer interface does not provide the bulk CSV workflow described by older documentation.
-:::
+Unclaiming removes the sensor from your project and makes it claimable by anyone who has its Device ID. It cannot be undone, and it does not reset the sensor itself.
+
+## Next steps
+
+1. [Add the sensor's location](/dashboard/sensors/configuring-sensor).
+2. Connect the hardware: [Grillo Pulse](/hardware/grillo-pulse) or [Grillo One](/hardware/grillo-one).
+3. [Verify that it is online](/dashboard/sensors/sensor-status).

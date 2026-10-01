@@ -6,23 +6,32 @@ title: Frequently Asked Questions
 
 ## Which products do these docs cover?
 
-The supported navigation currently covers Grillo Pulse, hosted Grillo Platform, and its Earthquake Monitoring module. Grillo One and Grillo Slide documentation is coming soon.
+Grillo Pulse, Grillo One, and Grillo Slide sensors; Grillo Cloud for Pulse and One, with its SISTEM add-on; and Grillo Cloud for Slide.
 
-## Where is Grillo Platform?
+## Where do I sign in?
 
-Open [cloud.grillo.io](https://cloud.grillo.io).
+- Pulse and One: [cloud.grillo.io](https://cloud.grillo.io)
+- Slide: [slide.grillo.io](https://slide.grillo.io)
+
+The two use separate accounts.
+
+## How do I get an account?
+
+Grillo Cloud accounts are by invitation. Grillo invites the owner of a new project, and owners and admins invite their colleagues. See [Create an Account](/dashboard/account/creating-account). For Slide, Grillo creates your sign-in.
 
 ## What is a Device ID?
 
-A Device ID is the sensor's 12-character uppercase hexadecimal identifier, for example `A0B1C2D3E4F5`. Record it before installing or sealing the device.
+For Pulse and One, the Device ID is the sensor's 12-character uppercase hexadecimal identifier, for example `A0B1C2D3E4F5`. It is on the sensor label. Record it before installing or sealing the device.
 
-## What is the difference between claiming and provisioning?
+Slide devices are labelled with an ID that starts with `slide-`.
 
-**Claiming** assigns a pre-registered sensor to an organization and seismic network in Platform. **Network provisioning** configures the sensor's Ethernet, cellular, or supported Wi-Fi connection. Claiming does not make an unconnected sensor Online.
+## What is the difference between claiming and connecting?
+
+**Claiming** adds a sensor to your project in Grillo Cloud. **Connecting** is setting up the sensor's Ethernet, Wi-Fi, or cellular link. A claimed sensor stays offline until it is powered and connected.
 
 ## Why is my claimed sensor offline?
 
-Check the active organization and network, Device ID, last-seen time, approved power arrangement, and variant-specific connectivity. Follow [Verify Sensor Status](/dashboard/sensors/sensor-status).
+A sensor is online when Grillo Cloud has heard from it in the last 2.5 minutes. Check the project, the Device ID, power, and the connection. Follow [Verify Sensor Status](/dashboard/sensors/sensor-status).
 
 ## How should I power a Pulse?
 
@@ -30,16 +39,28 @@ Use only the supplied power adapter through the sensor's barrel jack. Do not pow
 
 ## Does Pulse automatically switch between connection types?
 
-Connection options depend on the sensor configuration supplied for the deployment. Do not assume automatic fallback between cellular, Ethernet, or Wi-Fi. Check the order information or contact support.
+Connection options depend on the variant you ordered. Do not assume automatic fallback between cellular, Ethernet, or Wi-Fi. Check the order information or contact support.
 
-## Does Platform have a public API?
+## Can I download my seismic data?
 
-The current application has authenticated internal API routes, but these docs do not publish a supported external API contract. Contact Grillo about a specific integration. A public reference will return when a deployed, versioned contract is available.
+Yes. In Grillo Cloud, open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into your own seismic software, [send the data to your own server](/dashboard/data/data-server).
 
-## Is Live an operational earthquake feed?
+## Can I update firmware remotely?
 
-No. The current Live page uses generated mock events and stations. It is a simulation, not a protective-action or public-warning service.
+For Grillo One and Pulse units on firmware 1.x, yes: see [Update Firmware](/dashboard/sensors/firmware-updates). Slide firmware is rolled out by Grillo.
+
+## What is SISTEM?
+
+SISTEM is an optional add-on to Grillo Cloud that detects earthquakes automatically and builds an event catalog. Without it, Grillo Cloud covers sensor management and data access. See [SISTEM](/events).
+
+## Is there a public API?
+
+Grillo Cloud for Pulse and One does not have a public API or API keys yet. Grillo Cloud for Slide offers read-only [API tokens](/slide-cloud/firmware-and-api#api-tokens).
+
+## Is the Live map an official earthquake warning?
+
+No. In Live mode it shows your project's real detections, and in Simulation mode it shows a made-up earthquake. Neither is a public warning service. See [Live Map](/events/live-map).
 
 ## How do I get help?
 
-[Contact Grillo Support](/support/contact) with the Device ID, hardware revision, connectivity variant, firmware version, Platform last-seen time, and relevant photographs or screenshots.
+[Contact Grillo Support](/support/contact) with the Device ID, firmware version, the last-seen time shown in Grillo Cloud, and relevant photographs or screenshots.

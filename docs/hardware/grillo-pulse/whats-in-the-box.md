@@ -38,4 +38,4 @@ Do not assume that a SIM, battery, solar system, mains adapter, antenna, or moun
 - The power adapter does not match the sensor.
 - Installation would require opening or modifying the enclosure without instructions.
 
-After recording the identifier, [claim the sensor in Platform](/hardware/grillo-pulse/provisioning).
+After recording the identifier, [claim the sensor in Grillo Cloud](/hardware/grillo-pulse/provisioning).

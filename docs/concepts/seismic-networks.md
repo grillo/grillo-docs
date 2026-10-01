@@ -55,12 +55,12 @@ Reliable operations require more than installing hardware:
 5. Investigate correlated outages and changes in detection performance.
 6. Test the complete path from sensor to event processing and alert delivery.
 
-In Grillo Platform, an organization contains one or more named networks, and claimed sensors belong to a network. That administrative grouping helps scope access and processing, but it does not by itself guarantee scientifically adequate geometry.
+In Grillo Cloud, each project has one FDSN network code, and claimed sensors belong to the project. That administrative grouping helps scope access and processing, but it does not by itself guarantee scientifically adequate geometry.
 
 ## Further reading
 
 - [USGS: Monitoring Earthquakes](https://www.usgs.gov/programs/earthquake-hazards/monitoring-earthquakes)
 - [EarthScope Consortium: Seismic Instrumentation](https://www.earthscope.org/education-and-outreach/instrumentation/)
-- [Create a network in Grillo Platform](/dashboard/networks/creating-network)
+- [Network and station codes in Grillo Cloud](/dashboard/networks/creating-network)
 - [Sensor placement](/concepts/sensor-placement)
 - [Data quality](/concepts/data-quality)

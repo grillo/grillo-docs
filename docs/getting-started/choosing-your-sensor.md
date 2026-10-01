@@ -4,37 +4,42 @@ title: Choosing Your Sensor
 
 # Choosing Your Sensor
 
-This documentation currently provides a complete setup track for **Grillo Pulse**. Grillo One and Grillo Slide are listed as coming soon; their product and setup documentation will be published when ready.
+| | Grillo Pulse | Grillo One | Grillo Slide |
+|---|---|---|---|
+| Measures | Earthquakes, from small to strong | Strong ground shaking | Slow ground movement |
+| Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS |
+| Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
+| Power | Supplied DC adapter | 5 V DC | Internal battery with solar input |
+| Typical site | Field and remote stations | Buildings and sites with mains power and a network | Slopes and embankments |
+| Dashboard | [Grillo Cloud](/dashboard) | [Grillo Cloud](/dashboard) | [Grillo Cloud for Slide](/slide-cloud) |
 
 ## Grillo Pulse
 
-Pulse combines:
-
-- One vertical geophone channel
-- Three MEMS accelerometer channels
-- GNSS hardware for position/timebase development
-- Real-time device-health and seismic data transmission
-- Connectivity-specific cellular and Ethernet hardware variants
-
-Choose the variant specified for the site and integration. Wi-Fi hardware is present, but customer availability and fallback behavior depend on the shipping firmware and must not be assumed.
-
-Pulse is intended for network deployment and remote or field installations, subject to the enclosure and power system supplied with the order.
+Choose Pulse for a seismic network that needs to record small earthquakes as well as strong ones, or for sites without mains networking. Pick the cellular or Ethernet variant to match the site.
 
 [Install a Grillo Pulse →](/hardware/grillo-pulse)
 
 ## Grillo One
 
-Grillo One is a MEMS strong-motion sensor commonly used with Ethernet or Wi-Fi. Its existing documentation is under review, so contact Grillo for the current setup procedure and specifications.
+Choose One to add strong-motion stations where power and a network already exist, for example in buildings. Its hardware and software are open source.
 
-## Before ordering or deploying
+[Install a Grillo One →](/hardware/grillo-one)
+
+## Grillo Slide
+
+Choose Slide to monitor a slope for movement. One base on stable ground supports up to eight rovers on the ground being monitored.
+
+[Install a Grillo Slide →](/hardware/grillo-slide)
+
+## Before ordering
 
 Confirm with Grillo:
 
-1. Required sensitivity and channels
+1. What you need to measure, and how sensitive it must be
 2. Indoor or outdoor installation
 3. Cellular, Ethernet, or Wi-Fi availability at the site
 4. Power and backup requirements
-5. Destination for waveform data
-6. Which Grillo Platform modules are required
+5. Whether seismic data should go to Grillo or to your own server
+6. Whether you need the SISTEM add-on for earthquake detection
 
-[Contact Grillo Support](/support/contact) for deployment guidance.
+[Contact Grillo](/support/contact) for deployment guidance.

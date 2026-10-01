@@ -19,7 +19,7 @@ function requiredEnv(name: string): string {
 
 const config: Config = {
   title: 'Grillo Docs',
-  tagline: 'Earthquake monitoring made simple',
+  tagline: 'Earthquake and landslide monitoring made simple',
   favicon: 'img/grillo-mark-orange.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -86,7 +86,7 @@ const config: Config = {
       items: [
         {
           href: 'https://cloud.grillo.io',
-          label: 'Open Grillo Platform',
+          label: 'Open Grillo Cloud',
           position: 'right',
           className: 'navbar__platform-link',
         },
@@ -108,25 +108,29 @@ const config: Config = {
               to: '/getting-started',
             },
             {
-              label: 'Install Grillo Pulse',
-              to: '/hardware/grillo-pulse',
+              label: 'Grillo Cloud',
+              to: '/dashboard',
             },
             {
-              label: 'Grillo Platform',
-              to: '/dashboard',
+              label: 'Grillo Cloud for Slide',
+              to: '/slide-cloud',
             },
           ],
         },
         {
-          title: 'Products',
+          title: 'Sensors',
           items: [
             {
               label: 'Grillo Pulse',
               to: '/hardware/grillo-pulse',
             },
             {
-              label: 'Grillo Platform',
-              href: 'https://cloud.grillo.io',
+              label: 'Grillo One',
+              to: '/hardware/grillo-one',
+            },
+            {
+              label: 'Grillo Slide',
+              to: '/hardware/grillo-slide',
             },
           ],
         },

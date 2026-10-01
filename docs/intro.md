@@ -6,44 +6,55 @@ title: Grillo Documentation
 
 # Grillo Documentation
 
-Set up Grillo seismic sensors, manage them in Grillo Platform, and understand the earthquake information produced by your network.
+Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
 
 <div className="docs-journey-grid">
   <div className="docs-journey-card">
-    <h2>Install a Grillo Pulse</h2>
-    <p>Identify your hardware, claim the sensor, prepare connectivity, install it, and verify that it is reporting.</p>
+    <h2>Grillo Pulse</h2>
+    <p>Seismic sensor with a geophone and accelerometer, on cellular or Ethernet. Inspect, claim, connect, install, and verify.</p>
     <a href="/hardware/grillo-pulse/quick-start">Start the Pulse guide →</a>
   </div>
   <div className="docs-journey-card">
-    <h2>Set up Grillo Platform</h2>
-    <p>Create an account and organization, create a seismic network, and claim your first sensor.</p>
-    <a href="/dashboard">Start the Platform guide →</a>
+    <h2>Grillo One</h2>
+    <p>Open-source strong-motion sensor on Ethernet or Wi-Fi. Connect it to your network and mount it.</p>
+    <a href="/hardware/grillo-one">Start the One guide →</a>
   </div>
   <div className="docs-journey-card">
-    <h2>Use Platform modules</h2>
-    <p>Explore Earthquake Monitoring and learn about modules planned for other monitoring applications.</p>
-    <a href="/events">Explore Earthquake Monitoring →</a>
+    <h2>Grillo Slide</h2>
+    <p>GNSS base and rovers for landslide monitoring. Fit the SIM, set the APN with the app, and install on site.</p>
+    <a href="/hardware/grillo-slide">Start the Slide guide →</a>
+  </div>
+  <div className="docs-journey-card">
+    <h2>Grillo Cloud</h2>
+    <p>Manage Pulse and One sensors: accounts, claiming, status, waveforms, data download, and firmware updates. Includes the SISTEM add-on for automatic earthquake detection.</p>
+    <a href="/dashboard">Open the Grillo Cloud guide →</a>
+  </div>
+  <div className="docs-journey-card">
+    <h2>Grillo Cloud for Slide</h2>
+    <p>Read ground movement and device health from your Slide kits, and export the data.</p>
+    <a href="/slide-cloud">Open the Slide dashboard guide →</a>
   </div>
 </div>
 
-:::note Current scope
-These docs cover Grillo Pulse and the hosted Grillo Platform at [cloud.grillo.io](https://cloud.grillo.io). Grillo One and Grillo Slide are listed as coming soon; their setup documentation will be published when ready.
-:::
+## New sensor checklist
 
-## New installation checklist
+**Grillo Pulse and Grillo One**
 
-1. Confirm the model, hardware revision, and connectivity variant on your order or device label.
-2. [Create your Platform account](/dashboard/account/creating-account).
-3. Create or select an organization.
-4. [Create a seismic network](/dashboard/networks/creating-network).
-5. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID.
-6. Follow the installation guide for your exact sensor variant.
-7. Verify its status, last-seen time, connectivity, and power information in Platform.
+1. [Get a Grillo Cloud account](/dashboard/account/creating-account) from your project invitation.
+2. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID.
+3. Follow the hardware guide for your sensor: [Pulse](/hardware/grillo-pulse) or [One](/hardware/grillo-one).
+4. [Verify that it is online](/dashboard/sensors/sensor-status) and its live waveform is moving.
 
-:::warning Verify hardware before applying power
-Pulse power and USB requirements vary by hardware revision. Do not use a generic power supply or assume USB can power the sensor. Follow the documentation supplied with your unit or contact Grillo Support if its revision-specific instructions are unavailable.
+**Grillo Slide**
+
+1. [Fit the SIM and set the APN](/hardware/grillo-slide/sim-and-apn) on the base.
+2. [Install the devices on site](/hardware/grillo-slide/installation).
+3. [Check the first readings](/slide-cloud/sites-and-devices) at slide.grillo.io.
+
+:::warning Check power before you connect a Pulse
+Use only the power adapter supplied with your Pulse. Do not assume USB can power the sensor. Contact Grillo Support if the supplied accessories do not match your order.
 :::
 
 ## Need help?
 
-Read the [support FAQ](/support/faq) or [contact Grillo Support](/support/contact). Include the Device ID, hardware revision, connectivity variant, and a description of what you see in Platform.
+Read the [FAQ](/support/faq) or [contact Grillo Support](/support/contact). Include the Device ID and a description of what you see in Grillo Cloud.

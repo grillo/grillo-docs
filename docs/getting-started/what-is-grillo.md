@@ -4,32 +4,33 @@ title: What Is Grillo?
 
 # What Is Grillo?
 
-Grillo builds connected seismic sensors and software for operating dense earthquake-monitoring networks.
+Grillo builds connected sensors and cloud software for earthquake and landslide monitoring.
 
-## Grillo Pulse
+## Sensors
 
-Grillo Pulse combines a vertical geophone and a triaxial MEMS accelerometer. Current hardware is produced in connectivity-specific variants. See the [Pulse guide](/hardware/grillo-pulse) before connecting power or networking equipment.
+- **[Grillo Pulse](/hardware/grillo-pulse)** combines a vertical geophone and a three-axis MEMS accelerometer. It comes in cellular and Ethernet variants.
+- **[Grillo One](/hardware/grillo-one)** is an open-source strong-motion sensor with a three-axis MEMS accelerometer, on Ethernet or Wi-Fi.
+- **[Grillo Slide](/hardware/grillo-slide)** is a kit of one GNSS base and up to eight rovers that measures ground movement on slopes in millimetres.
 
-## Grillo Platform
+## Grillo Cloud
 
-[Grillo Platform](https://cloud.grillo.io) is the hosted application used to:
+[Grillo Cloud](/dashboard) at [cloud.grillo.io](https://cloud.grillo.io) is the web application for Pulse and One. Use it to:
 
-- Organize sensors by organization and seismic network
-- Claim pre-registered devices by Device ID
-- Assign FDSN station codes and location metadata
-- View sensors in table and map views
-- Monitor online state, last-seen time, connectivity, signal, and power information
-- Use enabled modules for monitoring applications
+- Claim sensors by Device ID and assign FDSN station codes
+- See sensors in a table and on a map
+- Monitor online status, connectivity, signal, power, and firmware
+- Watch live waveforms, review recordings, and download samples
+- Update firmware over the air
+- Send seismic data to your own server
 
-## Platform modules
+### SISTEM add-on
 
-Platform modules use the sensors, networks, and metadata already managed in Grillo Platform.
+[SISTEM](/events) is an optional add-on to Grillo Cloud. It detects earthquakes automatically from your sensors' data, builds an event catalog, and shows events on a live map. Ask Grillo to enable it for your project.
 
-- **Earthquake Monitoring**, powered by SISTEM, supports real-time earthquake detection, event cataloging, and early-warning workflows.
-- **Structural Health Monitoring** is coming soon.
+## Grillo Cloud for Slide
 
-Module availability and features depend on the organization's deployment.
+[Grillo Cloud for Slide](/slide-cloud) at [slide.grillo.io](https://slide.grillo.io) shows each rover's movement, device health, and battery, and lets you export the data.
 
-## Data integrations
+## Your own seismic system
 
-Grillo sensors can be integrated with customer seismic systems. Integration details depend on the contracted deployment and should be confirmed with Grillo before installation. A public API reference will be published when a versioned external API contract is available.
+Pulse and One can send their seismic data to a server you run instead of Grillo. See [Send Data to Your Own Server](/dashboard/data/data-server).

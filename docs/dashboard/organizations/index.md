@@ -1,36 +1,39 @@
 ---
-title: Organizations
+title: Projects
 ---
 
-# Organizations
+# Projects
 
-Organizations separate teams, networks, and sensors. Platform creates an organization from the user's name when a new account is created.
+A project holds one team's sensors, events, and members. Everything you see in Grillo Cloud belongs to the active project.
 
-## Switch organizations
+Grillo creates projects. To get a new one, [contact Grillo Support](/support/contact).
 
-Use the organization switcher at the top of the Platform sidebar. The active organization controls which networks, sensors, events, and members you can access.
+## Switch projects
 
-## Manage an organization
+If you belong to more than one project, use the project switcher at the top of the sidebar. Grillo Cloud reloads and shows that project's sensors, events, and members.
 
-Open the organization switcher and select **Manage Organization**. Depending on your role, this area displays:
+## Project Settings
 
-- Organization name and slug
-- Logo and sidebar branding preference
-- Members and roles
-- Pending invitations
+Open **Project Settings** in the sidebar under **Administration**.
 
-![Organization settings in Grillo Platform](/img/screenshots/12-organization-edit.png)
+![Project settings in Grillo Cloud](/img/screenshots/12-organization-edit.png)
 
-Owners can edit organization identity and branding. Owners and administrators can invite members. Some destructive or membership actions remain owner-only.
+| Section | What it contains | Who can change it |
+|---|---|---|
+| Branding | Project logo (PNG or JPG, up to 2 MB) and whether the sidebar shows the logo, the name, or both | Owner |
+| Information | Project name and slug | Owner |
+| Members | Everyone in the project, with their role | Owner and admins change roles; only the owner removes members |
+| Invitations | Pending invitations | Owner and admins |
+| Seismic Data Server | Where the project's sensors send seismic data | Owner and admins |
+
+See [Manage Members](/dashboard/organizations/managing-members) and [Send Data to Your Own Server](/dashboard/data/data-server).
 
 ## Roles
 
-Platform uses these organization roles:
+- **Owner** — full control of the project, including its name, branding, and removing members
+- **Admin** — invites members, changes member roles, and sets the seismic data server
+- **Member** — works with sensors and data
 
-- **Owner** — full organization management
-- **Admin** — member invitation and elevated organization access
-- **Member** — access to the organization's operational views
+## Leave a project
 
-Available actions are enforced by Platform and may differ by role.
-
-[Manage members →](/dashboard/organizations/managing-members)
+Open **Account** from the user menu. Your projects are listed there, each with a **Leave** button. Leaving removes your access to that project's sensors.

@@ -79,7 +79,7 @@ A connected station is an operational system. Plan for:
 
 ## Grillo architecture
 
-Grillo Platform manages organizations, networks, claimed devices, station metadata, and device-health information. Its Earthquake Monitoring module, powered by SISTEM, processes seismic observations into events for configured deployments.
+Grillo Cloud manages projects, claimed sensors, station metadata, device health, and waveform data. Its SISTEM add-on processes seismic observations into events.
 
 Customer integrations and local deployment models should receive their own operational documentation rather than being treated as automatic properties of the sensor.
 

@@ -4,21 +4,17 @@ title: Sensor Map
 
 # Sensor Map
 
-Open **Sensors** and switch from table to map view to see sensors with saved coordinates.
+Open **Sensors** and choose **Map** to see the project's sensors by location.
 
-![Sensor map in Grillo Platform](/img/screenshots/06-sensors-map.png)
+![Sensor map in Grillo Cloud](/img/screenshots/06-sensors-map.png)
 
 ## Use the map
 
 - Pan and zoom to inspect the deployment.
-- Use the fit control to include all visible sensors.
-- Select a sensor marker to open its details.
-- Change the selected network to change the displayed sensor set.
+- Use the fit control to bring all sensors into view.
+- Select a marker to open that sensor's details.
+- From a sensor's details, select **Find on map** to jump to its marker.
 
-A sensor needs valid latitude and longitude values to appear at the correct location. If a marker is missing or misplaced, [edit its location](/dashboard/sensors/configuring-sensor).
+A sensor needs a saved latitude and longitude to appear. If a marker is missing or in the wrong place, [edit the sensor's location](/dashboard/sensors/configuring-sensor).
 
-The online/offline state comes from device reporting, not from map position.
-
-:::note Current scope
-Saved map layouts, custom layers, shakemaps, event history overlays, and other advanced layer controls are not part of the current sensor-map workflow.
-:::
+Marker status follows the same rule as the table: online means a health report arrived in the last 2.5 minutes.

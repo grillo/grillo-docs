@@ -43,7 +43,7 @@ Connection options depend on the variant you ordered. Do not assume automatic fa
 
 ## Can I download my seismic data?
 
-Yes. In Grillo Cloud, open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into your own seismic software, [send the data to your own server](/dashboard/data/data-server).
+With the [SISTEM add-on](/events), yes. In Grillo Cloud, open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into your own seismic software, [send the data to your own server](/dashboard/data/data-server).
 
 ## Can I update firmware remotely?
 
@@ -51,7 +51,7 @@ For Grillo One and Pulse units on firmware 1.x, yes: see [Update Firmware](/dash
 
 ## What is SISTEM?
 
-SISTEM is an optional add-on to Grillo Cloud that detects earthquakes automatically and builds an event catalog. Without it, Grillo Cloud covers sensor management and data access. See [SISTEM](/events).
+SISTEM is an optional add-on to Grillo Cloud that detects earthquakes automatically and builds an event catalog. It also adds waveform viewing and download. Without it, Grillo Cloud covers sensor management. See [SISTEM](/events).
 
 ## Is there a public API?
 

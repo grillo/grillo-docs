@@ -16,7 +16,7 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | Get a Grillo Cloud account | [Create an Account](/dashboard/account/creating-account) |
 | Claim a sensor you already have | [Claim a Sensor](/dashboard/sensors/adding-sensor) |
 | Check whether a sensor is reporting | [Verify Sensor Status](/dashboard/sensors/sensor-status) |
-| View or download seismic data | [View and Download Waveforms](/dashboard/data/waveforms) |
+| View or download seismic data (SISTEM) | [View and Download Waveforms](/dashboard/data/waveforms) |
 | Send seismic data to your own server | [Send Data to Your Own Server](/dashboard/data/data-server) |
 | Update sensor firmware | [Update Firmware](/dashboard/sensors/firmware-updates) |
 | See detected earthquakes | [SISTEM add-on](/events) |
@@ -30,7 +30,7 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | **Grillo One** | Strong-motion seismic sensor with an accelerometer | Grillo Cloud, [cloud.grillo.io](https://cloud.grillo.io) |
 | **Grillo Slide** | GNSS base and rovers that measure ground movement | Grillo Cloud for Slide, [slide.grillo.io](https://slide.grillo.io) |
 
-**SISTEM** is an optional add-on to Grillo Cloud for Pulse and One. It detects earthquakes automatically and builds an event catalog. Without it, Grillo Cloud is for sensor management and data access.
+**SISTEM** is an optional add-on to Grillo Cloud for Pulse and One. It adds waveform viewing and download, detects earthquakes automatically, and builds an event catalog. Without it, Grillo Cloud is for sensor management: your sensors in a list and on a map, with their health.
 
 Pulse and Slide use separate dashboards and separate sign-ins.
 

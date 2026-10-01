@@ -26,7 +26,7 @@ Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
   </div>
   <div className="docs-journey-card">
     <h2>Grillo Cloud</h2>
-    <p>Manage Pulse and One sensors: accounts, claiming, status, waveforms, data download, and firmware updates. Includes the SISTEM add-on for automatic earthquake detection.</p>
+    <p>Claim your Pulse and One sensors, see them in a list and on a map, check their health, and update firmware. Add SISTEM for earthquake detection and waveforms.</p>
     <a href="/dashboard">Open the Grillo Cloud guide →</a>
   </div>
   <div className="docs-journey-card">
@@ -43,7 +43,7 @@ Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
 1. [Get a Grillo Cloud account](/dashboard/account/creating-account) from your project invitation.
 2. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID.
 3. Follow the hardware guide for your sensor: [Pulse](/hardware/grillo-pulse) or [One](/hardware/grillo-one).
-4. [Verify that it is online](/dashboard/sensors/sensor-status) and its live waveform is moving.
+4. [Verify that it is online](/dashboard/sensors/sensor-status) in the sensor list.
 
 **Grillo Slide**
 

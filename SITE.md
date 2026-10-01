@@ -68,11 +68,11 @@ The documentation is English-only.
 
 #### Data
 
-- View and Download Waveforms
 - Send Data to Your Own Server
 
 #### SISTEM Add-on
 
+- View and Download Waveforms
 - Event Catalog
 - Event Details
 - Live Map

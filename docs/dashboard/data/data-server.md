@@ -15,7 +15,7 @@ Sensors keep sending health reports to Grillo either way, so you still manage an
 | Sensor health, status, and connection history | In Grillo Cloud | In Grillo Cloud |
 | Station codes and firmware updates | In Grillo Cloud | In Grillo Cloud |
 | Seismic waveforms | Stored by Grillo | Delivered to your server only |
-| Live view and waveform review in Grillo Cloud | Available | No new data |
+| Live view and waveform review in Grillo Cloud (SISTEM) | Available | No new data |
 | SISTEM earthquake detection | Available with the add-on | Not available |
 
 The setting applies to every sensor in the project. It cannot be set for a single sensor.

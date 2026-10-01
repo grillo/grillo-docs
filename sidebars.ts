@@ -73,19 +73,13 @@ const sidebars: SidebarsConfig = {
             'dashboard/sensors/firmware-updates',
           ],
         },
-        {
-          type: 'category',
-          label: 'Data',
-          items: [
-            'dashboard/data/waveforms',
-            'dashboard/data/data-server',
-          ],
-        },
+        'dashboard/data/data-server',
         {
           type: 'category',
           label: 'SISTEM Add-on',
           link: {type: 'doc', id: 'events/index'},
           items: [
+            'dashboard/data/waveforms',
             'events/event-catalog',
             'events/event-details',
             'events/live-map',

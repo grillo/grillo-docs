@@ -4,7 +4,9 @@ title: Claim a Sensor
 
 # Claim a Sensor
 
-Claiming adds a sensor to your project. It does not connect the sensor to the internet; that is part of the hardware setup.
+When your Grillo Pulse or Grillo One arrives, claim it in Grillo Cloud. Claiming links the sensor to your project, so it shows up in your sensor list and on your map.
+
+Every Grillo sensor is registered in Grillo's system at the factory, so there is nothing to set up beforehand: you only need its Device ID. Claiming does not connect the sensor to the internet; that is part of the [hardware setup](#next-steps).
 
 ## Before you begin
 
@@ -24,13 +26,13 @@ Record the Device ID before you close or install the enclosure.
 5. Enter the station code. Grillo Cloud fills in the last four characters of the Device ID; replace them with your own station name.
 6. Select **Claim Device**.
 
-The sensor appears in the table straight away. It shows **offline** until it is powered and connected.
+The sensor appears in your list straight away and shows **offline**. Once it is powered and connected, it sends a health report about once a minute. Its status changes to **online**, and it appears on the map once you [add its location](/dashboard/sensors/configuring-sensor).
 
 ## Common errors
 
 | Message | What to do |
 |---|---|
-| Device not found | Check all 12 characters. The sensor must be in Grillo's inventory; contact support if it is new and still not found. |
+| Device not found | Check all 12 characters, or scan the QR code instead. Every Grillo sensor is registered at the factory, so if the ID is correct and still not found, contact support. |
 | Device is already claimed | Another project holds it. Ask that project to unclaim it, or contact support. |
 | Invalid Device ID format | Remove spaces and separators. Use exactly 12 characters from `0–9` and `A–F`. |
 | Station code already exists | Choose a station code no other sensor in the project uses. |

@@ -61,7 +61,6 @@ Use Grillo Cloud—not internal LEDs—as the primary setup indicator.
 - [ ] Confirm **Last Seen** is current.
 - [ ] Confirm the expected connection type.
 - [ ] Confirm the firmware version is displayed.
-- [ ] Open the sensor and confirm the **Live sensor** waveform is moving.
 
 Some health fields vary by sensor configuration. A blank or unavailable field does not necessarily indicate a fault.
 

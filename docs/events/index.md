@@ -8,11 +8,12 @@ SISTEM is an optional add-on to Grillo Cloud. Without it, Grillo Cloud is a sens
 
 SISTEM gives you:
 
+- **Waveforms.** Watch each sensor's live waveform and spectrogram, review recorded data, and [download it as CSV](/dashboard/data/waveforms).
 - **An automatic event catalog.** Each detected earthquake is recorded with its time, location, depth, and magnitude.
 - **A live map.** Watch detections as they happen, with the stations that triggered and the estimated wave fronts.
 - **In-app alerts.** Grillo Cloud shows a notification and an unread count on **Events** when a new earthquake is detected.
 
-These appear in the **Seismic** group of the sidebar as **Events** and **Live**.
+Events and the live map appear in the **Seismic** group of the sidebar. Waveforms appear in each sensor's details.
 
 ## Requirements
 

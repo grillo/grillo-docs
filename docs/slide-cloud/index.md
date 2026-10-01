@@ -17,7 +17,7 @@ Grillo creates your account and sends you the sign-in details. There is no self 
 
 You can also select **Send sign-in link instead** to receive a one-time link by email. To set a new password, use the reset option on the sign-in page and follow the emailed link.
 
-The same account signs you in to the Grillo Field app.
+The same account signs you in to the Grillo Field app, which is on Android now with the iPhone version coming soon.
 
 ## How your devices are organized
 
@@ -38,7 +38,7 @@ Project
 | Page | Use it to |
 |---|---|
 | **Sites** | See all your sites, with counts of devices reporting and overdue. Open a site to see its devices. If your account can create sites, **Add site** creates a new site with one sensor group, ready for devices set up in Grillo Field. |
-| **Devices** | Search every device across your sites by name, printed ID, or site. |
+| **Devices** | Search every device across your sites by name, printed ID, or site, in a **Table** or on a **Map**. |
 | **Exports** | Download movement, battery, and location data. |
 | **Settings** | Open your account and API tokens. |
 
@@ -62,9 +62,10 @@ If a button you expect is missing, or a page says you don't have permission, ask
 - [Sites and Devices](/slide-cloud/sites-and-devices) — read movement and device health
 - [Export Data](/slide-cloud/exports) — download readings and raw GNSS files
 - [Firmware and API Access](/slide-cloud/firmware-and-api)
+- [Landslide Monitoring with GNSS](/concepts/landslide-monitoring) — how to read the movement results
 
 ## Not available yet
 
 - Automated landslide alerts
-- Inviting other users from the dashboard. Ask Grillo to add a colleague.
+- Inviting other users from the dashboard. Ask Grillo Support to add a colleague.
 - Moving a sensor group between sites

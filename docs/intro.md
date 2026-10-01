@@ -52,7 +52,7 @@ Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
 3. [Check the first readings](/slide-cloud/sites-and-devices) at slide.grillo.io.
 
 :::warning Check power before you connect a Pulse
-Use only the power adapter supplied with your Pulse. Do not assume USB can power the sensor. Contact Grillo Support if the supplied accessories do not match your order.
+Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a powered USB cable can damage it. Contact Grillo Support if the supplied accessories do not match your order.
 :::
 
 ## Need help?

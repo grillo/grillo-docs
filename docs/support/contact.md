@@ -15,7 +15,6 @@ If the form does not send, email [support@grillo.io](mailto:support@grillo.io).
 
 - Device ID, or the `slide-…` ID on a Slide label
 - Product model: Pulse, One, or Slide
-- Hardware revision
 - Cellular or Ethernet variant
 - Firmware version
 - Project name

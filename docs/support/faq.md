@@ -35,11 +35,11 @@ A sensor is online when Grillo Cloud has heard from it in the last 2.5 minutes. 
 
 ## How should I power a Pulse?
 
-Use only the supplied power adapter through the sensor's barrel jack. Do not power it through a service port or open the enclosure unless instructed by Grillo Support.
+Use only the 12 V DC supply provided with it. It cannot be powered from USB, and a powered USB cable can damage it. Do not open the enclosure unless Grillo Support asks you to.
 
 ## Does Pulse automatically switch between connection types?
 
-Connection options depend on the variant you ordered. Do not assume automatic fallback between cellular, Ethernet, or Wi-Fi. Check the order information or contact support.
+No. Pulse Cellular uses the mobile network and Pulse Ethernet uses a wired network. The Wi-Fi hardware is not used as a fallback.
 
 ## Can I download my seismic data?
 
@@ -47,7 +47,7 @@ With the [SISTEM add-on](/events), yes. In Grillo Cloud, open the waveform revie
 
 ## Can I update firmware remotely?
 
-For Grillo One and Pulse units on firmware 1.x, yes: see [Update Firmware](/dashboard/sensors/firmware-updates). Slide firmware is also updated over the air, the base over LTE and the rovers through the base: see [Firmware updates](/slide-cloud/firmware-and-api#firmware-updates).
+For Grillo One and earlier Pulse units on firmware 1.x, yes. The current Pulse is updated by Grillo for now: see [Update Firmware](/dashboard/sensors/firmware-updates). Slide firmware is also updated over the air, the base over LTE and the rovers through the base: see [Firmware updates](/slide-cloud/firmware-and-api#firmware-updates).
 
 ## What is SISTEM?
 

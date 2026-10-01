@@ -1,40 +1,35 @@
 ---
-title: Cellular and SIM Setup
+title: Cellular and SIM
 ---
 
-# Cellular and SIM Setup
+# Cellular and SIM
 
-This page applies only to a Pulse Cellular sensor.
+This page applies to Pulse Cellular only.
 
-:::warning Do not open the enclosure without instructions
-Many sensors are supplied with a configured SIM. Opening the enclosure or replacing the SIM can affect weatherproofing and connectivity. Contact Grillo Support before making changes.
+Pulse Cellular connects over LTE Cat-1. Grillo fits the SIM and sets it up before shipping, so the sensor connects as soon as it has power and coverage. There is no APN or other mobile setting to enter.
+
+:::warning Do not change the SIM
+Leave the supplied SIM in place. The sensor is set up for that SIM, and opening the enclosure can affect its weatherproofing. If you need to use a different SIM or carrier, [contact Grillo Support](/support/contact) first.
 :::
 
-## Before deployment
+## Coverage
 
-Confirm:
+Pulse Cellular supports LTE on band 20 (used widely in the UK and Europe) and bands 12 and 13 (used in the US). Before you choose a site:
 
-- Cellular service is active.
-- The supplied antennas are installed on the matching labelled connectors.
-- The selected carrier has coverage at the site.
-- The data plan remains active for the expected deployment period.
-- The complete sensor has been tested in Grillo Cloud.
+1. Check that there is LTE coverage at the exact installation point, not just nearby.
+2. If you are unsure, bench-test the sensor there first.
+3. Keep the antennas clear of large metal surfaces and obstructions.
 
-## Site preparation
+In Grillo Cloud, the sensor's details show its **Signal Strength** and **SIM ICCID**. Check signal strength at the installed position before you leave the site.
 
-1. Check carrier coverage at the exact installation point.
-2. Keep antennas clear of large metal surfaces and major obstructions.
-3. Complete activation before traveling to a remote site.
-4. Bench-test with the same SIM, antennas, power adapter, and sensor configuration intended for deployment.
-5. Verify Online status and a current Last seen value in Grillo Cloud.
+## Timing
 
-## If cellular does not connect
+The sensor sets its clock from the network once it connects. On cellular, the first time can take up to 5 minutes; data recorded before that may be mis-timed.
 
-- Confirm the service and data plan are active.
-- Check that antennas are firmly connected to the correct labelled ports.
-- Test at another location with stronger coverage.
-- Restart the sensor using the normal power connection.
-- Record the Device ID, carrier, installation location, and Grillo Cloud Last seen value.
-- Contact Grillo Support before changing the SIM or network settings.
+## If it does not connect
 
-Do not test a managed IoT SIM in another device unless the carrier and deployment owner permit it.
+- Check that the antennas are firmly connected to the correct labelled connectors.
+- Check coverage at the site, or try somewhere with a stronger signal.
+- Disconnect the 12 V supply, wait 30 seconds, and reconnect it.
+- Give it 5 minutes, then check Grillo Cloud.
+- If it still does not connect, contact support with the Device ID, the site location, and the **SIM ICCID** shown in Grillo Cloud, if any.

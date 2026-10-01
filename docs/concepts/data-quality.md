@@ -91,10 +91,18 @@ Compare arrival times across stations and review time-source telemetry. Timing q
 5. Exclude or down-weight unsuitable channels in processing rather than hiding problems.
 6. Revalidate after relocation, firmware changes, power work, or antenna changes.
 
-Grillo Cloud shows device health, a live waveform and spectrogram, and recorded waveforms with their gaps. For calibrated spectra, completeness statistics, and detailed quality analysis, use your own seismic software on the downloaded or streamed data.
+## Data quality with Grillo sensors
+
+- **Health and uptime:** Grillo Cloud shows each sensor's online status, last report, signal, power, and a [connection history](/dashboard/sensors/sensor-details#connection-history) of interruptions and reboots. Use it to separate "the sensor stopped" from "the data path stopped".
+- **Waveforms:** with the [SISTEM add-on](/events), Grillo Cloud shows a live waveform and spectrogram, and recorded waveforms with their gaps marked. You can [download the samples](/dashboard/data/waveforms) for your own analysis.
+- **Timing:** Grillo Pulse and Grillo One set their clocks from network time (NTP). Data recorded in the first minutes after power-on, before the clock is set, may be mis-timed.
+- **Values:** waveforms in Grillo Cloud are raw counts, not calibrated ground motion. Convert them with the instrument response before comparing amplitudes between sensor types.
+
+For calibrated spectra, completeness statistics, and detailed quality analysis, use your own seismic software on the downloaded data, or [send the data to your own server](/dashboard/data/data-server).
 
 ## Further reading
 
 - [EarthScope: MUSTANG Quality Assurance](https://service.iris.edu/mustang/)
 - [Sensor placement](/concepts/sensor-placement)
 - [Pulse troubleshooting](/hardware/grillo-pulse/troubleshooting)
+- [Grillo One troubleshooting](/hardware/grillo-one/setup#troubleshooting)

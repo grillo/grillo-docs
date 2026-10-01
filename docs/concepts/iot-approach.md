@@ -25,7 +25,7 @@ Different sensing technologies serve different objectives:
 - Geophones and short-period seismometers improve sensitivity to weaker local and regional signals over their useful frequency range.
 - Broadband instruments support weak and long-period observations required by many research networks.
 
-Grillo Pulse combines a vertical geophone with a triaxial MEMS accelerometer. A mixed network can also combine Pulse with other station types, provided processing uses correct responses, sample rates, orientations, and channel metadata.
+Grillo Pulse combines a vertical geophone with a triaxial MEMS accelerometer, and Grillo One uses a triaxial MEMS accelerometer alone. A mixed network can also combine Pulse with other station types, provided processing uses correct responses, sample rates, orientations, and channel metadata.
 
 Avoid broad labels such as “consumer-grade” or fixed magnitude thresholds. Sensor usefulness depends on noise, coupling, gain, frequency response, distance, geology, and the target signal—not price category alone.
 
@@ -48,6 +48,12 @@ Avoid broad labels such as “consumer-grade” or fixed magnitude thresholds. S
 - Convenient at managed sites
 - Depends on credentials, radio coverage, interference, and access-point policy
 - Credential recovery can require site access if not designed carefully
+
+### Local radio mesh
+
+- Lets battery-powered devices share one internet connection, as Grillo Slide rovers do through their base
+- Each device needs radio reach to a neighbour, which depends on terrain and vegetation
+- Devices can sleep between scheduled cycles, saving power at the cost of latency
 
 No communication path should be assumed reliable without site testing. Network operations should distinguish “the sensor is sampling” from “the server is receiving data.”
 
@@ -79,9 +85,10 @@ A connected station is an operational system. Plan for:
 
 ## Grillo architecture
 
-Grillo Cloud manages projects, claimed sensors, station metadata, device health, and waveform data. Its SISTEM add-on processes seismic observations into events.
-
-Customer integrations and local deployment models should receive their own operational documentation rather than being treated as automatic properties of the sensor.
+- **Grillo Pulse and Grillo One** send health reports and seismic data in real time over Ethernet, Wi-Fi, or cellular, initiating every connection outbound.
+- **Grillo Cloud** manages projects, claimed sensors, station metadata, device health, and over-the-air firmware updates. Its [SISTEM add-on](/events) adds waveforms and processes seismic data into earthquake events.
+- **Seismic data** can go to Grillo or, per project, [to your own server](/dashboard/data/data-server), while health monitoring stays in Grillo Cloud.
+- **Grillo Slide** works differently: devices wake on a schedule, rovers relay readings through the base over a radio mesh, and the base uploads over LTE to [Grillo Cloud for Slide](/slide-cloud).
 
 ## Related concepts
 
@@ -89,3 +96,4 @@ Customer integrations and local deployment models should receive their own opera
 - [Sensor placement](/concepts/sensor-placement)
 - [Data quality](/concepts/data-quality)
 - [Earthquake early warning](/concepts/earthquake-early-warning)
+- [Landslide monitoring with GNSS](/concepts/landslide-monitoring)

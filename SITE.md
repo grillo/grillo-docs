@@ -90,6 +90,7 @@ The documentation is English-only.
 - Sensor Placement
 - Data Quality
 - Earthquake Early Warning
+- Landslide Monitoring with GNSS
 - IoT Approach
 
 ### Support

@@ -14,10 +14,12 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | Install a Grillo One | [Grillo One](/hardware/grillo-one) |
 | Install a Grillo Slide kit | [Grillo Slide](/hardware/grillo-slide) |
 | Get a Grillo Cloud account | [Create an Account](/dashboard/account/creating-account) |
+| Add a colleague to your project | [Add Colleagues](/dashboard/organizations/managing-members) |
 | Claim a sensor you already have | [Claim a Sensor](/dashboard/sensors/adding-sensor) |
 | Check whether a sensor is reporting | [Verify Sensor Status](/dashboard/sensors/sensor-status) |
 | View or download seismic data (SISTEM) | [View and Download Waveforms](/dashboard/data/waveforms) |
 | Send seismic data to your own server | [Send Data to Your Own Server](/dashboard/data/data-server) |
+| Export landslide readings | [Export Slide Data](/slide-cloud/exports) |
 | Update sensor firmware | [Update Firmware](/dashboard/sensors/firmware-updates) |
 | See detected earthquakes | [SISTEM add-on](/events) |
 | Read landslide movement data | [Grillo Cloud for Slide](/slide-cloud) |
@@ -32,15 +34,26 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 
 **SISTEM** is an optional add-on to Grillo Cloud for Pulse and One. It adds waveform viewing and download, detects earthquakes automatically, and builds an event catalog. Without it, Grillo Cloud is for sensor management: your sensors in a list and on a map, with their health.
 
-Pulse and Slide use separate dashboards and separate sign-ins.
+Grillo Cloud and Grillo Cloud for Slide are separate dashboards with separate sign-ins. In both, Grillo sets up your account and project for you.
 
-## Before installing a seismic sensor
+## When your sensors arrive
 
-Have these ready:
+Every Grillo sensor is registered at the factory, so there is nothing to set up in advance.
 
-- Device ID: 12 uppercase hexadecimal characters, printed on the sensor label
-- The FDSN station code you want for the sensor
-- Installation coordinates and elevation, or a phone to capture them on site
-- The power supply and cables supplied with the sensor
+**Grillo Pulse or Grillo One**
 
-For a remote site, claim and bench-test the sensor before you travel.
+1. Accept your Grillo Cloud invitation and [sign up](/dashboard/account/creating-account).
+2. [Claim the sensor](/dashboard/sensors/adding-sensor) with the Device ID on its label, or scan the label's QR code.
+3. Power and connect it by following its guide: [Pulse](/hardware/grillo-pulse) or [One](/hardware/grillo-one).
+4. Within a few minutes it appears **online** in your sensor list. Add its location and it appears on the map.
+
+Have ready the station code you want for each sensor, and a phone to capture coordinates on site. For a remote site, claim and bench-test the sensor before you travel.
+
+**Grillo Slide**
+
+Grillo sets up your kit and links it to your account before it ships.
+
+1. Install **Grillo Field** on an Android phone from the link Grillo sends you, and sign in.
+2. [Fit the SIM and set the APN](/hardware/grillo-slide/sim-and-apn) on the base.
+3. [Install the devices](/hardware/grillo-slide/installation) and let the base survey its position.
+4. [Check the first readings](/slide-cloud/sites-and-devices) at slide.grillo.io.

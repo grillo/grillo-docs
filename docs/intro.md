@@ -41,14 +41,14 @@ Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
 **Grillo Pulse and Grillo One**
 
 1. [Get a Grillo Cloud account](/dashboard/account/creating-account) from your project invitation.
-2. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID.
+2. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID or the QR code on its label.
 3. Follow the hardware guide for your sensor: [Pulse](/hardware/grillo-pulse) or [One](/hardware/grillo-one).
 4. [Verify that it is online](/dashboard/sensors/sensor-status) in the sensor list.
 
 **Grillo Slide**
 
 1. [Fit the SIM and set the APN](/hardware/grillo-slide/sim-and-apn) on the base.
-2. [Install the devices on site](/hardware/grillo-slide/installation).
+2. [Install the devices on site](/hardware/grillo-slide/installation) and let the base [survey its position](/hardware/grillo-slide/installation#survey-the-base).
 3. [Check the first readings](/slide-cloud/sites-and-devices) at slide.grillo.io.
 
 :::warning Check power before you connect a Pulse
@@ -57,4 +57,4 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a po
 
 ## Need help?
 
-Read the [FAQ](/support/faq) or [contact Grillo Support](/support/contact). Include the Device ID and a description of what you see in Grillo Cloud.
+Use the chat messenger on this site, read the [FAQ](/support/faq), or [contact Grillo Support](/support/contact).

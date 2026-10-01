@@ -108,6 +108,7 @@ const sidebars: SidebarsConfig = {
         'concepts/sensor-placement',
         'concepts/data-quality',
         'concepts/earthquake-early-warning',
+        'concepts/landslide-monitoring',
         'concepts/iot-approach',
       ],
     },

@@ -41,6 +41,7 @@ A network can combine different instruments:
 - Short-period geophones for local and regional signals
 - Strong-motion accelerometers for larger shaking
 - Dual-sensor stations such as Grillo Pulse
+- Low-cost strong-motion stations such as Grillo One, useful for densifying a network where power and a network connection already exist
 
 Mixed networks can extend dynamic range and coverage, but processing needs correct station metadata, channel names, sample rates, orientation, timing, and instrument response.
 

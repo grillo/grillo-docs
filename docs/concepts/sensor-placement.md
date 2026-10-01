@@ -4,6 +4,8 @@ title: Sensor Placement
 
 # Sensor Placement
 
+This page is about seismic stations. For Grillo Slide, see [Landslide monitoring with GNSS](/concepts/landslide-monitoring).
+
 A seismic station should measure motion of the ground or structure of interest while minimizing unrelated vibration. The correct site depends on the instrument and monitoring objective.
 
 ## Select a stable site
@@ -71,11 +73,11 @@ Update this record whenever equipment or site conditions change.
 
 ## Verify after installation
 
-A station is not accepted merely because it appears Online. Confirm:
+A station is not accepted merely because it appears online. Confirm:
 
 1. Current telemetry reaches the intended system.
 2. Timing and station metadata are correct.
-3. Waveforms are continuous and plausible.
+3. Waveforms are continuous and plausible. In Grillo Cloud this needs the [SISTEM add-on](/events); otherwise check them in your own system.
 4. Background noise is suitable for the monitoring objective.
 5. Known local activity is recognizable and does not saturate the channel.
 6. The enclosure, cables, antennas, and mount are secure.
@@ -83,5 +85,7 @@ A station is not accepted merely because it appears Online. Confirm:
 ## Related guides
 
 - [Pulse physical installation](/hardware/grillo-pulse/physical-installation)
+- [Grillo One installation](/hardware/grillo-one/setup#mount-the-sensor)
+- [Grillo Slide installation](/hardware/grillo-slide/installation)
 - [Data quality](/concepts/data-quality)
 - [Pulse troubleshooting](/hardware/grillo-pulse/troubleshooting)

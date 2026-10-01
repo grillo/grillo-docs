@@ -4,11 +4,11 @@ title: Troubleshooting
 
 # Troubleshoot Grillo Pulse
 
-Start with Grillo Cloud and the status lights. Do not open, reset, or rewire the sensor unless Grillo Support asks you to.
+Start with Grillo Cloud: it is the only way to check a Pulse from outside, because the status lights are inside the enclosure. Do not open, reset, or rewire the sensor unless Grillo Support asks you to.
 
 ## Status lights
 
-Grillo Pulse has three status lights.
+Grillo Pulse has three status lights on its circuit board. They cannot be seen with the enclosure closed, so they are only useful if Grillo Support asks you to open it.
 
 | Light | Meaning |
 |---|---|
@@ -19,8 +19,6 @@ Grillo Pulse has three status lights.
 
 A healthy sensor shows green on and white blinking steadily.
 
-The lights show what the sensor thinks of its connection. Only Grillo Cloud shows that data is actually arriving, so always check there too.
-
 ## Gather information
 
 Before contacting support, record:
@@ -30,7 +28,6 @@ Before contacting support, record:
 - Project and station code
 - Status and **Last Seen** in Grillo Cloud
 - Connection type and signal strength, if shown
-- Which status lights are on
 - Recent changes at the site: network, power, or moving the sensor
 - Photographs of the installation and the label
 
@@ -44,11 +41,11 @@ Before contacting support, record:
 ## Sensor is offline
 
 1. Check **Last Seen** and the sensor's [connection history](/dashboard/sensors/sensor-details#connection-history) to see when it stopped reporting and whether it has been dropping out.
-2. Check the 12 V supply is plugged into the external power connector and has power. With no lights at all, the sensor has no power.
-3. **Red light on:**
+2. Check the 12 V supply is plugged into the external power connector and has power.
+3. Check the connection:
    - Pulse Cellular: check the antennas and the mobile coverage at the site.
    - Pulse Ethernet: check the cable is fully seated through the weatherproof entry, that the port is live, and that the network gives out addresses by DHCP.
-4. **Green light on, but offline in Grillo Cloud:** the network is probably blocking outbound UDP on ports 5683 and 5684. Ask the network administrator.
+4. Pulse Ethernet on a managed network: check that outbound UDP on ports 5683 and 5684 is allowed. Ask the network administrator.
 5. Restart the sensor: unplug the 12 V supply from the external connector, wait 30 seconds, and reconnect it.
 6. Give it up to 5 minutes (cellular) or 1 minute (Ethernet), then refresh Grillo Cloud.
 7. Contact support if it stays offline.

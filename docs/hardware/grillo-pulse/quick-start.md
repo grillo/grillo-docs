@@ -50,7 +50,7 @@ Plug the 12 V supply into the external power connector on the enclosure. You do 
 - Pulse Ethernet usually comes online within a minute.
 - Pulse Cellular can take up to 5 minutes the first time, while it registers on the mobile network and sets its clock.
 
-The **green** light comes on when the connection is up, and the **white** light blinks each time data is sent. See [Status Lights](/hardware/grillo-pulse/troubleshooting#status-lights).
+The status lights are inside the enclosure and cannot be seen from outside, so use Grillo Cloud to check the sensor.
 
 ## 5. Check Grillo Cloud
 

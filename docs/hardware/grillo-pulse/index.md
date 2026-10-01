@@ -19,7 +19,7 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a US
 | Connectivity | **Pulse Cellular:** LTE Cat-1. **Pulse Ethernet:** 10/100 wired Ethernet through a weatherproof cable entry. |
 | Power | 12 V DC, through the external power connector |
 | Timing | Network time (NTP). GNSS receiver fitted. |
-| Status lights | Green, red, and white. See [Status Lights](/hardware/grillo-pulse/troubleshooting#status-lights). |
+| Status lights | Inside the enclosure only. Use Grillo Cloud to check the sensor. |
 | Managed in | [Grillo Cloud](/dashboard) |
 
 ## Two variants

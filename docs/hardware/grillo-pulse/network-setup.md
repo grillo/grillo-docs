@@ -41,4 +41,4 @@ By default a Pulse sends its seismic data to Grillo. Projects with the [SISTEM a
 
 ## Acceptance test
 
-The connection is working when Grillo Cloud shows the sensor **online**, with a current **Last Seen** and the expected connection type. A green light on the sensor shows the link is up; only Grillo Cloud shows that data is arriving.
+The connection is working when Grillo Cloud shows the sensor **online**, with a current **Last Seen** and the expected connection type.

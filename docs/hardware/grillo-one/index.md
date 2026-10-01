@@ -4,7 +4,7 @@ title: Grillo One
 
 # Grillo One
 
-Grillo One is a strong-motion seismic sensor with a three-axis MEMS accelerometer. It connects by Ethernet or Wi-Fi and is powered from 5 V DC. Its hardware and software are open source; it is the same device used in the OpenEEW project.
+Grillo One is a strong-motion seismic sensor with a three-axis MEMS accelerometer. It connects by Ethernet or Wi-Fi and is powered through its USB-C port. Its hardware and software are open source; it is the same device used in the OpenEEW project.
 
 ## At a glance
 
@@ -13,10 +13,10 @@ Grillo One is a strong-motion seismic sensor with a three-axis MEMS acceleromete
 | Sensor | Three-axis MEMS accelerometer |
 | Channels | `HNZ`, `HNN`, `HNE` at 125 samples per second |
 | Connectivity | Ethernet, with Wi-Fi (2.4 GHz) if no Ethernet cable is connected at start-up |
-| Power | 5 V DC |
+| Power | USB-C, 5 V. USB-C is the only power input. |
 | Timing | Network time (NTP) |
 | Status lights | Three colour lights: Network, Sensor, and Data. See [Status lights](/hardware/grillo-one/setup#status-lights). |
-| Firmware | Updated over the air from [Grillo Cloud](/dashboard/sensors/firmware-updates) |
+| Firmware | Updated over the air from [Grillo Cloud](/dashboard/sensors/firmware-updates). Latest version: 1.0.1. See [Firmware](/hardware/grillo-one/setup#firmware-updates). |
 | Managed in | [Grillo Cloud](/dashboard) |
 
 Grillo One has no geophone, GNSS, battery, or cellular modem. For those, see [Grillo Pulse](/hardware/grillo-pulse).

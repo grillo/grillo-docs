@@ -32,9 +32,6 @@ export default function ContentWrapper(props: Props): ReactNode {
         <button type="button" onClick={copyMarkdown}>
           {copied ? 'Copied' : 'Copy as Markdown'}
         </button>
-        <a href={markdownUrl} target="_blank" rel="noopener noreferrer">
-          View Markdown
-        </a>
         <a href={markdownUrl} download>
           Download .md
         </a>

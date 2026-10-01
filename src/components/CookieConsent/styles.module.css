@@ -1,0 +1,68 @@
+.banner {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 300;
+  display: flex;
+  max-width: 720px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface);
+}
+
+.message {
+  margin: 0;
+  color: var(--fg-2);
+  font: 400 13px/1.5 var(--font-sans);
+}
+
+.actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.reject,
+.accept {
+  padding: 7px 14px;
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  font: 500 12px/1.4 var(--font-sans);
+  transition: background var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+
+.reject {
+  color: var(--fg-1);
+  background: transparent;
+}
+
+.reject:hover {
+  background: var(--bg-elevated);
+}
+
+.accept {
+  border-color: var(--brand-orange);
+  color: var(--fg-on-brand);
+  background: var(--brand-orange);
+}
+
+.accept:hover {
+  border-color: var(--brand-orange-600);
+  background: var(--brand-orange-600);
+}
+
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}

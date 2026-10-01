@@ -21,6 +21,8 @@ title: Claim in Grillo Cloud
 5. Enter the station code.
 6. Select **Claim Device**.
 
+<img src="/img/screenshots/pulse-claim-sensor.png" alt="The Claim New Sensor dialog in Grillo Cloud, with Device ID and Station Code fields and a camera button for scanning the QR code" width="372" />
+
 Grillo Cloud identifies the sensor model from Grillo's inventory. See [Claim a Sensor](/dashboard/sensors/adding-sensor) for error messages and unclaiming.
 
 ## Add installation metadata

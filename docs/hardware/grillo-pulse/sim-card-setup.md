@@ -22,6 +22,8 @@ Pulse Cellular supports LTE on band 20 (used widely in the UK and Europe) and ba
 
 In Grillo Cloud, the sensor's details show its **Signal Strength** and **SIM ICCID**. Check signal strength at the installed position before you leave the site.
 
+<img src="/img/screenshots/pulse-cellular-networking.png" alt="The Networking section of a sensor in Grillo Cloud, showing signal strength and a Cellular connection type" width="398" />
+
 ## Timing
 
 The sensor sets its clock from the network once it connects. On cellular, the first time can take up to 5 minutes; data recorded before that may be mis-timed.

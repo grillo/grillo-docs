@@ -12,6 +12,8 @@ Select **Sites**, then **Open site**. The site page shows:
 - The devices in a **List** or on a **Map**
 - A **Sensor group** selector, if the site has more than one group
 
+![A site page listing a base and four rovers, all reporting with RTK Fixed (demo data)](/img/screenshots/slide-site.png)
+
 Use the rename control next to the site name or the sensor group name to change it.
 
 ## Device status
@@ -32,6 +34,8 @@ Select a device to open its details. The tabs are **Health**, **Movement**, **Ba
 
 ### Health
 
+![The Health tab for a rover, with report history, battery, and mesh signal (demo data)](/img/screenshots/slide-device-health.png)
+
 | Section | Values |
 |---|---|
 | Connectivity | Last heard, next report due, missed cycles, reports received, packet loss. For rovers: the device they relay through (**Parent**) and **Hops to base**. |
@@ -42,6 +46,8 @@ Select a device to open its details. The tabs are **Health**, **Movement**, **Ba
 Battery voltages are marked **Uncalibrated** until a device has been battery-calibrated. Treat them as approximate.
 
 ### Movement
+
+![The Movement tab for a rover drifting east and north over 30 days (demo data)](/img/screenshots/slide-movement.png)
 
 The **Ground movement** chart shows a rover's position relative to its baseline, in millimetres, as three lines: **East**, **North**, and **Up**. Choose 7, 30, or 90 days.
 

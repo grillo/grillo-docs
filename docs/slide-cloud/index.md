@@ -8,6 +8,10 @@ The Slide dashboard at [slide.grillo.io](https://slide.grillo.io) shows the read
 
 It is separate from [cloud.grillo.io](https://cloud.grillo.io), which is for Grillo Pulse and Grillo One.
 
+![The Sites page in Grillo Cloud for Slide, showing one site with five devices reporting (demo data)](/img/screenshots/slide-sites.png)
+
+Screenshots in this section use demo data.
+
 ## Sign in
 
 Grillo creates your account and sends you the sign-in details. There is no self sign-up.

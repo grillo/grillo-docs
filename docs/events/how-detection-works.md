@@ -4,7 +4,7 @@ title: How Detection Works
 
 # How Earthquake Detection Works
 
-The Earthquake Monitoring module receives seismic waveforms, identifies candidate arrivals, associates observations from multiple stations, and writes resulting events for Platform to display.
+SISTEM receives seismic waveforms from your sensors, picks candidate arrivals at each station, associates picks from several stations into one earthquake, and writes the resulting event to the catalog in Grillo Cloud.
 
 ```text
 Sensor waveforms
@@ -24,7 +24,7 @@ One station can record motion but normally cannot determine a unique earthquake 
 
 ## Automated estimates
 
-Platform events are automated outputs. Initial estimates can be incomplete or inaccurate because:
+SISTEM events are automated outputs. Initial estimates can be incomplete or inaccurate because:
 
 - Only early arrivals may be available.
 - Station coverage may be uneven.
@@ -41,4 +41,4 @@ Electronic communication is faster than damaging seismic waves, but detection an
 
 ## Deployment-specific configuration
 
-Detection thresholds, association configuration, velocity models, alert policies, and external integrations are managed for each deployment. They are not currently self-service controls in Grillo Platform's network settings.
+Detection thresholds, association configuration, velocity models, alert policies, and external integrations are managed for each deployment. Grillo configures them for your project; they are not settings you can change in Grillo Cloud.

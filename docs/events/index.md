@@ -1,38 +1,32 @@
 ---
-title: Earthquake Monitoring
+title: SISTEM Add-on
 ---
 
-# Earthquake Monitoring
+# SISTEM: Earthquake Detection Add-on
 
-Earthquake Monitoring, powered by SISTEM, is a Grillo Platform module for real-time earthquake detection, event cataloging, and earthquake early-warning workflows. It uses data from the sensor networks managed in Platform.
+SISTEM is an optional add-on to Grillo Cloud. Without it, Grillo Cloud is a sensor-management tool. With it, Grillo Cloud detects earthquakes from your sensors' data automatically.
 
-Availability and alert delivery depend on the organization's deployment.
+SISTEM gives you:
 
-## Events
+- **An automatic event catalog.** Each detected earthquake is recorded with its time, location, depth, and magnitude.
+- **A live map.** Watch detections as they happen, with the stations that triggered and the estimated wave fronts.
+- **In-app alerts.** Grillo Cloud shows a notification and an unread count on **Events** when a new earthquake is detected.
 
-The current Events interface supports:
+These appear in the **Seismic** group of the sidebar as **Events** and **Live**.
 
-- Events for the selected seismic network
-- Start and end date filtering
-- Sorting by time or magnitude
-- Pagination
-- Table and map views
-- Event location, magnitude, depth, and issue time
-- Associated picks and amplitudes when available
-- Refresh when a new event notification arrives
+## Requirements
 
-[Use the event catalog →](/events/event-catalog)
+- SISTEM enabled for your project. [Contact Grillo](/support/contact) to add it.
+- Sensors sending seismic data to Grillo. Detection does not run on data that goes to [your own server](/dashboard/data/data-server).
+- Enough stations, spread around the area you want to monitor. An earthquake is located from several stations' arrivals. See [How Detection Works](/events/how-detection-works).
 
-## Live
+## Guides
 
-The current Live page is a simulation and visualization tool built with mock event and station data. It must not be treated as an operational real-time warning display.
+- [Event Catalog](/events/event-catalog)
+- [Event Details](/events/event-details)
+- [Live Map](/events/live-map)
+- [How Detection Works](/events/how-detection-works)
 
-[Use the Live simulation →](/events/live-map)
-
-:::warning Not a protective-action authority
-Do not rely on the Live simulation as an official public warning source. Earthquake detection and early warning have unavoidable uncertainty and blind-zone limitations. Follow instructions from the responsible local authorities.
+:::warning Not a public warning service
+SISTEM results are automatic estimates. They do not replace instructions from emergency services or an official earthquake-warning authority.
 :::
-
-## Availability
-
-Module configuration, alert delivery, exports, and integrations depend on the deployment. Self-service email, SMS, webhook, API-key, and export controls are not currently available in the Platform interface.

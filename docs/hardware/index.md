@@ -1,25 +1,25 @@
 ---
-title: Products
+title: Sensors
 ---
 
-# Grillo Products
+# Grillo Sensors
 
 ## Grillo Pulse
 
-Grillo Pulse combines a vertical geophone and a low-noise triaxial MEMS accelerometer for seismic monitoring. Cellular and Ethernet configurations support different deployment environments.
+A seismic sensor with a vertical geophone and a three-axis MEMS accelerometer, in cellular and Ethernet variants.
 
 [Install Grillo Pulse →](/hardware/grillo-pulse/quick-start)
 
-## Coming soon
+## Grillo One
 
-### Grillo One
+An open-source strong-motion sensor with a three-axis MEMS accelerometer, on Ethernet or Wi-Fi.
 
-Setup and operating documentation for Grillo One is being prepared.
+[Install Grillo One →](/hardware/grillo-one)
 
-[View the Grillo One placeholder →](/hardware/grillo-one)
+## Grillo Slide
 
-### Grillo Slide
+A kit of one GNSS base and up to eight rovers for measuring ground movement on slopes.
 
-Product information, setup instructions, and availability details for Grillo Slide will be published when ready.
+[Install Grillo Slide →](/hardware/grillo-slide)
 
-[View the Grillo Slide placeholder →](/hardware/grillo-slide)
+Not sure which one you need? See [Choosing Your Sensor](/getting-started/choosing-your-sensor).

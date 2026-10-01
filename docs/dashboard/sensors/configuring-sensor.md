@@ -2,41 +2,35 @@
 title: Edit a Sensor
 ---
 
-# Edit Sensor Metadata
+# Edit a Sensor
 
-Select a sensor and choose **Edit**.
+Owners and admins can change a sensor's station code, location, and target firmware. Open the sensor's details and select **Edit**.
 
-![Edit sensor dialog in Grillo Platform](/img/screenshots/08-sensor-edit.png)
+![Edit sensor dialog in Grillo Cloud](/img/screenshots/08-sensor-edit.png)
 
-## Available fields
-
-The current edit form contains:
+## Fields
 
 | Field | Purpose |
 |---|---|
-| Station code | Unique 2–8 character uppercase FDSN station identifier |
-| Latitude | Decimal degrees from -90 to 90 |
-| Longitude | Decimal degrees from -180 to 180 |
-| Elevation | Site elevation in meters |
-| Location name | Human-readable site name or address |
-| Firmware version | Target OTA version when versions are available for that device |
+| Station Code | 2–8 uppercase letters or numbers, unique in the project |
+| Latitude | Decimal degrees, -90 to 90 |
+| Longitude | Decimal degrees, -180 to 180 |
+| Elevation (meters) | Site elevation |
+| Location Name | A name or address field staff will recognize |
+| Firmware Version | Target version for an over-the-air update. See [Update Firmware](/dashboard/sensors/firmware-updates). |
 
-On a device with location permission, **Use Current Location** can populate coordinates and, where available, elevation. Confirm that the captured position represents the sensor rather than the operator's temporary position.
+Select **Update Device** to save.
 
-Select **Update Device** to save changes.
+## Capture the location on site
 
-## What editing does not do
+Open Grillo Cloud on a phone at the sensor and select **Use Current Location**. It fills in latitude and longitude, and elevation when the phone provides it. Grillo Cloud then suggests a location name from the coordinates; select **Use** to accept it.
 
-Metadata changes update Platform's device record. Do not assume this form changes the sensor's physical network credentials, sample rate, data format, compression, heartbeat, or retry policy.
+Stand at the sensor when you do this. Coordinates captured at a desk or vehicle will put the station in the wrong place.
 
-Firmware targeting is shown in the Platform UI, but an update succeeds only when the installed hardware and firmware support the complete OTA path. Follow release-specific instructions before assigning a target version.
+## What a station code change does
 
-The current UI does not provide bulk editing, templates, configuration history, rollback, or remote factory reset.
+The sensor picks up its station code from Grillo Cloud on its next health check-in, about a minute later, and uses it for the data it sends from then on.
 
-## Recommended metadata
+## What editing does not change
 
-- Assign station codes from a documented network naming plan.
-- Capture coordinates at the final installed position.
-- Use meters for elevation.
-- Use a location name that field staff can identify.
-- Record more detailed installation notes and photographs in your organization's maintenance system.
+The edit form does not change the sensor's Wi-Fi, Ethernet, or cellular settings. Those are set on the sensor itself; see its hardware guide.

@@ -4,43 +4,49 @@ title: Sensor Details
 
 # Sensor Details
 
-Select a sensor in the table or map to open its details sheet.
+Select a sensor in the table or on the map to open its details panel.
 
-![Sensor details in Grillo Platform](/img/screenshots/07-sensor-info.png)
+![Sensor details in Grillo Cloud](/img/screenshots/07-sensor-info.png)
 
-## Identity and location
+## Live sensor
 
-Platform displays the station code, Device ID, sensor type, coordinates, elevation, and location name stored for the device.
+The top of the panel shows the sensor's waveform as it arrives. Choose a channel and switch between **Waveform** and **Spectrogram**. See [View Waveforms](/dashboard/data/waveforms).
+
+## Connection history
+
+The history chart shows the sensor's connection reports and signal strength over 1 hour, 24 hours, 7 days, 30 days, 90 days, or 1 year. It also counts:
+
+- **Interruptions** — gaps of more than 2.5 minutes with no health report
+- **Reboots** — times the sensor's reported uptime went back to zero
+
+These are inferred from the health reports. They show that the sensor went quiet or restarted; they do not say whether power, network, or firmware caused it.
 
 ## Networking
 
-When reported by the sensor, the sheet displays:
-
 - Signal strength
-- Connection type
-- SIM ICCID for cellular devices
+- Connection type: WiFi, Cellular, or Ethernet
+- SIM ICCID, for cellular sensors
 
-Signal data is useful only when it is recent. Check **Last seen** before diagnosing a current connection from an old value.
+Check **Last Seen** before reading these. An offline sensor shows the values from its last report.
 
 ## Power
 
-When supported by the device telemetry, Platform displays:
+- Power source: DC or Battery
+- Battery charging
+- Battery level
 
-- Power source
-- Battery charging state
-- Battery voltage and an estimated percentage
+Grillo One has no battery, so these fields are empty for it.
 
-:::note Sensor-specific fields
-Available power and battery information depends on the sensor configuration. A field that is unavailable or blank does not necessarily indicate a fault.
-:::
+## Location
+
+Latitude, longitude, elevation, and the saved location name.
 
 ## System
 
-The System area includes Device ID and last-seen time. The Sensors table also shows the reported firmware version.
+Device ID and **Last Seen**.
 
 ## Actions
 
-- **Edit** opens the supported metadata and firmware-target fields.
-- **Unclaim Sensor** removes the device from the organization/network after confirmation. It does not erase networking credentials or physically reset the sensor.
-
-Platform does not currently expose waveform history, alert history, diagnostic logs, or configuration history in this sheet.
+- **Find on map** jumps to the sensor's marker.
+- **Edit** opens [station, location](/dashboard/sensors/configuring-sensor), and [firmware](/dashboard/sensors/firmware-updates) settings. Owner or admin only.
+- **Unclaim Sensor** [removes the sensor from the project](/dashboard/sensors/adding-sensor#unclaim-a-sensor). Owner or admin only.

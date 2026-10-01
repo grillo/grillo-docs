@@ -1,36 +1,47 @@
 ---
-title: Live Simulation
+title: Live Map
 ---
 
-# Live Simulation
+# Live Map
 
-The current **Live** page demonstrates earthquake detection and wave propagation using generated mock earthquakes and a fixed mock station set.
+**Live** shows earthquake detection on a map as it happens. It has two modes:
 
-:::danger Simulation only
-Live is not currently an operational feed of the selected network and must not be used to make protective-action decisions.
+- **Live** follows your project's stations and SISTEM's real detections.
+- **Simulation** plays a made-up earthquake on a demonstration network, so you can see how detection works.
+
+![Live map in Grillo Cloud](/img/screenshots/11-live-map.png)
+
+## What the map shows
+
+- Your stations, with their online status
+- Cities and fault lines
+- During an event: the stations that have detected it, the located epicenter, and expanding P-wave and S-wave fronts
+- Estimated damage zones around the epicenter, from **Minor** to **Severe**
+
+The **Legend** explains each symbol.
+
+## Live mode
+
+When stations start detecting shaking, the **Event Log** lists each station pick as it arrives. Once enough stations have picked, SISTEM locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
+
+## Map settings
+
+Open **Map Settings** to choose:
+
+- **Minimum Magnitude** — ignore events smaller than this
+- **Auto-zoom to epicenter** — move the map to each new event
+- **Alert Sound** — the sound played when an event is detected: **Earthquake** or **Tone**
+
+Browsers block audio until you have interacted with the page. Click anywhere on the page after opening it if you rely on the sound.
+
+## Simulation mode
+
+Switch to **Simulation** and select **Simulate Earthquake**. The map generates an earthquake, shows simulated station picks, locates the event, and animates the waves.
+
+:::danger Simulation is not real data
+Simulation mode uses a demonstration station set, not your sensors. Check which mode is selected before acting on anything shown on this page.
 :::
 
-![Live earthquake simulation in Grillo Platform](/img/screenshots/11-live-map.png)
+## Limits
 
-## Run a simulation
-
-1. Open **Live** in Grillo Platform.
-2. Open the simulation settings.
-3. Choose the minimum generated magnitude, playback speed, auto-zoom preference, and alert sound.
-4. Preview audio if needed.
-5. Start the simulation.
-
-The visualization generates an earthquake, highlights simulated station picks, locates the event after enough picks, and animates P- and S-wave propagation. Its event log records simulation milestones.
-
-## What the controls mean
-
-- **Speed** changes simulation playback rate, not physical wave velocity.
-- **Minimum magnitude** constrains the generated mock event.
-- **Auto zoom** controls map movement during the simulation.
-- **Alert sound** selects or previews the browser audio used by the demonstration.
-
-Browser audio may require a user interaction and may be blocked by device or browser settings.
-
-## Operational events
-
-Use [Events](/events/event-catalog) for event records associated with the selected network. Confirm operational alert channels and procedures directly with the organization responsible for the deployment.
+The live map is a monitoring view for your team. It does not send SMS, email, or mobile alerts, and it is not a public warning service. See [Earthquake Early Warning](/concepts/earthquake-early-warning) for what warning time is physically possible.

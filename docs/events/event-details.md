@@ -4,46 +4,43 @@ title: Event Details
 
 # Event Details
 
-Select an event in the catalog to open its details sheet.
+Select an event in the catalog to open its details.
 
 ## Event information
 
-The summary displays:
-
 - Event ID
-- Issue time
+- Time
 - Magnitude
 - Depth in kilometers
 - Latitude and longitude
 
-These values are automated estimates and may differ from a reviewed catalog produced by an authoritative seismic agency.
+These are automatic estimates. They can differ from a catalog reviewed by a seismic agency.
+
+## Review waveforms
+
+Select **Review waveforms** to open the recorded data around the event, with the origin time and the automatic picks marked on the traces. From there you can pan, zoom, and [download the samples](/dashboard/data/waveforms).
 
 ## Picks and amplitudes
 
-When detailed association data is available, select the picks/amplitudes action to review:
+Under **Data**, select **View** to see the observations SISTEM used to build the event.
 
-### Picks
+**Picks** are the arrival times detected at each station:
 
 - Pick ID
-- Pick time
+- Time
 - Station
-- Location
 - Channel
 - Phase
 
-### Amplitudes
+**Amplitudes** are the measurements used for the magnitude:
 
-- Amplitude ID
-- Related pick ID
+- ID and related Pick ID
 - Station
-- Amplitude value
-- Time-window end
-
-These tables are diagnostic event-association information. Their presence does not imply that waveform downloads, manual event review, or catalog editing are available in Platform.
+- Amplitude
+- Time Window End
 
 ## If details are empty
 
-- Confirm the selected network still contains the event.
-- Refresh the catalog and reopen it.
-- Some events may have a summary before all associated details are available.
-- Contact support with the organization, network code, event ID, and issue time if details repeatedly fail to load.
+- Refresh the catalog and reopen the event.
+- A new event can appear before all of its picks and amplitudes are available.
+- If details keep failing to load, contact support with the project name, Event ID, and event time.

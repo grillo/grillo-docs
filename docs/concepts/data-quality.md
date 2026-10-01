@@ -91,7 +91,7 @@ Compare arrival times across stations and review time-source telemetry. Timing q
 5. Exclude or down-weight unsuitable channels in processing rather than hiding problems.
 6. Revalidate after relocation, firmware changes, power work, or antenna changes.
 
-Grillo Platform currently emphasizes device health rather than full waveform quality analysis. Use the destination seismic system and deployment-specific tooling for spectra, calibration, completeness, and detailed waveform review.
+Grillo Cloud shows device health, a live waveform and spectrogram, and recorded waveforms with their gaps. For calibrated spectra, completeness statistics, and detailed quality analysis, use your own seismic software on the downloaded or streamed data.
 
 ## Further reading
 

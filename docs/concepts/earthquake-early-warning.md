@@ -63,9 +63,9 @@ A warning is useful only when recipients know what to do. Procedures, training, 
 
 Depending on jurisdiction and engineering review, warnings can support actions such as prompting people to Drop, Cover, and Hold On or placing controlled systems into a safer state. Automatic control of trains, utilities, industrial processes, elevators, or medical systems requires specialist design, fail-safe behavior, and approval from the responsible operators.
 
-## Grillo Earthquake Monitoring
+## Earthquake detection in Grillo Cloud
 
-Grillo sensors can provide observations to a network. The Platform's Earthquake Monitoring module, powered by SISTEM, can produce automated event information for configured deployments. The current Platform Live page is a simulation, not an operational public-warning feed. Alert delivery and external integrations are deployment-specific and are not self-service controls in the current Platform UI.
+Grillo sensors provide observations to a network. SISTEM, an add-on to Grillo Cloud, turns those observations into automatic event information and shows detections on a live map for your team. It is not a public warning service: delivering alerts to the public needs its own delivery channels, governance, and testing.
 
 Do not present a sensor installation as an operational EEW system until the complete detection, alerting, governance, and response chain has been validated.
 
@@ -74,4 +74,4 @@ Do not present a sensor installation as an operational EEW system until the comp
 - [USGS ShakeAlert](https://www.usgs.gov/programs/earthquake-hazards/science/shakealert)
 - [Earthquake Country Alliance: Drop, Cover, and Hold On](https://www.earthquakecountry.org/step5/)
 - [How earthquake detection works](/events/how-detection-works)
-- [Earthquake Monitoring](/events)
+- [SISTEM add-on](/events)

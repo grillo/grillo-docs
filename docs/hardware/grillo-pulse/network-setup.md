@@ -24,14 +24,18 @@ Before deployment:
 2. Connect Ethernet using the enclosure-specific weatherproof procedure.
 3. Connect the supplied power adapter through the barrel jack.
 4. Allow the sensor time to start and obtain network access.
-5. Verify a current Last seen value in Grillo Platform.
+5. Verify a current Last seen value in Grillo Cloud.
 
-No inbound port forwarding should be required for normal operation. If the sensor remains Offline on a restricted network, ask Grillo Support for the current outbound firewall requirements.
+No inbound port forwarding is needed. The sensor only makes outbound connections: UDP port 5683 for health reports and UDP port 5684 for seismic data. On a restricted network, ask the administrator to allow both.
 
 ## Wi-Fi
 
 Wi-Fi availability depends on the sensor configuration supplied for the deployment. Do not assume that a cellular or Ethernet sensor will automatically switch to Wi-Fi. Follow the order-specific instructions or contact support.
 
+## Where the data goes
+
+By default a Pulse sends its seismic data to Grillo, where you can [view and download it](/dashboard/data/waveforms). To receive the data on your own server instead, see [Send Data to Your Own Server](/dashboard/data/data-server). This is a project setting in Grillo Cloud; nothing changes on the sensor.
+
 ## Acceptance test
 
-Connectivity is accepted only after Platform shows the correct sensor Online with a current Last seen value and the expected connection type. Local network indicators alone do not prove that data reached Grillo Platform.
+Connectivity is accepted only after Grillo Cloud shows the correct sensor Online with a current Last seen value and the expected connection type. Local network indicators alone do not prove that data reached Grillo Cloud.

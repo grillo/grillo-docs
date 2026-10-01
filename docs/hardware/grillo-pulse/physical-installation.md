@@ -53,7 +53,7 @@ Before leaving the site:
 
 1. Confirm the sensor is secure, upright, and level.
 2. Record coordinates, elevation, orientation, mounting method, antenna placement, and photographs.
-3. Update location metadata in Platform.
+3. Update location metadata in Grillo Cloud.
 4. Confirm Online status and a current Last seen value.
 5. Confirm the expected connection type.
 

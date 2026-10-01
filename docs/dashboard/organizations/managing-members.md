@@ -2,32 +2,35 @@
 title: Manage Members
 ---
 
-# Manage Organization Members
+# Manage Project Members
 
-Owners and administrators can invite people from the organization management page.
+Project owners and admins invite people from **Project Settings**.
 
-## Invite a member
+## Invite members
 
-1. Open the organization switcher.
-2. Select **Manage Organization**.
-3. In Members, select the invite action.
-4. Enter the person's email address.
-5. Send the invitation.
+1. Open **Project Settings** in the sidebar.
+2. In **Members**, select **Invite Members**.
+3. Enter one or more email addresses, separated by commas.
+4. Choose a role: **Member** or **Admin**.
+5. Select **Invite**.
 
-New invitations currently use the **member** role. The recipient follows the emailed link and signs in or creates an account with the invited address.
+Each person receives an email with a link. They must sign up or sign in with the invited address. See [Create an Account](/dashboard/account/creating-account).
 
-## Review membership
+## Review members and invitations
 
-The Members table shows each person's name, email, and role. Pending invitations are shown separately.
+The **Members** table shows each person's name, email, and role. Pending invitations are listed under **Invitations**, where owners and admins can cancel them.
+
+## Change a role
+
+Owners and admins can switch another person between **Member** and **Admin** in the Members table. You cannot change your own role or the owner's.
 
 ## Remove a member
 
-Organization owners can remove another member from the Members table. Confirm the selected person carefully; their access to the organization's networks and sensors is removed.
+Only the project owner can remove members. Select **Remove** next to the person and confirm. They lose access to the project's sensors and data.
 
-## Troubleshooting invitations
+## If an invitation does not arrive
 
-- Confirm the email address was entered correctly.
+- Check the address for typos.
 - Ask the recipient to check spam or filtered mail.
-- Make sure they sign in with the invited email address.
-- Review pending invitations in organization management.
-- Contact support if delivery repeatedly fails.
+- Cancel the pending invitation and send it again.
+- Contact support if delivery keeps failing.

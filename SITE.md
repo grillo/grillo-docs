@@ -1,15 +1,18 @@
 # Grillo Docs Site Map
 
-The documentation is currently English-only while the operational content is corrected and verified.
+The documentation is English-only.
 
 ```text
 /                           # Task-based documentation home
 ├── getting-started/        # Product overview and journey selection
 ├── hardware/
-│   └── grillo-pulse/       # Revision-aware Pulse installation
-├── dashboard/              # Grillo Platform onboarding and network management
-├── events/                 # Platform Earthquake Monitoring module
-├── modules/                # Current and upcoming Platform modules
+│   ├── grillo-pulse/       # Pulse installation
+│   ├── grillo-one/         # One connection and installation
+│   └── grillo-slide/       # Slide SIM/APN setup (Grillo Field app) and installation
+├── dashboard/              # Grillo Cloud for Pulse and One
+├── events/                 # SISTEM add-on
+├── slide-cloud/            # Grillo Cloud for Slide
+├── modules/                # Upcoming add-ons
 ├── concepts/               # Seismic and EEW background
 └── support/                # FAQ and contact information
 ```
@@ -21,13 +24,13 @@ The documentation is currently English-only while the operational content is cor
 - What Is Grillo?
 - Choosing Your Sensor
 
-### Products
+### Sensors
 
 #### Grillo Pulse
 
 - Pulse Quick Start
 - Inspect and Identify the Sensor
-- Claim in Grillo Platform
+- Claim in Grillo Cloud
 - Connectivity
 - Cellular and SIM Setup
 - Physical Installation
@@ -35,38 +38,51 @@ The documentation is currently English-only while the operational content is cor
 
 #### Grillo One
 
-- Coming Soon
+- Connect and Install
 
 #### Grillo Slide
 
-- Coming Soon
+- Fit the SIM and Set the APN
+- Install on Site
+- Troubleshooting
 
-### Grillo Platform
+### Grillo Cloud
 
 - Create an Account
-- Organizations
+- Projects
 - Manage Members
-- Create a Network
+- Dashboard
+- Account, Billing, and Settings
+- Structural Health Monitoring (coming soon)
+
+#### Sensors
+
 - Claim a Sensor
+- Network and Station Codes
 - Sensor Table
 - Sensor Map
 - Sensor Details
 - Edit a Sensor
 - Verify Sensor Status
-- Billing and Plan
+- Update Firmware
 
-#### Modules
+#### Data
 
-##### Earthquake Monitoring
+- View and Download Waveforms
+- Send Data to Your Own Server
+
+#### SISTEM Add-on
 
 - Event Catalog
 - Event Details
-- Live Simulation
+- Live Map
 - How Detection Works
 
-##### Structural Health Monitoring
+### Grillo Cloud for Slide
 
-- Coming Soon
+- Sites and Devices
+- Export Data
+- Firmware and API Access
 
 ### Concepts
 
@@ -83,7 +99,7 @@ The documentation is currently English-only while the operational content is cor
 
 ## Deferred content
 
-- Grillo One will be reviewed against its current hardware and firmware.
-- Local Grillo Platform deployment documentation will be added when ready.
-- Public API documentation will return after a deployed, versioned API contract is approved.
-- Additional languages will return after the English operational guides are stable.
+- On-premises Grillo Cloud (the appliance) will be documented when it is released.
+- A public API reference for Grillo Cloud will be added once a versioned API is deployed.
+- Self-setup of a new Slide kit, Slide alerts, and the iOS app will be documented when they ship.
+- Additional languages will return after the English guides are stable.

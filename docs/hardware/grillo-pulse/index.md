@@ -16,12 +16,12 @@ For a new sensor, begin with the [Pulse Quick Start](/hardware/grillo-pulse/quic
 
 1. [Inspect the shipment and identify the sensor](/hardware/grillo-pulse/whats-in-the-box).
 2. Record the Device ID and photograph the external labels.
-3. [Claim the sensor in Grillo Platform](/hardware/grillo-pulse/provisioning).
+3. [Claim the sensor in Grillo Cloud](/hardware/grillo-pulse/provisioning).
 4. Follow the guide for its [cellular or Ethernet connection](/hardware/grillo-pulse/network-setup).
-5. Bench-test power, connectivity, and Platform reporting.
+5. Bench-test power, connectivity, and Grillo Cloud reporting.
 6. [Choose and prepare the installation site](/hardware/grillo-pulse/physical-installation).
 7. Install the enclosure with the supplied mounting parts and instructions.
-8. [Verify status in Platform](/dashboard/sensors/sensor-status) before leaving the site.
+8. [Verify status in Grillo Cloud](/dashboard/sensors/sensor-status) before leaving the site.
 
 ## Identify the connection type
 
@@ -34,7 +34,7 @@ Options vary by order and region. Do not assume that a connection method not lis
 
 ## Setup is complete when
 
-In Grillo Platform, confirm:
+In Grillo Cloud, confirm:
 
 - The Device ID and station code are correct.
 - The sensor is Online.

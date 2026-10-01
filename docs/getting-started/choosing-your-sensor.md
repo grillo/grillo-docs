@@ -7,8 +7,9 @@ title: Choosing Your Sensor
 | | Grillo Pulse | Grillo One | Grillo Slide |
 |---|---|---|---|
 | Measures | Earthquakes, from small to strong | Strong ground shaking | Slow ground movement |
-| Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS |
+| Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS, plus a low-power accelerometer for motion detection |
 | Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
+| Timing | GPS, or network time (NTP) | Network time (NTP) | GPS (GNSS) |
 | Power | 12 V DC input; solar through your own charge controller and battery | USB-C, 5 V | Internal battery with solar input |
 | Readings | Continuous, in real time | Continuous, in real time | Every 6 hours |
 | Data in the dashboard | Health; waveforms and earthquake detection with SISTEM | Health; waveforms and earthquake detection with SISTEM | Movement in mm, health, exports, raw GNSS files |

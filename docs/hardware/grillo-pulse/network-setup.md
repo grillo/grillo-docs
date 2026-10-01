@@ -27,7 +27,7 @@ The network must:
 
 - Give the sensor an address automatically (DHCP)
 - Allow outbound UDP to ports 5683 (health reports) and 5684 (seismic data)
-- Allow outbound NTP (UDP port 123), which the sensor uses to set its clock
+- Allow outbound NTP (UDP port 123), which the sensor can use to set its clock
 
 No inbound ports or port forwarding are needed. Pulse Ethernet usually comes online within a minute.
 

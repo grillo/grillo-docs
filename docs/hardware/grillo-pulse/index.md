@@ -18,7 +18,7 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a US
 | Accelerometer | Three-axis MEMS. Channels `HNZ`, `HNN`, `HNE` at 125 samples per second. |
 | Connectivity | **Pulse Cellular:** LTE Cat-1. **Pulse Ethernet:** 10/100 wired Ethernet through a weatherproof cable entry. |
 | Power | 12 V DC, through the external power connector. No built-in solar or battery input. |
-| Timing | Network time (NTP). GNSS receiver fitted. |
+| Timing | GPS, or network time (NTP) |
 | Status lights | Inside the enclosure only. Use Grillo Cloud to check the sensor. |
 | Managed in | [Grillo Cloud](/dashboard) |
 

@@ -246,9 +246,21 @@ h5 {
   color: var(--fg-1);
 }
 
+.navbar__brand {
+  align-self: stretch;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-right: 0;
+}
+
 .navbar__brand img {
   width: auto;
-  height: 18px;
+  height: 24px;
 }
 
 .navbar__title {

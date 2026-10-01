@@ -18,17 +18,23 @@ title: Choosing Your Sensor
 
 ## Grillo Pulse
 
+![Grillo Pulse in its black aluminium enclosure, with the label QR code on the lid and external connectors on the side](/img/products/grillo-pulse.webp)
+
 Choose Pulse for a seismic network that needs to record small earthquakes as well as strong ones, or for sites without mains networking. Pick the cellular or Ethernet variant to match the site.
 
 [Install a Grillo Pulse →](/hardware/grillo-pulse)
 
 ## Grillo One
 
+![The Grillo One circuit board, with its USB-C power port, Ethernet port, and three status lights](/img/products/grillo-one.jpg)
+
 Choose One to add strong-motion stations where power and a network already exist, for example in buildings. It runs from USB-C power, and its hardware and software are open source.
 
 [Install a Grillo One →](/hardware/grillo-one)
 
 ## Grillo Slide
+
+![A white Grillo Slide rover and a black Grillo Slide base, each mounted on a post](/img/products/grillo-slide.webp)
 
 Choose Slide to monitor a slope for slow movement. One base on stable ground supports up to eight rovers on the ground being monitored. It runs on battery and solar, so it needs no mains power or network at the site, only mobile coverage at the base. See [Landslide Monitoring with GNSS](/concepts/landslide-monitoring).
 

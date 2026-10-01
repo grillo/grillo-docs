@@ -676,3 +676,17 @@ pre {
     animation-duration: 0ms !important;
   }
 }
+
+.docs-screenshot-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 8px 0 24px;
+}
+
+.docs-screenshot-pair img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-hairline);
+}

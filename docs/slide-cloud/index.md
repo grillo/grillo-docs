@@ -37,10 +37,25 @@ Project
 
 | Page | Use it to |
 |---|---|
-| **Sites** | See all your sites, with counts of devices reporting and overdue. Open a site to see its devices. |
+| **Sites** | See all your sites, with counts of devices reporting and overdue. Open a site to see its devices. If your account can create sites, **Add site** creates a new site with one sensor group, ready for devices set up in Grillo Field. |
 | **Devices** | Search every device across your sites by name, printed ID, or site. |
 | **Exports** | Download movement, battery, and location data. |
 | **Settings** | Open your account and API tokens. |
+
+## What your account can do
+
+Grillo sets what each account can do. Depending on yours, some of these may be missing:
+
+| Action | Needs permission to |
+|---|---|
+| Rename sites and sensor groups, add a site | Manage sites |
+| Reset a movement baseline | Manage baselines |
+| Export readings | Export data |
+| Request and download raw GNSS files, download original measurement files | Export technical data |
+| Create API tokens | Manage API tokens |
+| Set up and claim devices in Grillo Field | Set up devices |
+
+If a button you expect is missing, or a page says you don't have permission, ask Grillo Support to change your account.
 
 ## Guides
 

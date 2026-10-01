@@ -86,12 +86,6 @@ const config: Config = {
       },
       items: [
         {
-          href: 'https://cloud.grillo.io',
-          label: 'Open Grillo Cloud',
-          position: 'right',
-          className: 'navbar__platform-link',
-        },
-        {
           href: 'https://grillo.io',
           label: 'Grillo.io',
           position: 'right',

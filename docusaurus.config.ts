@@ -49,6 +49,7 @@ const config: Config = {
 
   plugins: [
     './plugins/suppress-casing-warnings.js',
+    './plugins/markdown-export.js',
   ],
 
   presets: [

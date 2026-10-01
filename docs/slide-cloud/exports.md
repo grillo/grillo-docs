@@ -8,6 +8,8 @@ You can download your readings as files, and request raw GNSS observations for y
 
 ## Export readings
 
+![The Exports page with the site and dataset choices (demo data)](/img/screenshots/slide-exports.png)
+
 1. Open **Exports**, or select **Export data** on a site page.
 2. Under **Export from**, choose **A sensor group or device**, **A site**, or **Export a whole project instead**. For a sensor group, export all its devices or pick one.
 3. Choose what to export:

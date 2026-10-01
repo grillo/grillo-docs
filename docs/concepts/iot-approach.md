@@ -2,6 +2,8 @@
 title: Connected Sensor Networks
 ---
 
+import {DataPathDiagram} from '@site/src/components/Diagrams';
+
 # Connected Sensor Networks
 
 Connected sensing combines compact instruments, standard communications, remote health telemetry, and centralized processing. It can make dense deployments practical, but connectivity does not replace good instrumentation or network design.
@@ -84,6 +86,8 @@ A connected station is an operational system. Plan for:
 - Documented ownership for field and cloud components
 
 ## Grillo architecture
+
+<DataPathDiagram />
 
 - **Grillo Pulse and Grillo One** send health reports and seismic data in real time over Ethernet, Wi-Fi, or cellular, initiating every connection outbound.
 - **Grillo Cloud** manages projects, claimed sensors, station metadata, device health, and over-the-air firmware updates. Its [SISTEM add-on](/events) adds waveforms and processes seismic data into earthquake events.

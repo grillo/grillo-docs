@@ -1,0 +1,98 @@
+.figure {
+  margin: 8px 0 28px;
+  padding: 16px;
+  border: 1px solid var(--border-hairline);
+  background: var(--bg-surface);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin-top: 10px;
+  color: var(--fg-3);
+  font: 400 13px/1.5 var(--font-sans);
+}
+
+.label {
+  fill: var(--fg-1);
+  font: 500 13px var(--font-sans);
+}
+
+.sub {
+  fill: var(--fg-3);
+  font: 400 11px var(--font-mono);
+}
+
+.box {
+  fill: var(--bg-elevated);
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.boxAccent {
+  fill: var(--bg-elevated);
+  stroke: var(--brand-orange);
+  stroke-width: 1.5;
+}
+
+.line,
+.axis {
+  stroke: var(--fg-3);
+  stroke-width: 1.25;
+  fill: none;
+}
+
+.mesh {
+  stroke: var(--fg-3);
+  stroke-width: 1.25;
+  stroke-dasharray: 3 3;
+}
+
+.gap {
+  stroke: var(--fg-2);
+  stroke-width: 1.25;
+}
+
+.arrowHead {
+  fill: var(--fg-3);
+}
+
+.accentLine {
+  stroke: var(--brand-orange);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.accentFill {
+  fill: var(--brand-orange);
+}
+
+.accentText {
+  fill: var(--brand-orange);
+  font: 500 12px var(--font-mono);
+}
+
+.wave {
+  stroke: var(--fg-1);
+  stroke-width: 2;
+}
+
+.ground {
+  stroke: var(--fg-3);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.slope {
+  fill: var(--brand-orange);
+  opacity: 0.08;
+}
+
+.blind {
+  fill: var(--brand-orange);
+  opacity: 0.12;
+}

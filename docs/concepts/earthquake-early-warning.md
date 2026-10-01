@@ -2,6 +2,8 @@
 title: Earthquake Early Warning
 ---
 
+import {WarningTimeDiagram} from '@site/src/components/Diagrams';
+
 # Earthquake Early Warning
 
 Earthquake early warning (EEW) detects an earthquake after it begins and attempts to notify locations before damaging shaking reaches them. It is not earthquake prediction.
@@ -29,6 +31,8 @@ Every step consumes time. Warning time depends on the earthquake, station geomet
 ## Blind zone
 
 Locations close to the source can experience strong shaking before the system has enough observations to issue a useful alert. No network density or communications technology eliminates this blind zone completely.
+
+<WarningTimeDiagram />
 
 ## Initial estimates change
 

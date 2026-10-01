@@ -2,6 +2,8 @@
 title: Landslide Monitoring with GNSS
 ---
 
+import {LandslideKitDiagram} from '@site/src/components/Diagrams';
+
 # Landslide Monitoring with GNSS
 
 Many landslides move slowly, by millimetres or centimetres over days to months, before they move fast. Measuring that slow movement shows which ground is active, how fast it is going, and whether it is speeding up.
@@ -13,6 +15,8 @@ Grillo Slide measures it with satellite positioning (GNSS).
 A phone or a basic GPS receiver knows its position to within a few metres. Landslide movement is far smaller than that, so it would be lost in the error.
 
 **RTK** (real-time kinematic) positioning removes most of that error. A **base** receiver at a known, stable point watches the same satellites as a **rover** on the moving ground. Errors from the atmosphere and the satellites affect both receivers in almost the same way, so the base sends corrections and the rover cancels them out. Over short distances this gets the rover's position relative to the base down to centimetres or better.
+
+<LandslideKitDiagram />
 
 When the rover has used the corrections to resolve its position precisely, it reports an **RTK Fixed** solution. Grillo Slide only uses RTK Fixed readings to measure movement.
 

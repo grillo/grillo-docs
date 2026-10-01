@@ -22,7 +22,9 @@ The **Legend** explains each symbol.
 
 ## Live mode
 
-When stations start detecting shaking, the **Event Log** lists each station pick as it arrives. Once enough stations have picked, SISTEM locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
+The **Live** button shows whether the map is connected to SISTEM: **Connected**, **Connecting**, or **Disconnected**. If it stays disconnected, refresh the page.
+
+When stations start detecting shaking, each pick plays a short beep and the **Event Log** lists the pick. Once at least four stations have picked, SISTEM locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
 
 ## Map settings
 

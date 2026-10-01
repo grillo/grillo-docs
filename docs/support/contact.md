@@ -7,9 +7,11 @@ title: Contact Support
 For help with a sensor, an account, or your data:
 
 - **Chat with us** using the messenger in the bottom corner of this page. It appears after you accept cookies.
-- **Send a support request** at [grillo.io/support](https://grillo.io/support). Replies come to your email.
+- **Send a support request** at [grillo.io/support](https://grillo.io/support). Fill in your name, email, and a description, tick **Verify you are human**, and select **Submit Support Request**. Replies come to your email.
 
 If neither works, email [support@grillo.io](mailto:support@grillo.io).
+
+<img src="/img/screenshots/support-request-form.png" alt="The Submit a support request form at grillo.io/support, with name, email, company, and message fields, a human verification check, and the Submit Support Request button" width="460" />
 
 Do not send passwords, API tokens, SIM PINs, or other secrets in a support request.
 

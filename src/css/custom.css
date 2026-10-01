@@ -271,18 +271,6 @@ h5 {
   background: var(--bg-elevated);
 }
 
-.navbar__platform-link {
-  border: 1px solid var(--brand-orange) !important;
-  color: var(--fg-on-brand) !important;
-  background: var(--brand-orange);
-}
-
-.navbar__platform-link:hover {
-  border-color: var(--brand-orange-600) !important;
-  color: var(--fg-on-brand) !important;
-  background: var(--brand-orange-600) !important;
-}
-
 .navbar__toggle:hover,
 .clean-btn:hover {
   background: var(--bg-elevated);

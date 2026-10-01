@@ -17,10 +17,14 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a US
 | Geophone | 4.5 Hz vertical, 24-bit converter. Channel `EHZ`. |
 | Accelerometer | Three-axis MEMS. Channels `HNZ`, `HNN`, `HNE` at 125 samples per second. |
 | Connectivity | **Pulse Cellular:** LTE Cat-1. **Pulse Ethernet:** 10/100 wired Ethernet through a weatherproof cable entry. |
-| Power | 12 V DC, through the external power connector |
+| Power | 12 V DC, through the external power connector. No built-in solar or battery input. |
 | Timing | Network time (NTP). GNSS receiver fitted. |
 | Status lights | Inside the enclosure only. Use Grillo Cloud to check the sensor. |
 | Managed in | [Grillo Cloud](/dashboard) |
+
+## Off-grid power
+
+Pulse has one power input: 12 V DC. It has no solar charger or battery connection of its own. For a site without mains power, use a solar charge controller and battery that together supply a steady 12 V DC to the Pulse. Size the panel and battery for the site's sunlight and for the days of autonomy you need, and ask Grillo Support if you need help.
 
 ## Two variants
 

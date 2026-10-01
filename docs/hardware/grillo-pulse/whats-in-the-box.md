@@ -23,7 +23,7 @@ Photograph the label and QR code before installation. Once the sensor is mounted
 - **Pulse Ethernet:** a weatherproof Ethernet entry on the enclosure for your network cable
 - Mounting hardware, if ordered
 
-Do not assume a battery, solar panel, or mounting accessory is included unless it is on the packing list.
+Do not assume a battery, solar panel, or mounting accessory is included unless it is on the packing list. Pulse has no solar or battery input of its own; for an off-grid site, see [Off-grid power](/hardware/grillo-pulse#off-grid-power).
 
 ## Stop and contact support if
 

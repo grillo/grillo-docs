@@ -9,7 +9,7 @@ title: Choosing Your Sensor
 | Measures | Earthquakes, from small to strong | Strong ground shaking | Slow ground movement |
 | Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS |
 | Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
-| Power | 12 V DC | USB-C, 5 V | Internal battery with solar input |
+| Power | 12 V DC input; solar through your own charge controller and battery | USB-C, 5 V | Internal battery with solar input |
 | Readings | Continuous, in real time | Continuous, in real time | Every 6 hours |
 | Data in the dashboard | Health; waveforms and earthquake detection with SISTEM | Health; waveforms and earthquake detection with SISTEM | Movement in mm, health, exports, raw GNSS files |
 | Firmware updates | By Grillo for now | Over the air from Grillo Cloud | Over the air |
@@ -18,9 +18,9 @@ title: Choosing Your Sensor
 
 ## Grillo Pulse
 
-![Grillo Pulse in its black aluminium enclosure, with the label QR code on the lid and external connectors on the side](/img/products/grillo-pulse.webp)
+Choose Pulse for a seismic network that needs to record small earthquakes as well as strong ones. Pick the cellular variant for sites without a wired network, or the Ethernet variant where you have one.
 
-Choose Pulse for a seismic network that needs to record small earthquakes as well as strong ones, or for sites without mains networking. Pick the cellular or Ethernet variant to match the site.
+Pulse has a single 12 V DC input. It has no solar or battery input of its own: at an off-grid site, power it from a solar charge controller and battery system that supplies 12 V DC.
 
 [Install a Grillo Pulse →](/hardware/grillo-pulse)
 
@@ -47,7 +47,7 @@ Confirm with Grillo:
 1. What you need to measure, and how sensitive it must be
 2. Indoor or outdoor installation
 3. Cellular, Ethernet, or Wi-Fi availability at the site
-4. Power and backup requirements
+4. Power and backup requirements, including whether you need a solar and battery system for Pulse
 5. Whether seismic data should go to Grillo or to your own server
 6. Whether you need the SISTEM add-on for earthquake detection
 

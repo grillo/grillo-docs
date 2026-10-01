@@ -41,7 +41,7 @@ The rover reached the base but did not get a precise position fix in that cycle.
 
 ## Movement looks wrong
 
-- **Every rover jumped by the same amount:** the base or its antenna moved. Reset the baseline for the sensor group.
+- **Every rover jumped by the same amount:** the base or its antenna moved. Put it back or fix it in place, press the base's reset button to [survey it again](/hardware/grillo-slide/installation#survey-the-base), then reset the baseline for the sensor group.
 - **One rover jumped:** check its mount and antenna, then reset that rover's baseline.
 - **Readings scatter by a centimetre or two:** this is normal for single readings. Look at the trend over several days.
 

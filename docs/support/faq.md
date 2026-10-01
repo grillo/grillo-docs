@@ -47,7 +47,7 @@ Yes. In Grillo Cloud, open the waveform review page and select **Download native
 
 ## Can I update firmware remotely?
 
-For Grillo One and Pulse units on firmware 1.x, yes: see [Update Firmware](/dashboard/sensors/firmware-updates). Slide firmware is rolled out by Grillo.
+For Grillo One and Pulse units on firmware 1.x, yes: see [Update Firmware](/dashboard/sensors/firmware-updates). Slide firmware is also updated over the air, the base over LTE and the rovers through the base: see [Firmware updates](/slide-cloud/firmware-and-api#firmware-updates).
 
 ## What is SISTEM?
 

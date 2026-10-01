@@ -6,6 +6,8 @@ title: Event Details
 
 Select an event in the catalog to open its details.
 
+![Event details in Grillo Cloud, with the Review waveforms button, time, magnitude, depth, location, and links to picks and amplitudes](/img/screenshots/event-details.png)
+
 ## Event information
 
 - Event ID

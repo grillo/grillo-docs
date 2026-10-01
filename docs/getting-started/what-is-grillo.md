@@ -35,7 +35,7 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 
 ## Your own seismic system
 
-Pulse and One can send their seismic data to a server you run, such as Earthworm or SeisComP, instead of Grillo. Grillo switches this on for your project, and you keep managing the sensors in Grillo Cloud. See [Send Data to Your Own Server](/dashboard/data/data-server).
+Pulse and One can send their seismic data to a server you run instead of Grillo. Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis) receives it and passes it to Earthworm, or writes miniSEED for SeisComP and ObsPy. Grillo switches this on for your project, and you keep managing the sensors in Grillo Cloud. See [Send Data to Your Own Server](/dashboard/data/data-server).
 
 ## Getting help
 

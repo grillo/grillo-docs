@@ -14,7 +14,7 @@ Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a US
 
 | | |
 |---|---|
-| Geophone | 4.5 Hz vertical, 24-bit converter. Channel `EHZ`. |
+| Geophone | 4.5 Hz vertical, 32-bit converter. Channel `EHZ`. |
 | Accelerometer | Three-axis MEMS. Channels `HNZ`, `HNN`, `HNE` at 125 samples per second. |
 | Connectivity | **Pulse Cellular:** LTE Cat-1. **Pulse Ethernet:** 10/100 wired Ethernet through a weatherproof cable entry. |
 | Power | 12 V DC, through the external power connector. No built-in solar or battery input. |

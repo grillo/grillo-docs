@@ -10,40 +10,57 @@ title: Connect and Install
 - Have a 5 V DC supply for the sensor.
 - For Ethernet: a cable to a network that gives out addresses by DHCP.
 - For Wi-Fi: the name and password of a 2.4 GHz network, and a phone or laptop.
-- Ask the site's network administrator to allow outbound UDP on ports 5683 and 5684, and NTP.
+- Ask the site's network administrator to allow outbound UDP on ports 5683 and 5684, and NTP (UDP port 123).
+
+## Ethernet or Wi-Fi
+
+Grillo One chooses its connection once, when it starts:
+
+- If an Ethernet cable with a working link is connected, it uses Ethernet.
+- If not, it uses Wi-Fi.
+
+It does not switch while running. If you plug in or remove the Ethernet cable later, restart the sensor by disconnecting and reconnecting power.
 
 ## Connect with Ethernet
 
 1. Plug the Ethernet cable into the sensor.
 2. Connect power.
 
-Grillo One checks for an Ethernet link when it starts. If it finds one, it uses Ethernet and needs no further setup.
+The sensor finds the link within about 5 seconds and gets an address by DHCP. No further setup is needed.
 
 ## Connect with Wi-Fi
 
-If there is no Ethernet link at start-up, Grillo One falls back to Wi-Fi. With no Wi-Fi network saved, it starts its own setup network.
+With no Ethernet link and no Wi-Fi details saved, Grillo One starts its own setup network.
 
-1. Connect power, with no Ethernet cable plugged in. The Network light turns blue while the setup network is running.
+1. Connect power, with no Ethernet cable plugged in. The **Network** light turns solid blue while the setup network is running.
 2. On your phone or laptop, join the Wi-Fi network named `GrilloOne-XXXX`, where `XXXX` is four characters unique to the sensor. The network has no password.
-3. A setup page opens. If it does not, browse to `http://192.168.4.1`.
-4. Choose your Wi-Fi network from the list, or type its name.
+3. A setup page titled **Grillo One** opens. If it does not, browse to `http://192.168.4.1`.
+4. Under **WiFi Configuration**, choose your network from the list or type its name.
 5. Enter the Wi-Fi password and select **Connect**.
 
-The sensor saves the details, restarts, and joins your network. The `GrilloOne-XXXX` network disappears.
+The sensor saves the details, restarts, and joins your network. The `GrilloOne-XXXX` network disappears. From then on it reconnects to the same Wi-Fi network by itself every time it starts.
 
 If you plug in an Ethernet cable while the setup network is running, the sensor switches to Ethernet and skips Wi-Fi setup.
 
 ## Status lights
 
-Grillo One has three status lights.
+Grillo One has three colour lights: **Network**, **Sensor**, and **Data**.
 
-| Light | Off | Blinking | Solid |
-|---|---|---|---|
-| Network | No connection | Connecting | Connected |
-| Sensor | Sensor error | Starting up | Recording |
-| Data | — | Blinks each time data is sent | — |
+| Light | Colour | Meaning |
+|---|---|---|
+| Network | Blue, pulsing | Connecting |
+| Network | Blue, solid | Wi-Fi setup network is running; join `GrilloOne-XXXX` |
+| Network | Green | Connected |
+| Network | Red | Connection failed |
+| Sensor | Blue, pulsing | Starting up |
+| Sensor | Green | Accelerometer recording |
+| Sensor | Red | Accelerometer not responding |
+| Data | Green flash | A packet of seismic data was sent |
+| Network and Sensor | Purple, flashing | Firmware update in progress. Do not disconnect power. |
 
-A healthy sensor shows Network solid, Sensor solid, and Data blinking steadily.
+A healthy sensor shows Network green, Sensor green, and Data flashing green about four times a second.
+
+If Network and Sensor are green but Data never flashes, the sensor is not yet claimed or has not yet received its station code. Check it is [claimed](/dashboard/sensors/adding-sensor) in the right project, then wait a minute for its next health report.
 
 ## Mount the sensor
 
@@ -56,16 +73,25 @@ See [Sensor Placement](/concepts/sensor-placement) for choosing a site.
 
 ## Verify
 
-In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Last Seen** time is current. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
+In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Last Seen** time is current. Grillo One sends a health report every minute. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
+
+## Firmware updates
+
+Grillo One can be updated over the air from Grillo Cloud. See [Update Firmware](/dashboard/sensors/firmware-updates). While it updates, the Network and Sensor lights flash purple; then it restarts.
+
+The new firmware checks the accelerometer when it starts. If that check fails, the sensor rolls back to the previous version by itself.
 
 ## Troubleshooting
 
 | Problem | What to do |
 |---|---|
-| Network light keeps blinking | On Ethernet, check the cable and that the network provides DHCP. On Wi-Fi, the sensor may be out of range. |
-| `GrilloOne-XXXX` network does not appear | Unplug the Ethernet cable and power-cycle the sensor. The setup network only starts when there is no Ethernet link and no working Wi-Fi details. |
+| Network light keeps pulsing blue | On Ethernet, check the cable and that the network provides DHCP. On Wi-Fi, the sensor may be out of range. |
+| Network light red | The connection failed. Check the cable or Wi-Fi signal, then restart the sensor. |
+| `GrilloOne-XXXX` network does not appear | Unplug the Ethernet cable and restart the sensor. The setup network only starts when there is no Ethernet link and no saved Wi-Fi details. |
 | Wrong Wi-Fi password entered | After three failed attempts the sensor forgets the saved details, restarts, and reopens the setup network. Join it and enter the details again. |
-| Network light solid but sensor offline in Grillo Cloud | Outbound UDP on ports 5683 and 5684 is probably blocked. Ask the network administrator. Also confirm the sensor is claimed in the right project. |
-| Sensor light off | The accelerometer did not start. Power-cycle the sensor; if it stays off, contact support. |
+| Switched from Wi-Fi to Ethernet, or back, and nothing changed | The connection is chosen at start-up. Restart the sensor. |
+| Network green but sensor offline in Grillo Cloud | Outbound UDP on ports 5683 and 5684 is probably blocked. Ask the network administrator. Also confirm the sensor is claimed in the right project. |
+| Online in Grillo Cloud but Data never flashes | The sensor has not received its station code yet. Check it is claimed, then wait a minute. |
+| Sensor light red | The accelerometer did not respond. Restart the sensor; if it stays red, contact support. |
 
-[Contact Grillo Support](/support/contact) with the Device ID and a description of the three lights.
+[Contact Grillo Support](/support/contact) with the Device ID and the colours of the three lights.

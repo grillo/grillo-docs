@@ -19,26 +19,26 @@ Do this before you go to site, somewhere with mobile coverage. A wrong APN canno
 ## Fit the SIM
 
 1. Make sure the base is powered off.
-2. Open the base's case and insert the nano-SIM into the SIM holder, following the install card supplied with the kit.
+2. Remove the base's cover and insert the nano-SIM into the SIM holder, following the install card supplied with the kit.
 
-Leave the case open for the next steps. You need the button inside it.
+Leave the cover off for the next steps. You need the **SETUP** button: one of two small buttons on the circuit board, just under the battery holder. The other one is **RESET**.
 
 ## Set the APN with Grillo Field
 
 1. Open Grillo Field and sign in with your Grillo account email and password.
-2. Power on the base. Within 10 seconds, press and hold the button inside the case for 2 seconds. The base keeps Bluetooth open for 2 minutes.
+2. Power on the base. Within 10 seconds, press and hold **SETUP** for 2 seconds. The base keeps Bluetooth open for 2 minutes.
 3. In the app, select **Scan your Slide** and scan the QR code on the base's label. If the camera is unavailable, select **Enter code manually** and type the `slide-…` ID printed on the label.
 4. Keep the phone next to the base. The app connects over Bluetooth by itself; there is nothing to pair in your phone's Bluetooth settings.
 5. Open **Network setup** and enter the APN.
 6. Wait for the app to show **APN saved on the base** followed by the APN you entered.
 
-If the 2 minutes run out, power the base off and on and hold the button again.
+If the 2 minutes run out, power the base off and on and hold **SETUP** again.
 
 ## Check the connection
 
 The base uses the new APN at its next upload. Leave it powered through one cycle and confirm that a fresh report appears on the [dashboard](/slide-cloud/sites-and-devices).
 
-Close the case when you are done, checking that the seal is seated and no cable is trapped.
+Refit the cover when you are done, checking that the seal is seated and no cable is trapped.
 
 ## Change the APN later
 

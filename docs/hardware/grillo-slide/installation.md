@@ -34,9 +34,34 @@ Do not power the devices from USB. The USB port is for service only and does not
 
 Power on the **rovers first** and the **base last**, all within 5 minutes.
 
-When the base powers on, it surveys its own position. This usually takes about 5 minutes and can take up to 30. Leave the base still, with a clear view of the sky. It then runs the first measurement cycle with the rovers.
+When the base powers on, it runs a [survey](#survey-the-base) to find its own position, then runs the first measurement cycle with the rovers.
 
 If the survey takes too long, the rovers go back to sleep and the whole kit meets at the next 6-hour slot (00:00, 06:00, 12:00, or 18:00 UTC). Nothing is wrong; the first reading arrives later.
+
+## Survey the base
+
+The base is the fixed reference every rover is measured against, so it needs to know exactly where it is. It works this out with a **survey**: it averages its GNSS position for several minutes and keeps the result as its reference.
+
+The base surveys every time it starts from power-off. To start a survey yourself, press the **RESET** button on the base. Do this whenever the base has been installed in a new place.
+
+The base has two small buttons on its circuit board, just under the battery holder. You need to remove the cover to reach them.
+
+| Button | Use |
+|---|---|
+| **RESET** | Restarts the base and starts a survey |
+| **SETUP** | Opens Bluetooth for the Grillo Field app. See [Fit the SIM and Set the APN](/hardware/grillo-slide/sim-and-apn). |
+
+1. Make sure the base is in its final position, its GNSS antenna is connected, and it has a clear view of the sky.
+2. Remove the base's cover.
+3. Press **RESET** once. Take care not to press **SETUP** instead.
+4. Refit the cover, checking that the seal is seated and no cable is trapped. Do not move the base or its antenna while doing this.
+5. Leave the base still and undisturbed while it surveys. This usually takes about 5 minutes and can take up to 30.
+
+When the survey finishes, the base runs a measurement cycle with any rovers that are awake, then follows the 6-hour schedule.
+
+A survey on the same spot does not change your readings. If the base has moved, its new position is used from then on; see below.
+
+Waking from sleep between cycles does not start a survey. Only a power-on or the **RESET** button does.
 
 ## Read the RTK light
 
@@ -64,6 +89,7 @@ The first valid reading from each rover becomes its zero. Movement is reported f
 
 ## If you move something later
 
-- **You move the base or its antenna:** every rover's movement shifts by the same amount. [Reset the movement baseline](/slide-cloud/sites-and-devices#reset-the-movement-baseline) for the sensor group afterwards.
+- **The base or its antenna moves:** every rover's movement shifts by the same amount. [Reset the movement baseline](/slide-cloud/sites-and-devices#reset-the-movement-baseline) for the sensor group afterwards.
 - **You move or remount a rover:** reset that rover's baseline.
-- **You power-cycle the base:** it surveys again. On the same spot, this does not change the readings.
+- **You power-cycle the base or press **RESET**:** it surveys again. On the same spot, this does not change the readings.
+- **You move the base to a new spot:** press **RESET** to survey the new position, then reset the baseline for the sensor group.

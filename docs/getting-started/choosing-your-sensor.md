@@ -9,7 +9,7 @@ title: Choosing Your Sensor
 | Measures | Earthquakes, from small to strong | Strong ground shaking | Slow ground movement |
 | Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS |
 | Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
-| Power | Supplied DC adapter | 5 V DC | Internal battery with solar input |
+| Power | 12 V DC | 5 V DC | Internal battery with solar input |
 | Typical site | Field and remote stations | Buildings and sites with mains power and a network | Slopes and embankments |
 | Dashboard | [Grillo Cloud](/dashboard) | [Grillo Cloud](/dashboard) | [Grillo Cloud for Slide](/slide-cloud) |
 

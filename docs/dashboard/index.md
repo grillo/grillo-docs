@@ -16,7 +16,6 @@ Grillo Slide uses a separate dashboard. See [Grillo Cloud for Slide](/slide-clou
 - Review connection history, interruptions, and reboots
 - Update sensor firmware over the air
 - Send seismic data to your own server instead of Grillo
-- Invite colleagues to your project
 
 With the [SISTEM add-on](/events), Grillo Cloud also shows your sensors' waveforms, lets you download recorded data, detects earthquakes automatically, builds an event catalog, and shows events on a live map.
 
@@ -30,7 +29,7 @@ With the [SISTEM add-on](/events), Grillo Cloud also shows your sensors' wavefor
 
 ## Navigation
 
-The sidebar has three groups:
+The sidebar has two groups:
 
 | Group | Page | Use it to |
 |---|---|---|
@@ -38,10 +37,11 @@ The sidebar has three groups:
 | Monitor | **Sensors** | Claim, find, inspect, edit, and unclaim sensors |
 | Seismic | **Events** | Browse detected earthquakes (SISTEM add-on) |
 | Seismic | **Live** | Watch detections on a live map, or run a simulation (SISTEM add-on) |
-| Administration | **Project Settings** | Manage branding, members, invitations, and the seismic data server |
 
-The **Seismic** group also shows where your sensors send their data: **Sending to Grillo**, or your own server if you have [set one](/dashboard/data/data-server).
+The **Seismic** group also shows where your sensors send their data: **Sending to Grillo**, or your own server if Grillo has [set one](/dashboard/data/data-server) for your project.
 
 The project switcher is at the top of the sidebar. **Account**, **Billing**, **Settings**, **Language**, and **Logout** are in the user menu at the bottom. Grillo Cloud is available in English and French.
+
+Projects, members, and other account settings are managed by Grillo. See [Projects](/dashboard/organizations).
 
 Each main page has a guided tour the first time you open it. To see the tours again, open **Settings** and use **Guided Tours**.

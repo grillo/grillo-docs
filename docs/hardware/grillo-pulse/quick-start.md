@@ -4,74 +4,69 @@ title: Pulse Quick Start
 
 # Pulse Quick Start
 
-Use this checklist to bench-test a Grillo Pulse before field installation.
+Bench-test a Grillo Pulse before you take it to site. It takes about 15 minutes and catches most problems while they are still easy to fix.
 
-:::warning Before connecting the sensor
-Use only the supplied power adapter and barrel jack. Do not open the enclosure, change internal components, or connect a service cable unless instructed by Grillo Support.
+:::warning Before you connect anything
+Use only the 12 V supply provided for the sensor. Do not connect a USB cable, and do not open the enclosure unless Grillo Support asks you to.
 :::
 
 ## 1. Inspect and record
 
-- [ ] Confirm whether the sensor uses cellular or Ethernet.
-- [ ] Record the 12-character Device ID from the external label.
-- [ ] Photograph the label before installation.
-- [ ] Check the enclosure, power adapter, antennas, cables, and mounting parts for damage.
-- [ ] Compare the shipment with its packing list.
+- [ ] Check whether the sensor is Pulse Cellular or Pulse Ethernet.
+- [ ] Record the 12-character Device ID from the label.
+- [ ] Photograph the label and its QR code.
+- [ ] Check the enclosure, power supply, antennas, and cables for damage.
 
-Stop and [contact support](/support/contact) if an item is damaged, missing, or does not match the supplied instructions.
+Stop and [contact support](/support/contact) if anything is damaged, missing, or does not match your order.
 
-## 2. Prepare Grillo Cloud
+## 2. Claim it in Grillo Cloud
 
 1. Sign in at [cloud.grillo.io](https://cloud.grillo.io).
-2. Select the intended project in the project switcher.
+2. Select your project in the project switcher.
 3. Open **Sensors** and select the **+** button.
-4. Enter or scan the Device ID.
-5. Assign the planned FDSN station code and select **Claim Device**.
+4. Type the Device ID or scan the QR code.
+5. Enter the station code you have planned and select **Claim Device**.
 
-The sensor can remain Offline until it is powered and connected.
+The sensor appears in the list as **offline**. That is expected until it is powered and connected.
 
-## 3. Prepare connectivity
+## 3. Connect it
 
-### Cellular sensor
+**Pulse Cellular**
 
-- Confirm that cellular service is active for the supplied SIM.
-- Connect the supplied antennas to their labelled enclosure connectors.
-- Test coverage at the intended site.
-- Ask Grillo Support before replacing the SIM or changing cellular settings.
+- [ ] Fit the antennas to the matching labelled connectors.
+- [ ] Check that you have mobile coverage where you are testing.
 
-### Ethernet sensor
+The SIM is supplied and set up by Grillo; there is nothing to configure.
 
-- Connect the sensor to a network with internet access.
-- Ask the network administrator to permit its outbound connection.
-- Use the supplied weatherproof connection procedure for outdoor installations.
+**Pulse Ethernet**
+
+- [ ] Feed the network cable through the weatherproof Ethernet entry and connect it to a port that gives out addresses automatically (DHCP).
+- [ ] Make sure the network allows outbound UDP on ports 5683 and 5684.
 
 ## 4. Power on
 
-1. Connect the supplied adapter to the sensor's barrel jack.
-2. Connect the adapter to power.
-3. Allow the sensor time to start and establish its network connection.
+Plug the 12 V supply into the external power connector on the enclosure. You do not need to open the enclosure. The sensor starts, connects, and begins reporting.
 
-Use Grillo Cloud—not internal LEDs—as the primary setup indicator.
+- Pulse Ethernet usually comes online within a minute.
+- Pulse Cellular can take up to 5 minutes the first time, while it registers on the mobile network and sets its clock.
 
-## 5. Verify in Grillo Cloud
+The **green** light comes on when the connection is up, and the **white** light blinks each time data is sent. See [Status Lights](/hardware/grillo-pulse/troubleshooting#status-lights).
 
-- [ ] Select the correct project.
-- [ ] Find the exact Device ID and station code.
-- [ ] Confirm **online**.
-- [ ] Confirm **Last Seen** is current.
-- [ ] Confirm the expected connection type.
-- [ ] Confirm the firmware version is displayed.
+## 5. Check Grillo Cloud
 
-Some health fields vary by sensor configuration. A blank or unavailable field does not necessarily indicate a fault.
+- [ ] Find the sensor by Device ID or station code.
+- [ ] It shows **online**.
+- [ ] **Last Seen** is current.
+- [ ] The connection type is **Cellular** or **Ethernet**, matching the variant.
+- [ ] A firmware version is shown.
+- [ ] For Pulse Cellular, signal strength is shown.
 
-If the sensor does not pass these checks, use [Pulse troubleshooting](/hardware/grillo-pulse/troubleshooting) before field deployment.
+If any check fails, see [Troubleshooting](/hardware/grillo-pulse/troubleshooting) before you go to site.
 
-## 6. Prepare the field installation
+## 6. Prepare for the site
 
-- [ ] Record final coordinates and elevation.
-- [ ] Choose a rigid, low-noise mounting surface.
-- [ ] Plan antenna placement, drainage, cable strain relief, and physical security.
-- [ ] Take the supplied enclosure and mounting instructions to the site.
-- [ ] Repeat the Grillo Cloud checks at the final location before leaving.
+- [ ] Plan where the sensor, antennas, and cables will go.
+- [ ] Bring a level and suitable fixings for the mounting surface.
+- [ ] Bring a phone to capture the coordinates at the sensor.
 
 Continue with [Physical Installation](/hardware/grillo-pulse/physical-installation).

@@ -8,8 +8,8 @@ Grillo Cloud accounts are created by invitation. You need an invitation to a pro
 
 ## Get an invitation
 
-- **New customers:** Grillo creates your project and invites its owner by email. If you have sensors but no invitation, [contact Grillo Support](/support/contact).
-- **Joining an existing project:** ask a project owner or admin to [invite you](/dashboard/organizations/managing-members).
+- **New customers:** Grillo creates your project and invites you by email. If you have sensors but no invitation, [contact Grillo Support](/support/contact).
+- **Joining an existing project:** ask Grillo Support to [add you](/dashboard/organizations/managing-members) to the project.
 
 ## Sign up
 
@@ -30,9 +30,9 @@ To reset a password, enter your email on the login page and select **Forgot your
 
 ## "No Projects Yet"
 
-This page means your account exists but does not belong to a project. Ask a project owner or admin to invite you, or contact Grillo Support.
+This page means your account exists but does not belong to a project. Contact Grillo Support to be added to your project.
 
 ## Next steps
 
 1. [Claim a sensor](/dashboard/sensors/adding-sensor).
-2. [Invite your team](/dashboard/organizations/managing-members).
+2. [Add your colleagues](/dashboard/organizations/managing-members).

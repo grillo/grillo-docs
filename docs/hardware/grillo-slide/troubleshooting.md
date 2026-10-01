@@ -13,7 +13,7 @@ Slide devices sleep between cycles, so most checks mean waiting for the next 6-h
 | QR code will not scan | Select **Enter code manually** and type the `slide-…` ID printed on the label. |
 | The app does not connect to the base | Power the base off and on, then hold the **SETUP** button (on the board under the battery holder, cover off) for 2 seconds within 10 seconds of power-on. Bluetooth stays open for 2 minutes. Keep the phone close, with Bluetooth on and the app's permissions allowed. |
 | "Nothing is available for your account" | You are signed in with an account that has no access to the kit. Check the email address, or contact Grillo Support. |
-| The app is not on your phone's store | The app is Android-only for now and is installed from the link Grillo sends you. |
+| The app is not on your phone's store | Grillo Field is on Android for now, installed from the link Grillo sends you. The iPhone version is coming soon. |
 
 ## Nothing arrives on the dashboard
 

@@ -50,7 +50,7 @@ The documentation is English-only.
 
 - Create an Account
 - Projects
-- Manage Members
+- Add Colleagues
 - Dashboard
 - Account, Billing, and Settings
 - Structural Health Monitoring (coming soon)

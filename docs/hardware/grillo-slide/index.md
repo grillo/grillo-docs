@@ -28,7 +28,7 @@ You view the results in [Grillo Cloud for Slide](/slide-cloud) at [slide.grillo.
 
 Grillo sets up each kit before it ships: the devices are already linked to your account, site, and sensor group. You fit the antennas and the SIM, set the SIM's APN, and install the devices.
 
-Not available yet: movement alerts, adding a rover to a kit that is already running, setting up a kit yourself from scratch, and an iOS version of the app.
+Not available yet: movement alerts, adding a rover to a kit that is already running, and setting up a kit yourself from scratch.
 
 ## What you need
 
@@ -36,7 +36,7 @@ Not available yet: movement alerts, adding a rover to a kit that is already runn
 - A GNSS antenna fitted to every device
 - An activated nano-SIM with a data plan, for the base
 - The SIM provider's APN
-- An Android phone with the **Grillo Field** app
+- An Android phone with the **Grillo Field** app. The iPhone version is coming soon.
 - Your Grillo sign-in, sent to you by Grillo
 
 ## Setup steps

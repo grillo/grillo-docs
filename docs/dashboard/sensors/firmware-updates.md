@@ -14,7 +14,7 @@ Only project owners and admins can start an update.
 |---|---|
 | Grillo Pulse on firmware 1.x | Yes |
 | Grillo One | Yes |
-| Grillo Pulse cellular and Ethernet variants on firmware 2.x | Not yet. Grillo updates these units directly; [contact support](/support/contact). |
+| Current Grillo Pulse, Cellular and Ethernet (firmware 2.x) | Not yet. Grillo updates these units for you; [contact support](/support/contact). |
 
 The sensor's current version is in the **Firmware** column of the [sensor table](/dashboard/sensors/table-view).
 

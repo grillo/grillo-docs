@@ -29,7 +29,7 @@ Online status comes from the sensor's health reports, which it sends about once 
 ## If a sensor is offline
 
 1. Confirm you are in the right project and the Device ID is correct.
-2. Check that the sensor has power from its supplied adapter.
+2. Check that the sensor has power from its supply: 12 V DC for Grillo Pulse, 5 V DC for Grillo One.
 3. Check the connection for its variant: Ethernet link, Wi-Fi, or cellular service and SIM.
 4. Ask the site's network administrator whether outbound UDP is allowed. Sensors send to Grillo on UDP ports 5683 and 5684.
 5. Give the sensor a few minutes to start and connect, then refresh.

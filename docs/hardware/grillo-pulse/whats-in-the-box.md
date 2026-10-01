@@ -4,38 +4,33 @@ title: Inspect Your Sensor
 
 # Inspect Your Grillo Pulse
 
-Package contents vary by connection type and ordered power or mounting options. Use the packing list supplied with the shipment as the authoritative inventory.
+Check the sensor before you claim or install it. Use the packing list that came with your order as the inventory; contents depend on the variant and the options you ordered.
 
-## Before installation
+## What to check
 
-1. Inspect the enclosure, connectors, antennas, cables, adapter, and mounting parts for damage.
-2. Confirm whether the sensor is cellular or Ethernet.
-3. Find the 12-character Device ID on the external label or packaging.
-4. Photograph the Device ID and QR code.
-5. Confirm that the supplied adapter and cables match the installation instructions.
+1. The enclosure, connectors, antennas, and cables are undamaged.
+2. You know which variant it is: **Pulse Cellular** or **Pulse Ethernet**. It is on your order and the enclosure label.
+3. The 12-character Device ID is on the label, for example `A0B1C2D3E4F5`. The label's QR code holds the same ID.
+4. The power supply is the one provided for the sensor: 12 V DC, with a plug that fits the external power connector on the enclosure.
 
-The Device ID contains 12 hexadecimal characters, for example `A0B1C2D3E4F5`.
+Photograph the label and QR code before installation. Once the sensor is mounted, the label may be hard to reach.
 
 ## Typical contents
 
-Depending on the order, a Pulse system may include:
-
 - Grillo Pulse in its enclosure
-- Cellular and positioning antennas for a cellular installation
-- Ethernet cable or weatherproof connection hardware for an Ethernet installation
-- Power adapter and cable
-- Mounting hardware
-- Quick-start or order-specific installation information
+- 12 V power supply and cable
+- **Pulse Cellular:** antennas, and a SIM already fitted and set up by Grillo
+- **Pulse Ethernet:** a weatherproof Ethernet entry on the enclosure for your network cable
+- Mounting hardware, if ordered
 
-Do not assume that a SIM, battery, solar system, mains adapter, antenna, or mounting accessory is included unless it appears on the packing list.
+Do not assume a battery, solar panel, or mounting accessory is included unless it is on the packing list.
 
 ## Stop and contact support if
 
-- The connection type is unclear.
-- A connector or cable does not match the supplied diagram.
-- The enclosure or seal is damaged.
+- You cannot tell which variant it is.
+- A connector or cable does not match its label.
+- The enclosure or a seal is damaged.
 - The Device ID is missing or unreadable.
-- The power adapter does not match the sensor.
-- Installation would require opening or modifying the enclosure without instructions.
+- The power supply is not 12 V DC.
 
-After recording the identifier, [claim the sensor in Grillo Cloud](/hardware/grillo-pulse/provisioning).
+Next: [claim the sensor in Grillo Cloud](/hardware/grillo-pulse/provisioning).

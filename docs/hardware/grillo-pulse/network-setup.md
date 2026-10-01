@@ -4,38 +4,41 @@ title: Connectivity
 
 # Connect a Grillo Pulse
 
-Determine whether the sensor is cellular or Ethernet from its order or enclosure label.
+Each Pulse uses one connection, set by its variant. Check your order or the enclosure label.
 
-## Cellular
+## Pulse Cellular
 
-Before deployment:
+Pulse Cellular connects over LTE using the SIM Grillo fits and sets up. You do not need to enter an APN or any other setting.
 
-1. Confirm that cellular service is active.
-2. Attach the supplied antennas to the matching labelled enclosure connectors.
-3. Check coverage at the exact installation site.
-4. Bench-test the sensor before traveling to a remote site.
-5. Ask Grillo Support before replacing the SIM or changing cellular settings.
+1. Fit the antennas to their matching labelled connectors.
+2. Check there is mobile coverage at the installation point.
+3. Plug the 12 V supply into the external power connector.
 
-[Cellular and SIM guidance →](/hardware/grillo-pulse/sim-card-setup)
+The first connection can take up to 5 minutes. See [Cellular and SIM](/hardware/grillo-pulse/sim-card-setup) for coverage and SIM details.
 
-## Ethernet
+## Pulse Ethernet
 
-1. Ask the network administrator for an active Ethernet connection with internet access.
-2. Connect Ethernet using the enclosure-specific weatherproof procedure.
-3. Connect the supplied power adapter through the barrel jack.
-4. Allow the sensor time to start and obtain network access.
-5. Verify a current Last seen value in Grillo Cloud.
+Pulse Ethernet connects to a wired 10/100 network.
 
-No inbound port forwarding is needed. The sensor only makes outbound connections: UDP port 5683 for health reports and UDP port 5684 for seismic data. On a restricted network, ask the administrator to allow both.
+1. Feed the network cable through the weatherproof Ethernet entry on the enclosure and tighten it so it seals around the cable.
+2. Plug the 12 V supply into the external power connector.
+
+The network must:
+
+- Give the sensor an address automatically (DHCP)
+- Allow outbound UDP to ports 5683 (health reports) and 5684 (seismic data)
+- Allow outbound NTP (UDP port 123), which the sensor uses to set its clock
+
+No inbound ports or port forwarding are needed. Pulse Ethernet usually comes online within a minute.
 
 ## Wi-Fi
 
-Wi-Fi availability depends on the sensor configuration supplied for the deployment. Do not assume that a cellular or Ethernet sensor will automatically switch to Wi-Fi. Follow the order-specific instructions or contact support.
+Both variants have Wi-Fi hardware, but the sensor uses its cellular or Ethernet connection. Wi-Fi cannot be set up by customers.
 
 ## Where the data goes
 
-By default a Pulse sends its seismic data to Grillo. Projects with the [SISTEM add-on](/events) can [view and download it](/dashboard/data/waveforms). To receive the data on your own server instead, see [Send Data to Your Own Server](/dashboard/data/data-server). This is a project setting in Grillo Cloud; nothing changes on the sensor.
+By default a Pulse sends its seismic data to Grillo. Projects with the [SISTEM add-on](/events) can [view and download it](/dashboard/data/waveforms). To receive the data on your own server instead, see [Send Data to Your Own Server](/dashboard/data/data-server). That is a project setting in Grillo Cloud; nothing changes on the sensor.
 
 ## Acceptance test
 
-Connectivity is accepted only after Grillo Cloud shows the correct sensor Online with a current Last seen value and the expected connection type. Local network indicators alone do not prove that data reached Grillo Cloud.
+The connection is working when Grillo Cloud shows the sensor **online**, with a current **Last Seen** and the expected connection type. A green light on the sensor shows the link is up; only Grillo Cloud shows that data is arriving.

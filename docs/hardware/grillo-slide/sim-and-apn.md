@@ -12,7 +12,7 @@ Do this before you go to site, somewhere with mobile coverage. A wrong APN canno
 
 - An activated nano-SIM with a data plan
 - The APN from your SIM provider. An APN is the mobile-network setting the base uses to reach the internet.
-- An Android phone with Bluetooth and internet access
+- An Android phone with Bluetooth and internet access. An iPhone version of Grillo Field is coming soon.
 - The **Grillo Field** app. Grillo sends you the install link with your sign-in.
 - Your Grillo account email and password
 

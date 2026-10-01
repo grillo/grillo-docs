@@ -22,7 +22,7 @@ Record unavoidable sources of environmental noise.
 ## Prepare before mounting
 
 1. Complete the [Pulse Quick Start](/hardware/grillo-pulse/quick-start).
-2. Confirm the Device ID is claimed in the correct network.
+2. Confirm the sensor is claimed in the correct project.
 3. Record and photograph external labels.
 4. Confirm mounting hardware is suitable for the surface.
 5. Review the supplied enclosure, cable, and weatherproofing instructions.
@@ -41,9 +41,10 @@ The geophone measures vertical motion, so the enclosure must be installed in the
 
 ## Power and weatherproofing
 
-- Use only the supplied power adapter and barrel jack.
-- Do not power the sensor through a service port.
+- Power the sensor through its external 12 V connector, using only the supply provided. There is no need to open the enclosure.
+- Do not connect anything to the USB ports. USB cannot power the sensor, and a powered USB cable can damage it.
 - Do not open or modify the enclosure unless the supplied procedure requires it.
+- On Pulse Ethernet, make sure the weatherproof Ethernet entry is tightened around the cable.
 - Inspect seals, cable entries, and strain relief before applying power.
 - Ensure cables cannot collect or direct water into the enclosure.
 
@@ -54,7 +55,8 @@ Before leaving the site:
 1. Confirm the sensor is secure, upright, and level.
 2. Record coordinates, elevation, orientation, mounting method, antenna placement, and photographs.
 3. Update location metadata in Grillo Cloud.
-4. Confirm Online status and a current Last seen value.
-5. Confirm the expected connection type.
+4. Confirm the green status light is on and the white light is blinking.
+5. Confirm the sensor is **online** in Grillo Cloud, with a current **Last Seen** and the expected connection type.
+6. For Pulse Cellular, check signal strength at the installed position.
 
 If these checks cannot be completed, treat the installation as incomplete.

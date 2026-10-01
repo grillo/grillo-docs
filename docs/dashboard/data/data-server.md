@@ -28,7 +28,32 @@ Sensors send waveform packets over CoAP on UDP, by default to port 5684. Your se
 - Accept inbound UDP on the port you choose
 - Run software that receives Grillo's waveform packets and passes them to your seismic system
 
-[Contact Grillo Support](/support/contact) for the receiver software and for help connecting it to Earthworm or SeisComP. Set this up and test it before you ask for the switch.
+## Receive the data with coap2seis
+
+[coap2seis](https://github.com/grillo/coap2seis) is Grillo's open-source receiver. It runs on your server, listens for the sensors' packets on UDP port 5684, and writes the data to:
+
+| Output | Use it for |
+|---|---|
+| An **Earthworm** ring, through PyEW | Feeding a real-time Earthworm system |
+| **miniSEED** files, one per station, channel, and day | ObsPy, SeisComP, archiving, and post-processing |
+
+Station, channel, and network codes come from the sensors, so the data arrives named the way it is in Grillo Cloud. You can set a fixed network code and the location code (default `00`).
+
+To install it:
+
+```bash
+git clone https://github.com/grillo/coap2seis.git
+cd coap2seis
+pip install -e .
+pip install obspy          # for miniSEED output
+python -m coap2seis
+```
+
+It asks for the output, port, and codes, with sensible defaults. The repository also includes a systemd service for running it permanently. See its [README](https://github.com/grillo/coap2seis#readme) for the full options.
+
+coap2seis reads the sensors' JSON data format. When Grillo points your project at your server, it also switches your sensors to that format; mention coap2seis in your request.
+
+Set up and test the receiver before you ask for the switch. [Contact Grillo Support](/support/contact) if you need help connecting it to your system.
 
 ## Set the data server
 

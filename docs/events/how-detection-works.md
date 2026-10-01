@@ -20,19 +20,13 @@ Event catalog, live map, and notifications
 
 ## The steps
 
-**Picking.** SISTEM compares each channel's short-term average energy with its long-term average (STA/LTA). When the short-term level jumps above the background, it records a **pick**: the time a seismic wave arrived at that station. Picks on different channels of the same station within 3 seconds count as one station.
+**Picking.** SISTEM watches each sensor channel for the sudden arrival of a seismic wave and records the time it arrived. This is called a **pick**.
 
-**Association.** SISTEM groups P-wave picks from different stations that fit a single earthquake, using the GaMMA association method and a P-wave speed of 6 km/s. It works with P waves only.
+**Association.** SISTEM groups picks from different stations that fit a single earthquake. An event is published, to the catalog, the live map, and notifications, once at least **4 stations** have detected it. Only stations that are online count.
 
-- A **candidate** event needs P-wave picks from at least **3 stations**.
-- An event is **published**, to the catalog, the live map, and notifications, once at least **4 stations** have picked it.
-- Only stations that are online are taken into account.
+**Location and magnitude.** SISTEM estimates where and when the earthquake started, its depth, and its magnitude. Magnitude is estimated quickly from the first seconds of shaking, so treat it as an early estimate.
 
-**Location.** The event is located within the monitoring region Grillo sets for your network, at a depth of up to 100 km.
-
-**Magnitude.** Magnitude is estimated from the size of the first P-wave motion at each station (its peak displacement) and the station's distance from the event. This kind of magnitude is available quickly, which suits early warning, but it is an early estimate.
-
-**Updates.** An event can be refined as more stations report. Its values settle about a minute after the last new pick.
+**Updates.** An event can be refined as more stations report. Its values settle about a minute after the last station reports.
 
 ## Why several stations are needed
 

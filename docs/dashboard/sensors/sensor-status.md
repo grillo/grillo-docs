@@ -19,13 +19,12 @@ A claimed sensor is not necessarily online. Claiming only adds it to your projec
 2. Open **Sensors** and refresh.
 3. Find the sensor by station code or Device ID.
 4. Confirm it is **online** and **Last Seen** is current.
-5. Open its details and check that the **Live sensor** waveform is moving.
-6. Confirm the connection type and signal strength look right.
-7. Check power source and battery level, where the sensor reports them.
-8. Confirm the coordinates and location name.
-9. Confirm the firmware version.
+5. Confirm the connection type and signal strength look right.
+6. Check power source and battery level, where the sensor reports them.
+7. Confirm the coordinates and location name.
+8. Confirm the firmware version.
 
-Tap the enclosure lightly and watch the live waveform respond. That proves seismic data, not just health reports, is arriving.
+Online status comes from the sensor's health reports, which it sends about once a minute. With the [SISTEM add-on](/events) you can also open the sensor's live waveform and tap the enclosure lightly to see it respond; that proves seismic data is arriving too.
 
 ## If a sensor is offline
 

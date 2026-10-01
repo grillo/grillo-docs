@@ -14,13 +14,11 @@ Grillo Slide uses a separate dashboard. See [Grillo Cloud for Slide](/slide-clou
 - See every sensor in a table or on a map, with online status and last-seen time
 - Check connection type, signal strength, SIM, power, battery, and firmware for each sensor
 - Review connection history, interruptions, and reboots
-- Watch a sensor's live waveform and review recorded waveforms
-- Download recorded samples as CSV
 - Update sensor firmware over the air
 - Send seismic data to your own server instead of Grillo
 - Invite colleagues to your project
 
-With the [SISTEM add-on](/events), Grillo Cloud also detects earthquakes automatically, builds an event catalog, and shows events on a live map.
+With the [SISTEM add-on](/events), Grillo Cloud also shows your sensors' waveforms, lets you download recorded data, detects earthquakes automatically, builds an event catalog, and shows events on a live map.
 
 ## First-sensor workflow
 

@@ -56,7 +56,7 @@ See [Sensor Placement](/concepts/sensor-placement) for choosing a site.
 
 ## Verify
 
-In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Live sensor** waveform is moving. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
+In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Last Seen** time is current. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
 
 ## Troubleshooting
 

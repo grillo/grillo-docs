@@ -19,13 +19,12 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 - Claim sensors by Device ID and assign FDSN station codes
 - See sensors in a table and on a map
 - Monitor online status, connectivity, signal, power, and firmware
-- Watch live waveforms, review recordings, and download samples
 - Update firmware over the air
 - Send seismic data to your own server
 
 ### SISTEM add-on
 
-[SISTEM](/events) is an optional add-on to Grillo Cloud. It detects earthquakes automatically from your sensors' data, builds an event catalog, and shows events on a live map. Ask Grillo to enable it for your project.
+[SISTEM](/events) is an optional add-on to Grillo Cloud. It adds live and recorded waveforms with data download, detects earthquakes automatically from your sensors' data, builds an event catalog, and shows events on a live map. Ask Grillo to enable it for your project.
 
 ## Grillo Cloud for Slide
 

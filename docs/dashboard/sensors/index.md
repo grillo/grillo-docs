@@ -10,7 +10,7 @@ From this page you can:
 
 - [Claim a sensor](/dashboard/sensors/adding-sensor)
 - Search the [sensor table](/dashboard/sensors/table-view) or switch to the [map](/dashboard/sensors/map-view)
-- Open [sensor details](/dashboard/sensors/sensor-details), including the live waveform and connection history
+- Open [sensor details](/dashboard/sensors/sensor-details), including health and connection history
 - [Edit](/dashboard/sensors/configuring-sensor) a sensor's station code and location
 - [Update its firmware](/dashboard/sensors/firmware-updates)
 - Unclaim a sensor

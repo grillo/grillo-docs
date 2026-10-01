@@ -4,7 +4,9 @@ title: View and Download Waveforms
 
 # View and Download Waveforms
 
-Grillo Cloud shows seismic data two ways: a live view of what a sensor is recording now, and a review page for recorded data that you can download.
+Waveforms are part of the [SISTEM add-on](/events). Projects without SISTEM see their sensors' status and health, but not their waveforms. [Contact Grillo](/support/contact) to add SISTEM.
+
+With SISTEM, Grillo Cloud shows seismic data two ways: a live view of what a sensor is recording now, and a review page for recorded data that you can download.
 
 Both show data only for sensors in the active project that send their seismic data to Grillo. If your project [sends data to its own server](/dashboard/data/data-server), Grillo Cloud has no waveforms to show.
 

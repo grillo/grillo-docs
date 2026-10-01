@@ -8,10 +8,6 @@ Select a sensor in the table or on the map to open its details panel.
 
 ![Sensor details in Grillo Cloud](/img/screenshots/07-sensor-info.png)
 
-## Live sensor
-
-The top of the panel shows the sensor's waveform as it arrives. Choose a channel and switch between **Waveform** and **Spectrogram**. See [View Waveforms](/dashboard/data/waveforms).
-
 ## Connection history
 
 The history chart shows the sensor's connection reports and signal strength over 1 hour, 24 hours, 7 days, 30 days, 90 days, or 1 year. It also counts:
@@ -44,6 +40,10 @@ Latitude, longitude, elevation, and the saved location name.
 ## System
 
 Device ID and **Last Seen**.
+
+## Waveforms (SISTEM)
+
+Projects with the [SISTEM add-on](/events) also see the sensor's live waveform at the top of the panel, and can open its recorded data. See [View and Download Waveforms](/dashboard/data/waveforms).
 
 ## Actions
 

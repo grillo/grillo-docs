@@ -1,8 +1,21 @@
+import {existsSync} from 'node:fs';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+if (existsSync('.env.local')) {
+  process.loadEnvFile('.env.local');
+}
+
+function requiredEnv(name: string): string {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`Missing ${name}; Algolia search needs ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY and ALGOLIA_INDEX_NAME`);
+  }
+  return value;
+}
 
 const config: Config = {
   title: 'Grillo Docs',
@@ -132,6 +145,12 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Grillo Ltd. All rights reserved.`,
+    },
+    algolia: {
+      appId: requiredEnv('ALGOLIA_APP_ID'),
+      apiKey: requiredEnv('ALGOLIA_SEARCH_API_KEY'),
+      indexName: requiredEnv('ALGOLIA_INDEX_NAME'),
+      contextualSearch: false,
     },
     prism: {
       theme: prismThemes.github,

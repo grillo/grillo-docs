@@ -40,4 +40,4 @@ Switch to **Map** to see event locations together with your sensors. Use the fit
 
 ## Exporting the catalog
 
-Grillo Cloud does not export the event list as a file. To get the recorded data for an event, open it and select **Review waveforms**, then [download the samples](/dashboard/data/waveforms#download-data).
+Grillo Cloud does not export the event list as a file. To get the recorded data for an event, open it and select **Open waveforms in archive**, then [download the samples](/dashboard/data/waveforms#download-data).

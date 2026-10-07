@@ -24,7 +24,7 @@ Select **Open historical view** to review the same sensor's recorded data.
 
 ## Review recorded waveforms
 
-Open the review page from **Open historical view** in a sensor's details, or from **Review waveforms** in an [event's details](/events/event-details).
+Open **Waveform archive** in the sidebar. You can also get there from **Open historical view** in a sensor's details, or from **Open waveforms in archive** in an [event's details](/events/event-details).
 
 1. Set **Start (UTC)** and **End (UTC)**. All times are UTC.
 2. Choose a **Station** and a **Channel**, then select **Add trace**. You can show up to 4 traces.

@@ -40,6 +40,8 @@ Browsers block audio until you have interacted with the page. Click anywhere on 
 
 Switch to **Simulation** and select **Simulate Earthquake**. The map generates an earthquake, shows simulated station picks, locates the event, and animates the waves.
 
+![A simulated earthquake on the live map: stations detect it, the event is located, and the P-wave and S-wave fronts spread out while panels show the magnitude, estimated arrival times, and affected cities](/img/screenshots/live-map-simulation.gif)
+
 :::danger Simulation is not real data
 Simulation mode uses a demonstration station set, not your sensors. Check which mode is selected before acting on anything shown on this page.
 :::

@@ -76,7 +76,7 @@ Remove the base's cover and press **RESET**. The base also surveys every time it
 
 ### Can I download my seismic data?
 
-With the [SISTEM add-on](/events), yes: open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into Earthworm, SeisComP, or ObsPy, ask Grillo to [send the data to your own server](/dashboard/data/data-server) and receive it with the open-source [coap2seis](https://github.com/grillo/coap2seis).
+With the [SISTEM add-on](/events), yes: open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into SeisComP, Swarm, or ObsPy, [stream it to your own ringserver](/dashboard/data/realtime-export). For Earthworm, you can also ask Grillo to [send the data to your own server](/dashboard/data/data-server) and receive it with the open-source [coap2seis](https://github.com/grillo/coap2seis).
 
 For Slide, use [Exports](/slide-cloud/exports).
 

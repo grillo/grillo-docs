@@ -69,6 +69,7 @@ The documentation is English-only.
 #### Data
 
 - Send Data to Your Own Server
+- Stream Data to Your Own Ringserver
 
 #### SISTEM Add-on
 

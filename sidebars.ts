@@ -74,6 +74,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         'dashboard/data/data-server',
+        'dashboard/data/realtime-export',
         {
           type: 'category',
           label: 'SISTEM Add-on',

@@ -8,6 +8,8 @@ By default, sensors send their seismic data to Grillo. You can point every senso
 
 Sensors keep sending health reports to Grillo either way, so you still manage and monitor them in Grillo Cloud.
 
+To keep your data in Grillo and also get a live copy over SeedLink, [stream it to your own ringserver](/dashboard/data/realtime-export) instead. You set that up yourself in Grillo Cloud.
+
 ## What changes
 
 | | Sending to Grillo (default) | Sending to your server |

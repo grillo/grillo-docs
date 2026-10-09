@@ -37,6 +37,8 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 
 Pulse and One can send their seismic data to a server you run instead of Grillo. Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis) receives it and passes it to Earthworm, or writes miniSEED for SeisComP and ObsPy. Grillo switches this on for your project, and you keep managing the sensors in Grillo Cloud. See [Send Data to Your Own Server](/dashboard/data/data-server).
 
+You can also keep the data in Grillo and stream a live copy as miniSEED to your own ringserver, which serves it over SeedLink. A project admin turns this on in Grillo Cloud. See [Stream Data to Your Own Ringserver](/dashboard/data/realtime-export).
+
 ## Getting help
 
 Use the chat messenger on this site, or see [Contact Support](/support/contact).

@@ -29,7 +29,7 @@ With the [SISTEM add-on](/events), Grillo Cloud also shows your sensors' wavefor
 
 ## Navigation
 
-The sidebar has two groups:
+The sidebar has three groups:
 
 | Group | Page | Use it to |
 |---|---|---|
@@ -37,6 +37,7 @@ The sidebar has two groups:
 | Monitor | **Sensors** | Claim, find, inspect, edit, and unclaim sensors |
 | Seismic | **Events** | Browse detected earthquakes (SISTEM add-on) |
 | Seismic | **Live** | Watch detections on a live map, or run a simulation (SISTEM add-on) |
+| Administration | **Project Settings** | See where data is sent, and [stream it to your own ringserver](/dashboard/data/realtime-export) |
 
 The **Seismic** group also shows where your sensors send their data: **Sending to Grillo**, or your own server if Grillo has [set one](/dashboard/data/data-server) for your project.
 

@@ -70,4 +70,4 @@ A CSV export holds up to 20,000 samples. Shorten the interval or remove traces i
 
 ## Continuous data and standard formats
 
-Grillo Cloud does not export miniSEED from the dashboard. For a continuous stream into Earthworm, SeisComP, or ObsPy, [send your sensors' data to your own server](/dashboard/data/data-server) and receive it with Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis).
+For a continuous miniSEED stream into SeisComP, Swarm, or ObsPy, [stream your project's data to your own ringserver](/dashboard/data/realtime-export) and serve it over SeedLink. For Earthworm, you can also [send your sensors' data to your own server](/dashboard/data/data-server) and receive it with Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis).

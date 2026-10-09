@@ -21,7 +21,13 @@ These are handled by Grillo's administrators. Ask Grillo Support to change any o
 - The project's logo and branding
 - Where the project's sensors send their seismic data. See [Send Data to Your Own Server](/dashboard/data/data-server).
 
-The **Administration** area of Grillo Cloud is used by Grillo staff for this and is not available to customers.
+Grillo staff use the **Admin** page for this; it is not available to customers.
+
+## Project Settings
+
+Open **Project Settings** in the sidebar to see the project's settings. Owners and admins can also change these:
+
+- **Real-time data export**: stream live waveforms to your own ringserver. See [Stream Data to Your Own Ringserver](/dashboard/data/realtime-export).
 
 ## Roles
 
@@ -30,7 +36,7 @@ Each person in a project has a role, which controls what they can do with its se
 | Role | Can do |
 |---|---|
 | **Member** | Claim sensors, and see sensors, their health, and SISTEM data where enabled |
-| **Admin** and **Owner** | Everything a member can, plus edit a sensor's station code and location, update its firmware, and unclaim it |
+| **Admin** and **Owner** | Everything a member can, plus edit a sensor's station code and location, update its firmware, unclaim it, and set up the [real-time data export](/dashboard/data/realtime-export) |
 
 To change someone's role, [contact Grillo Support](/support/contact).
 

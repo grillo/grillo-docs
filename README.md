@@ -1,6 +1,6 @@
 # Grillo Docs
 
-English documentation for [docs.grillo.io](https://docs.grillo.io), covering Grillo sensors (Pulse, One, Slide), Grillo Cloud and its SISTEM add-on, Grillo Cloud for Slide, seismic concepts, and support.
+English documentation for [docs.grillo.io](https://docs.grillo.io), covering Grillo sensors (Pulse, One, Slide), Grillo Cloud and its plans (Structural, Network, Seismic, Enterprise), the Grillo Cloud data API, Grillo Cloud for Slide, seismic concepts, and support.
 
 ## Quick start
 
@@ -30,9 +30,9 @@ docs/
 │   ├── grillo-one/
 │   └── grillo-slide/     # Includes the Grillo Field app steps
 ├── dashboard/            # Grillo Cloud for Pulse and One (cloud.grillo.io)
-├── events/               # SISTEM add-on: events and live map
+├── events/               # Earthquake detection (Seismic and Enterprise plans): events and live map
 ├── slide-cloud/          # Grillo Cloud for Slide (slide.grillo.io)
-├── modules/              # Upcoming add-ons
+├── modules/              # Structural monitoring
 ├── concepts/             # Seismic and EEW background
 └── support/              # FAQ and contact
 ```
@@ -45,7 +45,7 @@ See [SITE.md](SITE.md) for the supported navigation.
 
 - Document only behavior verified against the implementing repository and target release.
 - Write for sensor owners and Grillo Cloud users; keep internal hardware and firmware implementation details out of public guides.
-- Use the product names from `grillo-web`: **Grillo Cloud**, **SISTEM**, **Grillo Pulse**, **Grillo One**, **Grillo Slide**. Treat `grillo-web` as naming and positioning context, not an electrical or API authority.
+- Use the product names from `grillo-web`: **Grillo Cloud**, **Grillo Pulse**, **Grillo One**, **Grillo Slide**. Treat `grillo-web` as naming and positioning context, not an electrical or API authority.
 - Use the labels shown in the product UI: **project**, **claim**, **Device ID**, **station code** in Grillo Cloud; **site**, **sensor group**, **base**, **rover** for Slide.
 - Do not publish planned controls, placeholder values, unapproved warranty terms, or an API without a deployed contract.
 - Keep documentation English-only until the content and translation process are stable.
@@ -68,7 +68,7 @@ The Linear projects name the repository for each product. Check the page against
 | Grillo One | none yet | `grillo-firmware-one` |
 | Grillo Slide sensor | Grillo Slide Sensor | `grillo-sensor-slide` (`firmware/`, `pcb/`) |
 | Grillo Field app | Grillo Slide Mobile App | `grillo-sensor-slide` (`cloud/apps/field`) |
-| Grillo Cloud and SISTEM | Grillo Pulse Cloud | `grillo-platform` (`frontend/`, `services/`) |
+| Grillo Cloud | Grillo Pulse Cloud | `grillo-platform` (`frontend/`, `services/`) |
 | Grillo Cloud for Slide | Grillo Slide Cloud | `grillo-sensor-slide` (`cloud/`, `cloud/apps/web`) |
 | Product names and positioning | — | `grillo-web` |
 

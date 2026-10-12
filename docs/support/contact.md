@@ -22,7 +22,8 @@ These are done by Grillo, not in the dashboard. Include your project name:
 - Add or remove a colleague, or change their role
 - Create a new project, or change a project's name or network code
 - Send your seismic data to your own server, or back to Grillo
-- Add the SISTEM add-on, or change your plan
+- Change your [plan](/dashboard/plans) or contract
+- Issue or revoke a [Data API](/dashboard/data/api) key
 - For Slide: create a sign-in, or change what an account can do
 
 ## Include with a sensor problem

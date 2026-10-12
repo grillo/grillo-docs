@@ -11,8 +11,8 @@ title: Choosing Your Sensor
 | Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
 | Timing | GPS, or network time (NTP) | Network time (NTP) | GPS (GNSS) |
 | Power | 12 V DC input; solar through your own charge controller and battery | USB-C, 5 V | Internal battery with solar input |
-| Readings | Continuous, in real time | Continuous, in real time | Every 6 hours |
-| Data in the dashboard | Health; waveforms and earthquake detection with SISTEM | Health; waveforms and earthquake detection with SISTEM | Movement in mm, health, exports, raw GNSS files |
+| Readings | Continuous in real time, or triggered by shaking | Continuous, in real time | Every 6 hours |
+| Data in the dashboard | Health, waveforms, and triggers or earthquake detection, by [plan](/dashboard/plans) | Health, waveforms, and earthquake detection, by [plan](/dashboard/plans) | Movement in mm, health, exports, raw GNSS files |
 | Firmware updates | By Grillo for now | Over the air from Grillo Cloud | Over the air |
 | Typical site | Field and remote stations | Buildings and sites with mains power and a network | Slopes and embankments |
 | Dashboard | [Grillo Cloud](/dashboard) | [Grillo Cloud](/dashboard) | [Grillo Cloud for Slide](/slide-cloud) |
@@ -50,6 +50,6 @@ Confirm with Grillo:
 3. Cellular, Ethernet, or Wi-Fi availability at the site
 4. Power and backup requirements, including whether you need a solar and battery system for Pulse
 5. Whether seismic data should go to Grillo or to your own server
-6. Whether you need the SISTEM add-on for earthquake detection
+6. Which Grillo Cloud [plan](/dashboard/plans) fits: triggered recording for structures, or continuous recording with or without earthquake detection
 
 [Contact Grillo](/support/contact) for deployment guidance.

@@ -77,7 +77,7 @@ A station is not accepted merely because it appears online. Confirm:
 
 1. Current telemetry reaches the intended system.
 2. Timing and station metadata are correct.
-3. Waveforms are continuous and plausible. In Grillo Cloud this needs the [SISTEM add-on](/events); otherwise check them in your own system.
+3. Waveforms are continuous and plausible. Check them in Grillo Cloud's [live view](/dashboard/data/waveforms) or in your own system.
 4. Background noise is suitable for the monitoring objective.
 5. Known local activity is recognizable and does not saturate the channel.
 6. The enclosure, cables, antennas, and mount are secure.

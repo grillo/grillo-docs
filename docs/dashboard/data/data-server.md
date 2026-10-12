@@ -17,8 +17,9 @@ To keep your data in Grillo and also get a live copy over SeedLink, [stream it t
 | Sensor health, status, and connection history | In Grillo Cloud | In Grillo Cloud |
 | Station codes and firmware updates | In Grillo Cloud | In Grillo Cloud |
 | Seismic waveforms | Stored by Grillo | Delivered to your server only |
-| Live view and waveform review in Grillo Cloud (SISTEM) | Available | No new data |
-| SISTEM earthquake detection | Available with the add-on | Not available |
+| Live view and waveform archive in Grillo Cloud | Available | No new data |
+| Triggers and trigger alerts (Structural) | Available | Not available |
+| Earthquake detection (Seismic and Enterprise) | Available | Not available |
 
 The setting applies to every sensor in the project. It cannot be set for a single sensor.
 

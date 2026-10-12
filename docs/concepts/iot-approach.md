@@ -90,7 +90,7 @@ A connected station is an operational system. Plan for:
 <DataPathDiagram />
 
 - **Grillo Pulse and Grillo One** send health reports and seismic data in real time over Ethernet, Wi-Fi, or cellular, initiating every connection outbound.
-- **Grillo Cloud** manages projects, claimed sensors, station metadata, device health, and over-the-air firmware updates. Its [SISTEM add-on](/events) adds waveforms and processes seismic data into earthquake events.
+- **Grillo Cloud** manages projects, claimed sensors, station metadata, device health, and over-the-air firmware updates. Depending on the [plan](/dashboard/plans), it also records triggers, stores waveforms, and processes seismic data into [earthquake events](/events).
 - **Seismic data** can go to Grillo or, per project, [to your own server](/dashboard/data/data-server), while health monitoring stays in Grillo Cloud.
 - **Grillo Slide** works differently: devices wake on a schedule, rovers relay readings through the base over a radio mesh, and the base uploads over LTE to [Grillo Cloud for Slide](/slide-cloud).
 

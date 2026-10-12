@@ -10,9 +10,9 @@ The documentation is English-only.
 │   ├── grillo-one/         # One connection and installation
 │   └── grillo-slide/       # Slide SIM/APN setup (Grillo Field app) and installation
 ├── dashboard/              # Grillo Cloud for Pulse and One
-├── events/                 # SISTEM add-on
+├── events/                 # Earthquake detection (Seismic and Enterprise plans)
 ├── slide-cloud/            # Grillo Cloud for Slide
-├── modules/                # Upcoming add-ons
+├── modules/                # Structural monitoring
 ├── concepts/               # Seismic and EEW background
 └── support/                # FAQ and contact information
 ```
@@ -51,9 +51,8 @@ The documentation is English-only.
 - Create an Account
 - Projects
 - Add Colleagues
+- Plans
 - Dashboard
-- Account, Billing, and Settings
-- Structural Health Monitoring (coming soon)
 
 #### Sensors
 
@@ -63,21 +62,30 @@ The documentation is English-only.
 - Sensor Map
 - Sensor Details
 - Edit a Sensor
+- Recording Mode and Thresholds
 - Verify Sensor Status
 - Update Firmware
 
-#### Data
+#### Structural Monitoring
 
-- Send Data to Your Own Server
-- Stream Data to Your Own Ringserver
+- Triggers
+- Trigger Alerts
 
-#### SISTEM Add-on
+#### Earthquake Detection
 
-- View and Download Waveforms
 - Event Catalog
 - Event Details
 - Live Map
 - How Detection Works
+
+#### Data
+
+- View and Download Waveforms
+- Stream Data to Your Own Ringserver
+- Send Data to Your Own Server
+- Data API
+
+- Billing and Account
 
 ### Grillo Cloud for Slide
 
@@ -102,6 +110,5 @@ The documentation is English-only.
 ## Deferred content
 
 - On-premises Grillo Cloud (the appliance) will be documented when it is released.
-- A public API reference for Grillo Cloud will be added once a versioned API is deployed.
 - Self-setup of a new Slide kit, Slide alerts, and the iOS app will be documented when they ship.
 - Additional languages will return after the English guides are stable.

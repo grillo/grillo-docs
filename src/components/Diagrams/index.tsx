@@ -107,7 +107,7 @@ export function DataPathDiagram(): ReactNode {
 
       <line x1={175} y1={180} x2={448} y2={180} className={styles.line} markerEnd="url(#arrow)" />
       <text x={310} y={170} className={styles.sub} textAnchor="middle">seismic · UDP 5684 (default)</text>
-      <Box x={560} y={180} w={220} label="Grillo · SISTEM add-on" sub="events · waveforms" />
+      <Box x={560} y={180} w={220} label="Grillo · seismic data" sub="waveforms · triggers · events" />
 
       <line x1={175} y1={194} x2={448} y2={290} className={styles.line} strokeDasharray="5 4" markerEnd="url(#arrow)" />
       <text x={240} y={262} className={styles.sub} textAnchor="middle">or, if Grillo sets it</text>

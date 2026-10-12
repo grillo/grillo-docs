@@ -41,12 +41,22 @@ Latitude, longitude, elevation, and the saved location name.
 
 Device ID and **Last Seen**.
 
-## Waveforms (SISTEM)
+## Waveforms
 
-Projects with the [SISTEM add-on](/events) also see the sensor's live waveform at the top of the panel, and can open its recorded data. See [View and Download Waveforms](/dashboard/data/waveforms).
+A sensor that records continuously shows its live waveform at the top of the panel, with a link to its recorded data. See [View and Download Waveforms](/dashboard/data/waveforms).
+
+## Recording and recent triggers
+
+A sensor that records triggered, and every sensor in a Structural project, shows a recording panel instead of the live waveform:
+
+- Its mode, threshold, triggers since it started, and when it last triggered
+- **Trigger threshold**, with **Edit** for owners and admins
+- **Recent triggers**: its 8 latest [triggers](/dashboard/triggers), and **View all triggers**
+
+See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode).
 
 ## Actions
 
 - **Find on map** jumps to the sensor's marker.
-- **Edit** opens [station, location](/dashboard/sensors/configuring-sensor), and [firmware](/dashboard/sensors/firmware-updates) settings. Owner or admin only.
+- **Edit** opens [station, location](/dashboard/sensors/configuring-sensor), [recording mode](/dashboard/sensors/recording-mode), and [firmware](/dashboard/sensors/firmware-updates) settings. Owner or admin only.
 - **Unclaim Sensor** [removes the sensor from the project](/dashboard/sensors/adding-sensor#unclaim-a-sensor). Owner or admin only.

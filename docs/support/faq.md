@@ -21,9 +21,9 @@ By invitation. Grillo creates your project and invites you by email; sign up wit
 
 Ask Grillo Support. Projects, people, and roles are managed by Grillo, not in the dashboard. See [Add Colleagues](/dashboard/organizations/managing-members).
 
-### What is SISTEM?
+### Which plan do I need?
 
-An optional add-on to Grillo Cloud. It adds live and recorded waveforms with data download, detects earthquakes automatically, and builds an event catalog. Without it, Grillo Cloud shows your sensors in a list and on a map with their health. See [SISTEM](/events).
+**Structural** for buildings and infrastructure: sensors record when shaking crosses a threshold, and Grillo emails you when it reaches an alert level. **Network** for seismic networks that run their own processing: continuous data, waveform download, and a real-time feed. **Seismic** adds automatic earthquake detection and an event catalog. **Enterprise** is scoped for national systems and early warning. See [Plans](/dashboard/plans).
 
 ## Setting up sensors
 
@@ -76,7 +76,7 @@ Remove the base's cover and press **RESET**. The base also surveys every time it
 
 ### Can I download my seismic data?
 
-With the [SISTEM add-on](/events), yes: open the waveform review page and select **Download native CSV + metadata**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into SeisComP, Swarm, or ObsPy, [stream it to your own ringserver](/dashboard/data/realtime-export). For Earthworm, you can also ask Grillo to [send the data to your own server](/dashboard/data/data-server) and receive it with the open-source [coap2seis](https://github.com/grillo/coap2seis).
+On the Network, Seismic, and Enterprise plans, yes: open the waveform archive and select **Download (miniSEED + CSV)**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into SeisComP, Swarm, or ObsPy, [stream it to your own ringserver](/dashboard/data/realtime-export). For Earthworm, you can also ask Grillo to [send the data to your own server](/dashboard/data/data-server) and receive it with the open-source [coap2seis](https://github.com/grillo/coap2seis).
 
 For Slide, use [Exports](/slide-cloud/exports).
 
@@ -88,7 +88,7 @@ For Slide, use [Exports](/slide-cloud/exports).
 
 ### Is there a public API?
 
-Not for Grillo Cloud for Pulse and One yet. Grillo Cloud for Slide offers read-only [API tokens](/slide-cloud/firmware-and-api#api-tokens).
+Yes. Grillo Cloud has a read-only [Data API](/dashboard/data/api) for sensors, health reports, events, and triggers, with keys issued by Grillo Support. Grillo Cloud for Slide has its own read-only [API tokens](/slide-cloud/firmware-and-api#api-tokens).
 
 ### Is the Live map an official earthquake warning?
 

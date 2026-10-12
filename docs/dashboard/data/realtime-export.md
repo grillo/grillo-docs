@@ -14,7 +14,7 @@ Your sensors keep sending their data to Grillo, so everything in Grillo Cloud ke
 |---|---|---|
 | Where sensors send data | Grillo | Your server |
 | Data on your side | miniSEED over DataLink, served by your ringserver over SeedLink | Grillo's packets, received by coap2seis into Earthworm or miniSEED files |
-| Waveforms and SISTEM in Grillo Cloud | Keep working | No new data |
+| Waveforms and earthquake detection in Grillo Cloud | Keep working | No new data |
 | Who sets it up | A project owner or admin, in Grillo Cloud | Grillo Support |
 
 If your project already [sends its data to your own server](/dashboard/data/data-server), Grillo has no live data to stream.
@@ -23,6 +23,7 @@ If your project already [sends its data to your own server](/dashboard/data/data
 
 - A ringserver reachable from the internet at a public hostname or IPv4 address. Private, local, and Tailscale addresses are refused.
 - Its DataLink port open to Grillo. The port must be between 1024 and 65535; ringserver's usual DataLink port is 16000.
+- A project on the Network, Seismic, or Enterprise [plan](/dashboard/plans). Each includes one destination; [contact Grillo](/support/contact) for more.
 - The **Owner** or **Admin** [role](/dashboard/organizations#roles) in the project.
 
 One project streams to one ringserver.
@@ -100,7 +101,7 @@ After an error, Grillo retries automatically, waiting between 2 seconds and 1 mi
 
 ### Gaps
 
-Records that cannot be delivered while your ringserver is slow or unreachable are dropped, not resent later, and are counted as **dropped** in the panel. With the [SISTEM add-on](/events), you can download the missing interval from the [waveform archive](/dashboard/data/waveforms).
+Records that cannot be delivered while your ringserver is slow or unreachable are dropped, not resent later, and are counted as **dropped** in the panel. You can download the missing interval from the [waveform archive](/dashboard/data/waveforms).
 
 ## Pause, change, or remove the export
 

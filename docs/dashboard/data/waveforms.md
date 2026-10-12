@@ -4,9 +4,9 @@ title: View and Download Waveforms
 
 # View and Download Waveforms
 
-Waveforms are part of the [SISTEM add-on](/events). Projects without SISTEM see their sensors' status and health, but not their waveforms. [Contact Grillo](/support/contact) to add SISTEM.
+Grillo Cloud shows seismic data two ways: a live view of what a sensor is recording now, and the waveform archive of recorded data, which you can download on the Network, Seismic, and Enterprise [plans](/dashboard/plans).
 
-With SISTEM, Grillo Cloud shows seismic data two ways: a live view of what a sensor is recording now, and a review page for recorded data that you can download.
+Sensors that record [triggered](/dashboard/sensors/recording-mode) have no live view. Their recordings are in [Triggers](/dashboard/triggers) and the waveform archive.
 
 Both show data only for sensors in the active project that send their seismic data to Grillo. If your project [sends data to its own server](/dashboard/data/data-server), Grillo Cloud has no waveforms to show.
 
@@ -24,7 +24,7 @@ Select **Open historical view** to review the same sensor's recorded data.
 
 ## Review recorded waveforms
 
-Open **Waveform archive** in the sidebar. You can also get there from **Open historical view** in a sensor's details, or from **Open waveforms in archive** in an [event's details](/events/event-details).
+Open **Waveform archive** in the sidebar. You can also get there from **Open historical view** in a sensor's details, **Open waveforms in archive** in an [event's details](/events/event-details), or **Open in waveform archive** in a [trigger's details](/dashboard/triggers#waveforms).
 
 1. Set **Start (UTC)** and **End (UTC)**. All times are UTC.
 2. Choose a **Station** and a **Channel**, then select **Add trace**. You can show up to 4 traces.
@@ -48,25 +48,31 @@ When you open the page from an event, it marks the event's origin time and the a
 
 ## Download data
 
-On the review page, load the interval you want and select **Download native CSV + metadata**.
+Downloads are included in the Network, Seismic, and Enterprise [plans](/dashboard/plans).
 
-Your browser saves two files: `waveforms-native.csv` and `waveforms-metadata.json`.
+On the review page, load the interval you want and select **Download (miniSEED + CSV)**. Grillo Cloud shows **Preparing download…** while it builds the file, then your browser downloads a zip. A download covers one sensor, up to 4 channels and 5 minutes.
 
-The CSV contains the raw samples as recorded, one row per sample:
+You can also download a [trigger](/dashboard/triggers#waveforms) from its details. The download covers the trigger window plus 5 seconds either side, up to 5 minutes around the peak.
 
-| Column | Meaning |
+The zip contains:
+
+| File | Contents |
 |---|---|
-| `device_id` | Sensor Device ID |
-| `channel` | Channel code |
-| `segment` | Index of the continuous segment within the trace |
-| `anchor_start_us` | Segment start time, microseconds since the Unix epoch |
-| `rate_hz` | Sample rate |
-| `sample_index` | Sample number within the segment |
-| `native_value` | Raw value in counts |
+| `<station>_<start>.mseed` | All channels as miniSEED 2: 512-byte records of 32-bit integers. Accelerometer channels are in milligal (mGal; 1 mg = 980.665 mGal), and the geophone in counts |
+| `<station>_<start>_<rate>hz_<unit>.csv` | One CSV per sample rate, one row per sample time |
+| `metadata.json` | The requested interval, the channels, units, gaps, and the files in the zip |
 
-A sample's time is `anchor_start_us + sample_index / rate_hz`. The metadata file lists the requested interval, each trace's gaps and units, and the `timeBasis` of every segment. Check `timeBasis` before treating the timestamps as exact acquisition time.
+In the CSV, `utc_iso` is the sample time, `time_s` is seconds from the start of the interval, and there is one column per channel. Accelerometer channels are in mg, to 3 decimal places, and the geophone is in counts. The values are as recorded, so they include the sensor's offset; the charts in Grillo Cloud remove it.
 
-A CSV export holds up to 20,000 samples. Shorten the interval or remove traces if the export is refused.
+If the station code or the project's network code does not fit miniSEED (1–5 and 1–2 capital letters or digits), the miniSEED file uses network `XX` and the last five characters of the Device ID as the station. `metadata.json` records the substitution.
+
+Sensor timestamps are approximate, and every miniSEED record is flagged "time tag questionable". `metadata.json` gives each trace segment's `timeBasis`; check it before treating the timestamps as exact acquisition times.
+
+### Download limits
+
+- The download link works for 24 hours.
+- A project can request 6 downloads a minute, one at a time.
+- If the interval has no data, the download is refused. Choose an interval the traces cover.
 
 ## Continuous data and standard formats
 

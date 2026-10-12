@@ -69,7 +69,7 @@ Depending on jurisdiction and engineering review, warnings can support actions s
 
 ## Earthquake detection in Grillo Cloud
 
-Grillo sensors provide observations to a network. SISTEM, an add-on to Grillo Cloud, turns those observations into automatic event information and shows detections on a live map for your team. It is not a public warning service: delivering alerts to the public needs its own delivery channels, governance, and testing.
+Grillo sensors provide observations to a network. On the Seismic and Enterprise plans, Grillo Cloud turns those observations into automatic event information and shows detections on a live map for your team. It is not a public warning service: delivering alerts to the public needs its own delivery channels, governance, and testing.
 
 Do not present a sensor installation as an operational EEW system until the complete detection, alerting, governance, and response chain has been validated.
 
@@ -78,4 +78,4 @@ Do not present a sensor installation as an operational EEW system until the comp
 - [USGS ShakeAlert](https://www.usgs.gov/programs/earthquake-hazards/science/shakealert)
 - [Earthquake Country Alliance: Drop, Cover, and Hold On](https://www.earthquakecountry.org/step5/)
 - [How earthquake detection works](/events/how-detection-works)
-- [SISTEM add-on](/events)
+- [Earthquake Detection](/events)

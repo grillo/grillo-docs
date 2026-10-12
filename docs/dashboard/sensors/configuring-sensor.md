@@ -4,7 +4,7 @@ title: Edit a Sensor
 
 # Edit a Sensor
 
-Owners and admins can change a sensor's station code, location, and target firmware. Open the sensor's details and select **Edit**.
+Owners and admins can change a sensor's station code, location, recording mode, and target firmware. Open the sensor's details and select **Edit**.
 
 ![Edit sensor dialog in Grillo Cloud](/img/screenshots/08-sensor-edit.png)
 
@@ -18,6 +18,7 @@ Owners and admins can change a sensor's station code, location, and target firmw
 | Elevation (meters) | Site elevation |
 | Location Name | A name or address field staff will recognize |
 | Firmware Version | Target version for an over-the-air update. See [Update Firmware](/dashboard/sensors/firmware-updates). |
+| Recording mode | Continuous or triggered, and the trigger settings. See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode). |
 
 Select **Update Device** to save.
 
@@ -29,7 +30,7 @@ Stand at the sensor when you do this. Coordinates captured at a desk or vehicle 
 
 ## What a station code change does
 
-The sensor picks up its station code from Grillo Cloud on its next health check-in, about a minute later, and uses it for the data it sends from then on.
+The sensor picks up its station code and recording settings from Grillo Cloud at its next health check-in, usually within a minute, and uses them from then on.
 
 ## What editing does not change
 

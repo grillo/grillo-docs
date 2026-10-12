@@ -21,9 +21,15 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 - Monitor online status, connectivity, signal, power, and firmware
 - Update firmware over the air
 
-### SISTEM add-on
+### Plans
 
-[SISTEM](/events) is an optional add-on to Grillo Cloud. It adds live and recorded waveforms with data download, detects earthquakes automatically from your sensors' data, builds an event catalog, and shows events on a live map. Ask Grillo to enable it for your project.
+What else Grillo Cloud does depends on the project's [plan](/dashboard/plans):
+
+- **Structural:** sensors in buildings and infrastructure record [triggers](/dashboard/triggers) when shaking crosses a threshold, and Grillo emails you when it reaches an [alert level](/dashboard/alerts).
+- **Network:** sensors stream continuously; review and download waveforms, and stream them to your own ringserver.
+- **Seismic** and **Enterprise:** everything in Network, plus [automatic earthquake detection](/events), an event catalog, and a live map.
+
+Every plan includes the read-only [Data API](/dashboard/data/api).
 
 ## Grillo Cloud for Slide
 

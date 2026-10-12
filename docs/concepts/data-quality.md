@@ -94,7 +94,7 @@ Compare arrival times across stations and review time-source telemetry. Timing q
 ## Data quality with Grillo sensors
 
 - **Health and uptime:** Grillo Cloud shows each sensor's online status, last report, signal, power, and a [connection history](/dashboard/sensors/sensor-details#connection-history) of interruptions and reboots. Use it to separate "the sensor stopped" from "the data path stopped".
-- **Waveforms:** with the [SISTEM add-on](/events), Grillo Cloud shows a live waveform and spectrogram, and recorded waveforms with their gaps marked. You can [download the samples](/dashboard/data/waveforms) for your own analysis.
+- **Waveforms:** Grillo Cloud shows a live waveform and spectrogram, and recorded waveforms with their gaps marked. You can [download the samples](/dashboard/data/waveforms) for your own analysis.
 - **Timing:** Grillo Pulse sets its clock from GPS or network time (NTP), and Grillo One from network time (NTP). Data recorded in the first minutes after power-on, before the clock is set, may be mis-timed.
 - **Values:** waveforms in Grillo Cloud are raw counts, not calibrated ground motion. Convert them with the instrument response before comparing amplitudes between sensor types.
 

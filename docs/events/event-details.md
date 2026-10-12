@@ -20,7 +20,7 @@ These are automatic estimates. They can differ from a catalog reviewed by a seis
 
 ## Picks and amplitudes
 
-**Picks and Amplitudes** shows the observations SISTEM used to build the event. A summary line gives the number of stations, the first arrival, and the spread between the first and last arrival. The chart below it shows, for each station, when the wave arrived (in seconds after the origin time) and the amplitude measured there.
+**Picks and Amplitudes** shows the observations Grillo Cloud used to build the event. A summary line gives the number of stations, the first arrival, and the spread between the first and last arrival. The chart below it shows, for each station, when the wave arrived (in seconds after the origin time) and the amplitude measured there.
 
 Select **Download CSV** to save the picks and amplitudes, or **Full tables** to see them in detail.
 

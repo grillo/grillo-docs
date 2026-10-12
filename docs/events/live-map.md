@@ -6,7 +6,7 @@ title: Live Map
 
 **Live** shows earthquake detection on a map as it happens. It has two modes:
 
-- **Live** follows your project's stations and SISTEM's real detections.
+- **Live** follows your project's stations and their real detections.
 - **Simulation** plays a made-up earthquake on a demonstration network, so you can see how detection works.
 
 ![Live map in Grillo Cloud](/img/screenshots/11-live-map.png)
@@ -22,9 +22,9 @@ The **Legend** explains each symbol.
 
 ## Live mode
 
-The **Live** button shows whether the map is connected to SISTEM: **Connected**, **Connecting**, or **Disconnected**. If it stays disconnected, refresh the page.
+The **Live** button shows whether the map is connected to earthquake detection: **Connected**, **Connecting**, or **Disconnected**. If it stays disconnected, refresh the page.
 
-When stations start detecting shaking, each pick plays a short beep and the **Event Log** lists the pick. Once at least four stations have picked, SISTEM locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
+When stations start detecting shaking, each pick plays a short beep and the **Event Log** lists the pick. Once at least four stations have picked, Grillo Cloud locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
 
 ## Map settings
 

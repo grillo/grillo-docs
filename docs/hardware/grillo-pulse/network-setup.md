@@ -37,7 +37,7 @@ Both variants have Wi-Fi hardware, but the sensor uses its cellular or Ethernet 
 
 ## Where the data goes
 
-By default a Pulse sends its seismic data to Grillo. Projects with the [SISTEM add-on](/events) can [view and download it](/dashboard/data/waveforms). To receive the data on your own server instead, see [Send Data to Your Own Server](/dashboard/data/data-server). That is a project setting in Grillo Cloud; nothing changes on the sensor.
+By default a Pulse sends its seismic data to Grillo. You can [view and download it](/dashboard/data/waveforms) in Grillo Cloud. To receive the data on your own server instead, see [Send Data to Your Own Server](/dashboard/data/data-server). That is a project setting in Grillo Cloud; nothing changes on the sensor.
 
 ## Acceptance test
 

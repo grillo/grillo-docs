@@ -1,26 +1,41 @@
 ---
-title: Account, Billing, and Settings
+title: Billing and Account
 ---
 
-# Account, Billing, and Settings
-
-These pages are in the user menu at the bottom of the Grillo Cloud sidebar.
-
-## Account
-
-**Account** shows your name and email, and lists the projects you belong to. Use **Leave** to remove yourself from a project.
+# Billing and Account
 
 ## Billing
 
-**Billing** shows your current plan, its status, and its expiry date, along with the plan's data retention and support level.
+Project owners can open **Billing** in the **Project** group of the sidebar. Admins and members see "Only project owners can see billing for this project."
 
-The page is read-only. To buy, renew, or change a plan, or to add [SISTEM](/events), [contact Grillo](/support/contact).
+**Billing** shows:
 
-## Settings
+- **Current Plan**: the project's [plan](/dashboard/plans)
+- **Billing method**: **Stripe** for card payments, **Invoiced under contract**, or **Internal project, not billed**
+- **Contract**: the contract's start and end dates, and the time left
 
-**Settings** has one working control: **Guided Tours**. Use **Restart Tour** to replay the walkthrough for a page, or **Reset All Tours** to replay them all.
+From 60 days before the contract ends, owners also see the days left under the project name in the sidebar. Select it to open **Billing**.
 
-The other sections on the page (user preferences, notification settings, and API keys) are placeholders. They cannot be changed yet, and Grillo Cloud does not currently issue API keys.
+### Projects paid by card
+
+Projects billed through Stripe also show:
+
+- **Subscription**: its status, such as **Active** or **Payment overdue**, and when it renews or ends
+- **Next invoice**: the amount and date
+- **Payment method**: the card on file
+- **Invoices**: past invoices, each with a **View** link
+
+Select **Manage billing** to update your card or download invoices. It opens Stripe's secure billing portal.
+
+### Change your plan or contract
+
+Grillo changes plans and contracts for you. To upgrade, renew, or change a plan, [contact Grillo](/support/contact). Prices are on the [Grillo pricing page](https://grillo.io/pricing).
+
+If no plan has been set, **Billing** shows **No plan assigned**.
+
+## Account
+
+Open **Account** from the user menu at the bottom of the sidebar. It shows your name and email, and lists the projects you belong to. Use **Leave** to remove yourself from a project.
 
 ## Language
 

@@ -17,12 +17,14 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | Add a colleague to your project | [Add Colleagues](/dashboard/organizations/managing-members) |
 | Claim a sensor you already have | [Claim a Sensor](/dashboard/sensors/adding-sensor) |
 | Check whether a sensor is reporting | [Verify Sensor Status](/dashboard/sensors/sensor-status) |
-| View or download seismic data (SISTEM) | [View and Download Waveforms](/dashboard/data/waveforms) |
+| View or download seismic data | [View and Download Waveforms](/dashboard/data/waveforms) |
+| Monitor vibration in a building or structure | [Structural Monitoring](/modules/structural-health-monitoring) |
+| Read your data from your own software | [Data API](/dashboard/data/api) |
 | Stream live data to your SeedLink clients | [Stream Data to Your Own Ringserver](/dashboard/data/realtime-export) |
 | Send seismic data to your own server | [Send Data to Your Own Server](/dashboard/data/data-server) |
 | Export landslide readings | [Export Slide Data](/slide-cloud/exports) |
 | Update sensor firmware | [Update Firmware](/dashboard/sensors/firmware-updates) |
-| See detected earthquakes | [SISTEM add-on](/events) |
+| See detected earthquakes | [Earthquake Detection](/events) |
 | Read landslide movement data | [Grillo Cloud for Slide](/slide-cloud) |
 
 ## How the products fit together
@@ -33,7 +35,7 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | **Grillo One** | Strong-motion seismic sensor with an accelerometer | Grillo Cloud, [cloud.grillo.io](https://cloud.grillo.io) |
 | **Grillo Slide** | GNSS base and rovers that measure ground movement | Grillo Cloud for Slide, [slide.grillo.io](https://slide.grillo.io) |
 
-**SISTEM** is an optional add-on to Grillo Cloud for Pulse and One. It adds waveform viewing and download, detects earthquakes automatically, and builds an event catalog. Without it, Grillo Cloud is for sensor management: your sensors in a list and on a map, with their health.
+Every Grillo Cloud project has a [plan](/dashboard/plans). **Structural** records shaking at each sensor as triggers, with email alerts. **Network** streams continuously, with waveform download and a real-time feed. **Seismic** and **Enterprise** add automatic earthquake detection and an event catalog.
 
 Grillo Cloud and Grillo Cloud for Slide are separate dashboards with separate sign-ins. In both, Grillo sets up your account and project for you.
 

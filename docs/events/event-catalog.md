@@ -4,7 +4,7 @@ title: Event Catalog
 
 # Event Catalog
 
-Open **Events** in Grillo Cloud to browse the earthquakes SISTEM has detected for the active project.
+Open **Events** in Grillo Cloud to browse the earthquakes Grillo Cloud has detected for the active project.
 
 ![Event catalog in Grillo Cloud](/img/screenshots/09-events.png)
 
@@ -12,7 +12,7 @@ Open **Events** in Grillo Cloud to browse the earthquakes SISTEM has detected fo
 
 Use the date control to choose a start and end date, or pick **This week** or **This month**. Use the refresh button to fetch current results.
 
-When SISTEM detects a new earthquake, Grillo Cloud shows a notification with its magnitude and location, and an unread count appears next to **Events** in the sidebar.
+When Grillo Cloud detects a new earthquake, Grillo Cloud shows a notification with its magnitude and location, and an unread count appears next to **Events** in the sidebar.
 
 Results come in pages of 100 events.
 
@@ -36,7 +36,7 @@ Switch to **Map** to see event locations together with your sensors. Use the fit
 1. Confirm the correct project is selected.
 2. Widen the date range and refresh.
 3. Check that your sensors are [online](/dashboard/sensors/sensor-status) and sending data to Grillo.
-4. Confirm with Grillo that SISTEM is enabled for the project.
+4. Confirm the project is on the Seismic or Enterprise [plan](/dashboard/plans).
 
 ## Exporting the catalog
 

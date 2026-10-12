@@ -24,7 +24,12 @@ A claimed sensor is not necessarily online. Claiming only adds it to your projec
 7. Confirm the coordinates and location name.
 8. Confirm the firmware version.
 
-Online status comes from the sensor's health reports, which it sends about once a minute. With the [SISTEM add-on](/events) you can also open the sensor's live waveform and tap the enclosure lightly to see it respond; that proves seismic data is arriving too.
+Online status comes from the sensor's health reports, which it sends every minute or less, whether it records continuously or triggered.
+
+To prove seismic data is arriving too:
+
+- **Continuous sensors:** open the sensor's live waveform and tap the enclosure lightly. The trace should respond.
+- **Triggered sensors:** a light tap is below the threshold, so nothing is uploaded. Tap the side of the enclosure firmly enough to cross the [threshold](/dashboard/sensors/recording-mode); a new trigger appears under **Recent triggers** within about a minute.
 
 ## If a sensor is offline
 

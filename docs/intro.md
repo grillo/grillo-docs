@@ -26,7 +26,7 @@ Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
   </div>
   <div className="docs-journey-card">
     <h2>Grillo Cloud</h2>
-    <p>Claim your Pulse and One sensors, see them in a list and on a map, check their health, and update firmware. Add SISTEM for earthquake detection and waveforms.</p>
+    <p>Claim your Pulse and One sensors, check their health, and update firmware. Record triggers in structures, download waveforms, or detect earthquakes, depending on your plan.</p>
     <a href="/dashboard">Open the Grillo Cloud guide →</a>
   </div>
   <div className="docs-journey-card">

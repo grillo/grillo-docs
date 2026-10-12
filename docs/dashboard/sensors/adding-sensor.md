@@ -26,7 +26,7 @@ Record the Device ID before you close or install the enclosure.
 5. Enter the station code. Grillo Cloud fills in the last four characters of the Device ID; replace them with your own station name.
 6. Select **Claim Device**.
 
-The sensor appears in your list straight away and shows **offline**. Once it is powered and connected, it sends a health report about once a minute. Its status changes to **online**, and it appears on the map once you [add its location](/dashboard/sensors/configuring-sensor).
+The sensor appears in your list straight away and shows **offline**. Once it is powered and connected, it sends a health report every minute or less. Its status changes to **online**, and it appears on the map once you [add its location](/dashboard/sensors/configuring-sensor).
 
 ## Common errors
 

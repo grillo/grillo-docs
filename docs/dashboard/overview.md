@@ -12,9 +12,13 @@ Shows how many of the project's sensors are online and how many are offline. A w
 
 Open [Sensors](/dashboard/sensors) to see which ones.
 
-## Seismic events (SISTEM)
+## Triggers (Structural)
 
-Projects with the [SISTEM add-on](/events) also see counts of detected earthquakes for today, this week, this month, and the last 30 days, with a daily chart and the most recent events.
+Projects on the [Structural plan](/modules/structural-health-monitoring) see a **Triggers** card: the number of [triggers](/dashboard/triggers) in the last 24 hours and the last 30 days, and the largest horizontal PGA of the last 30 days, with its sensor and time. Select it to open that trigger.
+
+## Seismic events (Seismic and Enterprise)
+
+Projects with [earthquake detection](/events) see counts of detected earthquakes for today, this week, this month, and the last 30 days, with a daily chart and the most recent events.
 
 ## System status
 

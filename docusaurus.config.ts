@@ -72,8 +72,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/screenshots/11-live-map.png',
+    // Match grillo.io's cropped Cloud dashboard social card.
+    image: 'img/grillo-cloud-social-structural-v1.jpg',
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,

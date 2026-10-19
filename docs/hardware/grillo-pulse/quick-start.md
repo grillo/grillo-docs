@@ -7,7 +7,7 @@ title: Pulse Quick Start
 Bench-test a Grillo Pulse before you take it to site. It takes about 15 minutes and catches most problems while they are still easy to fix.
 
 :::warning Before you connect anything
-Use only the 12 V supply provided for the sensor. Do not connect a USB cable, and do not open the enclosure unless Grillo Support asks you to.
+Power the sensor only from 12 V DC, through its M12 power connector. Do not connect a USB cable, and do not open the enclosure unless Grillo Support asks you to.
 :::
 
 ## 1. Inspect and record
@@ -15,7 +15,7 @@ Use only the 12 V supply provided for the sensor. Do not connect a USB cable, an
 - [ ] Check whether the sensor is Pulse Cellular or Pulse Ethernet.
 - [ ] Record the 12-character Device ID from the label.
 - [ ] Photograph the label and its QR code.
-- [ ] Check the enclosure, power supply, antennas, and cables for damage.
+- [ ] Check the enclosure, connectors, and accessories for damage, and against your packing list. See [What's in the Box](/hardware/grillo-pulse/whats-in-the-box).
 
 Stop and [contact support](/support/contact) if anything is damaged, missing, or does not match your order.
 
@@ -33,19 +33,20 @@ The sensor appears in the list as **offline**. That is expected until it is powe
 
 **Pulse Cellular**
 
-- [ ] Fit the antennas to the matching labelled connectors.
+- [ ] Screw the cellular antenna onto the SMA cellular connector, and the GPS puck antenna onto the SMA GPS connector.
 - [ ] Check that you have mobile coverage where you are testing.
 
-The SIM is supplied and set up by Grillo; there is nothing to configure.
+If Grillo supplied the SIM, it is already set up; there is nothing to configure.
 
 **Pulse Ethernet**
 
-- [ ] Feed the network cable through the weatherproof Ethernet entry and connect it to a port that gives out addresses automatically (DHCP).
+- [ ] Connect the M12-to-Ethernet cable to the M12 Ethernet connector, and the other end to a port that gives out addresses automatically (DHCP).
+- [ ] To use GPS timing, screw the GPS puck antenna onto the SMA GPS connector.
 - [ ] Make sure the network allows outbound UDP on ports 5683 and 5684.
 
 ## 4. Power on
 
-Plug the 12 V supply into the external power connector on the enclosure. You do not need to open the enclosure. The sensor starts, connects, and begins reporting.
+Connect the M12-to-DC power cable to the M12 power connector, then connect it to the 12 V DC supply or solar kit. You do not need to open the enclosure. The sensor starts, connects, and begins reporting.
 
 - Pulse Ethernet usually comes online within a minute.
 - Pulse Cellular can take up to 5 minutes the first time, while it registers on the mobile network and sets its clock.

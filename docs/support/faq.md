@@ -37,12 +37,12 @@ For Pulse and One, the 12-character uppercase hexadecimal identifier on the sens
 
 ### Do I need to set an APN?
 
-- **Grillo Pulse Cellular:** no. Grillo fits and sets up the SIM.
+- **Grillo Pulse Cellular:** not if your order includes a Grillo SIM; Grillo fits and sets it up. Otherwise, contact Grillo Support before you fit your own.
 - **Grillo Slide:** yes, on the base, using the Grillo Field app. See [Fit the SIM and Set the APN](/hardware/grillo-slide/sim-and-apn).
 
 ### How do I power each sensor?
 
-- **Grillo Pulse:** 12 V DC through the external power connector. It has no solar or battery input; at an off-grid site, feed it 12 V DC from a solar charge controller and battery. Do not connect USB; it cannot power the sensor and a powered USB cable can damage it.
+- **Grillo Pulse:** 12 V DC through its M12 power connector. It has no built-in solar or battery; at an off-grid site, power it from a Grillo solar kit, or from your own solar charge controller and battery that supply 12 V DC. Do not connect USB; it cannot power the sensor and a powered USB cable can damage it.
 - **Grillo One:** USB-C, 5 V. This is its only power input.
 - **Grillo Slide:** internal battery with a solar input.
 

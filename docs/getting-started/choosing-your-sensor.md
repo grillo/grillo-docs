@@ -10,7 +10,7 @@ title: Choosing Your Sensor
 | Sensors | Vertical geophone and three-axis accelerometer | Three-axis accelerometer | RTK GNSS, plus a low-power accelerometer for motion detection |
 | Connectivity | Cellular or Ethernet, by variant | Ethernet or Wi-Fi | LTE at the base; rovers use a radio mesh |
 | Timing | GPS, or network time (NTP) | Network time (NTP) | GPS (GNSS) |
-| Power | 12 V DC input; solar through your own charge controller and battery | USB-C, 5 V | Internal battery with solar input |
+| Power | 12 V DC input; off-grid with a solar kit (panel and battery) | USB-C, 5 V | Internal battery with solar input |
 | Readings | Continuous in real time, or triggered by shaking | Continuous, in real time | Every 6 hours |
 | Data in the dashboard | Health, waveforms, and triggers or earthquake detection, by [plan](/dashboard/plans) | Health, waveforms, and earthquake detection, by [plan](/dashboard/plans) | Movement in mm, health, exports, raw GNSS files |
 | Firmware updates | By Grillo for now | Over the air from Grillo Cloud | Over the air |
@@ -21,7 +21,7 @@ title: Choosing Your Sensor
 
 Choose Pulse for a seismic network that needs to record small earthquakes as well as strong ones. Pick the cellular variant for sites without a wired network, or the Ethernet variant where you have one.
 
-Pulse has a single 12 V DC input. It has no solar or battery input of its own: at an off-grid site, power it from a solar charge controller and battery system that supplies 12 V DC.
+Pulse has a single 12 V DC input. It has no built-in solar or battery: at an off-grid site, power it from a Grillo solar kit, or from your own solar charge controller and battery that supply 12 V DC.
 
 [Install a Grillo Pulse →](/hardware/grillo-pulse)
 

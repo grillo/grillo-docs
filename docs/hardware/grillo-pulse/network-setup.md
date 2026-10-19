@@ -8,11 +8,11 @@ Each Pulse uses one connection, set by its variant. Check your order or the encl
 
 ## Pulse Cellular
 
-Pulse Cellular connects over LTE using the SIM Grillo fits and sets up. You do not need to enter an APN or any other setting.
+Pulse Cellular connects over LTE. If your order includes a Grillo SIM, Grillo fits and sets it up, and you do not need to enter an APN or any other setting.
 
-1. Fit the antennas to their matching labelled connectors.
+1. Screw the cellular antenna onto the SMA cellular connector, and the GPS puck antenna onto the SMA GPS connector.
 2. Check there is mobile coverage at the installation point.
-3. Plug the 12 V supply into the external power connector.
+3. Connect 12 V DC to the M12 power connector, using the M12-to-DC power cable.
 
 The first connection can take up to 5 minutes. See [Cellular and SIM](/hardware/grillo-pulse/sim-card-setup) for coverage and SIM details.
 
@@ -20,8 +20,9 @@ The first connection can take up to 5 minutes. See [Cellular and SIM](/hardware/
 
 Pulse Ethernet connects to a wired 10/100 network.
 
-1. Feed the network cable through the weatherproof Ethernet entry on the enclosure and tighten it so it seals around the cable.
-2. Plug the 12 V supply into the external power connector.
+1. Connect the M12-to-Ethernet cable to the M12 Ethernet connector and tighten it fully. Connect the other end to your network.
+2. To use GPS timing, screw the GPS puck antenna onto the SMA GPS connector.
+3. Connect 12 V DC to the M12 power connector, using the M12-to-DC power cable.
 
 The network must:
 

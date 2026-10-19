@@ -7,7 +7,7 @@ title: Grillo Pulse
 Grillo Pulse is a seismic sensor with two sensors in one enclosure: a geophone for small, distant earthquakes and an accelerometer for strong shaking. It sends its data in real time over cellular or Ethernet.
 
 :::warning Power it only from 12 V DC
-Grillo Pulse runs from a 12 V DC supply through its M12 power connector. It cannot be powered from USB, and a USB cable with power on it can damage it. Leave the USB ports alone unless Grillo Support asks you to use them.
+Grillo Pulse runs from 9–16 V DC (12 V nominal) through its M12 power connector. It cannot be powered from USB, and a USB cable with power on it can damage it. Leave the USB ports alone unless Grillo Support asks you to use them.
 :::
 
 ## At a glance
@@ -17,7 +17,7 @@ Grillo Pulse runs from a 12 V DC supply through its M12 power connector. It cann
 | Geophone | 4.5 Hz vertical, 32-bit converter. Channel `EHZ`. |
 | Accelerometer | Three-axis MEMS. Channels `HNZ`, `HNN`, `HNE` at 125 samples per second. |
 | Connectivity | **Pulse Cellular:** LTE Cat-1. **Pulse Ethernet:** 10/100 wired Ethernet through an M12 connector. |
-| Power | 12 V DC, through the M12 power connector. No built-in solar or battery. |
+| Power | 9–16 V DC (12 V nominal), through the M12 4-pin power connector. No built-in solar or battery. |
 | Connectors | M12 power and SMA GPS antenna on both variants. Plus SMA cellular antenna on Pulse Cellular, or M12 Ethernet on Pulse Ethernet. See [What's in the Box](/hardware/grillo-pulse/whats-in-the-box). |
 | Timing | GPS, or network time (NTP) |
 | Status lights | Inside the enclosure only. Use Grillo Cloud to check the sensor. |

@@ -41,9 +41,10 @@ The geophone measures vertical motion, so the enclosure must be installed in the
 
 ## Power and weatherproofing
 
-- Power the sensor with 12 V DC through its M12 power connector. There is no need to open the enclosure.
+- Check the geophone is plugged in (see [Pulse Quick Start](/hardware/grillo-pulse/quick-start#3-plug-in-the-geophone)) before you close the enclosure for the last time.
+- Power the sensor with 9–16 V DC (12 V nominal) through its M12 power connector.
 - Do not connect anything to the USB ports. USB cannot power the sensor, and a powered USB cable can damage it.
-- Do not open or modify the enclosure unless the supplied procedure requires it.
+- Do not open or modify the enclosure except to plug in the geophone, or when Grillo Support asks you to.
 - Make sure every M12 and SMA connector is fully tightened.
 - Inspect seals, cable entries, and strain relief before applying power.
 - Ensure cables cannot collect or direct water into the enclosure.

@@ -56,6 +56,8 @@ Open the sensor in Grillo Cloud, select **Edit**, correct the station code or lo
 
 ## Noisy or implausible data
 
+- If the geophone channel (`EHZ`) is flat or missing while the accelerometer channels look normal, check the geophone is plugged into its connector on the circuit board. See [Pulse Quick Start](/hardware/grillo-pulse/quick-start#3-plug-in-the-geophone).
+
 - Check that the enclosure is rigidly mounted, upright, and level.
 - Look for loose fixings, or cables touching or tugging the enclosure.
 - Note nearby machinery, traffic, wind, and people.

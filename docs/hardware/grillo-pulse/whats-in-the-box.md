@@ -10,11 +10,13 @@ A Grillo Pulse ships as the sensor in its enclosure. Cables, antennas, and solar
 
 Every Pulse box contains the sensor in its IP68 aluminium enclosure. The geophone and the accelerometer are both inside the enclosure.
 
-Everything connects from outside, so you do not need to open the enclosure:
+The geophone ships unplugged. Before you power the sensor for the first time, open the lid and plug the geophone's JST lead into its JST connector on the circuit board. See [Pulse Quick Start](/hardware/grillo-pulse/quick-start#3-plug-in-the-geophone).
+
+Everything else connects from outside the enclosure:
 
 | Connector | Pulse Cellular | Pulse Ethernet |
 |---|---|---|
-| M12, power (12 V DC in) | ✓ | ✓ |
+| M12 4-pin, power (9–16 V DC in, 12 V nominal) | ✓ | ✓ |
 | SMA, GPS antenna | ✓ | ✓ |
 | SMA, cellular antenna | ✓ | |
 | M12, Ethernet | | ✓ |

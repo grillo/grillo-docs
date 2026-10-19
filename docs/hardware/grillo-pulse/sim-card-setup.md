@@ -6,7 +6,9 @@ title: Cellular and SIM
 
 This page applies to Pulse Cellular only.
 
-Pulse Cellular connects over LTE Cat-1. Grillo fits the SIM and sets it up before shipping, so the sensor connects as soon as it has power and coverage. There is no APN or other mobile setting to enter.
+Pulse Cellular connects over LTE Cat-1. If your order includes a Grillo SIM and data plan, Grillo fits the SIM and sets it up before shipping, so the sensor connects as soon as it has power and coverage. There is no APN or other mobile setting to enter.
+
+If your order does not include a Grillo SIM, [contact Grillo Support](/support/contact) before you fit your own.
 
 :::warning Do not change the SIM
 Leave the supplied SIM in place. The sensor is set up for that SIM, and opening the enclosure can affect its weatherproofing. If you need to use a different SIM or carrier, [contact Grillo Support](/support/contact) first.
@@ -30,8 +32,8 @@ The sensor sets its clock from the network once it connects. On cellular, the fi
 
 ## If it does not connect
 
-- Check that the antennas are firmly connected to the correct labelled connectors.
+- Check that the cellular and GPS antennas are screwed onto the correct SMA connectors.
 - Check coverage at the site, or try somewhere with a stronger signal.
-- Disconnect the 12 V supply, wait 30 seconds, and reconnect it.
+- Disconnect the 12 V DC power, wait 30 seconds, and reconnect it.
 - Give it 5 minutes, then check Grillo Cloud.
 - If it still does not connect, contact support with the Device ID, the site location, and the **SIM ICCID** shown in Grillo Cloud, if any.

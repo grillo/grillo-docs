@@ -1,29 +1,51 @@
 ---
-title: Inspect Your Sensor
+title: What's in the Box
 ---
 
-# Inspect Your Grillo Pulse
+# What's in the Grillo Pulse Box
 
-Check the sensor before you claim or install it. Use the packing list that came with your order as the inventory; contents depend on the variant and the options you ordered.
+A Grillo Pulse ships as the sensor in its enclosure. Cables, antennas, and solar kits are accessories, so what else arrives depends on your order. Check the box against your packing list before you claim or install the sensor.
+
+## The sensor
+
+Every Pulse box contains the sensor in its IP68 aluminium enclosure. The geophone and the accelerometer are both inside the enclosure.
+
+Everything connects from outside, so you do not need to open the enclosure:
+
+| Connector | Pulse Cellular | Pulse Ethernet |
+|---|---|---|
+| M12, power (12 V DC in) | ✓ | ✓ |
+| SMA, GPS antenna | ✓ | ✓ |
+| SMA, cellular antenna | ✓ | |
+| M12, Ethernet | | ✓ |
+
+The variant, Cellular or Ethernet, is on your order and on the enclosure label.
+
+## Accessories
+
+Accessories are listed separately on your order. If an item is not on your packing list, it was not ordered.
+
+| Accessory | For | What it does |
+|---|---|---|
+| M12-to-DC power cable | Both variants | Connects the M12 power connector to a 12 V DC supply or solar kit |
+| GPS puck antenna | Both variants | Connects to the SMA GPS connector, for GPS timing |
+| Cellular antenna | Pulse Cellular | Connects to the SMA cellular connector |
+| M12-to-Ethernet cable | Pulse Ethernet | Connects the M12 Ethernet connector to your network |
+| Solar kit for continuous recording | Both variants | Solar panel and battery for an off-grid sensor that records all the time |
+| Solar kit for triggered recording | Both variants | Solar panel and battery for an off-grid sensor that records on trigger, for example structural health monitoring |
+
+If your order includes a Grillo SIM and data plan, Grillo fits and sets up the SIM before shipping. See [Cellular and SIM](/hardware/grillo-pulse/sim-card-setup).
+
+Mounting hardware is not included unless it is on your packing list.
 
 ## What to check
 
-1. The enclosure, connectors, antennas, and cables are undamaged.
-2. You know which variant it is: **Pulse Cellular** or **Pulse Ethernet**. It is on your order and the enclosure label.
+1. The enclosure, connectors, and any accessories are undamaged.
+2. You know which variant it is: **Pulse Cellular** or **Pulse Ethernet**.
 3. The 12-character Device ID is on the label, for example `A0B1C2D3E4F5`. The label's QR code holds the same ID.
-4. The power supply is the one provided for the sensor: 12 V DC, with a plug that fits the external power connector on the enclosure.
+4. Every accessory on your packing list is in the box.
 
 Photograph the label and QR code before installation. Once the sensor is mounted, the label may be hard to reach.
-
-## Typical contents
-
-- Grillo Pulse in its enclosure
-- 12 V power supply and cable
-- **Pulse Cellular:** antennas, and a SIM already fitted and set up by Grillo
-- **Pulse Ethernet:** a weatherproof Ethernet entry on the enclosure for your network cable
-- Mounting hardware, if ordered
-
-Do not assume a battery, solar panel, or mounting accessory is included unless it is on the packing list. Pulse has no solar or battery input of its own; for an off-grid site, see [Off-grid power](/hardware/grillo-pulse#off-grid-power).
 
 ## Stop and contact support if
 
@@ -31,6 +53,6 @@ Do not assume a battery, solar panel, or mounting accessory is included unless i
 - A connector or cable does not match its label.
 - The enclosure or a seal is damaged.
 - The Device ID is missing or unreadable.
-- The power supply is not 12 V DC.
+- Something on your packing list is missing.
 
 Next: [claim the sensor in Grillo Cloud](/hardware/grillo-pulse/provisioning).

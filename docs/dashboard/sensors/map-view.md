@@ -4,17 +4,14 @@ title: Sensor Map
 
 # Sensor Map
 
-Open **Sensors** and choose **Map** to see the project's sensors by location.
-
-![Sensor map in Grillo Cloud](/img/screenshots/06-sensors-map.png)
-
-## Use the map
+Open **Sensors** and choose **Map** to see the project's sensors by location. Each marker is colored by the sensor's [status](/dashboard/sensors/sensor-status).
 
 - Pan and zoom to inspect the deployment.
-- Use the fit control to bring all sensors into view.
 - Select a marker to open that sensor's details.
-- From a sensor's details, select **Find on map** to jump to its marker.
+- From a sensor's details, select **Show on map** to jump to its marker.
 
-A sensor needs a saved latitude and longitude to appear. If a marker is missing or in the wrong place, [edit the sensor's location](/dashboard/sensors/configuring-sensor).
+The **Network status** panel shows how many sensors are reporting. Turn on **Coverage gaps** to shade the areas with too few reporting sensors nearby to detect an earthquake quickly. The panel gives the share of the country affected.
 
-Marker status follows the same rule as the table: online means a health report arrived in the last 2.5 minutes.
+A sensor needs a saved latitude and longitude to appear. If a marker is missing or in the wrong place, [contact Grillo Support](/support/contact) with the correct coordinates.
+
+If the project masks sensor locations (**Settings → Data**), coordinates are not shown exactly.

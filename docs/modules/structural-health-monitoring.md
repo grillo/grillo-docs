@@ -19,12 +19,10 @@ Because sensors upload only when something happens, they use much less mobile da
 
 ## What you see in Grillo Cloud
 
-- **Dashboard:** a **Triggers** card with the number of triggers in the last 24 hours and 30 days, and the largest horizontal PGA of the last 30 days.
-- **Triggers** in the sidebar: every trigger in the project. See [Triggers](/dashboard/triggers).
-- **Sensor details:** each sensor's trigger threshold and its recent triggers. See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode).
-- **Project Settings:** the project's trigger defaults and [trigger alerts](/dashboard/alerts).
+- **Triggers** at [cloud.grillo.io/triggers](https://cloud.grillo.io/triggers): every trigger in the project. See [Triggers](/dashboard/triggers).
+- **Settings → Recording & triggers:** the project's trigger defaults and [trigger emails](/dashboard/alerts).
 
-**Events** and **Live** are not part of the Structural plan.
+Earthquake detection, the **Events** catalog, and the **Live map** are not part of the Structural plan.
 
 ## Set up a structural project
 

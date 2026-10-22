@@ -4,6 +4,10 @@ title: Claim a Sensor
 
 # Claim a Sensor
 
+:::note Handled by Grillo Support for now
+The new Grillo Cloud dashboard does not yet have a way to claim or unclaim a sensor. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the station code you want, and Grillo will make the change for you. The steps below describe the previous dashboard.
+:::
+
 When your Grillo Pulse or Grillo One arrives, claim it in Grillo Cloud. Claiming links the sensor to your project, so it shows up in your sensor list and on your map.
 
 Every Grillo sensor is registered in Grillo's system at the factory, so there is nothing to set up beforehand: you only need its Device ID. Claiming does not connect the sensor to the internet; that is part of the [hardware setup](#next-steps).

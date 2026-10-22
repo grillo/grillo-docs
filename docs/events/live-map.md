@@ -4,48 +4,50 @@ title: Live Map
 
 # Live Map
 
-**Live** shows earthquake detection on a map as it happens. It has two modes:
+The **Live map** is the first page you see after signing in. It shows your stations on a dark map, and earthquake detection as it happens. It has two modes, chosen at the top of the side panel:
 
-- **Live** follows your project's stations and their real detections.
-- **Simulation** plays a made-up earthquake on a demonstration network, so you can see how detection works.
-
-![Live map in Grillo Cloud](/img/screenshots/11-live-map.png)
+- **LIVE** follows your project's stations and their real detections.
+- **SIMULATION** plays a scenario earthquake over your real stations, so you can see how detection works.
 
 ## What the map shows
 
-- Your stations, with their online status
-- Cities and fault lines
-- During an event: the stations that have detected it, the located epicenter, and expanding P-wave and S-wave fronts
-- Estimated damage zones around the epicenter, from **Minor** to **Severe**
+- Your stations. The **Legend** counts stations and **Offline** stations
+- Fault lines
+- During an event: stations that have **Picked** the waves, the epicenter, the expanding **P-wave** and **S-wave** fronts, and where there is **Shaking now**
+- Estimated shaking zones around the epicenter, from **Minor** to **Severe**
 
-The **Legend** explains each symbol.
+Stations with no saved location are not on the map; a note says how many.
 
-## Live mode
+Use the full-screen button to show the map on its own, for example on a wall screen.
 
-The **Live** button shows whether the map is connected to earthquake detection: **Connected**, **Connecting**, or **Disconnected**. If it stays disconnected, refresh the page.
+## The side panel
 
-When stations start detecting shaking, each pick plays a short beep and the **Event Log** lists the pick. Once at least four stations have picked, Grillo Cloud locates the event and the map shows its magnitude, epicenter, and the cities the waves will reach.
+The status at the top of the panel says what detection is doing:
 
-## Map settings
+| Status | Meaning |
+|---|---|
+| **MONITORING** | Stations are reporting and there is no event, for example **14 of 15 stations reporting · no event** |
+| **DETECTING** | One or more stations have picked the waves and Grillo Cloud is locating the event |
+| **EVENT LOCATED** | The event has a location and magnitude, and the panel says when the alert was issued, in seconds after the origin |
 
-Open **Map Settings** to choose:
+Once an event is located, the panel shows its **Magnitude**, **Depth**, and **Location**, and a list of places with how many seconds each has before **Strong shaking** reaches it, or **no warning** where shaking had already arrived.
 
-- **Minimum Magnitude** — ignore events smaller than this
-- **Auto-zoom to epicenter** — move the map to each new event
-- **Alert Sound** — the sound played when an event is detected: **Earthquake** or **Tone**
+The **Event log** lists each pick, the location, and S-wave arrivals as they happen.
 
-Browsers block audio until you have interacted with the page. Click anywhere on the page after opening it if you rely on the sound.
+**LIVE FEED CONNECTED** shows the map is receiving detections. If it stays on **CONNECTING TO LIVE FEED…**, refresh the page. The latency readout shows how long picks and events take to reach your screen.
+
+If any stations are offline, the bar at the bottom says how many. Select it to open [Sensors](/dashboard/sensors) filtered to offline sensors.
 
 ## Simulation mode
 
-Switch to **Simulation** and select **Simulate Earthquake**. The map generates an earthquake, shows simulated station picks, locates the event, and animates the waves.
+Switch to **SIMULATION**. A banner across the map reads **SIMULATED SCENARIO · NOT REAL EVENTS**. Choose a speed of 1×, 2×, or 4×.
 
-![A simulated earthquake on the live map: stations detect it, the event is located, and the P-wave and S-wave fronts spread out while panels show the magnitude, estimated arrival times, and affected cities](/img/screenshots/live-map-simulation.gif)
+The simulation uses your project's real station positions and needs at least 4 reporting stations. It plays picks, locates the event, and animates the waves and shaking.
 
 :::danger Simulation is not real data
-Simulation mode uses a demonstration station set, not your sensors. Check which mode is selected before acting on anything shown on this page.
+The events in Simulation mode are made up. Check which mode is selected before acting on anything shown on this page. Simulated events are not added to the [event catalog](/events/event-catalog).
 :::
 
 ## Limits
 
-The live map is a monitoring view for your team. It does not send SMS, email, or mobile alerts, and it is not a public warning service. See [Earthquake Early Warning](/concepts/earthquake-early-warning) for what warning time is physically possible.
+The live map is a monitoring view for your team. It does not itself send SMS, email, or mobile alerts, and it is not a public warning service. See [Earthquake Early Warning](/concepts/earthquake-early-warning) for what warning time is physically possible.

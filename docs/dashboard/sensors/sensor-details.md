@@ -4,59 +4,42 @@ title: Sensor Details
 
 # Sensor Details
 
-Select a sensor in the table or on the map to open its details panel.
+Select a sensor in any view to open its details panel. The top of the panel shows its station code, status, and the reason for the status.
 
-![Sensor details in Grillo Cloud](/img/screenshots/07-sensor-info.png)
+## Connectivity
 
-## Connection history
+- **Uptime 30 d**: the share of the last 30 days the sensor was reporting
+- **Signal** and **Latency** from its latest health report
+- **Last 24 h, 30-minute blocks**: when data arrived, arrived late, or did not arrive
+- **Last 30 days, daily uptime**: one bar per day
 
-The history chart shows the sensor's connection reports and signal strength over 1 hour, 24 hours, 7 days, 30 days, 90 days, or 1 year. It also counts:
+These come from the sensor's health reports. They show that the sensor went quiet or slowed down; they do not say whether power, network, or firmware caused it.
 
-- **Interruptions** — gaps of more than 2.5 minutes with no health report
-- **Reboots** — times the sensor's reported uptime went back to zero
+## Live signal
 
-These are inferred from the health reports. They show that the sensor went quiet or restarted; they do not say whether power, network, or firmware caused it.
+For a sensor that records continuously, select **Show live signal** to see its vertical geophone (`EHZ`) trace as it arrives. Select **Hide live signal** to close it.
 
-## Networking
+## Device
 
-- Signal strength
-- Connection type: WiFi, Cellular, or Ethernet
-- SIM ICCID, for cellular sensors
+- **Device ID** and **Type**
+- **Firmware**, and the version most of the project's sensors run
+- **Up since boot**
+- **Power**: power source and battery voltage, where the sensor reports them
+- **Enclosure temp**, on current Grillo Pulse hardware
+- **Time sync**: how far the sensor's clock is from true time, in milliseconds
 
-Check **Last Seen** before reading these. An offline sensor shows the values from its last report.
+## Cellular
 
-## Power
-
-- Power source: DC or Battery
-- Battery charging
-- Battery level
-
-Grillo One has no battery, so these fields are empty for it.
+For cellular sensors: **ICCID** and **Reconnects (24 h)**, the number of times health reports stopped for more than 150 seconds in the last 24 hours.
 
 ## Location
 
-Latitude, longitude, elevation, and the saved location name.
+A small map, the **Coordinates**, **Elevation**, and the date the sensor was **Installed** (added to the project). **Show on map** opens the [sensor map](/dashboard/sensors/map-view) at the sensor. If the project masks sensor locations, coordinates are marked **(masked)**.
 
-## System
+## Download data
 
-Device ID and **Last Seen**.
+**Download data** opens the [Archive](/dashboard/data/waveforms) with this sensor selected.
 
-## Waveforms
+## Changing the sensor
 
-A sensor that records continuously shows its live waveform at the top of the panel, with a link to its recorded data. See [View and Download Waveforms](/dashboard/data/waveforms).
-
-## Recording and recent triggers
-
-A sensor that records triggered, and every sensor in a Structural project, shows a recording panel instead of the live waveform:
-
-- Its mode, threshold, triggers since it started, and when it last triggered
-- **Trigger threshold**, with **Edit** for owners and admins
-- **Recent triggers**: its 8 latest [triggers](/dashboard/triggers), and **View all triggers**
-
-See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode).
-
-## Actions
-
-- **Find on map** jumps to the sensor's marker.
-- **Edit** opens [station, location](/dashboard/sensors/configuring-sensor), [recording mode](/dashboard/sensors/recording-mode), and [firmware](/dashboard/sensors/firmware-updates) settings. Owner or admin only.
-- **Unclaim Sensor** [removes the sensor from the project](/dashboard/sensors/adding-sensor#unclaim-a-sensor). Owner or admin only.
+Editing a sensor, changing its [recording mode](/dashboard/sensors/recording-mode), and [updating its firmware](/dashboard/sensors/firmware-updates) are handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID.

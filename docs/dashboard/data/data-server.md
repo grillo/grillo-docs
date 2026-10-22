@@ -62,7 +62,7 @@ Set up and test the receiver before you ask for the switch. [Contact Grillo Supp
 
 Grillo sets this for you. [Contact Grillo Support](/support/contact) with your project name and your server as `host:port`, for example `seismic.example.org:5684`.
 
-Each sensor switches at its next health check-in, about a minute after the change. The sidebar then shows **Sending to** followed by your server.
+Each sensor switches at its next health check-in, about a minute after the change. **Settings → Data** then shows your server under **Seismic data server**.
 
 ## Check that it worked
 

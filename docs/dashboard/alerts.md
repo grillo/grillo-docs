@@ -10,9 +10,9 @@ The alert level is separate from the [trigger threshold](/dashboard/sensors/reco
 
 ## Turn on alerts
 
-Owners and admins of Structural projects can set up alerts:
+Everyone in a Structural project can see the alert level and recipients in **Settings → Recording & triggers**, under **Trigger emails**. Owners and admins change them on the previous dashboard's Project Settings page:
 
-1. Open **Project Settings**.
+1. Go to [cloud.grillo.io/organization](https://cloud.grillo.io/organization).
 2. Under **Trigger alerts**, enter an **Alert level (mg)** between 1 and 2000 mg. 1000 mg is 1 g.
 3. Under **Recipients**, add up to 25 email addresses. Recipients do not need a Grillo Cloud account. If you add none, alerts go to the project's owners and admins.
 4. Select **Save**.
@@ -24,7 +24,7 @@ To turn alerts off, clear the alert level and save. The setting then shows **Off
 
 ### A different level for one sensor
 
-A sensor in a busy location may need a higher level than the rest of the project. Open the sensor's details, select **Edit**, turn off **Use project alert level** under **Recording mode**, and enter the sensor's own **Alert level (mg)**.
+A sensor in a busy location may need a higher level than the rest of the project. [Contact Grillo Support](/support/contact) with the Device ID and the level you want.
 
 ## What you receive
 
@@ -43,7 +43,7 @@ To keep a busy sensor from filling your inbox:
 - **Per project:** at most 20 alerts a day. After that, recipients get one digest listing each sensor's triggers and largest PGA.
 - **Trigger storm:** a sensor that triggers more than 15 times in an hour gets one trigger storm email, with a suggested threshold. It sends no more alerts until it has been quiet for 6 hours.
 
-The suggested threshold is twice the typical horizontal PGA of that hour's triggers. If you accept it, [raise the sensor's threshold](/dashboard/sensors/recording-mode#change-a-sensors-threshold).
+The suggested threshold is twice the typical horizontal PGA of that hour's triggers. If you accept it, ask Grillo Support to [raise the sensor's threshold](/dashboard/sensors/recording-mode#change-a-sensors-threshold).
 
 ## On the trigger page
 
@@ -65,6 +65,10 @@ A trigger that never reached the alert level shows no alert.
 2. Confirm the trigger's horizontal PGA reached the alert level, using the sensor's own level if it has one.
 3. Check spam or junk folders, and ask your email administrator whether mail from Grillo is being blocked.
 4. Use **Send test email** to confirm delivery to your address.
+
+:::note Trigger alerts and the Alerts page
+Trigger alerts are emails about shaking at your sensors. The **Alerts** page in the menu bar is for earthquake early-warning alerts sent to phones, and does not list trigger emails.
+:::
 
 :::warning Not a safety system
 Trigger alerts are sent over email and can be delayed by mobile networks and email providers. Do not rely on them alone for life-safety decisions.

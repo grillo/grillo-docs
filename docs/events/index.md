@@ -9,10 +9,9 @@ On the Seismic and Enterprise [plans](/dashboard/plans), Grillo Cloud detects ea
 You get:
 
 - **An automatic event catalog.** Each detected earthquake is recorded with its time, location, depth, and magnitude.
-- **A live map.** Watch detections as they happen, with the stations that triggered and the estimated wave fronts, or run a simulation.
-- **In-app alerts.** Grillo Cloud shows a notification and an unread count on **Events** when a new earthquake is detected.
+- **A live map.** Watch detections as they happen, with the stations that picked the waves and the estimated wave fronts, or run a simulation.
 
-Events and the live map appear in the **Seismic** group of the sidebar. Detected events are also available from the [Data API](/dashboard/data/api#events).
+**Live map** and **Events** are in the menu bar at the top of every page. Detected events are also available from the [Data API](/dashboard/data/api#events).
 
 ## Requirements
 

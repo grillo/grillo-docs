@@ -4,7 +4,7 @@ title: Grillo Cloud
 
 # Grillo Cloud
 
-Grillo Cloud at [cloud.grillo.io](https://cloud.grillo.io) is where you manage Grillo Pulse and Grillo One sensors and work with their data: claim them, name their stations, watch their health, update their firmware, and see what they record.
+Grillo Cloud at [cloud.grillo.io](https://cloud.grillo.io) is where you watch your Grillo Pulse and Grillo One sensors and work with their data: see earthquakes as they are detected, check every sensor's health, browse the event catalog, and download recorded waveforms.
 
 Grillo Slide uses a separate dashboard. See [Grillo Cloud for Slide](/slide-cloud).
 
@@ -12,46 +12,45 @@ Grillo Slide uses a separate dashboard. See [Grillo Cloud for Slide](/slide-clou
 
 On every plan:
 
-- Claim sensors by Device ID and give each one an FDSN station code
-- See every sensor in a table or on a map, with online status and last-seen time
-- Check connection type, signal strength, SIM, power, battery, and firmware for each sensor
-- Review connection history, interruptions, and reboots
-- Update sensor firmware over the air
+- See every sensor as tiles, in a table, or on a map, with its status and the reason for it
+- Check each sensor's connectivity over the last 24 hours and 30 days, its signal, power, firmware, and location
 - Read your project's data from your own software with the [Data API](/dashboard/data/api)
 
 Then, depending on your project's [plan](/dashboard/plans):
 
 - **Structural:** sensors record [triggers](/dashboard/triggers) when shaking crosses their threshold, and Grillo emails you when shaking reaches an [alert level](/dashboard/alerts)
-- **Network:** sensors stream continuously; [review and download waveforms](/dashboard/data/waveforms) and [stream them to your own ringserver](/dashboard/data/realtime-export)
-- **Seismic and Enterprise:** everything in Network, plus [automatic earthquake detection](/events), an event catalog, and a live map
-
-## First-sensor workflow
-
-1. [Get an account](/dashboard/account/creating-account) from a project invitation.
-2. Open **Sensors** and [claim the sensor](/dashboard/sensors/adding-sensor) with its Device ID and a station code.
-3. [Add its location](/dashboard/sensors/configuring-sensor).
-4. Power and connect the sensor by following its hardware guide: [Grillo Pulse](/hardware/grillo-pulse) or [Grillo One](/hardware/grillo-one).
-5. [Verify that it is online](/dashboard/sensors/sensor-status).
+- **Network:** sensors stream continuously; [download recorded waveforms](/dashboard/data/waveforms) and [stream them to your own ringserver](/dashboard/data/realtime-export)
+- **Seismic and Enterprise:** everything in Network, plus [automatic earthquake detection](/events), an event catalog, and a [live map](/events/live-map)
 
 ## Navigation
 
-The top of the sidebar shows the project and its plan, for example **Structural plan**. If you belong to more than one project, use the switcher next to the project name.
+The menu bar along the top of every page has:
 
-The sidebar has these groups:
+| Page | Use it to |
+|---|---|
+| **Live map** | Watch stations and earthquake detections as they happen. This is the first page you see after signing in. See [Live Map](/events/live-map). |
+| **Sensors** | Check the health of every sensor and open its details. See [Sensors](/dashboard/sensors). |
+| **Events** | Browse the earthquakes Grillo Cloud has detected in the last 90 days. See [Event Catalog](/events/event-catalog). |
+| **Archive** | Download recorded waveforms for a time window and a set of sensors. See [Download Waveforms](/dashboard/data/waveforms). |
+| **Alerts** | The record of earthquake alerts sent for the project. |
+| **Settings** | Your profile, and the project's members, recording and trigger settings, data settings, and billing. See [Settings](/dashboard/organizations). |
 
-| Group | Page | Use it to | Plans |
-|---|---|---|---|
-| Monitor | **Dashboard** | See sensor availability and recent activity at a glance | All |
-| Monitor | **Sensors** | Claim, find, inspect, edit, and unclaim sensors | All |
-| Seismic | **Triggers** | Browse the shaking your sensors recorded | Structural |
-| Seismic | **Events** | Browse detected earthquakes | Seismic, Enterprise |
-| Seismic | **Live** | Watch detections on a live map, or run a simulation | Seismic, Enterprise |
-| Seismic | **Waveform archive** | Review recorded waveforms | All |
-| Project | **Project Settings** | See where data is sent, and set up trigger defaults, alerts, and the real-time export | All |
-| Project | **Billing** | See the plan, contract, and invoices. Owners only | All |
+The language switcher at the right of the menu bar changes the dashboard between English, French, and Haitian Creole (**KREYÒL**). Parts of the dashboard that are not yet translated into Haitian Creole are shown in English.
 
-The **Seismic** group also shows where your sensors send their data: **Sending to Grillo**, or your own server if Grillo has [set one](/dashboard/data/data-server) for your project.
+The browser tab shows the page and the project name, for example **Sensors · Grillo | My Project**.
 
-**Account**, **Language**, and **Logout** are in the user menu at the bottom of the sidebar. Grillo Cloud is available in English and French.
+## Pages from the previous dashboard
+
+Some tasks are still on the pages of the previous Grillo Cloud dashboard. They are not in the menu bar, but they work at these addresses:
+
+| Address | Use it to |
+|---|---|
+| [cloud.grillo.io/triggers](https://cloud.grillo.io/triggers) | Browse [triggers](/dashboard/triggers) recorded by Structural sensors |
+| [cloud.grillo.io/organization](https://cloud.grillo.io/organization) | Change trigger defaults, [trigger alerts](/dashboard/alerts), and the [real-time export](/dashboard/data/realtime-export) |
+| [cloud.grillo.io/waveforms](https://cloud.grillo.io/waveforms) | View recorded waveforms as charts |
+| [cloud.grillo.io/account](https://cloud.grillo.io/account) | Leave a project, or sign out |
+| [cloud.grillo.io/billing](https://cloud.grillo.io/billing) | Open **Manage billing** to update your card |
+
+Claiming, editing, and unclaiming sensors, changing a sensor's recording mode or threshold, and firmware updates are handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID and what you need.
 
 Projects, members, and plans are managed by Grillo. See [Projects](/dashboard/organizations).

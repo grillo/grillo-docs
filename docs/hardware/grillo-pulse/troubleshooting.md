@@ -40,7 +40,7 @@ Before contacting support, record:
 
 ## Sensor is offline
 
-1. Check **Last Seen** and the sensor's [connection history](/dashboard/sensors/sensor-details#connection-history) to see when it stopped reporting and whether it has been dropping out.
+1. Check **Last seen** and the sensor's [connectivity history](/dashboard/sensors/sensor-details#connectivity) to see when it stopped reporting and whether it has been dropping out.
 2. Check the M12 power cable is connected and tightened, and that the 12 V DC supply or solar kit has power.
 3. Check the connection:
    - Pulse Cellular: check the cellular antenna is on the SMA cellular connector, and the mobile coverage at the site.

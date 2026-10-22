@@ -4,48 +4,34 @@ title: Event Details
 
 # Event Details
 
-Select an event in the catalog to open its details.
-
-![Event details in Grillo Cloud, with the event's time, magnitude, and depth, and a chart of each station's arrival time and amplitude](/img/screenshots/event-details.png)
+Select an event in the catalog, on the chart, or on the map to open its details.
 
 ## Event information
 
-- Event ID
-- Time
-- Magnitude
-- Depth in kilometers
-- Latitude and longitude
+The top of the panel shows the magnitude, the Event ID, the nearest place, and the origin time in UTC and Haiti local time. Below it:
+
+- **Depth** in kilometers
+- **Stations**: how many of the project's stations detected the event
 
 These are automatic estimates. They can differ from a catalog reviewed by a seismic agency.
 
-## Picks and amplitudes
+## Detection timeline
 
-**Picks and Amplitudes** shows the observations Grillo Cloud used to build the event. A summary line gives the number of stations, the first arrival, and the spread between the first and last arrival. The chart below it shows, for each station, when the wave arrived (in seconds after the origin time) and the amplitude measured there.
+How long detection took, in seconds from the earthquake's origin: the **first pick** (the first station to detect the waves) and when the event was **located**.
 
-Select **Download CSV** to save the picks and amplitudes, or **Full tables** to see them in detail.
+## Location
 
-**Picks** are the arrival times detected at each station:
+A map of the epicenter and the stations that picked the event (marked ◆).
 
-- Pick ID
-- Time
-- Station
-- Location
-- Channel
-- Phase
+## Nearest stations
 
-**Amplitudes** are the measurements used for the magnitude:
-
-- ID and related Pick ID
-- Station
-- Amplitude
-- Time Window End
+The vertical geophone traces of the nearest stations that picked the event, from the origin to 40 seconds after, with each station's P-wave pick marked. Traces need the event's origin time; if it is missing, the panel says so.
 
 ## Open the waveforms
 
-Select **Open waveforms in archive** to open the recorded data around the event in the **Waveform archive**, with the origin time and the automatic picks marked on the traces. From there you can pan, zoom, and [download the samples](/dashboard/data/waveforms).
+Select **Open in archive** to open the [Archive](/dashboard/data/waveforms) with a window from 1 minute before the origin to 3 minutes after, and the sensors within 80 km selected.
 
 ## If details are empty
 
-- Refresh the catalog and reopen the event.
-- A new event can appear before all of its picks and amplitudes are available.
-- If details keep failing to load, contact support with the project name, Event ID, and event time.
+- A new event can appear before all of its details are available. Reopen it after a minute.
+- If details keep failing to load, contact support with the Event ID and event time.

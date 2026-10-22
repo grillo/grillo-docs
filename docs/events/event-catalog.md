@@ -4,40 +4,43 @@ title: Event Catalog
 
 # Event Catalog
 
-Open **Events** in Grillo Cloud to browse the earthquakes Grillo Cloud has detected for the active project.
+Open **Events** to browse the earthquakes Grillo Cloud has detected for the active project in the last 90 days, newest first. Simulated earthquakes from the [Live map](/events/live-map) are not included.
 
-![Event catalog in Grillo Cloud](/img/screenshots/09-events.png)
+## Magnitude over time
 
-## Filter and refresh
+The chart at the top plots every event by time and magnitude. The dashed line marks M4, the alert threshold. Select an event's marker to open it.
 
-Use the date control to choose a start and end date, or pick **This week** or **This month**. Use the refresh button to fetch current results.
+## Filter and search
 
-When Grillo Cloud detects a new earthquake, Grillo Cloud shows a notification with its magnitude and location, and an unread count appears next to **Events** in the sidebar.
+- **All events**, **M ≥ 3**, or **M ≥ 4** filter by magnitude.
+- **Search by place or ID…** finds events by the nearest place name or the Event ID.
 
-Results come in pages of 100 events.
+The heading shows how many events match, for example **12 of 85 events · last 90 days**.
 
 ## Table view
 
 | Column | Meaning |
 |---|---|
-| Event ID | Identifier for the event |
-| Time | When the event was issued |
-| Magnitude | Estimated magnitude |
-| Location | Estimated latitude and longitude |
+| Issued (UTC) | When the event was issued |
+| Mag | Estimated magnitude |
+| Place | Distance and direction from the nearest place, for example **12 km NE of Les Cayes** |
+| Depth | Estimated depth in kilometers |
+| Stations | Number of stations that detected it |
 
-Select the **Time** or **Magnitude** heading to sort. Select a row to open [event details](/events/event-details).
+Select a column heading to sort by it. Select a row to open [event details](/events/event-details).
 
 ## Map view
 
-Switch to **Map** to see event locations together with your sensors. Use the fit control to bring all events into view.
+Choose **Map** to see the events by location.
+
+## Export
+
+Select **Export** to download the events that match the current filter and search as a CSV file.
 
 ## If no events appear
 
-1. Confirm the correct project is selected.
-2. Widen the date range and refresh.
-3. Check that your sensors are [online](/dashboard/sensors/sensor-status) and sending data to Grillo.
-4. Confirm the project is on the Seismic or Enterprise [plan](/dashboard/plans).
+1. Change the filter or clear the search.
+2. Check that your sensors are [online](/dashboard/sensors/sensor-status) and sending data to Grillo.
+3. Confirm the project is on the Seismic or Enterprise [plan](/dashboard/plans).
 
-## Exporting the catalog
-
-Grillo Cloud does not export the event list as a file. To get the recorded data for an event, open it and select **Open waveforms in archive**, then [download the samples](/dashboard/data/waveforms#download-data).
+Detected events are also available from the [Data API](/dashboard/data/api#events).

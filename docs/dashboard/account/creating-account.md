@@ -20,7 +20,7 @@ Grillo Cloud accounts are created by invitation. You need an invitation to a pro
    - **Google** or **Microsoft.** Sign in with the account that owns the invited address.
 4. If you signed up with email and password, open the verification link Grillo Cloud emails you. Use **Resend verification email** if it does not arrive.
 
-After you accept the invitation, the project appears in the project switcher at the top of the sidebar.
+After you accept the invitation, Grillo Cloud opens on the project's [Live map](/events/live-map).
 
 ## Sign in
 

@@ -4,6 +4,10 @@ title: Update Firmware
 
 # Update Sensor Firmware
 
+:::note Handled by Grillo Support for now
+The new Grillo Cloud dashboard does not yet have a way to start a firmware update. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the target version, and Grillo will make the change for you. The steps below describe the previous dashboard.
+:::
+
 Grillo Cloud can update a sensor's firmware over the air (OTA). You choose a target version, and the sensor downloads and installs it the next time it checks in.
 
 Only project owners and admins can start an update.
@@ -42,7 +46,7 @@ Wait a few minutes, then refresh **Sensors**. The update worked when:
 - The sensor is **online** again, and
 - The **Firmware** column shows the target version.
 
-A reboot also appears in the sensor's [connection history](/dashboard/sensors/sensor-details#connection-history).
+The sensor also restarts, which resets **Up since boot** in its [details](/dashboard/sensors/sensor-details#connectivity).
 
 ## If the update does not complete
 

@@ -4,6 +4,10 @@ title: Recording Mode and Thresholds
 
 # Recording Mode and Thresholds
 
+:::note Handled by Grillo Support for now
+The new Grillo Cloud dashboard does not yet have a way to change a sensor's recording mode or threshold. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the settings you want, and Grillo will make the change for you. The steps below describe the previous dashboard.
+:::
+
 A sensor records in one of two modes:
 
 | Mode | What the sensor uploads |
@@ -65,9 +69,9 @@ Below the settings, the dialog shows what the sensor last reported: its mode, th
 
 ## Set the project's trigger defaults
 
-On Structural projects, owners and admins can set defaults for all of the project's triggered sensors:
+On Structural projects, everyone can see the defaults in **Settings → Recording & triggers**. Owners and admins can change them on the previous dashboard's Project Settings page:
 
-1. Open **Project Settings**.
+1. Go to [cloud.grillo.io/organization](https://cloud.grillo.io/organization).
 2. Under **Trigger defaults**, set the trigger channel, threshold, pre-event, and post-event times. Leave a field empty to use the Grillo default.
 3. Select **Save**.
 

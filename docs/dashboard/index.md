@@ -52,6 +52,6 @@ The sidebar has these groups:
 
 The **Seismic** group also shows where your sensors send their data: **Sending to Grillo**, or your own server if Grillo has [set one](/dashboard/data/data-server) for your project.
 
-**Account**, **Language**, and **Logout** are in the user menu at the bottom of the sidebar. Grillo Cloud is available in English and French.
+**Account**, **Language**, **Terms of Service**, **Privacy Policy**, and **Logout** are in the user menu at the bottom of the sidebar. The terms and privacy links open the pages on grillo.io. Grillo Cloud is available in English and French.
 
 Projects, members, and plans are managed by Grillo. See [Projects](/dashboard/organizations).

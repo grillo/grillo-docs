@@ -4,14 +4,14 @@ title: Plans
 
 # Plans
 
-Every Grillo Cloud project has a plan. The plan decides how your sensors record, which pages appear in the sidebar, and which data tools you get. Prices and the full feature comparison are on the [Grillo pricing page](https://grillo.io/pricing).
+Every Grillo Cloud project has a plan. The plan decides how your sensors record, and which data tools you get. Prices and the full feature comparison are on the [Grillo pricing page](https://grillo.io/pricing).
 
-| Plan | Best for | Sensors record | In the sidebar |
+| Plan | Best for | Sensors record | Main tools |
 |---|---|---|---|
-| **Structural** | Buildings, warehouses, infrastructure | Triggered | **Triggers**, **Waveform archive** |
-| **Network** | Seismic networks that run their own processing | Continuous | **Waveform archive** |
-| **Seismic** | Networks wanting automatic earthquake catalogs | Continuous | **Events**, **Live**, **Waveform archive** |
-| **Enterprise** | National systems and earthquake early warning | Continuous | **Events**, **Live**, **Waveform archive** |
+| **Structural** | Buildings, warehouses, infrastructure | Triggered | [Triggers](/dashboard/triggers), [trigger alerts](/dashboard/alerts) |
+| **Network** | Seismic networks that run their own processing | Continuous | **Archive**, [real-time export](/dashboard/data/realtime-export) |
+| **Seismic** | Networks wanting automatic earthquake catalogs | Continuous | **Events**, **Live map**, **Archive** |
+| **Enterprise** | National systems and earthquake early warning | Continuous | **Events**, **Live map**, **Archive** |
 
 ## Included in every plan
 
@@ -41,7 +41,7 @@ Everything in Seismic, scoped to your system. Enterprise can include earthquake 
 
 ## See your plan
 
-The plan is shown under the project name at the top of the sidebar, for example **Structural plan**. Project owners can see the plan, billing, and contract on the [Billing page](/dashboard/billing).
+Project owners can see the plan, billing, and contract on the [Billing page](/dashboard/billing).
 
 ## Change your plan
 

@@ -10,7 +10,7 @@ Triggers are not earthquake detections. Each one is the shaking at one sensor, w
 
 ## The Triggers page
 
-Open **Triggers** in the sidebar.
+Triggers are on the previous dashboard's Triggers page at [cloud.grillo.io/triggers](https://cloud.grillo.io/triggers). It is not in the menu bar of the new dashboard yet; bookmark it.
 
 ![Triggers page in Grillo Cloud](/img/screenshots/triggers-list.png)
 
@@ -56,11 +56,11 @@ The **Waveform** section has one chart per channel: **East**, **North**, and **V
 
 A trigger longer than 5 minutes shows the 5 minutes around its peak.
 
-Select **Open in waveform archive** to look at the same interval in the [waveform archive](/dashboard/data/waveforms). On plans that include waveform download, **Download (miniSEED + CSV)** saves the trigger window as a [zip file](/dashboard/data/waveforms#download-data).
+Select **Open in waveform archive** to look at the same interval in the [waveform archive](/dashboard/data/waveforms). On plans that include waveform download, **Download (miniSEED + CSV)** saves the trigger window as a [zip file](/dashboard/data/waveforms#what-you-download).
 
 ## Recent triggers for a sensor
 
-Each sensor's details list its 8 most recent triggers. Select **View all triggers** to open the Triggers page filtered to that sensor.
+On the Triggers page, use **Sensor** to show one sensor's triggers.
 
 ## When a trigger appears
 
@@ -71,8 +71,8 @@ A trigger appears in Grillo Cloud once the sensor starts uploading, usually with
 
 ## If no triggers appear
 
-1. Confirm the sensor is [online](/dashboard/sensors/sensor-status) and its details show **Triggered**.
-2. Check its threshold. A threshold above the site's normal vibration records nothing until real shaking arrives. To test a sensor, tap the side of the enclosure firmly; the trigger count in its details goes up.
+1. Confirm the sensor is [online](/dashboard/sensors/sensor-status) and records triggered. If you are not sure, [contact Grillo Support](/support/contact).
+2. Check its threshold. A threshold above the site's normal vibration records nothing until real shaking arrives. To test a sensor, tap the side of the enclosure firmly; a new trigger appears within about a minute.
 3. Check the **Date** range and the **Sensor** filter, then select refresh.
 
 If a sensor records too many triggers, raise its threshold. See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode#choose-a-threshold).

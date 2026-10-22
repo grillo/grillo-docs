@@ -11,7 +11,7 @@ The Grillo Cloud data API gives your own software read-only access to one projec
 - The API reads data; it cannot change anything in your project.
 - The full OpenAPI 3.1 description is at [`https://api.grillo.io/v1/openapi.yaml`](https://api.grillo.io/v1/openapi.yaml). It needs no key.
 
-The API is included in every [plan](/dashboard/plans). For waveform data, use the [waveform download](/dashboard/data/waveforms#download-data) or the [real-time export](/dashboard/data/realtime-export).
+The API is included in every [plan](/dashboard/plans). For waveform data, use the [waveform download](/dashboard/data/waveforms#what-you-download) or the [real-time export](/dashboard/data/realtime-export).
 
 ## Get an API key
 

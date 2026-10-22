@@ -1,60 +1,50 @@
 ---
-title: View and Download Waveforms
+title: Download Waveforms
 ---
 
-# View and Download Waveforms
+# Download Waveforms
 
-Grillo Cloud shows seismic data two ways: a live view of what a sensor is recording now, and the waveform archive of recorded data, which you can download on the Network, Seismic, and Enterprise [plans](/dashboard/plans).
+Open **Archive** to download the raw waveform data your sensors recorded. Downloads are included in the Network, Seismic, and Enterprise [plans](/dashboard/plans).
 
-Sensors that record [triggered](/dashboard/sensors/recording-mode) have no live view. Their recordings are in [Triggers](/dashboard/triggers) and the waveform archive.
+The Archive has data only for sensors that send their seismic data to Grillo. If your project [sends data to its own server](/dashboard/data/data-server), there are no waveforms to download.
 
-Both show data only for sensors in the active project that send their seismic data to Grillo. If your project [sends data to its own server](/dashboard/data/data-server), Grillo Cloud has no waveforms to show.
+## 01 · Time window
 
-## Live view
+Choose **Last hour**, **Last 24 h**, **Last 7 days**, **Around an event**, or **Custom**. All times are UTC.
 
-1. Open **Sensors** and select a sensor.
-2. The **Live sensor** panel at the top of the details shows the incoming waveform.
-3. Choose a **Channel**, and switch between **Waveform** and **Spectrogram**.
+- **Around an event** lists recent events. Pick one and the window runs from 1 minute before its origin to 3 minutes after, with the sensors within 80 km already selected.
+- **Custom** lets you set **From (UTC)** and **To (UTC)**.
 
-The panel shows **Live** while samples are arriving and **Waiting for the next sensor sample** just after you open it. **Stale** or **No recent samples** means data has stopped arriving; check the sensor's [status](/dashboard/sensors/sensor-status).
+You can also open the Archive from **Download data** in a [sensor's details](/dashboard/sensors/sensor-details), or **Open in archive** in an [event's details](/events/event-details).
 
-Times in the live view are the sensor's own clock and are approximate. Values are raw counts, not calibrated ground motion.
+## 02 · Sensors
 
-Select **Open historical view** to review the same sensor's recorded data.
+Pick sensors from the list or on the map: **Click to add or remove**. Use **All** or **None** to change the selection quickly.
 
-## Review recorded waveforms
+## 03 · Format
 
-Open **Waveform archive** in the sidebar. You can also get there from **Open historical view** in a sensor's details, **Open waveforms in archive** in an [event's details](/events/event-details), or **Open in waveform archive** in a [trigger's details](/dashboard/triggers#waveforms).
+- **miniSEED**: the standard seismology format. Opens in ObsPy, SeisComP, SAC, and Swarm.
+- **CSV**: for spreadsheets and quick analysis.
 
-1. Set **Start (UTC)** and **End (UTC)**. All times are UTC.
-2. Choose a **Station** and a **Channel**, then select **Add trace**. You can show up to 4 traces.
-3. Select **Load recording**.
-4. Use the pan and zoom buttons to move through the recording, and **Reset** to return to the full interval.
+The channel is `EHZ`, the vertical geophone, at 100 Hz.
 
-When you open the page from an event, it marks the event's origin time and the automatic picks on the traces.
+For now the download always contains both a miniSEED file and a CSV file, whichever you choose; the choice changes only the size estimate.
 
-### Limits
+## Your request
 
-- One request covers up to 5 minutes, 4 channels, and 75,000 samples.
-- The most recent data may still be uploading. The page shows the time of the **latest published** recording.
-- Gaps are marked on each trace. Open **Gap details** to see where data is missing.
+The summary on the right shows the window, its duration, the sensors, and the format, with an estimated size. **Data available in window** shows each sensor's coverage, with gaps marked. Gaps are left empty in the download, not filled.
 
-### Channels
+Select **Download**. Grillo Cloud prepares the file and your browser downloads it. If the browser blocks the new tab, use the link that appears under the button.
 
-| Channel | Sensor |
-|---|---|
-| `EHZ` | Vertical geophone (Grillo Pulse) |
-| `HNZ`, `HNN`, `HNE` | Accelerometer: vertical, north, east |
+:::note Current limits
+A download from the Archive covers **one sensor and up to 5 minutes**. Longer windows and several sensors at once are coming. For more data now, use the [Data API](/dashboard/data/api) or [stream to your own ringserver](/dashboard/data/realtime-export).
+:::
 
-## Download data
+**Same request by API** shows the equivalent API request; select **Copy** to copy it.
 
-Downloads are included in the Network, Seismic, and Enterprise [plans](/dashboard/plans).
+## What you download
 
-On the review page, load the interval you want and select **Download (miniSEED + CSV)**. Grillo Cloud shows **Preparing download…** while it builds the file, then your browser downloads a zip. A download covers one sensor, up to 4 channels and 5 minutes.
-
-You can also download a [trigger](/dashboard/triggers#waveforms) from its details. The download covers the trigger window plus 5 seconds either side, up to 5 minutes around the peak.
-
-The zip contains:
+You get a zip containing the `EHZ` channel (downloads from the [waveform charts](#waveform-charts) page contain all of the sensor's channels):
 
 | File | Contents |
 |---|---|
@@ -73,6 +63,10 @@ Sensor timestamps are approximate, and every miniSEED record is flagged "time ta
 - The download link works for 24 hours.
 - A project can request 6 downloads a minute, one at a time.
 - If the interval has no data, the download is refused. Choose an interval the traces cover.
+
+## Waveform charts
+
+To look at recorded waveforms as charts, with pan and zoom, use the previous dashboard's waveform page at [cloud.grillo.io/waveforms](https://cloud.grillo.io/waveforms). It can show up to 4 traces over 5 minutes and download the same zip with all of a sensor's channels.
 
 ## Continuous data and standard formats
 

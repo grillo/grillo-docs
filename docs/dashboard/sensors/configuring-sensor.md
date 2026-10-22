@@ -4,6 +4,10 @@ title: Edit a Sensor
 
 # Edit a Sensor
 
+:::note Handled by Grillo Support for now
+The new Grillo Cloud dashboard does not yet have a way to edit a sensor. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the changes you need, and Grillo will make the change for you. The steps below describe the previous dashboard.
+:::
+
 Owners and admins can change a sensor's station code, location, recording mode, and target firmware. Open the sensor's details and select **Edit**.
 
 ![Edit sensor dialog in Grillo Cloud](/img/screenshots/08-sensor-edit.png)

@@ -43,7 +43,7 @@ The **Real-time data export** panel in Grillo Cloud always shows the current add
 
 ## Turn on the export
 
-1. Open **Project Settings** in the sidebar.
+1. Go to the previous dashboard's Project Settings page at [cloud.grillo.io/organization](https://cloud.grillo.io/organization). The new dashboard shows the export in **Settings → Data** but does not save changes yet.
 2. Under **Real-time data export**, enter your **Ringserver host**, for example `ring.example.org`, without a port.
 3. Enter the **DataLink port**. It defaults to 16000.
 4. Leave **Streaming enabled** on and select **Save**.
@@ -63,7 +63,7 @@ Each stream is named `NET_STA__CHA`: the project's network code, the sensor's st
 
 The data is sent as 512-byte miniSEED 2 records with 32-bit integer samples in raw counts. A record is sent when it is full (112 samples, about 0.9 seconds at 125 Hz) or after at most 2 seconds. A new record starts wherever there is a gap.
 
-Every record is flagged "time tag questionable", because sensor timestamps are approximate. See the `timeBasis` notes in [View and Download Waveforms](/dashboard/data/waveforms#download-data).
+Every record is flagged "time tag questionable", because sensor timestamps are approximate. See the `timeBasis` notes in [Download Waveforms](/dashboard/data/waveforms#what-you-download).
 
 ### Station codes
 

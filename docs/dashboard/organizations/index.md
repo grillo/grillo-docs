@@ -34,10 +34,10 @@ The **Project** group is marked **ADMIN** because project admins manage these se
 
 ### Changing settings
 
-The Settings page shows your project's settings but does not save changes yet. Until it does:
+Owners and admins manage people directly in **Settings → Members**; see [Add Colleagues](/dashboard/organizations/managing-members). The other Settings sections show your project's settings but do not save changes yet. Until they do:
 
 - Owners and admins change **Trigger defaults**, **Trigger emails**, and the **Real-time data export** on the previous dashboard's Project Settings page at [cloud.grillo.io/organization](https://cloud.grillo.io/organization).
-- For anything else, including the project name, logo, members, and roles, [contact Grillo Support](/support/contact).
+- For anything else, including the project name and logo, [contact Grillo Support](/support/contact).
 
 ## Roles
 
@@ -50,7 +50,7 @@ Each person in a project has a role.
 | **Admin** | Everything a member can, plus manage members and settings |
 | **Owner** | Everything an admin can, plus see [Billing](/dashboard/billing) |
 
-To change someone's role, [contact Grillo Support](/support/contact).
+Owners and admins change roles in **Settings → Members**; see [Add Colleagues](/dashboard/organizations/managing-members).
 
 ## Leave a project
 

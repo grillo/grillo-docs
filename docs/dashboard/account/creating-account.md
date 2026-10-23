@@ -9,7 +9,7 @@ Grillo Cloud accounts are created by invitation. You need an invitation to a pro
 ## Get an invitation
 
 - **New customers:** Grillo creates your project and invites you by email. If you have sensors but no invitation, [contact Grillo Support](/support/contact).
-- **Joining an existing project:** ask Grillo Support to [add you](/dashboard/organizations/managing-members) to the project.
+- **Joining an existing project:** ask an owner or admin of the project to [invite you](/dashboard/organizations/managing-members) to the project.
 
 ## Sign up
 

@@ -50,7 +50,7 @@ Each person in a project has a role.
 | **Admin** | Everything a member can, plus manage members and settings |
 | **Owner** | Everything an admin can, plus see [Billing](/dashboard/billing) |
 
-To change someone's role, [contact Grillo Support](/support/contact).
+Owners and admins change roles in **Settings → Members**; see [Add Colleagues](/dashboard/organizations/managing-members).
 
 ## Leave a project
 

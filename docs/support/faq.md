@@ -19,7 +19,7 @@ By invitation. Grillo creates your project and invites you by email; sign up wit
 
 ### How do I add a colleague or change someone's role?
 
-Project owners and admins do it in **Settings → Members**: **Invite members**, enter the email, choose a role, **Send invite**. Anyone else should ask their project owner or Grillo Support. See [Add Colleagues](/dashboard/organizations/managing-members).
+Project owners and admins do both in **Settings → Members**. To add someone: **Invite members**, enter the email, choose a role, **Send invite**. To change an existing person's role, pick the new role in their **Role** column. Only Grillo Support can make someone an Owner. Anyone else should ask their project owner or Grillo Support. See [Add Colleagues](/dashboard/organizations/managing-members).
 
 ### Which plan do I need?
 

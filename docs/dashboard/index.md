@@ -53,4 +53,4 @@ Some tasks are still on the pages of the previous Grillo Cloud dashboard. They a
 
 Claiming, editing, and unclaiming sensors, changing a sensor's recording mode or threshold, and firmware updates are handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID and what you need.
 
-Projects, members, and plans are managed by Grillo. See [Projects](/dashboard/organizations).
+Projects and plans are managed by Grillo. Project owners and admins add and remove people themselves; see [Add Colleagues](/dashboard/organizations/managing-members).

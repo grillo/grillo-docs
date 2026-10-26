@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "Suivante",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Start Here": {
+    "message": "Pour commencer",
+    "description": "The label for category 'Start Here' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sensors": {
+    "message": "Capteurs (matériel)",
+    "description": "The label for category 'Sensors' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Grillo Pulse": {
+    "message": "Grillo Pulse",
+    "description": "The label for category 'Grillo Pulse' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Grillo One": {
+    "message": "Grillo One",
+    "description": "The label for category 'Grillo One' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Grillo Slide": {
+    "message": "Grillo Slide",
+    "description": "The label for category 'Grillo Slide' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Grillo Cloud": {
+    "message": "Grillo Cloud",
+    "description": "The label for category 'Grillo Cloud' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.cloud-sensors": {
+    "message": "Capteurs",
+    "description": "The label for category 'Sensors' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Structural Monitoring": {
+    "message": "Surveillance des structures",
+    "description": "The label for category 'Structural Monitoring' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Earthquake Detection": {
+    "message": "Détection des séismes",
+    "description": "The label for category 'Earthquake Detection' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Data": {
+    "message": "Données",
+    "description": "The label for category 'Data' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Grillo Cloud for Slide": {
+    "message": "Grillo Cloud for Slide",
+    "description": "The label for category 'Grillo Cloud for Slide' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Concepts": {
+    "message": "Notions",
+    "description": "The label for category 'Concepts' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Support",
+    "description": "The label for category 'Support' in sidebar 'docsSidebar'"
+  }
+}

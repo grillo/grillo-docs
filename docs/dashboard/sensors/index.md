@@ -20,4 +20,6 @@ See [Verify Sensor Status](/dashboard/sensors/sensor-status) for what each statu
 
 ## Changing a sensor
 
-Claiming, editing, and unclaiming a sensor, changing its [recording mode or threshold](/dashboard/sensors/recording-mode), and [updating its firmware](/dashboard/sensors/firmware-updates) are handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID and what you need.
+Only project owners and admins see **Add sensor** and a sensor's settings. Viewers and members can see every sensor and its details but cannot change them; if a sensor needs changing, tell your project's admin.
+
+[Updating firmware](/dashboard/sensors/firmware-updates) is handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID.

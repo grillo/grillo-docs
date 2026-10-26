@@ -31,8 +31,4 @@ Grillo changes plans and contracts for you. To upgrade, renew, or change a plan,
 
 ## Account
 
-Open **Settings → Profile** to see your name and email, and the projects you belong to. To leave a project, go to [cloud.grillo.io/account](https://cloud.grillo.io/account) and select **Leave**.
-
-## Language
-
-Use the language switcher at the right of the menu bar to choose English, French, or Haitian Creole.
+Open **Settings → Profile**, or **Profile** in the account menu (the circle with your initials), to see your name and email, and the projects you belong to. To sign out, choose **Log out** in the account menu. To leave a project, go to [cloud.grillo.io/account](https://cloud.grillo.io/account) and select **Leave**.

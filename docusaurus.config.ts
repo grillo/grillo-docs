@@ -39,12 +39,15 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // French covers the Grillo Cloud pages for viewers and members; other pages
+  // fall back to English.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {label: 'English'},
+      fr: {label: 'Français'},
+    },
   },
 
   plugins: [
@@ -85,6 +88,10 @@ const config: Config = {
         src: 'img/grillo-mark-orange.png',
       },
       items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://grillo.io',
           label: 'Grillo.io',

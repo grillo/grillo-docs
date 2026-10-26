@@ -32,10 +32,16 @@ The menu bar along the top of every page has:
 | **Sensors** | Check the health of every sensor and open its details. See [Sensors](/dashboard/sensors). |
 | **Events** | Browse the earthquakes Grillo Cloud has detected in the last 90 days. See [Event Catalog](/events/event-catalog). |
 | **Archive** | Download recorded waveforms for a time window and a set of sensors. See [Download Waveforms](/dashboard/data/waveforms). |
-| **Alerts** | The record of earthquake alerts sent for the project. |
+| **Alerts** | The log of trigger email alerts sent for the project in the last 90 days. See [Trigger Alerts](/dashboard/alerts). |
 | **Settings** | Your profile, and the project's members, recording and trigger settings, data settings, and billing. See [Settings](/dashboard/organizations). |
 
-The language switcher at the right of the menu bar changes the dashboard between English, French, and Haitian Creole (**KREYÒL**). Parts of the dashboard that are not yet translated into Haitian Creole are shown in English.
+At the right of the menu bar:
+
+- **Project.** If you belong to more than one project, choose the project here. Grillo Cloud reloads on the Live map of the project you chose. With one project, its name is shown instead.
+- **Language.** **EN**, **FR**, or **KR** switches the dashboard between English, French, and Haitian Creole.
+- **Account menu.** The circle with your initials shows your name and email, opens your **Profile**, and has **Log out**.
+
+What you see depends on your [role](/dashboard/organizations#roles). Viewers and members see the same pages but cannot change sensors; see [What You Can Do as a Viewer or Member](/dashboard/account/viewer-and-member).
 
 The browser tab shows the page and the project name, for example **Sensors · Grillo | My Project**.
 
@@ -48,9 +54,9 @@ Some tasks are still on the pages of the previous Grillo Cloud dashboard. They a
 | [cloud.grillo.io/triggers](https://cloud.grillo.io/triggers) | Browse [triggers](/dashboard/triggers) recorded by Structural sensors |
 | [cloud.grillo.io/organization](https://cloud.grillo.io/organization) | Change trigger defaults, [trigger alerts](/dashboard/alerts), and the [real-time export](/dashboard/data/realtime-export) |
 | [cloud.grillo.io/waveforms](https://cloud.grillo.io/waveforms) | View recorded waveforms as charts |
-| [cloud.grillo.io/account](https://cloud.grillo.io/account) | Leave a project, or sign out |
+| [cloud.grillo.io/account](https://cloud.grillo.io/account) | Leave a project |
 | [cloud.grillo.io/billing](https://cloud.grillo.io/billing) | Open **Manage billing** to update your card |
 
-Claiming, editing, and unclaiming sensors, changing a sensor's recording mode or threshold, and firmware updates are handled by Grillo Support for now. [Contact Grillo Support](/support/contact) with the Device ID and what you need.
+Project owners and admins add sensors and change sensor settings. For firmware updates, [contact Grillo Support](/support/contact) with the Device ID.
 
-Projects, members, and plans are managed by Grillo. See [Projects](/dashboard/organizations).
+Grillo creates projects and sets plans. Owners and admins invite and remove members themselves. See [Projects and Settings](/dashboard/organizations).

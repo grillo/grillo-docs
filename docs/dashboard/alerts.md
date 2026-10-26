@@ -66,8 +66,8 @@ A trigger that never reached the alert level shows no alert.
 3. Check spam or junk folders, and ask your email administrator whether mail from Grillo is being blocked.
 4. Use **Send test email** to confirm delivery to your address.
 
-:::note Trigger alerts and the Alerts page
-Trigger alerts are emails about shaking at your sensors. The **Alerts** page in the menu bar is for earthquake early-warning alerts sent to phones, and does not list trigger emails.
+:::note The Alerts page
+The **Alerts** page in the menu bar lists the trigger email alerts sent for the project in the last 90 days, with each alert's sensor, peak PGA, status (**Sent** or **Held**), recipients, and delay. Select an alert to see its details.
 :::
 
 :::warning Not a safety system

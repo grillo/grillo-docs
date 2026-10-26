@@ -17,9 +17,8 @@ Do not send passwords, API tokens, SIM PINs, or other secrets in a support reque
 
 ## Ask Grillo to change your account
 
-These are done by Grillo, not in the dashboard. Include your project name:
+These are done by Grillo, not in the dashboard. Include your project name. (Project owners and admins [add and remove colleagues](/dashboard/organizations/managing-members) themselves.)
 
-- Add or remove a colleague, or change their role
 - Create a new project, or change a project's name or network code
 - Send your seismic data to your own server, or back to Grillo
 - Change your [plan](/dashboard/plans) or contract

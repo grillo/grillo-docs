@@ -19,7 +19,7 @@ By invitation. Grillo creates your project and invites you by email; sign up wit
 
 ### How do I add a colleague or change someone's role?
 
-Ask Grillo Support. Projects, people, and roles are managed by Grillo, not in the dashboard. See [Add Colleagues](/dashboard/organizations/managing-members).
+Project owners and admins do it in **Settings → Members**. If you are a viewer or member, ask your project's admin. See [Add Colleagues](/dashboard/organizations/managing-members).
 
 ### Which plan do I need?
 

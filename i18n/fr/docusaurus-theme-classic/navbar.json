@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "grillo · docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Grillo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Grillo.io": {
+    "message": "Grillo.io",
+    "description": "Navbar item with label Grillo.io"
+  }
+}

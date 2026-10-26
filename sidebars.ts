@@ -55,6 +55,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'dashboard/index'},
       items: [
         'dashboard/account/creating-account',
+        'dashboard/account/viewer-and-member',
         'dashboard/organizations/index',
         'dashboard/organizations/managing-members',
         'dashboard/plans',
@@ -62,6 +63,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Sensors',
+          key: 'cloud-sensors',
           link: {type: 'doc', id: 'dashboard/sensors/index'},
           items: [
             'dashboard/sensors/adding-sensor',
@@ -89,6 +91,7 @@ const sidebars: SidebarsConfig = {
             'events/event-catalog',
             'events/event-details',
             'events/live-map',
+            'events/reading-an-alert',
             'events/how-detection-works',
           ],
         },

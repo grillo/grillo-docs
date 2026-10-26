@@ -10,7 +10,7 @@ Grillo crée les projets. Si vous appartenez à plusieurs projets, passez de l�
 
 ## Paramètres
 
-Ouvrez **Paramètres** dans la barre de menu. Les sections sont listées à gauche, en deux groupes.
+Ouvrez **Paramètres** dans la barre de menu. Les sections sont listées à gauche, en deux groupes. Vous ne voyez que les sections utiles à votre rôle : les lecteurs voient **Profil** et **Notifications**, les membres voient aussi **Membres**, et les administrateurs voient toutes les sections sauf **Facturation**.
 
 **VOUS**
 
@@ -19,7 +19,7 @@ Ouvrez **Paramètres** dans la barre de menu. Les sections sont listées à gauc
 | **Profil** | Votre nom, votre e-mail et les projets auxquels vous appartenez |
 | **Notifications** | Les e-mails qui vous sont envoyés |
 
-**PROJET** (marqué **ADMIN** : réservé aux propriétaires et administrateurs du projet)
+**PROJET** (marqué **ADMIN** : géré par les propriétaires et administrateurs du projet)
 
 | Section | Contenu |
 |---|---|

@@ -12,6 +12,8 @@ Grillo decides whether an earthquake warrants an alert, from its automatic check
 
 Open **Project settings → Earthquake alerts**. Project owners and admins can change it.
 
+![Project settings, Earthquake alerts: alerts on from magnitude 3.2, email recipients, and a Grillo JSON and a Slack webhook](/img/screenshots/cloud/earthquake-alerts-settings.png)
+
 1. Set **Alerts** to **On**.
 2. Enter the **Minimum magnitude**, from 0 to 9.5. The default is 3.
 3. Set **Email alerts** to **On** and choose the **Recipients**: pick members from the list and select **Add**, or type any address and select **Add address**. Up to 25 recipients; they do not need a Grillo Cloud account. With no one chosen, the project's owners and admins get them.
@@ -52,6 +54,8 @@ The **Alert log** at the bottom of **Project settings → Earthquake alerts** li
 ## The Alerts page
 
 Open **Alerts** to see every alert decision Grillo made for the earthquakes in your project, newest first. It is in the menu bar on the Seismic and Enterprise plans, and everyone in the project can open it.
+
+![The Alerts tab: summary tiles, filters, and each alert decision with its deliveries, delay, and the project's own alert](/img/screenshots/cloud/alerts.png)
 
 The tiles at the top count the alerts **sent**, **withdrawn**, and **held (not alerted)**, the **failed deliveries**, and the **median alert time after origin**.
 

@@ -4,11 +4,11 @@ title: Stream Data to Your Own Ringserver
 
 # Stream Data to Your Own Ringserver
 
-:::note Not available in the current Grillo Cloud
-The previous Grillo Cloud could stream a project's live waveforms to a [ringserver](https://github.com/EarthScope/ringserver) you run, as miniSEED over DataLink. The current Grillo Cloud does not have this real-time export yet, and there is no setting for it. If you need it, [contact Grillo Support](/support/contact) with your project name and your ringserver's address.
+:::note Coming soon
+Grillo Cloud will stream a project's live waveforms to a [ringserver](https://github.com/EarthScope/ringserver) you run, as miniSEED over DataLink, for SeisComP, Swarm, ObsPy, or any other SeedLink client. It is not available yet. To hear when it is, [contact Grillo Support](/support/contact) with your project name and your ringserver's address.
 :::
 
-## What you can use instead
+Until then:
 
 | You want | Use |
 |---|---|

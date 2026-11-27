@@ -6,6 +6,8 @@ title: Waveforms
 
 Open **Waveforms** to look at the data your sensors recorded and download it. It is in the menu bar on the Seismic, Enterprise, and Structural [plans](/dashboard/plans), for the project's owners, admins, and members.
 
+![The Waveforms page with the station and channel picker, span buttons, end time, Download, and one channel's trace](/img/screenshots/cloud/waveforms.png)
+
 Projects that [send their data to their own server](/dashboard/data/data-server), such as those on the Network plan, have no waveforms in Grillo Cloud.
 
 ## View waveforms

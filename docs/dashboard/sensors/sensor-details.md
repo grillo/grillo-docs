@@ -6,6 +6,8 @@ title: Sensor Details
 
 Select a sensor on the **Sensors** page to open its page. The top shows the station, its name, and its state, with chips for the hardware type, Device ID, firmware, and connection (with the mobile operator for cellular sensors). **Open in waveforms →** opens its recorded data on the [Waveforms](/dashboard/data/waveforms) page.
 
+![A sensor's page: chips for type, device, firmware, and link, the live waveform, and connectivity over 7 days](/img/screenshots/cloud/sensor-page.png)
+
 The page has these sections, top to bottom.
 
 ## Live waveform

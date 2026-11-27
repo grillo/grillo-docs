@@ -29,7 +29,7 @@ What else Grillo Cloud does depends on the project's [plan](/dashboard/plans):
 - **Network:** sensors send their seismic data to [your own server](/dashboard/data/data-server); Grillo Cloud keeps watching their health.
 - **Seismic** and **Enterprise:** [automatic earthquake detection](/events), an event catalog, a live map, [earthquake alerts](/events/earthquake-alerts), and waveforms to view and download.
 
-Every plan includes the read-only [Data API](/dashboard/data/api).
+The Enterprise plan adds the read-only [Data API](/dashboard/data/api).
 
 ## Grillo Cloud for Slide
 

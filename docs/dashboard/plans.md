@@ -11,14 +11,13 @@ Every Grillo Cloud project has a plan. The plan decides where your sensors' seis
 | **Structural** | Buildings, warehouses, infrastructure | Live, Sensors, Triggers, Waveforms | [Triggers](/dashboard/triggers), [trigger alerts](/dashboard/alerts) |
 | **Network** | Seismic networks that run their own processing | Sensors | [Data destination](/dashboard/data/data-server) |
 | **Seismic** | Networks wanting automatic earthquake catalogs | Live, Sensors, Events, Alerts, Waveforms | [Events](/events/event-catalog), [Live map](/events/live-map), [earthquake alerts](/events/earthquake-alerts), [Waveforms](/dashboard/data/waveforms) |
-| **Enterprise** | National systems and earthquake early warning | Live, Sensors, Events, Alerts, Waveforms | As Seismic, scoped to your system |
+| **Enterprise** | National systems and earthquake early warning | Live, Sensors, Events, Alerts, Waveforms | As Seismic, plus the [Data API](/dashboard/data/api) |
 
 ## Included in every plan
 
 - Sensor health, connectivity history, and status
 - Claiming sensors and editing their station details yourself
 - Unlimited users in the project
-- The [Data API](/dashboard/data/api)
 - 12 months of data retention, unless your contract says otherwise
 
 ## Structural
@@ -37,7 +36,7 @@ Grillo detects and locates earthquakes from your sensors' continuous data: a liv
 
 ## Enterprise
 
-Everything in Seismic, scoped to your system. Enterprise can include earthquake early warning, more data retention and export destinations, private-cloud or on-premises hosting, and consultancy. [Contact Grillo](/support/contact) to scope it.
+Everything in Seismic, scoped to your system, plus the read-only [Data API](/dashboard/data/api) for your own software. Enterprise can include earthquake early warning, more data retention and export destinations, private-cloud or on-premises hosting, and consultancy. [Contact Grillo](/support/contact) to scope it.
 
 ## See your plan
 

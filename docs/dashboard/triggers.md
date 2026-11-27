@@ -6,6 +6,8 @@ title: Triggers
 
 A trigger is shaking at one sensor that crossed its trigger threshold. Grillo records it from a few seconds before the shaking started until it died down, with its peak ground acceleration (PGA), peak ground velocity (PGV), duration, and dominant frequency.
 
+![The Triggers list: start time, sensors, peak PGA, peak PGV, duration, dominant frequency, and alert](/img/screenshots/cloud/triggers.png)
+
 Triggers are not earthquake detections. Each one is shaking at a sensor, whatever caused it: an earthquake, machinery, traffic, wind, construction, or someone bumping the sensor.
 
 **Triggers** is a tab on the [Structural plan](/modules/structural-health-monitoring). Everyone in the project can open it.
@@ -43,6 +45,8 @@ Select a row to open the shaking event.
 ## A shaking event
 
 The page title gives the start time in UTC and how many sensors triggered, with an **alert sent** or **alert held** badge when there was an alert.
+
+![A shaking event's page: peak PGA, PGV, duration, and frequency, each sensor's figures and alert, and the archive waveforms with onset and peak marked](/img/screenshots/cloud/trigger-page.png)
 
 The tiles at the top give the event's **peak PGA**, **peak PGV**, **duration**, and **dominant frequency**.
 

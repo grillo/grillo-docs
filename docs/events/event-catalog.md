@@ -6,6 +6,8 @@ title: Event Catalog
 
 Open **Events** to browse the earthquakes Grillo Cloud has detected for the active project, newest first. New events appear in the list as they are detected.
 
+![The Events list with magnitude, origin time, place, depth, stations, status, and a Replay button on each row](/img/screenshots/cloud/events.png)
+
 ## Filter and search
 
 - **Time range:** **24 h**, **7 d**, **30 d** (the default), **1 y**, or **all**.

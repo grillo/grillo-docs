@@ -11,11 +11,11 @@ The Grillo Cloud data API gives your own software read-only access to one projec
 - The API reads data; it cannot change anything in your project.
 - The full OpenAPI 3.1 description is at [`https://api.grillo.io/v1/openapi.yaml`](https://api.grillo.io/v1/openapi.yaml). It needs no key.
 
-The API is included in every [plan](/dashboard/plans). For waveform data, [download it](/dashboard/data/waveforms#download-waveforms) from **Waveforms** in Grillo Cloud.
+The API is part of the Enterprise [plan](/dashboard/plans). For waveform data, [download it](/dashboard/data/waveforms#download-waveforms) from **Waveforms** in Grillo Cloud.
 
 ## Get an API key
 
-[Contact Grillo Support](/support/contact) with your project name and what the key is for, for example "Partner SCADA". Grillo issues the key and sends it to you.
+On an Enterprise project, [contact Grillo Support](/support/contact) with your project name and what the key is for, for example "Partner SCADA". Grillo issues the key and sends it to you.
 
 - Each key reads one project.
 - A project can have up to 10 active keys. Use a separate key for each system, so you can revoke one without affecting the others.

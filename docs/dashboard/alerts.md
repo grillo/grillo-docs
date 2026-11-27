@@ -6,6 +6,8 @@ title: Trigger Alerts
 
 On the Structural plan, Grillo Cloud can tell your team when a [trigger](/dashboard/triggers) reaches an alert level: by email, by SMS, and to your own systems or chat channels through webhooks. The level is measured as horizontal peak ground acceleration (PGA), in mg.
 
+![Project settings, Trigger alerts: alerts on, alert level, email recipients, and a webhook](/img/screenshots/cloud/trigger-alerts-settings.png)
+
 The alert level is separate from the [trigger threshold](/dashboard/sensors/recording-mode). The threshold decides when a sensor records; the alert level decides which of those recordings are worth an alert. For example, with a 5 mg threshold and a 50 mg alert level, Grillo records every disturbance above 5 mg and alerts you only when shaking reaches 50 mg.
 
 ## Set up alerts

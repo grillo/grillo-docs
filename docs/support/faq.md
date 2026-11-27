@@ -88,7 +88,7 @@ For Slide, use [Exports](/slide-cloud/exports).
 
 ### Is there a public API?
 
-Yes. Grillo Cloud has a read-only [Data API](/dashboard/data/api) for sensors, health reports, events, and triggers, with keys issued by Grillo Support. Grillo Cloud for Slide has its own read-only [API tokens](/slide-cloud/firmware-and-api#api-tokens).
+On the Enterprise plan, yes. Grillo Cloud has a read-only [Data API](/dashboard/data/api) for sensors, health reports, events, and triggers, with keys issued by Grillo Support. Grillo Cloud for Slide has its own read-only [API tokens](/slide-cloud/firmware-and-api#api-tokens).
 
 ### Is the Live map an official earthquake warning?
 

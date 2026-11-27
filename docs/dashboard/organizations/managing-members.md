@@ -6,6 +6,8 @@ title: Add Colleagues
 
 Owners and admins manage who belongs to a project in **Project settings → Members**. Members can see the list but not change it.
 
+![Project settings, Members: each member's role and last sign-in, with Remove, and pending invitations with Resend and Revoke](/img/screenshots/cloud/members.png)
+
 ## Add someone
 
 1. Open the account menu (your initials, top right) and choose **Project settings**, then **Members**.

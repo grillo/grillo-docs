@@ -56,6 +56,8 @@ A setting the sensor's firmware does not accept reads **needs newer firmware** a
 
 On Structural projects, the owner can also set the default trigger in **Project settings → Triggers**:
 
+![Project settings, Triggers: channel, threshold, seconds before and after, and a chart of how many recent triggers each threshold keeps](/img/screenshots/cloud/project-triggers.png)
+
 | Setting | Range | Grillo default |
 |---|---|---|
 | **Channel** | **Either horizontal (H_ANY)**, **East (HNE)**, **North (HNN)**, or **Vertical (HNZ)** | Either horizontal |

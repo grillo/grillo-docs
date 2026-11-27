@@ -6,6 +6,8 @@ title: Event Details
 
 Select an event in **Events**, on the Live map, or on the **Alerts** page to open its page. The title gives the magnitude and the place, with the event's status, its Event ID, and its revision.
 
+![An event's page: map with rays to the stations, origin, magnitudes, alert, and waveforms of the nearest stations](/img/screenshots/cloud/event-page.png)
+
 An event imported from the previous Grillo Cloud is marked **old system**, with a line saying where it came from and, for an event from another agency's catalog such as USGS or EMSC, a link to its page there.
 
 Everything on the page is an automatic estimate. It can differ from a catalog reviewed by a seismic agency. When a new revision of the event arrives, the page updates itself.

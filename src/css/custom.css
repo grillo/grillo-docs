@@ -476,7 +476,8 @@ h5 {
   background: var(--danger-bg);
 }
 
-.alert__heading {
+.alert__heading,
+.theme-admonition [class*='admonitionHeading'] {
   color: var(--fg-1);
   font: 400 15px/1.3 var(--font-display);
   letter-spacing: -0.02em;

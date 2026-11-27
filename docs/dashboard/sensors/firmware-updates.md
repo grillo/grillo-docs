@@ -6,7 +6,7 @@ title: Update firmware
 
 Grillo sensors can update their firmware over the air (OTA): the sensor is given a target version, and downloads and installs it the next time it checks in.
 
-:::note Done by Grillo Support for now
+:::note[Done by Grillo Support for now]
 Grillo Cloud does not have a way to start a firmware update yet. [Contact Grillo Support](/support/contact) with the Device IDs and the version you want, and Grillo sets the update for you.
 :::
 

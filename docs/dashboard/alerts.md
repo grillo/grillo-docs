@@ -105,6 +105,6 @@ The [Triggers page](/dashboard/triggers) also marks each shaking event's alert a
 3. For email, check spam or junk folders, and ask your email administrator whether mail from Grillo is being blocked.
 4. Use **Send test alert**, or **Test send** on a webhook, to check delivery.
 
-:::warning Not a safety system
+:::warning[Not a safety system]
 Alerts can be delayed by email providers, mobile networks, and the receiving system. Do not rely on them alone for life-safety decisions.
 :::

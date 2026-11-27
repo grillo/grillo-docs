@@ -72,7 +72,7 @@ Owners and admins can change it. Members can see it; viewers do not see it.
 
 Each sensor switches at its next status report, in about a minute, and sends its seismic data there from then on.
 
-:::note After a sensor restarts
+:::note[After a sensor restarts]
 On current Grillo Pulse firmware, a sensor goes back to Grillo's default address each time it restarts, until its next status report, about a minute later, tells it your address again. Expect to miss up to a minute of data on your server after each restart.
 :::
 

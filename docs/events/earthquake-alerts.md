@@ -80,6 +80,6 @@ Select a row to see its detail below the list: each delivery's target, status, a
 
 On the [Events](/events/event-catalog) page, an event an alert was sent for is marked **alerted**; select the mark to open its alert here.
 
-:::warning Not a public warning service
+:::warning[Not a public warning service]
 Earthquake alerts are automatic and can be delayed by email providers, mobile networks, and the receiving system. Near the epicenter, strong shaking can arrive before any alert. They do not replace instructions from emergency services or an official earthquake-warning authority. See [Earthquake Early Warning](/concepts/earthquake-early-warning).
 :::

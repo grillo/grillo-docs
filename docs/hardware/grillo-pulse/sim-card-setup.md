@@ -10,7 +10,7 @@ Pulse Cellular connects over LTE Cat-1. If your order includes a Grillo SIM and 
 
 If your order does not include a Grillo SIM, [contact Grillo Support](/support/contact) before you fit your own.
 
-:::warning Do not change the SIM
+:::warning[Do not change the SIM]
 Leave the supplied SIM in place. The sensor is set up for that SIM, and opening the enclosure can affect its weatherproofing. If you need to use a different SIM or carrier, [contact Grillo Support](/support/contact) first.
 :::
 

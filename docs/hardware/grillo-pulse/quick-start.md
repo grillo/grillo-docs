@@ -6,7 +6,7 @@ title: Pulse quick start
 
 Bench-test a Grillo Pulse before you take it to site. It takes about 15 minutes and catches most problems while they are still easy to fix.
 
-:::warning Before you connect anything
+:::warning[Before you connect anything]
 Power the sensor only from 9–16 V DC (12 V nominal), through its M12 power connector. Do not connect a USB cable. Open the enclosure only to plug in the geophone (step 3), or when Grillo Support asks you to.
 :::
 

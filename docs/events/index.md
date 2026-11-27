@@ -28,6 +28,6 @@ You get:
 - [Earthquake Alerts](/events/earthquake-alerts)
 - [How Detection Works](/events/how-detection-works)
 
-:::warning Not a public warning service
+:::warning[Not a public warning service]
 Detected events are automatic estimates. They do not replace instructions from emergency services or an official earthquake-warning authority.
 :::

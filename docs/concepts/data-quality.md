@@ -1,8 +1,8 @@
 ---
-title: Data Quality
+title: Data quality
 ---
 
-# Seismic Data Quality
+# Seismic data quality
 
 Data quality describes whether a recording is complete, correctly timed, correctly identified, and suitable for its intended use. A waveform can look clean while still having incorrect timing or metadata.
 

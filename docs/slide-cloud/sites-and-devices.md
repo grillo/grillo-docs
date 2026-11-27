@@ -1,8 +1,8 @@
 ---
-title: Sites and Devices
+title: Sites and devices
 ---
 
-# Sites and Devices
+# Sites and devices
 
 ## Open a site
 

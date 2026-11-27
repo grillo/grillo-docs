@@ -1,8 +1,8 @@
 ---
-title: Event Details
+title: Event details
 ---
 
-# Event Details
+# Event details
 
 Select an event in **Events**, on the Live map, or on the **Alerts** page to open its page. The title gives the magnitude and the place, with the event's status, its Event ID, and its revision.
 

@@ -1,8 +1,8 @@
 ---
-title: Connect and Install
+title: Connect and install
 ---
 
-# Connect and Install Grillo One
+# Connect and install Grillo One
 
 ## Before you begin
 

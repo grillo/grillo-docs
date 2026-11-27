@@ -1,8 +1,8 @@
 ---
-title: Earthquake Alerts
+title: Earthquake alerts
 ---
 
-# Earthquake Alerts
+# Earthquake alerts
 
 On the Seismic and Enterprise [plans](/dashboard/plans), Grillo can alert your team when it detects an earthquake: by email, by SMS, and to your own systems or chat channels through webhooks.
 

@@ -2,7 +2,7 @@
 title: Troubleshooting
 ---
 
-# Grillo Slide Troubleshooting
+# Grillo Slide troubleshooting
 
 Slide devices sleep between cycles, so most checks mean waiting for the next 6-hour slot: 00:00, 06:00, 12:00, or 18:00 UTC.
 

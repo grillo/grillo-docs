@@ -1,8 +1,8 @@
 ---
-title: Sensor Placement
+title: Sensor placement
 ---
 
-# Sensor Placement
+# Sensor placement
 
 This page is about seismic stations. For Grillo Slide, see [Landslide monitoring with GNSS](/concepts/landslide-monitoring).
 

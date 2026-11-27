@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
 slug: /
-title: Grillo Documentation
+title: Grillo documentation
 ---
 
-# Grillo Documentation
+# Grillo documentation
 
 Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
 

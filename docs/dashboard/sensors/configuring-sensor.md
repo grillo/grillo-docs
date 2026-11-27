@@ -1,8 +1,8 @@
 ---
-title: Edit a Sensor
+title: Edit a sensor
 ---
 
-# Edit a Sensor
+# Edit a sensor
 
 Owners and admins can change a station's name, site, notes, and position. Open the sensor's page and select **Edit**, at the top of the page or in the **Station** card.
 

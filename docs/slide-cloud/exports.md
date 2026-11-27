@@ -1,8 +1,8 @@
 ---
-title: Export Data
+title: Export data
 ---
 
-# Export Slide Data
+# Export Slide data
 
 You can download your readings as files, and request raw GNSS observations for your own processing.
 

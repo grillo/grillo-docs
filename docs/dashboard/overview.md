@@ -1,8 +1,8 @@
 ---
-title: Home Page
+title: Home page
 ---
 
-# Home Page
+# Home page
 
 After you sign in, Grillo Cloud opens on the first tab of your project's [plan](/dashboard/plans):
 

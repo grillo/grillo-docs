@@ -1,8 +1,8 @@
 ---
-title: Sensor Map
+title: Sensor map
 ---
 
-# Sensor Map
+# Sensor map
 
 The **Sensors** page is a [table](/dashboard/sensors/table-view); it has no map view. To see sensors on a map:
 

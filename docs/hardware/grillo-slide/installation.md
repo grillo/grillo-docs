@@ -1,8 +1,8 @@
 ---
-title: Install on Site
+title: Install on site
 ---
 
-# Install Grillo Slide on Site
+# Install Grillo Slide on site
 
 Install the kit after you have [fitted the SIM and set the APN](/hardware/grillo-slide/sim-and-apn).
 

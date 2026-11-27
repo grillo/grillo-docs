@@ -1,8 +1,8 @@
 ---
-title: Firmware and API Access
+title: Firmware and API access
 ---
 
-# Firmware and API Access
+# Firmware and API access
 
 ## Firmware updates
 

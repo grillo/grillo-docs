@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'Start Here',
+      label: 'Start here',
       link: {type: 'doc', id: 'getting-started/index'},
       items: [
         'getting-started/what-is-grillo',
@@ -76,13 +76,13 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
-          label: 'Structural Monitoring',
+          label: 'Structural monitoring',
           link: {type: 'doc', id: 'modules/structural-health-monitoring'},
           items: ['dashboard/triggers', 'dashboard/alerts'],
         },
         {
           type: 'category',
-          label: 'Earthquake Detection',
+          label: 'Earthquake detection',
           link: {type: 'doc', id: 'events/index'},
           items: [
             'events/event-catalog',

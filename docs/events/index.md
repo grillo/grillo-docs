@@ -1,8 +1,8 @@
 ---
-title: Earthquake Detection
+title: Earthquake detection
 ---
 
-# Earthquake Detection
+# Earthquake detection
 
 On the Seismic and Enterprise [plans](/dashboard/plans), Grillo Cloud detects earthquakes from your sensors' data automatically.
 

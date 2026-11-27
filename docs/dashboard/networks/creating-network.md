@@ -1,8 +1,8 @@
 ---
-title: Network and Station Codes
+title: Network and station codes
 ---
 
-# Network and Station Codes
+# Network and station codes
 
 Grillo Cloud names seismic stations with FDSN codes so your data lines up with other seismic software. A station is written as network code and station code, for example `HT.E4F5`.
 

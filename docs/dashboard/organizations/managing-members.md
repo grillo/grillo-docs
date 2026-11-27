@@ -1,8 +1,8 @@
 ---
-title: Add Colleagues
+title: Add colleagues
 ---
 
-# Add Colleagues to a Project
+# Add colleagues to a project
 
 Owners and admins manage who belongs to a project in **Project settings → Members**. Members can see the list but not change it.
 

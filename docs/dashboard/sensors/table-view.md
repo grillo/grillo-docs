@@ -1,8 +1,8 @@
 ---
-title: Sensor Table
+title: Sensor table
 ---
 
-# Sensor Table
+# Sensor table
 
 The **Sensors** page shows every sensor in the project as a row. Problems come first: rows start sorted by state, with offline sensors at the top. On the Network plan they start sorted by station.
 

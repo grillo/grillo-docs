@@ -1,8 +1,8 @@
 ---
-title: Event Catalog
+title: Event catalog
 ---
 
-# Event Catalog
+# Event catalog
 
 Open **Events** to browse the earthquakes Grillo Cloud has detected for the active project, newest first. New events appear in the list as they are detected.
 

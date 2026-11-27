@@ -37,6 +37,8 @@ Open the sensor's page and find **Settings**. **This device** lists each setting
 
 **Last sent** below lists recent changes, who sent them, and why.
 
+![A sensor's Settings: each setting's desired value and where it comes from, beside what the sensor reports, with a trigger change pending and the last settings sent](/img/screenshots/cloud/sensor-settings.png)
+
 ## Change a sensor's settings
 
 The project owner can:

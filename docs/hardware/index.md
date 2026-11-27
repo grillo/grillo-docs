@@ -2,7 +2,7 @@
 title: Sensors
 ---
 
-# Grillo Sensors
+# Grillo sensors
 
 ## Grillo Pulse
 

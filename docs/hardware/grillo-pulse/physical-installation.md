@@ -1,5 +1,5 @@
 ---
-title: Physical Installation
+title: Physical installation
 ---
 
 # Install a Grillo Pulse

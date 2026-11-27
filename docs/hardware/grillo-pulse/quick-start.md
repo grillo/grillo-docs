@@ -1,8 +1,8 @@
 ---
-title: Pulse Quick Start
+title: Pulse quick start
 ---
 
-# Pulse Quick Start
+# Pulse quick start
 
 Bench-test a Grillo Pulse before you take it to site. It takes about 15 minutes and catches most problems while they are still easy to fix.
 

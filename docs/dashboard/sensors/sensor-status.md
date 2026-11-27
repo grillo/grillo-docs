@@ -1,8 +1,8 @@
 ---
-title: Verify Sensor Status
+title: Verify sensor status
 ---
 
-# Verify Sensor Status
+# Verify sensor status
 
 Use the **Sensors** page and the sensor's page to confirm that Grillo Cloud is receiving data from a sensor.
 

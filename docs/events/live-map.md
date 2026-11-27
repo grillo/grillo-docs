@@ -1,8 +1,8 @@
 ---
-title: Live Map
+title: Live map
 ---
 
-# Live Map
+# Live map
 
 **Live** is the first page you see after signing in. It shows your stations on a map, and earthquake detection as it happens: which stations pick up the waves, where the earthquake is, and how soon the shaking reaches nearby places. You can also [replay a past event](#replay-a-past-event) in the same view.
 

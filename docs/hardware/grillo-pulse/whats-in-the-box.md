@@ -1,8 +1,8 @@
 ---
-title: What's in the Box
+title: What's in the box
 ---
 
-# What's in the Grillo Pulse Box
+# What's in the Grillo Pulse box
 
 A Grillo Pulse ships as the sensor in its enclosure. Cables, antennas, and solar kits are accessories, so what else arrives depends on your order. Check the box against your packing list before you claim or install the sensor.
 

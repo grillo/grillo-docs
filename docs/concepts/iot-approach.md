@@ -1,10 +1,10 @@
 ---
-title: Connected Sensor Networks
+title: Connected sensor networks
 ---
 
 import {DataPathDiagram} from '@site/src/components/Diagrams';
 
-# Connected Sensor Networks
+# Connected sensor networks
 
 Connected sensing combines compact instruments, standard communications, remote health telemetry, and centralized processing. It can make dense deployments practical, but connectivity does not replace good instrumentation or network design.
 

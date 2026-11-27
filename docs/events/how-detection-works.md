@@ -1,8 +1,8 @@
 ---
-title: How Detection Works
+title: How detection works
 ---
 
-# How Earthquake Detection Works
+# How earthquake detection works
 
 Grillo Cloud receives seismic waveforms from your sensors, picks candidate arrivals at each station, associates picks from several stations into one earthquake, and writes the resulting event to the catalog in Grillo Cloud.
 

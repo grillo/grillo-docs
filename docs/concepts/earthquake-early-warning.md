@@ -1,10 +1,10 @@
 ---
-title: Earthquake Early Warning
+title: Earthquake early warning
 ---
 
 import {WarningTimeDiagram} from '@site/src/components/Diagrams';
 
-# Earthquake Early Warning
+# Earthquake early warning
 
 Earthquake early warning (EEW) detects an earthquake after it begins and attempts to notify locations before damaging shaking reaches them. It is not earthquake prediction.
 

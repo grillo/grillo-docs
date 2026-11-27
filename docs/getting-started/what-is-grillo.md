@@ -1,8 +1,8 @@
 ---
-title: What Is Grillo?
+title: What is Grillo?
 ---
 
-# What Is Grillo?
+# What is Grillo?
 
 Grillo builds connected sensors and cloud software for earthquake and landslide monitoring.
 

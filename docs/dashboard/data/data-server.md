@@ -1,8 +1,8 @@
 ---
-title: Send Data to Your Own Server
+title: Send data to your own server
 ---
 
-# Send Data to Your Own Server
+# Send data to your own server
 
 On the Network [plan](/dashboard/plans), your sensors send their seismic data to your own server, for example to feed Earthworm or SeisComP on your network. You choose the address in Grillo Cloud.
 

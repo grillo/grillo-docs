@@ -1,8 +1,8 @@
 ---
-title: Start Here
+title: Start here
 ---
 
-# Start Here
+# Start here
 
 Grillo makes sensors for monitoring earthquakes and landslides, and the cloud software to manage them and use their data.
 

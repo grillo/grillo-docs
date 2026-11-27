@@ -1,8 +1,8 @@
 ---
-title: Projects and Settings
+title: Projects and settings
 ---
 
-# Projects and Settings
+# Projects and settings
 
 A project holds one team's sensors, events or triggers, alerts, and members. Everything you see in Grillo Cloud belongs to the project picked in the project selector, at the top right. If you belong to more than one project, pick another there to switch the whole dashboard to it.
 

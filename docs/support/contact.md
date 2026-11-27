@@ -1,8 +1,8 @@
 ---
-title: Contact Support
+title: Contact support
 ---
 
-# Contact Grillo Support
+# Contact Grillo support
 
 For help with a sensor, an account, or your data:
 

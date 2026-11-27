@@ -1,8 +1,8 @@
 ---
-title: Claim a Sensor
+title: Claim a sensor
 ---
 
-# Claim a Sensor
+# Claim a sensor
 
 When your Grillo Pulse or Grillo One arrives, claim it in Grillo Cloud. Claiming adds the sensor to your project, so it shows up in your sensor list.
 

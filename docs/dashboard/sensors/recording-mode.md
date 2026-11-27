@@ -1,8 +1,8 @@
 ---
-title: Recording Mode and Thresholds
+title: Recording mode and thresholds
 ---
 
-# Recording Mode and Thresholds
+# Recording mode and thresholds
 
 A sensor records in one of two modes:
 

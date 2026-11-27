@@ -1,8 +1,8 @@
 ---
-title: Frequently Asked Questions
+title: Frequently asked questions
 ---
 
-# Frequently Asked Questions
+# Frequently asked questions
 
 ## Accounts and access
 

@@ -1,8 +1,8 @@
 ---
-title: Seismic Networks
+title: Seismic networks
 ---
 
-# Seismic Networks
+# Seismic networks
 
 A seismic network combines observations from multiple stations to detect, locate, and characterize earthquakes across an area.
 

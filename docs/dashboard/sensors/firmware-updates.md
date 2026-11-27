@@ -1,8 +1,8 @@
 ---
-title: Update Firmware
+title: Update firmware
 ---
 
-# Update Sensor Firmware
+# Update sensor firmware
 
 Grillo sensors can update their firmware over the air (OTA): the sensor is given a target version, and downloads and installs it the next time it checks in.
 

@@ -1,8 +1,8 @@
 ---
-title: Create an Account
+title: Create an account
 ---
 
-# Create a Grillo Cloud Account
+# Create a Grillo Cloud account
 
 Grillo Cloud accounts are created by invitation. You need an invitation to a project before you can sign in.
 

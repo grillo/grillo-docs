@@ -1,10 +1,10 @@
 ---
-title: Landslide Monitoring with GNSS
+title: Landslide monitoring with GNSS
 ---
 
 import {LandslideKitDiagram} from '@site/src/components/Diagrams';
 
-# Landslide Monitoring with GNSS
+# Landslide monitoring with GNSS
 
 Many landslides move slowly, by millimetres or centimetres over days to months, before they move fast. Measuring that slow movement shows which ground is active, how fast it is going, and whether it is speeding up.
 

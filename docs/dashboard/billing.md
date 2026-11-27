@@ -1,8 +1,8 @@
 ---
-title: Billing and Account
+title: Billing and account
 ---
 
-# Billing and Account
+# Billing and account
 
 ## Billing
 

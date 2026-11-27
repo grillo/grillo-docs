@@ -1,8 +1,8 @@
 ---
-title: Fit the SIM and Set the APN
+title: Fit the SIM and set the APN
 ---
 
-# Fit the SIM and Set the APN
+# Fit the SIM and set the APN
 
 The base uploads readings over LTE. Kits ship without a SIM, so you fit your own and tell the base which APN to use. Only the base needs this; rovers have no SIM.
 

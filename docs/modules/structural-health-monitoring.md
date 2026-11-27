@@ -1,8 +1,8 @@
 ---
-title: Structural Monitoring
+title: Structural monitoring
 ---
 
-# Structural Monitoring
+# Structural monitoring
 
 The **Structural** [plan](/dashboard/plans) is for monitoring vibration in buildings, warehouses, bridges, and other infrastructure. Instead of detecting earthquakes across a network, Grillo records the shaking at each sensor whenever it crosses a threshold, and alerts your team when it reaches an alert level.
 

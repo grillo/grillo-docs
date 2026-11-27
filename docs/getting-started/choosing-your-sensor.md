@@ -1,8 +1,8 @@
 ---
-title: Choosing Your Sensor
+title: Choosing your sensor
 ---
 
-# Choosing Your Sensor
+# Choosing your sensor
 
 | | Grillo Pulse | Grillo One | Grillo Slide |
 |---|---|---|---|

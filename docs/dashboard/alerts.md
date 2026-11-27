@@ -1,8 +1,8 @@
 ---
-title: Trigger Alerts
+title: Trigger alerts
 ---
 
-# Trigger Alerts
+# Trigger alerts
 
 On the Structural plan, Grillo Cloud can tell your team when a [trigger](/dashboard/triggers) reaches an alert level: by email, by SMS, and to your own systems or chat channels through webhooks. The level is measured as horizontal peak ground acceleration (PGA), in mg.
 

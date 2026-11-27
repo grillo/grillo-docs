@@ -6,7 +6,7 @@ title: Sensor table
 
 The **Sensors** page shows every sensor in the project as a row. Problems come first: rows start sorted by state, with offline sensors at the top. On the Network plan they start sorted by station.
 
-![The Sensors table with each sensor's state, data, station, type, firmware, link, uptime, and last health report](/img/screenshots/cloud/sensors.png)
+![The Sensors table, offline and late sensors first, with each sensor's state, data, station, type, firmware, link, uptime, and last health report](/img/screenshots/cloud/sensors.png)
 
 ## Columns
 

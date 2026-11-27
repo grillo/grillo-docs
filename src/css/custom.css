@@ -761,3 +761,31 @@ pre {
   height: auto;
   border: 1px solid var(--border-hairline);
 }
+
+/* Task-list checkboxes: a square hairline box, the same in every browser */
+.markdown .contains-task-list input[type='checkbox'] {
+  appearance: none;
+  display: inline-grid;
+  place-content: center;
+  width: 14px;
+  height: 14px;
+  margin: 0 8px 0 0;
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface);
+  vertical-align: -2px;
+}
+
+.markdown .contains-task-list input[type='checkbox']:checked::after {
+  width: 8px;
+  height: 4px;
+  margin-top: -2px;
+  border-bottom: 1.5px solid var(--brand-orange);
+  border-left: 1.5px solid var(--brand-orange);
+  content: '';
+  transform: rotate(-45deg);
+}
+
+.markdown .contains-task-list .task-list-item {
+  padding-left: 26px;
+  text-indent: -26px;
+}

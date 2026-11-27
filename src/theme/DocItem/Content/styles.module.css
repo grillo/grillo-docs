@@ -11,15 +11,13 @@
   padding: 4px 10px;
   border: 1px solid var(--border-default);
   background: transparent;
-  color: var(--fg-3);
-  font: 500 11px/1.5 var(--font-mono);
-  letter-spacing: 0.03em;
+  color: var(--fg-1);
+  font: 500 12px/1.5 var(--font-sans);
   cursor: pointer;
   text-decoration: none;
 }
 
 .actions button:hover,
 .actions a:hover {
-  background: var(--bg-elevated);
-  color: var(--fg-1);
+  border-color: var(--border-strong);
 }

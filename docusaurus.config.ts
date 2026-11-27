@@ -20,7 +20,12 @@ function requiredEnv(name: string): string {
 const config: Config = {
   title: 'Grillo Docs',
   tagline: 'Earthquake and landslide monitoring made simple',
-  favicon: 'img/grillo-mark-orange.png',
+  // Same icons as grillo.io (grillo-web public/).
+  favicon: 'favicon.svg',
+  headTags: [
+    {tagName: 'link', attributes: {rel: 'icon', href: '/favicon.ico', sizes: '32x32'}},
+    {tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/apple-touch-icon.png'}},
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -79,10 +84,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'grillo · docs',
+      title: 'docs',
       logo: {
         alt: 'Grillo',
-        src: 'img/grillo-mark-orange.png',
+        src: 'img/grillo-logo-word-orange.svg',
       },
       items: [
         {
@@ -99,7 +104,7 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
-              label: 'Getting Started',
+              label: 'Getting started',
               to: '/getting-started',
             },
             {
@@ -137,7 +142,7 @@ const config: Config = {
               href: 'https://grillo.io',
             },
             {
-              label: 'Contact Support',
+              label: 'Contact support',
               to: '/support/contact',
             },
           ],

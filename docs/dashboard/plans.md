@@ -4,51 +4,48 @@ title: Plans
 
 # Plans
 
-Every Grillo Cloud project has a plan. The plan decides how your sensors record, and which data tools you get. Prices and the full feature comparison are on the [Grillo pricing page](https://grillo.io/pricing).
+Every Grillo Cloud project has a plan. The plan decides where your sensors' seismic data goes, and which pages and tools you get. Prices and the full feature comparison are on the [Grillo pricing page](https://grillo.io/pricing).
 
-| Plan | Best for | Sensors record | Main tools |
+| Plan | Best for | Tabs in Grillo Cloud | Main tools |
 |---|---|---|---|
-| **Structural** | Buildings, warehouses, infrastructure | Triggered | [Triggers](/dashboard/triggers), [trigger alerts](/dashboard/alerts) |
-| **Network** | Seismic networks that run their own processing | Continuous | **Archive**, [real-time export](/dashboard/data/realtime-export) |
-| **Seismic** | Networks wanting automatic earthquake catalogs | Continuous | **Events**, **Live map**, **Archive** |
-| **Enterprise** | National systems and earthquake early warning | Continuous | **Events**, **Live map**, **Archive** |
+| **Structural** | Buildings, warehouses, infrastructure | Live, Sensors, Triggers, Waveforms | [Triggers](/dashboard/triggers), [trigger alerts](/dashboard/alerts) |
+| **Network** | Seismic networks that run their own processing | Sensors | [Data destination](/dashboard/data/data-server) |
+| **Seismic** | Networks wanting automatic earthquake catalogs | Live, Sensors, Events, Alerts, Waveforms | [Events](/events/event-catalog), [Live map](/events/live-map), [earthquake alerts](/events/earthquake-alerts), [Waveforms](/dashboard/data/waveforms) |
+| **Enterprise** | National systems and earthquake early warning | Live, Sensors, Events, Alerts, Waveforms | As Seismic, plus the [Data API](/dashboard/data/api) |
 
 ## Included in every plan
 
-- Sensor health, status, and over-the-air firmware updates
-- Live traces from your sensors
+- Sensor health, connectivity history, and status
+- Claiming sensors and editing their station details yourself
 - Unlimited users in the project
-- The [Data API](/dashboard/data/api)
 - 12 months of data retention, unless your contract says otherwise
 
 ## Structural
 
-Sensors measure all the time but upload only when shaking crosses their threshold. Each recording, called a **trigger**, keeps the waveform from before the threshold was crossed until the shaking stops. You see each trigger's peak ground acceleration and velocity, and you can get an email when shaking reaches an alert level.
+Grillo Cloud watches your sensors' shaking and records a **trigger** whenever it crosses the project's threshold. You see each trigger's peak ground acceleration and velocity, duration, and frequency, view and download its waveforms, and can get an alert by email, webhook, or SMS when shaking reaches an alert level.
 
 See [Structural Monitoring](/modules/structural-health-monitoring).
 
 ## Network
 
-Sensors stream continuously. You can review and [download the waveforms](/dashboard/data/waveforms) as miniSEED and CSV, and [stream them live to your own ringserver](/dashboard/data/realtime-export) for your own processing.
+Your sensors send their seismic data to your own server, which you set in **Project settings → Data destination**. Grillo Cloud keeps their health reports, so you still see every sensor's state, connectivity, and firmware on the **Sensors** tab.
 
 ## Seismic
 
-Everything in Network, plus [automatic earthquake detection](/events): an event catalog, a live map of detections, and in-app notifications.
+Grillo detects and locates earthquakes from your sensors' continuous data: a live map of detections, an event catalog, earthquake alerts by email, webhook, or SMS, and waveforms to view and download.
 
 ## Enterprise
 
-Everything in Seismic, scoped to your system. Enterprise can include earthquake early warning, more data retention and export destinations, private-cloud or on-premises hosting, and consultancy. [Contact Grillo](/support/contact) to scope it.
+Everything in Seismic, scoped to your system, plus the read-only [Data API](/dashboard/data/api) for your own software. Enterprise can include earthquake early warning, more data retention and export destinations, private-cloud or on-premises hosting, and consultancy. [Contact Grillo](/support/contact) to scope it.
 
 ## See your plan
 
-Project owners can see the plan, billing, and contract on the [Billing page](/dashboard/billing).
+Owners and admins can see the plan in **Project settings → General**. The project selector also shows each project's plan.
 
 ## Change your plan
 
 Grillo changes plans for you. [Contact Grillo Support](/support/contact) to move to another plan.
 
-When the plan changes between Structural and another plan, sensors that follow the plan switch between triggered and continuous recording at their next check-in, within about a minute. Sensors that have their [own recording mode](/dashboard/sensors/recording-mode) keep it.
-
 ## Pages outside your plan
 
-If you open a page your plan does not include, for example **Events** on a Structural project, Grillo Cloud says it is not part of your plan and links to the page that is.
+If you open a page your plan does not include, for example **Events** on a Structural project, Grillo Cloud says which plans include it.

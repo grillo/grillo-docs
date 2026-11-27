@@ -26,21 +26,21 @@ Before contacting support, record:
 - Device ID, and whether it is Pulse Cellular or Pulse Ethernet
 - Firmware version shown in Grillo Cloud
 - Project and station code
-- Status and **Last Seen** in Grillo Cloud
+- State and **Last SOH** in Grillo Cloud
 - Connection type and signal strength, if shown
 - Recent changes at the site: network, power, or moving the sensor
 - Photographs of the installation and the label
 
 ## Sensor is missing from Grillo Cloud
 
-1. Select the correct project in the project switcher.
-2. Search by Device ID and station code.
+1. Select the correct project in the project selector.
+2. Filter by Device ID and station code.
 3. Confirm the sensor was [claimed](/hardware/grillo-pulse/provisioning).
-4. If Grillo Cloud says **Device not found** when you claim it, check the ID or scan the QR code. If it is still not found, contact support.
+4. If Grillo Cloud says the ID isn't in Grillo's inventory when you claim it, check all 12 characters on the label. If it is still not found, contact support.
 
 ## Sensor is offline
 
-1. Check **Last seen** and the sensor's [connectivity history](/dashboard/sensors/sensor-details#connectivity) to see when it stopped reporting and whether it has been dropping out.
+1. Check **Last SOH** and the sensor's [connectivity history](/dashboard/sensors/sensor-details#connectivity) to see when it stopped reporting and whether it has been dropping out.
 2. Check the M12 power cable is connected and tightened, and that the 12 V DC supply or solar kit has power.
 3. Check the connection:
    - Pulse Cellular: check the cellular antenna is on the SMA cellular connector, and the mobile coverage at the site.
@@ -52,7 +52,7 @@ Before contacting support, record:
 
 ## Location or station is wrong
 
-Open the sensor in Grillo Cloud, select **Edit**, correct the station code or location, and save. Physical orientation has to be fixed at the installation.
+Open the sensor in Grillo Cloud, select **Edit**, correct the name, site, or position, and save. See [Edit a Sensor](/dashboard/sensors/configuring-sensor). To change the station code, contact support. Physical orientation has to be fixed at the installation.
 
 ## Noisy or implausible data
 

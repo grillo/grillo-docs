@@ -43,7 +43,7 @@ The two variants are the same sensor with a different connection. Check your ord
 In Grillo Cloud:
 
 - The Device ID and station code are correct.
-- The sensor is **online** and **Last Seen** is current.
+- The sensor is **online** and **Last SOH** is current.
 - The connection type matches the variant: Cellular or Ethernet.
 - The coordinates and location name are correct.
 

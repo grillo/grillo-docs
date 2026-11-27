@@ -55,8 +55,8 @@ Before leaving the site:
 
 1. Confirm the sensor is secure, upright, and level.
 2. Record coordinates, elevation, orientation, mounting method, antenna placement, and photographs.
-3. Update location metadata in Grillo Cloud.
-4. Confirm the sensor is **online** in Grillo Cloud, with a current **Last Seen** and the expected connection type.
+3. Update the station's position in Grillo Cloud. See [Edit a Sensor](/dashboard/sensors/configuring-sensor).
+4. Confirm the sensor is **online** in Grillo Cloud, with a current **Last SOH** and the expected connection type.
 5. For Pulse Cellular, check signal strength at the installed position.
 
 If these checks cannot be completed, treat the installation as incomplete.

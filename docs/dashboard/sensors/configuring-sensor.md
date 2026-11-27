@@ -4,38 +4,39 @@ title: Edit a Sensor
 
 # Edit a Sensor
 
-:::note Handled by Grillo Support for now
-The new Grillo Cloud dashboard does not yet have a way to edit a sensor. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the changes you need, and Grillo will make the change for you. The steps below describe the previous dashboard.
-:::
-
-Owners and admins can change a sensor's station code, location, recording mode, and target firmware. Open the sensor's details and select **Edit**.
-
-![Edit sensor dialog in Grillo Cloud](/img/screenshots/08-sensor-edit.png)
+Owners and admins can change a station's name, site, notes, and position. Open the sensor's page and select **Edit**, at the top of the page or in the **Station** card.
 
 ## Fields
 
 | Field | Purpose |
 |---|---|
-| Station Code | 2–8 uppercase letters or numbers, unique in the project |
-| Latitude | Decimal degrees, -90 to 90 |
-| Longitude | Decimal degrees, -180 to 180 |
-| Elevation (meters) | Site elevation |
-| Location Name | A name or address field staff will recognize |
-| Firmware Version | Target version for an over-the-air update. See [Update Firmware](/dashboard/sensors/firmware-updates). |
-| Recording mode | Continuous or triggered, and the trigger settings. See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode). |
+| **Name** | A name your team will recognize, up to 200 characters |
+| **Site** | Where it is: building, floor, mounting. Up to 500 characters |
+| **Latitude** | Decimal degrees, -90 to 90 |
+| **Longitude** | Decimal degrees, -180 to 180 |
+| **Elevation, m** | Site elevation, -500 to 9000 m. Optional |
+| **Notes** | Access, contacts, anything for the next visit. Seen only in this project |
 
-Select **Update Device** to save.
+Select **Save**.
 
-## Capture the location on site
+## Fill in the position
 
-Open Grillo Cloud on a phone at the sensor and select **Use Current Location**. It fills in latitude and longitude, and elevation when the phone provides it. Grillo Cloud then suggests a location name from the coordinates; select **Use** to accept it.
+- **Use my location** fills in latitude and longitude from your phone or browser. Stand at the sensor when you use it; a position taken at a desk or in a vehicle puts the station in the wrong place.
+- **Use device GPS** fills them in from the sensor's own GPS, the median of the last 24 hours. It appears only for sensors with a GPS fix.
 
-Stand at the sensor when you do this. Coordinates captured at a desk or vehicle will put the station in the wrong place.
+If the saved position is more than 100 m from where the sensor's GPS puts it, the **Station** card says so. The card also shows the GPS **Reported position** beside the saved one.
 
-## What a station code change does
+## Moving a station
 
-The sensor picks up its station code and recording settings from Grillo Cloud at its next health check-in, usually within a minute, and uses them from then on.
+A change of more than 100 m is a move. The dialog asks **Moved on, UTC**: the date and time the sensor moved. Events from then on use the new position; earlier events keep the old one. Select **Save and move**. The station keeps its code and its recorded data.
+
+If the station did not move and the saved position was simply wrong, tick **It didn't move: the saved position was wrong. Correct it in place.** A change of less than 100 m is always a correction.
+
+The **Station** card lists every position the station has had, with the date of each.
 
 ## What editing does not change
 
-The edit form does not change the sensor's Wi-Fi, Ethernet, or cellular settings. Those are set on the sensor itself; see its hardware guide.
+- **Station code and network code.** These are set when the sensor is claimed. To change them, [contact Grillo Support](/support/contact).
+- **Hardware type.** Grillo records it; if the **Hardware** card says the sensor reports a different type, Grillo can correct it.
+- **Recording mode and trigger settings.** See [Recording Mode and Thresholds](/dashboard/sensors/recording-mode).
+- **Wi-Fi, Ethernet, or cellular settings.** Those are set on the sensor itself; see its hardware guide.

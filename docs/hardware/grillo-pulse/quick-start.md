@@ -22,12 +22,12 @@ Stop and [contact support](/support/contact) if anything is damaged, missing, or
 ## 2. Claim it in Grillo Cloud
 
 1. Sign in at [cloud.grillo.io](https://cloud.grillo.io).
-2. Select your project in the project switcher.
-3. Open **Sensors** and select the **+** button.
-4. Type the Device ID or scan the QR code.
-5. Enter the station code you have planned and select **Claim Device**.
+2. Select your project in the project selector.
+3. Open **Sensors** and select **Add sensor**.
+4. Type the full Device ID and select **Claim**.
+5. Enter the station's position, or select **Place later** if you are not at the site yet.
 
-The sensor appears in the list as **offline**. That is expected until it is powered and connected.
+The sensor appears in the list as **not seen**. That is expected until it is powered and connected.
 
 ## 3. Plug in the geophone
 
@@ -68,8 +68,8 @@ The status lights are inside the enclosure and cannot be seen from outside, so u
 
 - [ ] Find the sensor by Device ID or station code.
 - [ ] It shows **online**.
-- [ ] **Last Seen** is current.
-- [ ] The connection type is **Cellular** or **Ethernet**, matching the variant.
+- [ ] **Last SOH** is current.
+- [ ] The **Link** is **cell** or **eth**, matching the variant.
 - [ ] A firmware version is shown.
 - [ ] For Pulse Cellular, signal strength is shown.
 

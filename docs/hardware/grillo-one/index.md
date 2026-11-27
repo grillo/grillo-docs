@@ -16,7 +16,7 @@ Grillo One is a strong-motion seismic sensor with a three-axis MEMS acceleromete
 | Power | USB-C, 5 V. USB-C is the only power input. |
 | Timing | Network time (NTP) |
 | Status lights | Three colour lights: Network, Sensor, and Data. See [Status lights](/hardware/grillo-one/setup#status-lights). |
-| Firmware | Updated over the air from [Grillo Cloud](/dashboard/sensors/firmware-updates). Latest version: 1.0.1. See [Firmware](/hardware/grillo-one/setup#firmware-updates). |
+| Firmware | Updated over the air [by Grillo Support](/dashboard/sensors/firmware-updates). Latest version: 1.0.1. See [Firmware](/hardware/grillo-one/setup#firmware-updates). |
 | Managed in | [Grillo Cloud](/dashboard) |
 
 Grillo One has no geophone, GNSS, battery, or cellular modem. For those, see [Grillo Pulse](/hardware/grillo-pulse).

@@ -59,7 +59,6 @@ The documentation is English-only.
 - Claim a Sensor
 - Network and Station Codes
 - Sensor Table
-- Sensor Map
 - Sensor Details
 - Edit a Sensor
 - Recording Mode and Thresholds
@@ -76,6 +75,7 @@ The documentation is English-only.
 - Event Catalog
 - Event Details
 - Live Map
+- Earthquake Alerts
 - How Detection Works
 
 #### Data

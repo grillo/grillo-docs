@@ -42,4 +42,4 @@ By default a Pulse sends its seismic data to Grillo. You can [view and download 
 
 ## Acceptance test
 
-The connection is working when Grillo Cloud shows the sensor **online**, with a current **Last Seen** and the expected connection type.
+The connection is working when Grillo Cloud shows the sensor **online**, with a current **Last SOH** and the expected connection type.

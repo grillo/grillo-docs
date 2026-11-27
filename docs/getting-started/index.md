@@ -19,8 +19,8 @@ Grillo makes sensors for monitoring earthquakes and landslides, and the cloud so
 | Check whether a sensor is reporting | [Verify Sensor Status](/dashboard/sensors/sensor-status) |
 | View or download seismic data | [View and Download Waveforms](/dashboard/data/waveforms) |
 | Monitor vibration in a building or structure | [Structural Monitoring](/modules/structural-health-monitoring) |
-| Read your data from your own software | [Data API](/dashboard/data/api) |
-| Stream live data to your SeedLink clients | [Stream Data to Your Own Ringserver](/dashboard/data/realtime-export) |
+| Read your data from your own software (Enterprise) | [Data API](/dashboard/data/api) |
+| Get earthquake alerts by email, webhook, or SMS | [Earthquake Alerts](/events/earthquake-alerts) |
 | Send seismic data to your own server | [Send Data to Your Own Server](/dashboard/data/data-server) |
 | Export landslide readings | [Export Slide Data](/slide-cloud/exports) |
 | Update sensor firmware | [Update Firmware](/dashboard/sensors/firmware-updates) |

@@ -16,20 +16,20 @@ Grillo builds connected sensors and cloud software for earthquake and landslide 
 
 [Grillo Cloud](/dashboard) at [cloud.grillo.io](https://cloud.grillo.io) is the web application for Pulse and One. Use it to:
 
-- Claim sensors by Device ID or QR code and assign FDSN station codes
-- See sensors in a table and on a map
-- Monitor online status, connectivity, signal, power, and firmware
-- Update firmware over the air
+- Claim sensors by Device ID and place them on the map
+- See every sensor's state, connectivity, signal, and firmware in one table
+- Watch stations and detections on the live map
+- Invite colleagues and set up alerts by email, webhook, or SMS
 
 ### Plans
 
 What else Grillo Cloud does depends on the project's [plan](/dashboard/plans):
 
-- **Structural:** sensors in buildings and infrastructure record [triggers](/dashboard/triggers) when shaking crosses a threshold, and Grillo emails you when it reaches an [alert level](/dashboard/alerts).
-- **Network:** sensors stream continuously; review and download waveforms, and stream them to your own ringserver.
-- **Seismic** and **Enterprise:** everything in Network, plus [automatic earthquake detection](/events), an event catalog, and a live map.
+- **Structural:** Grillo Cloud records [triggers](/dashboard/triggers) when shaking in buildings and infrastructure crosses a threshold, and alerts you when it reaches an [alert level](/dashboard/alerts).
+- **Network:** sensors send their seismic data to [your own server](/dashboard/data/data-server); Grillo Cloud keeps watching their health.
+- **Seismic** and **Enterprise:** [automatic earthquake detection](/events), an event catalog, a live map, [earthquake alerts](/events/earthquake-alerts), and waveforms to view and download.
 
-Every plan includes the read-only [Data API](/dashboard/data/api).
+The Enterprise plan adds the read-only [Data API](/dashboard/data/api).
 
 ## Grillo Cloud for Slide
 
@@ -41,9 +41,7 @@ Every plan includes the read-only [Data API](/dashboard/data/api).
 
 ## Your own seismic system
 
-Pulse and One can send their seismic data to a server you run instead of Grillo. Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis) receives it and passes it to Earthworm, or writes miniSEED for SeisComP and ObsPy. Grillo switches this on for your project, and you keep managing the sensors in Grillo Cloud. See [Send Data to Your Own Server](/dashboard/data/data-server).
-
-You can also keep the data in Grillo and stream a live copy as miniSEED to your own ringserver, which serves it over SeedLink. A project admin turns this on in Grillo Cloud. See [Stream Data to Your Own Ringserver](/dashboard/data/realtime-export).
+Pulse and One can send their seismic data to a server you run instead of Grillo. Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis) receives it and passes it to Earthworm, or writes miniSEED for SeisComP and ObsPy. On the Network plan you set the address yourself in Grillo Cloud, and you keep managing the sensors there. See [Send Data to Your Own Server](/dashboard/data/data-server).
 
 ## Getting help
 

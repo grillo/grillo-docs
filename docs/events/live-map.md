@@ -4,50 +4,66 @@ title: Live Map
 
 # Live Map
 
-The **Live map** is the first page you see after signing in. It shows your stations on a dark map, and earthquake detection as it happens. It has two modes, chosen at the top of the side panel:
+**Live** is the first page you see after signing in. It shows your stations on a map, and earthquake detection as it happens: which stations pick up the waves, where the earthquake is, and how soon the shaking reaches nearby places. You can also [replay a past event](#replay-a-past-event) in the same view.
 
-- **LIVE** follows your project's stations and their real detections.
-- **SIMULATION** plays a scenario earthquake over your real stations, so you can see how detection works.
+![The Live map: stations as diamonds, one lit by a pick, with the status, current event, latency, and recent picks in the side panel](/img/screenshots/cloud/live-map.png)
 
-## What the map shows
+On a phone, the map comes first and the panels follow below it.
 
-- Your stations. The **Legend** counts stations and **Offline** stations
-- Fault lines
-- During an event: stations that have **Picked** the waves, the epicenter, the expanding **P-wave** and **S-wave** fronts, and where there is **Shaking now**
-- Estimated shaking zones around the epicenter, from **Minor** to **Severe**
+## The map
 
-Stations with no saved location are not on the map; a note says how many.
+- **Stations** as diamonds: **online**, **late** (data arriving late), or **offline** (hollow). The **Legend** counts each.
+- A station that **picked** the waves lights up for 30 seconds, with a flash when it detects.
+- Recent epicenters, sized and colored by magnitude. Select one to show it in the panel; lines run from it to the stations that detected it.
+- During an event: the pulsing epicenter, the expanding **P wave** and **S wave** fronts, and the land where there is **shaking now**.
+- Fault lines and place names on the base map.
 
-Use the full-screen button to show the map on its own, for example on a wall screen.
+Owners, admins, and members can select a station to open its [sensor page](/dashboard/sensors/sensor-details).
+
+The clock in the corner is Grillo's time in UTC. The connection chip in the menu bar shows whether the page is receiving live data; if it shows **Reconnecting** or **Offline** for long, refresh the page.
 
 ## The side panel
 
-The status at the top of the panel says what detection is doing:
+The status at the top says what detection is doing:
 
 | Status | Meaning |
 |---|---|
-| **MONITORING** | Stations are reporting and there is no event, for example **14 of 15 stations reporting · no event** |
-| **DETECTING** | One or more stations have picked the waves and Grillo Cloud is locating the event |
-| **EVENT LOCATED** | The event has a location and magnitude, and the panel says when the alert was issued, in seconds after the origin |
+| **Monitoring** | No earthquake now, for example **Monitoring 14 of 15 stations** |
+| **Detecting** | Stations have picked waves in the last 30 seconds and Grillo is locating the event |
+| **Event located** | The event has a location. The line below says when it was located and when the alert went out, in seconds after the origin (**T+**) |
 
-Once an event is located, the panel shows its **Magnitude**, **Depth**, and **Location**, and a list of places with how many seconds each has before **Strong shaking** reaches it, or **no warning** where shaking had already arrived.
+The large clock counts **T+** seconds from the earthquake's origin. Once an event is located, the panel shows its **Magnitude** (**pending** until it is estimated), **Depth**, and **Epicentre**, and a table of nearby places:
 
-The **Event log** lists each pick, the location, and S-wave arrivals as they happen.
+| Column | Meaning |
+|---|---|
+| **Place** | A town or city near the epicenter, ordered by when the shaking reaches it |
+| **Intensity** | The expected shaking there: **Severe**, **Heavy**, **Moderate**, **Light**, or **Minor** |
+| **Shaking in** | Seconds until the S wave, the strong shaking, arrives; **shaking** once it has; **no warning** where it arrived before the alert |
 
-**LIVE FEED CONNECTED** shows the map is receiving detections. If it stays on **CONNECTING TO LIVE FEED…**, refresh the page. The latency readout shows how long picks and events take to reach your screen.
+The event log below lists each pick, the location, and the S-wave arrivals as they happen.
 
-If any stations are offline, the bar at the bottom says how many. Select it to open [Sensors](/dashboard/sensors) filtered to offline sensors.
+**Sound** is off by default. Turn it on for a beep on each pick and a tone when an event is located. The browser remembers the choice.
 
-## Simulation mode
+Further down:
 
-Switch to **SIMULATION**. A banner across the map reads **SIMULATED SCENARIO · NOT REAL EVENTS**. Choose a speed of 1×, 2×, or 4×.
+- **Current event**: the event's magnitude, status, origin, epicenter, depth, number of stations, alert decision, and its arrivals, with **Event detail →** to open its [page](/events/event-details)
+- **Pipeline latency**: how long each step takes, from the sensor's sample to the pick, the event, and the alert
+- **Earthquakes now**: the events of the last 15 minutes. With none, it links to the last one and to **all events**
+- **Recent picks**: the latest picks across your stations
 
-The simulation uses your project's real station positions and needs at least 4 reporting stations. It plays picks, locates the event, and animates the waves and shaking.
+## Replay a past event
 
-:::danger Simulation is not real data
-The events in Simulation mode are made up. Check which mode is selected before acting on anything shown on this page. Simulated events are not added to the [event catalog](/events/event-catalog).
-:::
+Select **▶ Replay** on an event in [Events](/events/event-catalog) or on its [details page](/events/event-details). The Live page then plays the event back as it was published: the picks lighting up, each revision of the location, the alert decision, the wave fronts, and the places' countdown.
+
+A bar over the map reads **Replay · not live**. Use it to:
+
+- **Play**, **Pause**, or play **Again**
+- Choose **1×** or **2×** speed
+- Drag the timeline to any moment. The **quake** mark is the origin time, the **alert** mark when the alert went out
+- **Back to live** to return to the live view
+
+A replay runs only in your browser. Nothing is sent, and no alert goes out.
 
 ## Limits
 
-The live map is a monitoring view for your team. It does not itself send SMS, email, or mobile alerts, and it is not a public warning service. See [Earthquake Early Warning](/concepts/earthquake-early-warning) for what warning time is physically possible.
+The live map is a monitoring view for your team, not a public warning service. Alerts are set up separately; see [Earthquake Alerts](/events/earthquake-alerts). See [Earthquake Early Warning](/concepts/earthquake-early-warning) for what warning time is physically possible.

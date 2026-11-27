@@ -4,30 +4,28 @@ title: Send Data to Your Own Server
 
 # Send Data to Your Own Server
 
-By default, sensors send their seismic data to Grillo. You can point every sensor in a project at your own server instead, for example to feed Earthworm or SeisComP on your network.
+On the Network [plan](/dashboard/plans), your sensors send their seismic data to your own server, for example to feed Earthworm or SeisComP on your network. You choose the address in Grillo Cloud.
 
-Sensors keep sending health reports to Grillo either way, so you still manage and monitor them in Grillo Cloud.
-
-To keep your data in Grillo and also get a live copy over SeedLink, [stream it to your own ringserver](/dashboard/data/realtime-export) instead. You set that up yourself in Grillo Cloud.
+Sensors keep sending their health reports to Grillo either way, so you still manage and monitor them in Grillo Cloud.
 
 ## What changes
 
-| | Sending to Grillo (default) | Sending to your server |
+| | Sending to Grillo (other plans) | Sending to your server (Network) |
 |---|---|---|
 | Sensor health, status, and connection history | In Grillo Cloud | In Grillo Cloud |
-| Station codes and firmware updates | In Grillo Cloud | In Grillo Cloud |
+| Station details and settings | In Grillo Cloud | In Grillo Cloud |
 | Seismic waveforms | Stored by Grillo | Delivered to your server only |
-| Live view and waveform archive in Grillo Cloud | Available | No new data |
+| Live traces and **Waveforms** in Grillo Cloud | Available | Not available |
 | Triggers and trigger alerts (Structural) | Available | Not available |
-| Earthquake detection (Seismic and Enterprise) | Available | Not available |
+| Earthquake detection and alerts (Seismic and Enterprise) | Available | Not available |
 
-The setting applies to every sensor in the project. It cannot be set for a single sensor.
+The address applies to every sensor in the project. It cannot be set for a single sensor.
 
 ## What your server needs
 
-Sensors send waveform packets over CoAP on UDP, by default to port 5684. Your server must:
+Sensors send waveform packets over CoAP on UDP, over IPv4. Your server must:
 
-- Be reachable from every sensor at a fixed hostname or IP address
+- Be reachable from every sensor at a fixed hostname or IPv4 address
 - Accept inbound UDP on the port you choose
 - Run software that receives Grillo's waveform packets and passes them to your seismic system
 
@@ -54,23 +52,36 @@ python -m coap2seis
 
 It asks for the output, port, and codes, with sensible defaults. The repository also includes a systemd service for running it permanently. See its [README](https://github.com/grillo/coap2seis#readme) for the full options.
 
-coap2seis reads the sensors' JSON data format. When Grillo points your project at your server, it also switches your sensors to that format; mention coap2seis in your request.
+coap2seis reads the sensors' JSON data format. Before you switch, ask Grillo Support to confirm your sensors send that format.
 
-Set up and test the receiver before you ask for the switch. [Contact Grillo Support](/support/contact) if you need help connecting it to your system.
+Set up and test the receiver before you switch the sensors to it. [Contact Grillo Support](/support/contact) if you need help connecting it to your system.
 
-## Set the data server
+## Set the data destination
 
-Grillo sets this for you. [Contact Grillo Support](/support/contact) with your project name and your server as `host:port`, for example `seismic.example.org:5684`.
+Open **Project settings → Data destination**. It shows:
 
-Each sensor switches at its next health check-in, about a minute after the change. **Settings → Data** then shows your server under **Seismic data server**.
+- **Address**: where the sensors send their data now
+- **Sensors**: how many of the project's sensors have switched to it
+- **Changed**: who changed it, and when
+- **Previous**: the address before, with **Use previous** to go back to it
+
+Owners and admins can change it. Members can see it; viewers do not see it.
+
+1. Enter the **New address** as `coap://` followed by a hostname or IPv4 address and, optionally, a port, for example `coap://seismic.example.org:5684`. No path, no IPv6 address, and at most 127 characters. Grillo Cloud checks it as you type.
+2. Confirm the change. The dialog shows the old and new address.
+
+Each sensor switches at its next status report, in about a minute, and sends its seismic data there from then on.
+
+:::note After a sensor restarts
+On current Grillo Pulse firmware, a sensor goes back to Grillo's default address each time it restarts, until its next status report, about a minute later, tells it your address again. Expect to miss up to a minute of data on your server after each restart.
+:::
+
+To unset the address, clear it and confirm. The sensors keep the address they have.
 
 ## Check that it worked
 
 - On your server, confirm packets are arriving from each sensor.
+- In **Project settings → Data destination**, **Sensors** should count every sensor as switched.
 - In Grillo Cloud, sensors should stay **online**. Health reports are not affected by this setting.
 
 If packets are not arriving, check that the hostname resolves from the sensors' network and that the UDP port is open in your firewall.
-
-## Go back to Grillo
-
-Ask Grillo Support to clear the data server. Sensors return to sending data to Grillo at their next check-in.

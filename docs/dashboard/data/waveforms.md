@@ -1,73 +1,66 @@
 ---
-title: Download Waveforms
+title: Waveforms
 ---
 
-# Download Waveforms
+# Waveforms
 
-Open **Archive** to download the raw waveform data your sensors recorded. Downloads are included in the Network, Seismic, and Enterprise [plans](/dashboard/plans).
+Open **Waveforms** to look at the data your sensors recorded and download it. It is in the menu bar on the Seismic, Enterprise, and Structural [plans](/dashboard/plans), for the project's owners, admins, and members.
 
-The Archive has data only for sensors that send their seismic data to Grillo. If your project [sends data to its own server](/dashboard/data/data-server), there are no waveforms to download.
+![The Waveforms page with the station and channel picker, span buttons, end time, Download, and one channel's trace](/img/screenshots/cloud/waveforms.png)
 
-## 01 · Time window
+Projects that [send their data to their own server](/dashboard/data/data-server), such as those on the Network plan, have no waveforms in Grillo Cloud.
 
-Choose **Last hour**, **Last 24 h**, **Last 7 days**, **Around an event**, or **Custom**. All times are UTC.
+## View waveforms
 
-- **Around an event** lists recent events. Pick one and the window runs from 1 minute before its origin to 3 minutes after, with the sensors within 80 km already selected.
-- **Custom** lets you set **From (UTC)** and **To (UTC)**.
+1. Choose a station from the list.
+2. Choose its channels, for example `HNZ`, `HNN`, and `HNE` for the accelerometer and `EHZ` for the geophone. Each channel gets its own chart.
+3. Choose a span: **10 s**, **1 min**, **10 min**, **1 h**, **6 h**, **1 d**, **7 d**, or **30 d**.
 
-You can also open the Archive from **Download data** in a [sensor's details](/dashboard/sensors/sensor-details), or **Open in archive** in an [event's details](/events/event-details).
+Move around the data:
 
-## 02 · Sensors
+- **Zoom** with the mouse wheel, a pinch, or **+** and **−**.
+- **Pan** by dragging the chart, or with **←** and **→**.
+- **Now** jumps to the latest data. **End (UTC)** sets the end of the window to a time you choose.
 
-Pick sensors from the list or on the map: **Click to add or remove**. Use **All** or **None** to change the selection quickly.
+The address in your browser keeps the station, channels, and window, so you can bookmark or share a view with your colleagues.
 
-## 03 · Format
+Long spans show the range of the signal in each pixel; zoom in to see every sample.
 
-- **miniSEED**: the standard seismology format. Opens in ObsPy, SeisComP, SAC, and Swarm.
-- **CSV**: for spreadsheets and quick analysis.
+If the window holds no data, the page says so, for example **No data from HT.LEOG between … and …**, with **Jump to latest data** to move to the station's last data. If only some channels are empty, a line names them.
 
-The channel is `EHZ`, the vertical geophone, at 100 Hz.
+You can also open Waveforms from a [shaking event](/dashboard/triggers#waveforms) with **Open in Waveforms →**.
 
-For now the download always contains both a miniSEED file and a CSV file, whichever you choose; the choice changes only the size estimate.
+## Download waveforms
 
-## Your request
+Select **Download** on the Waveforms page to download the shown station, channels, and window. The same download is on an [event's page](/events/event-details#replay-and-download) and a [shaking event's page](/dashboard/triggers#waveforms), for every station involved.
 
-The summary on the right shows the window, its duration, the sensors, and the format, with an estimated size. **Data available in window** shows each sensor's coverage, with gaps marked. Gaps are left empty in the download, not filled.
+The download dialog shows:
 
-Select **Download**. Grillo Cloud prepares the file and your browser downloads it. If the browser blocks the new tab, use the link that appears under the button.
+- **Format**: **miniSEED** (the default) or **CSV**
+- The **Stations**, **Channels**, and **Window** in the file
+- **Size**: an estimate before you download
+- **File**: the file's name, for example `HT.2354_2026-11-18T005400Z_10min.mseed`
 
-:::note Current limits
-A download from the Archive covers **one sensor and up to 5 minutes**. Longer windows and several sensors at once are coming. For more data now, use the [Data API](/dashboard/data/api) or [stream to your own ringserver](/dashboard/data/realtime-export).
-:::
+Select **Download**. The file downloads straight away, with the progress shown. To stop it, select **Cancel download**.
 
-**Same request by API** shows the equivalent API request; select **Copy** to copy it.
+### Formats
 
-## What you download
+- **miniSEED**: miniSEED 2 (Steim2), every channel in one file, as recorded and cut to the window. Opens in ObsPy, SeisComP, SAC, Swarm, and most seismology tools.
+- **CSV**: one row per sample, with the time (UTC, microseconds), network, station, location, channel, the raw counts, and the value in physical units where the channel's scale is known. The geophone (`EHZ`) gets a value only for recent data whose scale the sensor confirmed since it last restarted; otherwise the value is blank.
 
-You get a zip containing the `EHZ` channel (downloads from the [waveform charts](#waveform-charts) page contain all of the sensor's channels):
+### Limits
 
-| File | Contents |
-|---|---|
-| `<station>_<start>.mseed` | All channels as miniSEED 2: 512-byte records of 32-bit integers. Accelerometer channels are in milligal (mGal; 1 mg = 980.665 mGal), and the geophone in counts |
-| `<station>_<start>_<rate>hz_<unit>.csv` | One CSV per sample rate, one row per sample time |
-| `metadata.json` | The requested interval, the channels, units, gaps, and the files in the zip |
+| Limit | miniSEED | CSV |
+|---|---|---|
+| Longest window | 24 hours | 1 hour |
+| Channels × hours in one file | 96, for example 4 channels over 24 hours | 4, for example 4 channels over 1 hour |
 
-In the CSV, `utc_iso` is the sample time, `time_s` is seconds from the start of the interval, and there is one column per channel. Accelerometer channels are in mg, to 3 decimal places, and the geophone is in counts. The values are as recorded, so they include the sensor's offset; the charts in Grillo Cloud remove it.
+- One download at a time for each person. **Another download is running. Wait for it to finish.** means yours has not finished.
+- At most 20 downloads an hour for each person.
+- At most 2 GB a day for each project, counted in UTC days.
 
-If the station code or the project's network code does not fit miniSEED (1–5 and 1–2 capital letters or digits), the miniSEED file uses network `XX` and the last five characters of the Device ID as the station. `metadata.json` records the substitution.
-
-Sensor timestamps are approximate, and every miniSEED record is flagged "time tag questionable". `metadata.json` gives each trace segment's `timeBasis`; check it before treating the timestamps as exact acquisition times.
-
-### Download limits
-
-- The download link works for 24 hours.
-- A project can request 6 downloads a minute, one at a time.
-- If the interval has no data, the download is refused. Choose an interval the traces cover.
-
-## Waveform charts
-
-To look at recorded waveforms as charts, with pan and zoom, use the previous dashboard's waveform page at [cloud.grillo.io/waveforms](https://cloud.grillo.io/waveforms). It can show up to 4 traces over 5 minutes and download the same zip with all of a sensor's channels.
+A window over a limit says why, and **Download** stays off until you shorten it. When a limit is reached, the dialog says when you can try again.
 
 ## Continuous data and standard formats
 
-For a continuous miniSEED stream into SeisComP, Swarm, or ObsPy, [stream your project's data to your own ringserver](/dashboard/data/realtime-export) and serve it over SeedLink. For Earthworm, you can also [send your sensors' data to your own server](/dashboard/data/data-server) and receive it with Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis).
+For your sensors' data live on your own systems, see [Send Data to Your Own Server](/dashboard/data/data-server).

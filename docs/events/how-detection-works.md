@@ -15,18 +15,20 @@ Associate: P-wave picks from several stations are grouped into one earthquake
       ↓
 Locate and size: origin time, latitude, longitude, depth, and magnitude
       ↓
-Event catalog, live map, and notifications
+Event catalog, live map, and alerts
 ```
 
 ## The steps
 
 **Picking.** Grillo Cloud watches each sensor channel for the sudden arrival of a seismic wave and records the time it arrived. This is called a **pick**.
 
-**Association.** Grillo Cloud groups picks from different stations that fit a single earthquake. An event is published, to the catalog, the live map, and notifications, once at least **4 stations** have detected it. Only stations that are online count.
+**Association.** Grillo Cloud groups picks from different stations that fit a single earthquake. An event is published, to the catalog and the live map, once at least **4 stations** have detected it. Only stations that are online count.
 
 **Location and magnitude.** Grillo Cloud estimates where and when the earthquake started, its depth, and its magnitude. Magnitude is estimated quickly from the first seconds of shaking, so treat it as an early estimate.
 
-**Updates.** An event can be refined as more stations report. Its values settle about a minute after the last station reports.
+**Updates.** An event is refined as more stations report. It is first published as **preliminary**, becomes **confirmed** as more stations agree, and **final** about a minute after its location last changed. Each update is a new revision. An event that turns out not to be an earthquake is **withdrawn**.
+
+**Alerts.** For each revision, Grillo decides whether the event warrants an alert. Your project chooses where alerts go and from what magnitude; see [Earthquake Alerts](/events/earthquake-alerts).
 
 ## Why several stations are needed
 

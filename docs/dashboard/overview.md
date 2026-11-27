@@ -4,10 +4,12 @@ title: Home Page
 
 # Home Page
 
-After you sign in, Grillo Cloud opens on the **Live map**: your stations on a map, with earthquake detections shown as they happen. See [Live Map](/events/live-map).
+After you sign in, Grillo Cloud opens on the first tab of your project's [plan](/dashboard/plans):
 
-The previous dashboard's summary page, with sensor counts and recent activity, is replaced by:
+- **Seismic, Enterprise, and Structural projects** open on **Live**: your stations on a map, with detections shown as they happen. See [Live Map](/events/live-map).
+- **Network projects** open on **Sensors**: every sensor with its state and last report. See [Sensors](/dashboard/sensors).
 
-- [Sensors](/dashboard/sensors), which counts online, degraded, and offline sensors and lists problems first
-- [Events](/events/event-catalog), which shows the last 90 days of detected earthquakes with a magnitude chart
-- The bar along the bottom of the Live map, which shows how many stations are reporting and links to any that are offline
+To find what needs attention:
+
+- On [Sensors](/dashboard/sensors), filter by state to see the sensors that are offline or late.
+- On [Events](/events/event-catalog) or [Triggers](/dashboard/triggers), the newest are at the top.

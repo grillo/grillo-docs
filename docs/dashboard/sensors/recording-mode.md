@@ -4,91 +4,77 @@ title: Recording Mode and Thresholds
 
 # Recording Mode and Thresholds
 
-:::note Handled by Grillo Support for now
-The new Grillo Cloud dashboard does not yet have a way to change a sensor's recording mode or threshold. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the settings you want, and Grillo will make the change for you. The steps below describe the previous dashboard.
-:::
-
 A sensor records in one of two modes:
 
 | Mode | What the sensor uploads |
 |---|---|
-| **Continuous** | Everything it measures, all the time |
-| **Triggered** | Nothing until shaking crosses its threshold. Then it uploads from up to 60 seconds before the crossing until the shaking stops, and Grillo Cloud records it as a [trigger](/dashboard/triggers) |
+| **continuous** | Everything it measures, all the time |
+| **triggered** | Only windows around shaking: from up to 60 seconds before the shaking crosses its threshold until the shaking stops |
 
 In both modes the sensor sends its health reports every minute or less, so it shows as [online](/dashboard/sensors/sensor-status) either way.
 
-By default the project's [plan](/dashboard/plans) decides the mode: sensors on the Structural plan record triggered, and sensors on every other plan record continuous. Owners and admins can give a sensor its own mode.
+## How triggers are found
 
-## See a sensor's mode and threshold
+On the Structural plan, Grillo Cloud finds [triggers](/dashboard/triggers) in the data each sensor sends, using that sensor's trigger setting. A sensor recording continuously gets the same triggers it would have recorded in triggered mode with the same setting. The recording mode decides how much data is uploaded and stored, not which triggers you see.
 
-Open **Sensors** and select a triggered sensor. Its details show a summary such as **Triggered · 5 mg threshold · 12 triggers since boot · last trigger 2 hours ago**, and the **Trigger threshold**, marked **project default** or **set for this sensor**. The trigger count starts again from zero when the sensor restarts.
+## Where settings come from
 
-![Sensor details for a triggered sensor, with its threshold and recent triggers](/img/screenshots/sensor-recording.png)
+Each sensor gets its recording mode and trigger from, in order:
 
-Below it, **Recent triggers** lists the sensor's latest triggers.
+1. Its own setting, if one was sent to it
+2. The project default
+3. Grillo's defaults: continuous recording, and a trigger on either horizontal axis at 5 mg, keeping 60 seconds before and 60 seconds after the shaking
 
-## Change a sensor's threshold
+Only the project owner can change these. Grillo Support can change them for you too.
 
-Owners and admins can change the threshold from the sensor's details:
+## See a sensor's settings
 
-1. Next to **Trigger threshold**, select **Edit**.
-2. Enter a threshold between 1 and 2000 mg, in steps of 0.5 mg.
-3. Select **Save**.
+Open the sensor's page and find **Settings**. **This device** lists each setting with:
 
-To go back to the project's threshold, select **Edit**, then **Use project default**.
+- **Desired**: the value Grillo Cloud sends, and where it comes from (**this device**, **project default**, or **system default**)
+- **Reported**: what the sensor says it runs
+- Its state: **in sync**, **pending** (sent, not yet confirmed by the sensor), **differs**, **not reported**, **needs newer firmware**, or **read-only**
 
-The sensor applies the change at its next check-in, usually within a minute. Until then its details show **Pending — device has not applied this yet**.
+**Last sent** below lists recent changes, who sent them, and why.
 
-## Change a sensor's recording mode
+## Change a sensor's settings
 
-Owners and admins can set a sensor's mode and all of its trigger settings:
+The project owner can:
 
-1. Open the sensor's details and select **Edit**.
-2. Under **Recording mode**, choose:
-   - **Follow project plan**, to use the plan's mode. The option shows the mode the plan currently uses.
-   - **Continuous**
-   - **Triggered**
-3. For a triggered sensor, leave **Use project trigger defaults** on, or turn it off to give the sensor its own settings.
-4. Select **Update Device**.
+1. In **Settings**, select **Change** next to **Recording mode** or **Trigger**.
+2. Choose **continuous** or **triggered**, or set the trigger's **Channel**, **Threshold** in mg, **Pre** and **Post** in seconds, and **Max per hour**. **Use the default** stops sending the sensor its own value.
+3. Select **Keep for sending**. Repeat for other settings, then select **Review and send…**.
+4. Check the summary, enter a reason (kept in the audit log), and select **Send to device**.
 
-![Recording mode settings in the Edit Sensor dialog](/img/screenshots/sensor-recording-mode.png)
+The sensor gets the change in its next report reply, within about 30 seconds if it is online, and the setting stays **pending** until the sensor's report confirms it.
 
-Below the settings, the dialog shows what the sensor last reported: its mode, the number of triggers since it started, and whether it is recording an event now.
+A setting the sensor's firmware does not accept reads **needs newer firmware** and cannot be changed. Settings that change the sensor's scale are changed only by Grillo.
 
-### Trigger settings
+## Change the project's defaults
+
+**Project default**, next to **This device** in a sensor's **Settings**, lists the project's defaults for recording mode, trigger, and time source. The project owner can change them the same way. They go to every sensor in the project without a setting of its own.
+
+On Structural projects, the owner can also set the default trigger in **Project settings → Triggers**:
 
 | Setting | Range | Grillo default |
 |---|---|---|
-| **Trigger channel** | **Any horizontal**, `HNE` (east), `HNN` (north), or `HNZ` (vertical) | Any horizontal |
+| **Channel** | **Either horizontal (H_ANY)**, **East (HNE)**, **North (HNN)**, or **Vertical (HNZ)** | Either horizontal |
 | **Threshold (mg)** | 1 to 2000 mg | 5 mg |
-| **Pre-event (s, max 60)** | Seconds kept from before the threshold was crossed, 0 to 60 | 60 s |
-| **Post-event (s, max 300)** | Seconds the sensor keeps recording after the shaking last crossed the threshold, 0 to 300 | 60 s |
-| **Alert level (mg)** | The level for [trigger alerts](/dashboard/alerts). Leave **Use project alert level** on to use the project's | The project's level |
+| **Before the onset (s)** | 0 to 60 | 60 |
+| **After the shaking (s)** | 0 to 300 | 60 |
+| **Debounce**, under **More** | 1 to 25 samples over the threshold in 200 ms | 3 |
+| **Longest trigger (s)**, under **More** | 10 to 600 | 600 |
 
-**Any horizontal** triggers when either horizontal axis crosses the threshold. A vertical-only knock may not trigger it.
+The threshold is on the acceleration filtered to 0.5–25 Hz. **Threshold preview** shows how many of the last 30 days' triggers each threshold would keep. Enter a reason and select **Send to the sensors**.
 
-## Set the project's trigger defaults
-
-On Structural projects, everyone can see the defaults in **Settings → Recording & triggers**. Owners and admins can change them on the previous dashboard's Project Settings page:
-
-1. Go to [cloud.grillo.io/organization](https://cloud.grillo.io/organization).
-2. Under **Trigger defaults**, set the trigger channel, threshold, pre-event, and post-event times. Leave a field empty to use the Grillo default.
-3. Select **Save**.
-
-Sensors that use the project trigger defaults apply the change at their next check-in. Sensors with their own settings keep them.
+**Either horizontal** triggers when either horizontal axis crosses the threshold. A vertical-only knock may not trigger it.
 
 ## Choose a threshold
 
 The right threshold is above the normal vibration at the sensor's location and below the shaking you want to record.
 
 - Start with the default of 5 mg.
-- If a sensor records triggers all day from machinery, lifts, or traffic, raise its threshold. Look at the Horizontal PGA of those triggers on the [Triggers page](/dashboard/triggers) and set the threshold above them.
+- If a sensor records triggers all day from machinery, lifts, or traffic, raise its threshold. Look at the peak acceleration of those triggers on the [Triggers page](/dashboard/triggers), or at the **Threshold preview**, and set the threshold above them.
 - If it records nothing during events you can feel, lower it.
 
-A sensor that triggers more than 15 times in an hour is in a **trigger storm**. Grillo emails the alert recipients once, with a suggested threshold. See [Trigger Alerts](/dashboard/alerts#limits).
-
-## Which sensors support triggered recording
-
-Triggered recording needs current Grillo Pulse firmware. If a sensor's firmware cannot record triggered, its details show **Not reported by this firmware**. [Update its firmware](/dashboard/sensors/firmware-updates), or [contact Grillo Support](/support/contact).
-
-Settings are saved on the sensor, so it keeps recording the same way after a restart.
+The alert level for [trigger alerts](/dashboard/alerts) is a separate setting from the trigger threshold.

@@ -4,54 +4,42 @@ title: Update Firmware
 
 # Update Sensor Firmware
 
-:::note Handled by Grillo Support for now
-The new Grillo Cloud dashboard does not yet have a way to start a firmware update. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the target version, and Grillo will make the change for you. The steps below describe the previous dashboard.
+Grillo sensors can update their firmware over the air (OTA): the sensor is given a target version, and downloads and installs it the next time it checks in.
+
+:::note Done by Grillo Support for now
+Grillo Cloud does not have a way to start a firmware update yet. [Contact Grillo Support](/support/contact) with the Device IDs and the version you want, and Grillo sets the update for you.
 :::
-
-Grillo Cloud can update a sensor's firmware over the air (OTA). You choose a target version, and the sensor downloads and installs it the next time it checks in.
-
-Only project owners and admins can start an update.
 
 ## Which sensors support OTA
 
-| Sensor | OTA from Grillo Cloud |
+| Sensor | Over-the-air update |
 |---|---|
 | Grillo Pulse on firmware 1.x | Yes |
 | Grillo One | Yes |
-| Current Grillo Pulse, Cellular and Ethernet (firmware 2.x) | Not yet. Grillo updates these units for you; [contact support](/support/contact). |
+| Current Grillo Pulse, Cellular and Ethernet (firmware 2.x) | Not yet. Grillo updates these units for you. |
 
-The sensor's current version is in the **Firmware** column of the [sensor table](/dashboard/sensors/table-view).
+## Find sensors on old firmware
 
-## Before you update
+The **Firmware** column of the [sensor table](/dashboard/sensors/table-view) shows the version each sensor last reported. **old** marks a sensor running an older version than another sensor of the same type in the project; hover over it to see the newer version.
 
-- The sensor must be **online**. An offline sensor takes the update when it next connects.
-- Make sure it has stable power. Do not unplug it during the update.
-- On a cellular sensor, check that signal strength is steady. The download uses the sensor's data connection.
+## Before you ask for an update
+
+- The sensor should be **online**. An offline sensor takes the update when it next connects.
+- Make sure it has stable power. It must not be unplugged during the update.
+- On a cellular sensor, check that the signal is steady. The download uses the sensor's data connection.
 - Update one sensor first and confirm it comes back before updating the rest.
-
-## Start an update
-
-1. Open **Sensors** and select the sensor.
-2. Select **Edit**.
-3. In **Firmware Version**, choose the target version. The list shows the versions published for that sensor type; the installed one is marked **current**.
-4. Select **Update Device**.
-5. In **Confirm OTA Version Update**, select **Confirm Update**.
-
-The sensor receives the target version at its next health check-in, about a minute later. It downloads the firmware, installs it, and restarts.
 
 ## Check the result
 
-Wait a few minutes, then refresh **Sensors**. The update worked when:
+The sensor downloads the firmware, installs it, and restarts. The update worked when:
 
 - The sensor is **online** again, and
-- The **Firmware** column shows the target version.
+- The **Firmware** column, and **Firmware** in the **Hardware** card on its page, show the new version.
 
-The sensor also restarts, which resets **Up since boot** in its [details](/dashboard/sensors/sensor-details#connectivity).
+The restart also shows under **Restarts** in its [Connectivity](/dashboard/sensors/sensor-details#connectivity), and the firmware change in its events log.
 
 ## If the update does not complete
 
-- **Firmware column unchanged and sensor online:** the sensor may still be downloading, especially on a weak cellular link. Give it more time before trying again.
+- **Firmware unchanged and sensor online:** the sensor may still be downloading, especially on a weak cellular link. Give it more time.
 - **Sensor offline after the update:** check power and connectivity on site, then follow the troubleshooting guide for the sensor.
-- **Still on the old version after an hour:** contact support with the Device ID, the current and target versions, and the time you started the update.
-
-You cannot set the target to the version the sensor already runs.
+- **Still on the old version after an hour:** contact support with the Device ID, the current and target versions, and when the update was set.

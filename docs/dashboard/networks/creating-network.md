@@ -4,7 +4,7 @@ title: Network and Station Codes
 
 # Network and Station Codes
 
-Grillo Cloud names seismic stations with FDSN codes so your data lines up with other seismic software.
+Grillo Cloud names seismic stations with FDSN codes so your data lines up with other seismic software. A station is written as network code and station code, for example `HT.E4F5`.
 
 ## Network code
 
@@ -14,18 +14,17 @@ Tell Grillo which code you want when you order. Use a code assigned to you by th
 
 ## Station codes
 
-You choose a station code when you [claim a sensor](/dashboard/sensors/adding-sensor) and can change it later in [Edit Sensor](/dashboard/sensors/configuring-sensor).
+When you [claim a sensor](/dashboard/sensors/adding-sensor), Grillo Cloud creates its station and names it with the last four characters of the Device ID. A sensor with Device ID `A0B1C2D3E4F5` in a project with network code `HT` becomes station `HT.E4F5`.
 
-- 2–8 uppercase letters or numbers
-- Unique within your project
-
-Plan your station names before you start claiming. A consistent scheme is easier to work with than the default, which is the last four characters of the Device ID.
+You give the station a readable **Name** and **Site** in [Edit a Sensor](/dashboard/sensors/configuring-sensor). The station code itself cannot be changed in Grillo Cloud; to use a different code, [contact Grillo Support](/support/contact).
 
 ## Channels
 
-| Channel | Sensor | Recorded by |
-|---|---|---|
-| `EHZ` | Vertical geophone | Grillo Pulse |
-| `HNZ` | Accelerometer, vertical | Grillo Pulse, Grillo One |
-| `HNN` | Accelerometer, north | Grillo Pulse, Grillo One |
-| `HNE` | Accelerometer, east | Grillo Pulse, Grillo One |
+| Channel | Sensor | Rate | Recorded by |
+|---|---|---|---|
+| `EHZ` | Geophone, vertical | 100 Hz | Grillo Pulse |
+| `HNZ` | Accelerometer, vertical | 125 Hz | Grillo Pulse, Grillo One |
+| `HNN` | Accelerometer, north | 125 Hz | Grillo Pulse, Grillo One |
+| `HNE` | Accelerometer, east | 125 Hz | Grillo Pulse, Grillo One |
+
+Grillo One has no geophone, so its stations have no `EHZ` channel.

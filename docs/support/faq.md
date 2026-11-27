@@ -76,7 +76,7 @@ Remove the base's cover and press **RESET**. The base also surveys every time it
 
 ### Can I download my seismic data?
 
-On the Network, Seismic, and Enterprise plans, yes: open the waveform archive and select **Download (miniSEED + CSV)**. See [View and Download Waveforms](/dashboard/data/waveforms). For a continuous feed into SeisComP, Swarm, or ObsPy, [stream it to your own ringserver](/dashboard/data/realtime-export). For Earthworm, you can also ask Grillo to [send the data to your own server](/dashboard/data/data-server) and receive it with the open-source [coap2seis](https://github.com/grillo/coap2seis).
+On the Structural, Seismic, and Enterprise plans, yes: open **Waveforms**, choose the station, channels, and window, and select **Download** for miniSEED or CSV. See [View and Download Waveforms](/dashboard/data/waveforms). On the Network plan your sensors [send their data to your own server](/dashboard/data/data-server), where Grillo's open-source [coap2seis](https://github.com/grillo/coap2seis) can pass it to Earthworm or write miniSEED.
 
 For Slide, use [Exports](/slide-cloud/exports).
 

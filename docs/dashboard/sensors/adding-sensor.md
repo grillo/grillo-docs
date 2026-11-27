@@ -4,51 +4,48 @@ title: Claim a Sensor
 
 # Claim a Sensor
 
-:::note Handled by Grillo Support for now
-The new Grillo Cloud dashboard does not yet have a way to claim or unclaim a sensor. Until it does, [contact Grillo Support](/support/contact) with the Device ID and the station code you want, and Grillo will make the change for you. The steps below describe the previous dashboard.
-:::
+When your Grillo Pulse or Grillo One arrives, claim it in Grillo Cloud. Claiming adds the sensor to your project, so it shows up in your sensor list.
 
-When your Grillo Pulse or Grillo One arrives, claim it in Grillo Cloud. Claiming links the sensor to your project, so it shows up in your sensor list and on your map.
+Every Grillo sensor is registered in Grillo's inventory at the factory, so there is nothing to set up beforehand: you only need its Device ID. Claiming does not connect the sensor to the internet; that is part of the [hardware setup](#next-steps).
 
-Every Grillo sensor is registered in Grillo's system at the factory, so there is nothing to set up beforehand: you only need its Device ID. Claiming does not connect the sensor to the internet; that is part of the [hardware setup](#next-steps).
+Project owners and admins can claim sensors.
 
 ## Before you begin
 
-You need:
+You need the sensor's 12-character Device ID, for example `A0B1C2D3E4F5`. It is printed on the sensor label. Record it before you close or install the enclosure.
 
-- The sensor's 12-character Device ID, for example `A0B1C2D3E4F5`. It is printed on the sensor label and encoded in the label's QR code.
-- A [station code](/dashboard/networks/creating-network#station-codes): 2–8 uppercase letters or numbers, unique in your project.
+## Add the sensor
 
-Record the Device ID before you close or install the enclosure.
+1. Select the right project in the project selector.
+2. Open **Sensors** and select **Add sensor**. (**Project settings → Sensors** has the same **Add sensor** button.)
+3. **Claim**: type the full Device ID and select **Claim**.
+4. **Place it**: enter the station's **Name**, **Site**, **Latitude**, **Longitude**, and **Elevation**, then select **Save and enable**. At the sensor, **Use my location** fills in the position from your phone or browser. If you are not at the site yet, select **Place later**.
+5. **First report**: the dialog waits for the sensor's first health report. A sensor reports within a minute or two of being powered with a network connection. You can close the dialog; the sensor shows up in the list when its report arrives.
 
-## Claim the sensor
+Select **Add another** to claim the next sensor.
 
-1. Select the right project in the project switcher.
-2. Open **Sensors**.
-3. Select the **+** button at the top of the page, or **Claim your first sensor** if the list is empty.
-4. In **Claim New Sensor**, type the Device ID or select the camera button to scan the label's QR code.
-5. Enter the station code. Grillo Cloud fills in the last four characters of the Device ID; replace them with your own station name.
-6. Select **Claim Device**.
+The claim creates the sensor's station, named with your project's network code and the last four characters of the Device ID, for example `HT.E4F5`. See [Network and Station Codes](/dashboard/networks/creating-network).
 
-The sensor appears in your list straight away and shows **offline**. Once it is powered and connected, it sends a health report every minute or less. Its status changes to **online**, and it appears on the map once you [add its location](/dashboard/sensors/configuring-sensor).
+## Place the station
+
+Until a station has a position it is **not placed**: Grillo stores its data, but earthquake detection ignores it. To place it later, open the sensor's page and select **Edit**. See [Edit a Sensor](/dashboard/sensors/configuring-sensor).
+
+Enter the position at the installed site, not at a bench or desk.
 
 ## Common errors
 
 | Message | What to do |
 |---|---|
-| Device not found | Check all 12 characters, or scan the QR code instead. Every Grillo sensor is registered at the factory, so if the ID is correct and still not found, contact support. |
-| Device is already claimed | Another project holds it. Ask that project to unclaim it, or contact support. |
-| Invalid Device ID format | Remove spaces and separators. Use exactly 12 characters from `0–9` and `A–F`. |
-| Station code already exists | Choose a station code no other sensor in the project uses. |
+| *ID* isn't in Grillo's inventory. Check the full id on the device's label. | Check all 12 characters. If the ID is correct and still not found, [contact Grillo Support](/support/contact). |
+| *ID* already belongs to a project. Ask Grillo to move it. | Another project holds the sensor. [Contact Grillo Support](/support/contact). |
 
 ## Unclaim a sensor
 
-Open the sensor's details, select **Unclaim Sensor**, and type `unclaim` to confirm. Owners and admins can unclaim.
+Open **Project settings → Sensors**, select **Unclaim** next to the device, then **Back to inventory** to confirm. Owners and admins can unclaim.
 
-Unclaiming removes the sensor from your project and makes it claimable by anyone who has its Device ID. It cannot be undone, and it does not reset the sensor itself.
+Unclaiming removes the sensor from your project and returns it to Grillo's inventory. It does not reset the sensor itself.
 
 ## Next steps
 
-1. [Add the sensor's location](/dashboard/sensors/configuring-sensor).
-2. Connect the hardware: [Grillo Pulse](/hardware/grillo-pulse) or [Grillo One](/hardware/grillo-one).
-3. [Verify that it is online](/dashboard/sensors/sensor-status).
+1. Connect the hardware: [Grillo Pulse](/hardware/grillo-pulse) or [Grillo One](/hardware/grillo-one).
+2. [Verify that it is online](/dashboard/sensors/sensor-status).

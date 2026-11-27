@@ -78,7 +78,7 @@ See [Sensor Placement](/concepts/sensor-placement) for choosing a site.
 
 ## Verify
 
-In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Last Seen** time is current. Grillo One sends a health report every minute. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
+In Grillo Cloud, open **Sensors** and check that the sensor is **online** and its **Last SOH** time is current. Grillo One sends a health report every minute. See [Verify Sensor Status](/dashboard/sensors/sensor-status).
 
 ## Firmware updates
 
@@ -86,7 +86,7 @@ The latest Grillo One firmware is **1.0.1**.
 
 ### Update over the air
 
-If the sensor appears in Grillo Cloud with a firmware version, update it from there. See [Update Firmware](/dashboard/sensors/firmware-updates). While it updates, the Network and Sensor lights flash purple; then it restarts.
+If the sensor appears in Grillo Cloud with a firmware version, Grillo Support can update it over the air. See [Update Firmware](/dashboard/sensors/firmware-updates). While it updates, the Network and Sensor lights flash purple; then it restarts.
 
 The new firmware checks the accelerometer when it starts. If that check fails, the sensor rolls back to the previous version by itself.
 

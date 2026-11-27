@@ -4,32 +4,48 @@ title: Event Details
 
 # Event Details
 
-Select an event in the catalog, on the chart, or on the map to open its details.
+Select an event in **Events**, on the Live map, or on the **Alerts** page to open its page. The title gives the magnitude and the place, with the event's status, its Event ID, and its revision.
 
-## Event information
+An event imported from the previous Grillo Cloud is marked **old system**, with a line saying where it came from and, for an event from another agency's catalog such as USGS or EMSC, a link to its page there.
 
-The top of the panel shows the magnitude, the Event ID, the nearest place, and the origin time in UTC and Haiti local time. Below it:
+Everything on the page is an automatic estimate. It can differ from a catalog reviewed by a seismic agency. When a new revision of the event arrives, the page updates itself.
 
+## Map
+
+The epicenter and your stations, with a line from the epicenter to each station that detected the event. Select a station to open its [sensor page](/dashboard/sensors/sensor-details).
+
+## Origin
+
+- **Time** of the earthquake's origin, in UTC
+- **Epicentre**: latitude and longitude
 - **Depth** in kilometers
-- **Stations**: how many of the project's stations detected the event
+- **Method**, **Stations / phases**, and **RMS residual**: how the location was computed and how well the arrivals fit it
+- **Created** and **Updated**
 
-These are automatic estimates. They can differ from a catalog reviewed by a seismic agency.
+## Magnitudes
 
-## Detection timeline
+Each magnitude estimate, with its type, value, uncertainty, and the number of stations it used. The one the event shows is marked ★. A magnitude marked **catalogue** comes from the S-wave peak about a minute after the origin; it is kept for the catalog and never triggers an alert.
 
-How long detection took, in seconds from the earthquake's origin: the **first pick** (the first station to detect the waves) and when the event was **located**.
+## Alert
 
-## Location
+Grillo's alert decision for the event and each of its deliveries, with how many seconds after the origin each went out. For your project's own alert, see the [Alerts page](/events/earthquake-alerts#the-alerts-page).
 
-A map of the epicenter and the stations that picked the event (marked ◆).
+## Waveforms around the event
 
-## Nearest stations
+The vertical acceleration (`HNZ`) of the 8 nearest stations that detected the event, with the origin and each station's pick marked. Zoom with **+** and **−**.
 
-The vertical geophone traces of the nearest stations that picked the event, from the origin to 40 seconds after, with each station's P-wave pick marked. Traces need the event's origin time; if it is missing, the panel says so.
+Owners, admins, and members see the waveforms; viewers see the rest of the page.
 
-## Open the waveforms
+## Arrivals
 
-Select **Open in archive** to open the [Archive](/dashboard/data/waveforms) with a window from 1 minute before the origin to 3 minutes after, and the sensors within 80 km selected.
+One row per arrival used in the location: **Station**, **Channel**, **Phase**, **Onset (UTC)**, the time **After origin**, the **Distance** and **Azimuth** from the epicenter, the **Residual** (how far the arrival is from the location's prediction; over 0.5 s is highlighted), and its **Weight**.
+
+## Replay and download
+
+- **▶ Replay** plays the event back on the [Live map](/events/live-map#replay-a-past-event) as it was published.
+- **Download** opens the [download dialog](/dashboard/data/waveforms#download-waveforms) for the stations that detected the event, every channel they have, from 10 seconds before the origin to 40 seconds after the last arrival. Owners, admins, and members can download.
+
+`cloud.grillo.io/events/latest` opens the newest event.
 
 ## If details are empty
 

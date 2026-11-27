@@ -22,9 +22,7 @@ Pulse Cellular supports LTE on band 20 (used widely in the UK and Europe) and ba
 2. If you are unsure, bench-test the sensor there first.
 3. Keep the antennas clear of large metal surfaces and obstructions.
 
-In Grillo Cloud, the sensor's details show its **Signal Strength** and **SIM ICCID**. Check signal strength at the installed position before you leave the site.
-
-<img src="/img/screenshots/pulse-cellular-networking.png" alt="The Networking section of a sensor in Grillo Cloud, showing signal strength and a Cellular connection type" width="398" />
+In Grillo Cloud, **Current connection** on the sensor's page shows its **Link** and signal, **Operator**, and **ICCID**. Check the signal at the installed position before you leave the site.
 
 ## Timing
 
@@ -36,4 +34,4 @@ The sensor sets its clock from the network once it connects. On cellular, the fi
 - Check coverage at the site, or try somewhere with a stronger signal.
 - Disconnect the 12 V DC power, wait 30 seconds, and reconnect it.
 - Give it 5 minutes, then check Grillo Cloud.
-- If it still does not connect, contact support with the Device ID, the site location, and the **SIM ICCID** shown in Grillo Cloud, if any.
+- If it still does not connect, contact support with the Device ID, the site location, and the **ICCID** shown in Grillo Cloud, if any.

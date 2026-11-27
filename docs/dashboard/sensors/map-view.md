@@ -4,14 +4,9 @@ title: Sensor Map
 
 # Sensor Map
 
-Open **Sensors** and choose **Map** to see the project's sensors by location. Each marker is colored by the sensor's [status](/dashboard/sensors/sensor-status).
+The **Sensors** page is a [table](/dashboard/sensors/table-view); it has no map view. To see sensors on a map:
 
-- Pan and zoom to inspect the deployment.
-- Select a marker to open that sensor's details.
-- From a sensor's details, select **Show on map** to jump to its marker.
+- **Live** shows every station of the project on a map, with its state. See [Live Map](/events/live-map).
+- Each [sensor's page](/dashboard/sensors/sensor-details) has a small map centered on the station.
 
-The **Network status** panel shows how many sensors are reporting. Turn on **Coverage gaps** to shade the areas with too few reporting sensors nearby to detect an earthquake quickly. The panel gives the share of the country affected.
-
-A sensor needs a saved latitude and longitude to appear. If a marker is missing or in the wrong place, [contact Grillo Support](/support/contact) with the correct coordinates.
-
-If the project masks sensor locations (**Settings → Data**), coordinates are not shown exactly.
+A station appears on a map only once it has a position. If a marker is missing or in the wrong place, [edit the station](/dashboard/sensors/configuring-sensor) and correct its latitude and longitude.

@@ -1,19 +1,398 @@
 ---
-import Default from '@astrojs/starlight/components/Search.astro';
+// Inline search: type in the header field and results drop down beneath it (no modal).
+// Uses the Pagefind index Starlight builds; it only exists in a production build.
 ---
 
-<Default />
+<grillo-search class="gs" data-dev={import.meta.env.DEV ? '' : undefined}>
+  <div class="gs-field">
+    <svg class="gs-icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+      <path
+        fill="currentColor"
+        d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7Z"
+      ></path>
+    </svg>
+    <input
+      type="search"
+      placeholder="Search"
+      autocomplete="off"
+      spellcheck="false"
+      role="combobox"
+      aria-label="Search the docs"
+      aria-expanded="false"
+      aria-controls="gs-results"
+      aria-autocomplete="list"
+      aria-keyshortcuts="Control+K Meta+K /"
+    />
+    <button type="button" class="gs-clear" aria-label="Clear search" hidden>×</button>
+    <kbd class="gs-key" aria-hidden="true">Ctrl K</kbd>
+  </div>
+  <div class="gs-panel" hidden>
+    <ul id="gs-results" class="gs-results" role="listbox" aria-label="Search results"></ul>
+    <p class="gs-status" role="status"></p>
+  </div>
+</grillo-search>
 
 <script>
-  // Pages are built as hardware/grillo-pulse.html, so Pagefind returns .html URLs.
-  // Show the canonical URL instead: /hardware/grillo-pulse.
-  const results = document.getElementById('starlight__search');
+  type SubResult = { title: string; url: string; excerpt: string };
+  type ResultData = { url: string; excerpt: string; meta: { title?: string }; sub_results: SubResult[] };
+  type Pagefind = {
+    options: (o: object) => Promise<void>;
+    debouncedSearch: (q: string, o?: object, ms?: number) => Promise<{ results: { data: () => Promise<ResultData> }[] } | null>;
+  };
+
+  const MAX_PAGES = 8;
+  const MAX_SECTIONS = 3;
+
+  // Pages are built as hardware/grillo-pulse.html, so Pagefind returns .html URLs; show the canonical one.
   const canonical = (href: string) => href.replace(/(?:\/index)?\.html(?=#|$)/, '') || '/';
-  if (results) {
-    new MutationObserver(() => {
-      for (const link of results.querySelectorAll<HTMLAnchorElement>('a[href*=".html"]')) {
-        link.setAttribute('href', canonical(link.getAttribute('href')!));
+
+  let pagefind: Promise<Pagefind> | undefined;
+  const loadPagefind = () =>
+    (pagefind ??= (async () => {
+      const path = '/pagefind/pagefind.js';
+      const pf: Pagefind = await import(/* @vite-ignore */ path);
+      await pf.options({ excerptLength: 18 });
+      return pf;
+    })());
+
+  class GrilloSearch extends HTMLElement {
+    input = this.querySelector('input')!;
+    panel = this.querySelector<HTMLElement>('.gs-panel')!;
+    list = this.querySelector<HTMLUListElement>('.gs-results')!;
+    status = this.querySelector<HTMLElement>('.gs-status')!;
+    clear = this.querySelector<HTMLButtonElement>('.gs-clear')!;
+    active = -1;
+
+    connectedCallback() {
+      const key = this.querySelector('.gs-key');
+      if (key && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) key.textContent = '⌘ K';
+
+      this.input.addEventListener('focus', () => {
+        if (this.dataset.dev === undefined) loadPagefind();
+        if (this.input.value.trim()) this.open();
+      });
+      this.input.addEventListener('input', () => {
+        this.clear.hidden = !this.input.value;
+        this.search(this.input.value.trim());
+      });
+      this.clear.addEventListener('click', () => {
+        this.input.value = '';
+        this.clear.hidden = true;
+        this.close();
+        this.input.focus();
+      });
+      this.input.addEventListener('keydown', (e) => this.onKey(e));
+      this.list.addEventListener('mousemove', (e) => {
+        const option = (e.target as Element).closest<HTMLElement>('[role=option]');
+        if (option) this.select(this.options().indexOf(option));
+      });
+      document.addEventListener('pointerdown', (e) => {
+        if (!this.contains(e.target as Node)) this.close();
+      });
+      window.addEventListener('keydown', (e) => {
+        const typing = e.target instanceof HTMLElement && e.target.matches('input, textarea, select, [contenteditable]');
+        if (((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') || (e.key === '/' && !typing)) {
+          e.preventDefault();
+          this.input.focus();
+          this.input.select();
+        }
+      });
+    }
+
+    async search(query: string) {
+      if (!query) return this.close();
+      if (this.dataset.dev !== undefined) {
+        return this.show([], 'Search works in a production build: npm run build && npm run preview');
       }
-    }).observe(results, { childList: true, subtree: true });
+      const pf = await loadPagefind();
+      const found = await pf.debouncedSearch(query, {}, 150);
+      if (found === null || query !== this.input.value.trim()) return; // a newer search replaced this one
+      const pages = await Promise.all(found.results.slice(0, MAX_PAGES).map((r) => r.data()));
+      if (query !== this.input.value.trim()) return;
+      this.show(pages, pages.length ? '' : `No results for “${query}”.`);
+    }
+
+    show(pages: ResultData[], message: string) {
+      this.list.replaceChildren(...pages.flatMap((page) => this.renderPage(page)));
+      this.status.textContent = message;
+      this.status.hidden = !message;
+      this.active = -1;
+      this.input.removeAttribute('aria-activedescendant');
+      this.open();
+    }
+
+    renderPage(page: ResultData) {
+      const url = canonical(page.url);
+      const sections = page.sub_results
+        .filter((s) => canonical(s.url) !== url && !s.url.endsWith('#_top'))
+        .slice(0, MAX_SECTIONS);
+      const items = [this.option(url, page.meta.title ?? url, sections.length ? '' : page.excerpt, 'gs-page')];
+      for (const s of sections) items.push(this.option(canonical(s.url), s.title, s.excerpt, 'gs-section'));
+      return items;
+    }
+
+    option(href: string, title: string, excerptHtml: string, kind: string) {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'presentation');
+      const a = document.createElement('a');
+      a.href = href;
+      a.className = `gs-option ${kind}`;
+      a.id = `gs-option-${this.list.childElementCount}-${Math.random().toString(36).slice(2, 7)}`;
+      a.setAttribute('role', 'option');
+      a.setAttribute('aria-selected', 'false');
+      a.tabIndex = -1;
+      const t = document.createElement('span');
+      t.className = 'gs-title';
+      t.textContent = title;
+      a.append(t);
+      if (excerptHtml) {
+        const x = document.createElement('span');
+        x.className = 'gs-excerpt';
+        x.innerHTML = excerptHtml; // Pagefind escapes page text and wraps matches in <mark>
+        a.append(x);
+      }
+      li.append(a);
+      return li;
+    }
+
+    options() {
+      return [...this.list.querySelectorAll<HTMLElement>('[role=option]')];
+    }
+
+    select(index: number) {
+      const options = this.options();
+      options.forEach((o, i) => o.setAttribute('aria-selected', String(i === index)));
+      this.active = index;
+      const current = options[index];
+      if (current) {
+        this.input.setAttribute('aria-activedescendant', current.id);
+        current.scrollIntoView({ block: 'nearest' });
+      } else {
+        this.input.removeAttribute('aria-activedescendant');
+      }
+    }
+
+    onKey(e: KeyboardEvent) {
+      const count = this.options().length;
+      if (e.key === 'ArrowDown' && count) {
+        e.preventDefault();
+        this.open();
+        this.select((this.active + 1) % count);
+      } else if (e.key === 'ArrowUp' && count) {
+        e.preventDefault();
+        this.select((this.active - 1 + count) % count);
+      } else if (e.key === 'Enter') {
+        const target = this.options()[this.active >= 0 ? this.active : 0] as HTMLAnchorElement | undefined;
+        if (target && !this.panel.hidden) {
+          e.preventDefault();
+          window.location.href = target.href;
+        }
+      } else if (e.key === 'Escape') {
+        if (!this.panel.hidden) this.close();
+        else {
+          this.input.value = '';
+          this.clear.hidden = true;
+          this.input.blur();
+        }
+      }
+    }
+
+    open() {
+      if (!this.list.childElementCount && !this.status.textContent) return;
+      this.panel.hidden = false;
+      this.input.setAttribute('aria-expanded', 'true');
+    }
+
+    close() {
+      this.panel.hidden = true;
+      this.input.setAttribute('aria-expanded', 'false');
+      this.select(-1);
+    }
   }
+
+  customElements.define('grillo-search', GrilloSearch);
 </script>
+
+<style is:global>
+  .gs {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .gs-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    padding: 0 0.625rem 0 0.75rem;
+    border: 1px solid var(--border-default);
+    color: var(--fg-3);
+    background: var(--bg-surface);
+    transition: border-color 120ms ease;
+  }
+
+  .gs-field:hover {
+    border-color: var(--border-strong);
+  }
+
+  .gs-field:focus-within {
+    border-color: var(--brand-orange);
+    box-shadow: 0 0 0 1px var(--brand-orange);
+  }
+
+  .gs-icon {
+    flex-shrink: 0;
+  }
+
+  .gs-field input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    color: var(--fg-1);
+    background: transparent;
+    font: 400 var(--sl-text-sm) / 1 var(--font-sans);
+  }
+
+  .gs-field input::placeholder {
+    color: var(--fg-3);
+  }
+
+  .gs-field input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .gs-clear {
+    flex-shrink: 0;
+    padding: 0 0.25rem;
+    border: 0;
+    color: var(--fg-3);
+    background: transparent;
+    cursor: pointer;
+    font: 400 1.25rem / 1 var(--font-sans);
+  }
+
+  .gs-clear:hover {
+    color: var(--fg-1);
+  }
+
+  .gs-clear[hidden] {
+    display: none;
+  }
+
+  .gs-key {
+    flex-shrink: 0;
+    padding: 0.125rem 0.375rem;
+    border: 1px solid var(--border-hairline);
+    color: var(--fg-3);
+    font: 400 0.6875rem / 1.4 var(--font-mono);
+  }
+
+  .gs-field:focus-within .gs-key {
+    display: none;
+  }
+
+  .gs-panel {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + 0.5rem);
+    left: 50%;
+    width: min(40rem, calc(100vw - 2rem));
+    max-height: min(32rem, calc(100dvh - var(--sl-nav-height) - 2rem));
+    overflow-y: auto;
+    transform: translateX(-50%);
+    border: 1px solid var(--border-default);
+    background: var(--bg-surface);
+    box-shadow: 0 12px 32px rgb(0 0 0 / 0.18);
+  }
+
+  .gs-panel[hidden] {
+    display: none;
+  }
+
+  .gs-results {
+    margin: 0;
+    padding: 0.375rem 0;
+    list-style: none;
+  }
+
+  .gs-results:empty {
+    display: none;
+  }
+
+  .gs-option {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding: 0.5rem 1rem;
+    border-left: 2px solid transparent;
+    color: var(--fg-1);
+    text-decoration: none;
+  }
+
+  .gs-option.gs-section {
+    padding-left: 2rem;
+  }
+
+  .gs-option[aria-selected='true'] {
+    border-left-color: var(--brand-orange);
+    background: var(--bg-elevated);
+  }
+
+  .gs-page:not(:first-child) {
+    margin-top: 0.25rem;
+  }
+
+  .gs-page .gs-title {
+    font: 500 var(--sl-text-sm) / 1.4 var(--font-sans);
+  }
+
+  .gs-section .gs-title {
+    color: var(--fg-1);
+    font: 400 var(--sl-text-xs) / 1.4 var(--font-sans);
+  }
+
+  .gs-section .gs-title::before {
+    content: '# ';
+    color: var(--fg-3);
+  }
+
+  .gs-excerpt {
+    color: var(--fg-2);
+    font: 400 var(--sl-text-xs) / 1.5 var(--font-sans);
+  }
+
+  .gs-excerpt mark {
+    color: var(--fg-1);
+    background: var(--sl-color-accent-low);
+  }
+
+  .gs-status {
+    margin: 0;
+    padding: 1.5rem 1rem;
+    color: var(--fg-2);
+    font-size: var(--sl-text-sm);
+    text-align: center;
+  }
+
+  .gs-status[hidden] {
+    display: none;
+  }
+
+  @media (max-width: 50rem) {
+    .gs-key {
+      display: none;
+    }
+
+    .gs-panel {
+      position: fixed;
+      top: var(--sl-nav-height);
+      left: 0;
+      width: 100vw;
+      max-height: calc(100dvh - var(--sl-nav-height));
+      transform: none;
+      border-width: 1px 0;
+    }
+  }
+</style>

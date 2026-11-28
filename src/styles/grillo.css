@@ -186,7 +186,7 @@ h1#_top {
 @media (min-width: 50rem) {
   div.header {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 26rem) 1fr;
+    grid-template-columns: 1fr minmax(0, 32rem) 1fr;
   }
 
   div.header > :last-child {
@@ -198,15 +198,16 @@ div.header .social-icons::after {
   display: none;
 }
 
-site-search button[data-open-modal] {
-  width: 100%;
-  border: 1px solid var(--border-default);
-  background: transparent;
-  box-shadow: none;
+/* The search field fills its slot: the centre column on desktop, the space between logo and menu on mobile. */
+div.header > :has(> grillo-search) {
+  flex: 1;
+  min-width: 0;
 }
 
-site-search button[data-open-modal]:hover {
-  border-color: var(--border-strong);
+@media (max-width: 50rem) {
+  div.header .site-title .word {
+    display: none;
+  }
 }
 
 /* Sidebar: one type style, orange marker on the current page. */

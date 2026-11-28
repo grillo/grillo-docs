@@ -3,7 +3,7 @@ import Default from '@astrojs/starlight/components/PageTitle.astro';
 import { markdownPath } from '../markdown';
 
 const route = Astro.locals.starlightRoute;
-const showMenu = route.entry.data.template !== 'splash' && Astro.url.pathname !== '/404';
+const showMenu = route.entry.data.template !== 'splash';
 const href = markdownPath(route.id);
 ---
 

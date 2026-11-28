@@ -77,4 +77,4 @@ The Linear projects name the repository for each product. Check the page against
 
 ## Deployment
 
-GitHub Actions builds the site with Astro Starlight and deploys `dist/` to GitHub Pages after changes reach `main`. `public/CNAME` keeps the docs.grillo.io domain. Pages are built as `page.html` (`build.format: 'file'`) so URLs have no trailing slash.
+GitHub Actions builds the site with Astro Starlight and deploys `dist/` to GitHub Pages after changes reach `main`. `public/CNAME` keeps the docs.grillo.io domain. Pages are built as `page.html` files (`build.format: 'preserve'`), so URLs have no trailing slash.

@@ -5,7 +5,7 @@ import Default from '@astrojs/starlight/components/Search.astro';
 <Default />
 
 <script>
-  // Pages are built as hardware/grillo-pulse.html (build.format 'file'), so Pagefind returns .html URLs.
+  // Pages are built as hardware/grillo-pulse.html, so Pagefind returns .html URLs.
   // Show the canonical URL instead: /hardware/grillo-pulse.
   const results = document.getElementById('starlight__search');
   const canonical = (href: string) => href.replace(/(?:\/index)?\.html(?=#|$)/, '') || '/';

@@ -13,8 +13,9 @@ const overview = (slug) => ({slug, label: 'Overview'});
 export default defineConfig({
   site: 'https://docs.grillo.io',
   // Same URLs as the Docusaurus site: /hardware/grillo-pulse, served from hardware/grillo-pulse.html.
+  // 'preserve' writes page.html files like 'file', but keeps links and canonical URLs extensionless.
   trailingSlash: 'never',
-  build: {format: 'file'},
+  build: {format: 'preserve'},
   integrations: [
     // Must come before Starlight so it sees ```mermaid blocks first.
     mermaid({

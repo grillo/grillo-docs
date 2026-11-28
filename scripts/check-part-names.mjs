@@ -4,14 +4,13 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 const PART_NAMES = /SIMCom|A767\d|SIM7\d{3}|Quectel|u-blox|ESP32|Espressif|ADS1262|ADXL355|W5500|ATGM336|TPS63020|BQ24073/i;
-const ROOTS = ['docs', 'src', 'static'];
-const TEXT = /\.(mdx?|tsx?|jsx?|json|css|html|svg|txt|ya?ml)$/i;
+const ROOTS = ['src', 'public', 'astro.config.mjs'];
+const TEXT = /\.(mdx?|astro|[cm]?[jt]sx?|json|css|html|svg|txt|ya?ml)$/i;
 
-const files = (dir) =>
-  readdirSync(dir).flatMap((name) => {
-    const path = join(dir, name);
-    return statSync(path).isDirectory() ? files(path) : TEXT.test(name) ? [path] : [];
-  });
+const files = (path) =>
+  statSync(path).isDirectory()
+    ? readdirSync(path).flatMap((name) => files(join(path, name)))
+    : TEXT.test(path) ? [path] : [];
 
 const hits = [];
 for (const file of ROOTS.flatMap(files)) {

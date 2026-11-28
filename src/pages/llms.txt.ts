@@ -1,0 +1,15 @@
+import type {APIRoute} from 'astro';
+import {getCollection} from 'astro:content';
+import {markdownPath, pageDescription} from '../markdown';
+
+export const GET: APIRoute = async ({site}) => {
+  const base = site!.origin;
+  const docs = (await getCollection('docs')).sort((a, b) => a.id.localeCompare(b.id));
+  const index = docs.map((d) => {
+    const description = pageDescription(d);
+    return `- [${d.data.title}](${base}${markdownPath(d.id)})${description ? `: ${description}` : ''}`;
+  });
+  return new Response(
+    `# Grillo Docs\n\n> Earthquake and landslide monitoring made simple\n\nEvery page is available as plain Markdown by appending .md to its URL. Full text of all pages: ${base}/llms-full.txt\n\n## Docs\n\n${index.join('\n')}\n`,
+  );
+};

@@ -4,7 +4,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 const PART_NAMES = /SIMCom|A767\d|SIM7\d{3}|Quectel|u-blox|ESP32|Espressif|ADS1262|ADXL355|W5500|ATGM336|TPS63020|BQ24073/i;
-const ROOTS = ['docs', 'src', 'static'];
+const ROOTS = ['src', 'public'];
 const TEXT = /\.(mdx?|tsx?|jsx?|json|css|html|svg|txt|ya?ml)$/i;
 
 const files = (dir) =>

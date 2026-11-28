@@ -6,10 +6,10 @@ English documentation for [docs.grillo.io](https://docs.grillo.io), covering Gri
 
 ```bash
 npm ci
-npm run start
+npm run dev
 ```
 
-The local site runs at `http://localhost:3000`.
+The local site runs at `http://localhost:4321`. Search (Pagefind) is built from the production build, so to try it run `npm run build && npm run preview`.
 
 ## Checks
 
@@ -18,12 +18,13 @@ npm run typecheck
 npm run build
 ```
 
-The production build fails on broken internal links.
+The production build fails on broken internal links and anchors (starlight-links-validator), and on component part names (`scripts/check-part-names.mjs`).
 
 ## Content structure
 
 ```text
-docs/
+src/content/docs/
+├── index.mdx             # Home page
 ├── getting-started/      # Journey selection and product overview
 ├── hardware/             # Sensor installation guides
 │   ├── grillo-pulse/
@@ -37,7 +38,7 @@ docs/
 └── support/              # FAQ and contact
 ```
 
-Folder names under `docs/` are public URLs. Keep them stable even when a product is renamed, and change the page title instead.
+Folder and file names under `src/content/docs/` are public URLs (`hardware/grillo-pulse/index.md` is `/hardware/grillo-pulse`). Keep them stable even when a product is renamed, and change the page title instead.
 
 See [SITE.md](SITE.md) for the supported navigation.
 
@@ -76,4 +77,4 @@ The Linear projects name the repository for each product. Check the page against
 
 ## Deployment
 
-GitHub Actions builds and deploys the site to GitHub Pages after changes reach `main`.
+GitHub Actions builds the site with Astro Starlight and deploys `dist/` to GitHub Pages after changes reach `main`. `public/CNAME` keeps the docs.grillo.io domain. Pages are built as `page.html` (`build.format: 'file'`) so URLs have no trailing slash.

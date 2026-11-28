@@ -1,0 +1,58 @@
+---
+title: Grillo documentation
+---
+
+import { Aside, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Install Grillo sensors, connect them, and work with their data in Grillo Cloud.
+
+<CardGrid>
+  <LinkCard
+    title="Grillo Pulse"
+    description="Seismic sensor with a geophone and accelerometer, on cellular or Ethernet. Inspect, claim, connect, install, and verify."
+    href="/hardware/grillo-pulse/quick-start"
+  />
+  <LinkCard
+    title="Grillo One"
+    description="Open-source strong-motion sensor on Ethernet or Wi-Fi. Connect it to your network and mount it."
+    href="/hardware/grillo-one"
+  />
+  <LinkCard
+    title="Grillo Slide"
+    description="GNSS base and rovers for landslide monitoring. Fit the SIM, set the APN with the app, and install on site."
+    href="/hardware/grillo-slide"
+  />
+  <LinkCard
+    title="Grillo Cloud"
+    description="Claim your Pulse and One sensors, check their health, and update firmware. Record triggers in structures, download waveforms, or detect earthquakes, depending on your plan."
+    href="/dashboard"
+  />
+  <LinkCard
+    title="Grillo Cloud for Slide"
+    description="Read ground movement and device health from your Slide kits, and export the data."
+    href="/slide-cloud"
+  />
+</CardGrid>
+
+## New sensor checklist
+
+**Grillo Pulse and Grillo One**
+
+1. [Get a Grillo Cloud account](/dashboard/account/creating-account) from your project invitation.
+2. [Claim the sensor](/dashboard/sensors/adding-sensor) with its 12-character Device ID or the QR code on its label.
+3. Follow the hardware guide for your sensor: [Pulse](/hardware/grillo-pulse) or [One](/hardware/grillo-one).
+4. [Verify that it is online](/dashboard/sensors/sensor-status) in the sensor list.
+
+**Grillo Slide**
+
+1. [Fit the SIM and set the APN](/hardware/grillo-slide/sim-and-apn) on the base.
+2. [Install the devices on site](/hardware/grillo-slide/installation) and let the base [survey its position](/hardware/grillo-slide/installation#survey-the-base).
+3. [Check the first readings](/slide-cloud/sites-and-devices) at slide.grillo.io.
+
+<Aside type="caution" title="Check power before you connect a Pulse">
+Grillo Pulse runs from a 12 V DC supply. It cannot be powered from USB, and a powered USB cable can damage it. Contact Grillo Support if the supplied accessories do not match your order.
+</Aside>
+
+## Need help?
+
+Use the chat messenger on this site, read the [FAQ](/support/faq), or [contact Grillo Support](/support/contact).

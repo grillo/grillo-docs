@@ -19,93 +19,102 @@ The documentation is English-only.
 
 ## Supported navigation
 
-### Start Here
+The sidebar is defined in `astro.config.mjs` and has two levels: a section, then its pages. Page labels come from each page's `sidebar.label`, or its `title`.
 
-- What Is Grillo?
-- Choosing Your Sensor
+### Start here
 
-### Sensors
+- Overview
+- What is Grillo?
+- Choosing your sensor
+- All sensors
 
-#### Grillo Pulse
+### Grillo Pulse
 
-- Pulse Quick Start
-- Inspect and Identify the Sensor
+- Overview
+- Pulse quick start
+- What's in the box
 - Claim in Grillo Cloud
 - Connectivity
-- Cellular and SIM Setup
-- Physical Installation
+- Cellular and SIM
+- Physical installation
 - Troubleshooting
 
-#### Grillo One
+### Grillo One
 
-- Connect and Install
+- Overview
+- Connect and install
 
-#### Grillo Slide
+### Grillo Slide
 
-- Fit the SIM and Set the APN
-- Install on Site
+- Overview
+- Fit the SIM and set the APN
+- Install on site
 - Troubleshooting
 
 ### Grillo Cloud
 
-- Create an Account
-- Projects
-- Add Colleagues
+- Overview
+- Create an account
+- Projects and settings
+- Add colleagues
 - Plans
-- Dashboard
+- Home page
+- Billing and account
 
-#### Sensors
+### Sensors in Grillo Cloud
 
-- Claim a Sensor
-- Network and Station Codes
-- Sensor Table
-- Sensor Details
-- Edit a Sensor
-- Recording Mode and Thresholds
-- Verify Sensor Status
-- Update Firmware
+- Overview
+- Claim a sensor
+- Network and station codes
+- Sensor table
+- Sensor details
+- Edit a sensor
+- Recording mode and thresholds
+- Verify sensor status
+- Update firmware
 
-#### Structural Monitoring
+### Structural monitoring
 
+- Overview
 - Triggers
-- Trigger Alerts
+- Trigger alerts
 
-#### Earthquake Detection
+### Earthquake detection
 
-- Event Catalog
-- Event Details
-- Live Map
-- Earthquake Alerts
-- How Detection Works
+- Overview
+- Event catalog
+- Event details
+- Live map
+- Earthquake alerts
+- How detection works
 
-#### Data
+### Data
 
-- View and Download Waveforms
-- Stream Data to Your Own Ringserver
-- Send Data to Your Own Server
+- Waveforms
+- Stream data to your own ringserver
+- Send data to your own server
 - Data API
-
-- Billing and Account
 
 ### Grillo Cloud for Slide
 
-- Sites and Devices
-- Export Data
-- Firmware and API Access
+- Overview
+- Sites and devices
+- Export data
+- Firmware and API access
 
 ### Concepts
 
-- Seismic Networks
-- Sensor Placement
-- Data Quality
-- Earthquake Early Warning
-- Landslide Monitoring with GNSS
-- IoT Approach
+- Seismic networks
+- Sensor placement
+- Data quality
+- Earthquake early warning
+- Landslide monitoring with GNSS
+- Connected sensor networks
 
 ### Support
 
-- Frequently Asked Questions
-- Contact Support
+- Frequently asked questions
+- Contact support
 
 ## Deferred content
 

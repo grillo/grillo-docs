@@ -1,0 +1,19 @@
+---
+import Default from '@astrojs/starlight/components/Search.astro';
+---
+
+<Default />
+
+<script>
+  // Pages are built as hardware/grillo-pulse.html (build.format 'file'), so Pagefind returns .html URLs.
+  // Show the canonical URL instead: /hardware/grillo-pulse.
+  const results = document.getElementById('starlight__search');
+  const canonical = (href: string) => href.replace(/(?:\/index)?\.html(?=#|$)/, '') || '/';
+  if (results) {
+    new MutationObserver(() => {
+      for (const link of results.querySelectorAll<HTMLAnchorElement>('a[href*=".html"]')) {
+        link.setAttribute('href', canonical(link.getAttribute('href')!));
+      }
+    }).observe(results, { childList: true, subtree: true });
+  }
+</script>

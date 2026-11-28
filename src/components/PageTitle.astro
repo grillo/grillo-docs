@@ -1,0 +1,91 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { markdownPath } from '../markdown';
+
+const route = Astro.locals.starlightRoute;
+const showMenu = route.entry.data.template !== 'splash' && Astro.url.pathname !== '/404';
+const href = markdownPath(route.id);
+---
+
+<div class="title-row">
+  <Default />
+  {
+    showMenu && (
+      <details class="md-menu" data-pagefind-ignore>
+        <summary>Markdown</summary>
+        <div class="md-menu-items">
+          <button type="button" data-md-copy={href}>Copy as Markdown</button>
+          <a href={href} download>Download .md</a>
+        </div>
+      </details>
+    )
+  }
+</div>
+
+<script>
+  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-md-copy]')) {
+    button.addEventListener('click', async () => {
+      const response = await fetch(button.dataset.mdCopy!);
+      await navigator.clipboard.writeText(await response.text());
+      button.textContent = 'Copied';
+      setTimeout(() => (button.textContent = 'Copy as Markdown'), 2000);
+    });
+  }
+</script>
+
+<style>
+  .title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .md-menu {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 1.25rem;
+    font-size: var(--sl-text-xs);
+  }
+  summary {
+    padding: 0.25rem 0.625rem;
+    border: 1px solid var(--sl-color-gray-5);
+    color: var(--sl-color-gray-2);
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: ' ▾';
+  }
+  summary:hover,
+  .md-menu[open] summary {
+    border-color: var(--sl-color-gray-4);
+    color: var(--sl-color-white);
+  }
+  .md-menu-items {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    display: flex;
+    min-width: 11rem;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    border: 1px solid var(--sl-color-gray-5);
+    background: var(--sl-color-bg);
+  }
+  .md-menu-items > * {
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    color: var(--sl-color-white);
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    text-decoration: none;
+  }
+  .md-menu-items > *:hover {
+    background: var(--sl-color-gray-6);
+  }
+</style>

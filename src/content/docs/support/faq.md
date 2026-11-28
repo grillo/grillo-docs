@@ -40,7 +40,7 @@ For Pulse and One, the 12-character uppercase hexadecimal identifier on the sens
 
 ### How do I power each sensor?
 
-- **Grillo Pulse:** 12 V DC through its M12 power connector. It has no built-in solar or battery; at an off-grid site, power it from a Grillo solar kit, or from your own solar charge controller and battery that supply 12 V DC. Do not connect USB; it cannot power the sensor and a powered USB cable can damage it.
+- **Grillo Pulse:** 12 V DC through its M12 power connector. It has no built-in solar or battery; at an off-grid site, power it from a Grillo solar kit, or from your own solar charge controller and battery that supply 12 V DC. Its USB ports carry data only and cannot power the sensor.
 - **Grillo One:** USB-C, 5 V. This is its only power input.
 - **Grillo Slide:** internal battery with a solar input.
 
